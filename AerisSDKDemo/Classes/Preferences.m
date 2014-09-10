@@ -30,17 +30,5 @@ NSString * const kMapControlBasic		= @"basic";
 	return nil;
 }
 
-- (NSString *)userIdentifier {
-	NSString *userId = [[NSUserDefaults standardUserDefaults] stringForKey:@"userid"];
-    if (userId == nil || userId.length == 0) {
-		CFUUIDRef cfuuid = CFUUIDCreate(kCFAllocatorDefault);
-		NSString *cfuuidString = (NSString*)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, cfuuid));
-		userId = [cfuuidString stringByReplacingOccurrencesOfString:@"-" withString:@""];
-        [[NSUserDefaults standardUserDefaults] setObject:userId forKey:@"userid"];
-		[[NSUserDefaults standardUserDefaults] synchronize];
-    }
-	
-	return userId;
-}
 
 @end

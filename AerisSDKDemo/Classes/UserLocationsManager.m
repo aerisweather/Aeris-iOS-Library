@@ -86,20 +86,6 @@ static NSString *lonKey		= @"lon";
 - (void)setDefaultLocation:(AWFPlace *)place {
 	[[NSUserDefaults standardUserDefaults] setObject:[self placeToDictionary:place] forKey:prefsDefaultLocationKey];
 	
-	// get the unique id for this user
-	NSString *userId = [[Preferences sharedInstance] userIdentifier];
-	NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"DeviceToken"];
-	if (token && userId) {
-		// send stored location with this device token id back to server for push notifications
-		AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-		manager.responseSerializer = [AFJSONResponseSerializer serializer];
-		NSDictionary *parameters = @{@"token": token, @"uuid": userId, @"place": [NSString stringWithFormat:@"%@,%@,%@", place.name, place.state, place.country]};
-		[manager POST:@"http://apollo.urban10.net/aeris/ios/push/devicestore.php" parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
-			//NSLog(@"JSON: %@", responseObject);
-		} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-			NSLog(@"Error: %@", error);
-		}];
-	}
 }
 
 - (void)removeDefaultLocation {

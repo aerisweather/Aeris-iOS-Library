@@ -25,6 +25,4 @@ extern NSString * const kMapControlBasic;
 @property (nonatomic, assign) BOOL saved;
 
 - (AWFCascadingStyle *)preferredStyle;
-- (NSString *)userIdentifier;
-
 @end

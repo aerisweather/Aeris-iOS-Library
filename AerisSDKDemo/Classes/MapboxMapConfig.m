@@ -19,11 +19,10 @@
 - (id)init {
 	self = [super init];
 	if (self) {
-		
-		//self.mapboxMapId = @"u10int.map-i2i85ouw";
+		// sample map set from Mapbox, replace this with your own map id
 		self.mapboxMapId = @"justin.map-mf07hryq";
-		
 	}
+
 	return self;
 }
 
