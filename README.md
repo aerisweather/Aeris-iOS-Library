@@ -1,9 +1,9 @@
 Aeris iOS Weather SDK 2.0
 =============
 
-The Aeris iOS Framework allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the Aeris API backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
+The [Aeris iOS Weather Framework](http://www.hamweather.com/support/documentation/mobile/aeris-ios-2.0-beta/) allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the [Aeris API](http://www.hamweather.com/support/documentation/aeris/) backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
 
-***Heads Up!** Version 2.0 of the SDK is currently in beta. Thus, it is not recommended that is be used in production versions of your applications as parts of the SDK may change before its final public release. If you need a production-ready version, please use [version 1.0 of the SDK](http://www.hamweather.com/support/documentation/mobile/ios/installation/).*
+> **Heads Up!** Version 2.0 of the SDK is currently in beta. Thus, it is not recommended that is be used in production versions of your applications as parts of the SDK may change before its final public release. If you need a production-ready version, please use [version 1.0 of the SDK](http://www.hamweather.com/support/documentation/mobile/ios/installation/).
 
 ### How to Get Started
 
