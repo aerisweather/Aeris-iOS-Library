@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70C19BFCD700013C45C /* Foundation.framework */; };
+		2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */; };
+		2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB71019BFCD700013C45C /* UIKit.framework */; };
+		2BEDF60219C0C9C400BECBB2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60019C0C9C400BECBB2 /* MapKit.framework */; };
+		2BEDF60319C0C9C400BECBB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */; };
+		2BEDF6C519C0CA1000BECBB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF60619C0CA1000BECBB2 /* AppDelegate.m */; };
+		2BEDF6C719C0CA1000BECBB2 /* AppleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF60919C0CA1000BECBB2 /* AppleMapViewController.m */; };
+		2BEDF6C819C0CA1000BECBB2 /* BarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF60B19C0CA1000BECBB2 /* BarGraphsViewController.m */; };
+		2BEDF6C919C0CA1000BECBB2 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF60D19C0CA1000BECBB2 /* CatalogViewController.m */; };
+		2BEDF6F819C0CA1000BECBB2 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF66F19C0CA1000BECBB2 /* Globals.m */; };
+		2BEDF6F919C0CA1000BECBB2 /* GoogleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67119C0CA1000BECBB2 /* GoogleMapViewController.m */; };
+		2BEDF6FA19C0CA1000BECBB2 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67319C0CA1000BECBB2 /* GraphViewController.m */; };
+		2BEDF6FB19C0CA1000BECBB2 /* GroupedListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67519C0CA1000BECBB2 /* GroupedListingViewController.m */; };
+		2BEDF6FC19C0CA1000BECBB2 /* BarGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67819C0CA1000BECBB2 /* BarGraphsViewController_iPad.m */; };
+		2BEDF6FD19C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67A19C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.m */; };
+		2BEDF6FE19C0CA1000BECBB2 /* IPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67C19C0CA1000BECBB2 /* IPadViewController.m */; };
+		2BEDF6FF19C0CA1000BECBB2 /* LineGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF67E19C0CA1000BECBB2 /* LineGraphsViewController_iPad.m */; };
+		2BEDF70019C0CA1000BECBB2 /* ModelGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68019C0CA1000BECBB2 /* ModelGraphsViewController_iPad.m */; };
+		2BEDF70119C0CA1000BECBB2 /* AdvisoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68319C0CA1000BECBB2 /* AdvisoriesViewController.m */; };
+		2BEDF70219C0CA1000BECBB2 /* DailySummariesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68519C0CA1000BECBB2 /* DailySummariesViewController.m */; };
+		2BEDF70319C0CA1000BECBB2 /* DailySummaryGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68719C0CA1000BECBB2 /* DailySummaryGraphsViewController.m */; };
+		2BEDF70419C0CA1000BECBB2 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68919C0CA1000BECBB2 /* DetailedWeatherViewController.m */; };
+		2BEDF70519C0CA1000BECBB2 /* EarthquakesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68B19C0CA1000BECBB2 /* EarthquakesViewController.m */; };
+		2BEDF70619C0CA1000BECBB2 /* ForecastBarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68D19C0CA1000BECBB2 /* ForecastBarGraphsViewController.m */; };
+		2BEDF70719C0CA1000BECBB2 /* ForecastLineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF68F19C0CA1000BECBB2 /* ForecastLineGraphsViewController.m */; };
+		2BEDF70819C0CA1000BECBB2 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69119C0CA1000BECBB2 /* ForecastViewController.m */; };
+		2BEDF70919C0CA1000BECBB2 /* IndicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69319C0CA1000BECBB2 /* IndicesViewController.m */; };
+		2BEDF70A19C0CA1000BECBB2 /* ModelGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69519C0CA1000BECBB2 /* ModelGraphsViewController.m */; };
+		2BEDF70B19C0CA1000BECBB2 /* MoonPhasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69719C0CA1000BECBB2 /* MoonPhasesViewController.m */; };
+		2BEDF70C19C0CA1000BECBB2 /* NearbyObservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69919C0CA1000BECBB2 /* NearbyObservationsViewController.m */; };
+		2BEDF70D19C0CA1000BECBB2 /* NormalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69B19C0CA1000BECBB2 /* NormalsViewController.m */; };
+		2BEDF70E19C0CA1000BECBB2 /* RecentObservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69D19C0CA1000BECBB2 /* RecentObservationsViewController.m */; };
+		2BEDF70F19C0CA1000BECBB2 /* RecentObsGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF69F19C0CA1000BECBB2 /* RecentObsGraphViewController.m */; };
+		2BEDF71019C0CA1000BECBB2 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6A119C0CA1000BECBB2 /* RecordsViewController.m */; };
+		2BEDF71119C0CA1000BECBB2 /* StormCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6A319C0CA1000BECBB2 /* StormCellsViewController.m */; };
+		2BEDF71219C0CA1000BECBB2 /* StormReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6A519C0CA1000BECBB2 /* StormReportsViewController.m */; };
+		2BEDF71319C0CA1000BECBB2 /* SunMoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6A719C0CA1000BECBB2 /* SunMoonViewController.m */; };
+		2BEDF71419C0CA1000BECBB2 /* TidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6A919C0CA1000BECBB2 /* TidesViewController.m */; };
+		2BEDF71519C0CA1000BECBB2 /* WeekendWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6AB19C0CA1000BECBB2 /* WeekendWeatherViewController.m */; };
+		2BEDF71619C0CA1000BECBB2 /* LineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6AD19C0CA1000BECBB2 /* LineGraphsViewController.m */; };
+		2BEDF71719C0CA1000BECBB2 /* ListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6AF19C0CA1000BECBB2 /* ListingViewController.m */; };
+		2BEDF71819C0CA1000BECBB2 /* LocationSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6B119C0CA1000BECBB2 /* LocationSearchViewController.m */; };
+		2BEDF71919C0CA1000BECBB2 /* MapboxMapConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6B319C0CA1000BECBB2 /* MapboxMapConfig.m */; };
+		2BEDF71A19C0CA1000BECBB2 /* MapboxMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6B519C0CA1000BECBB2 /* MapboxMapViewController.m */; };
+		2BEDF71B19C0CA1000BECBB2 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6B719C0CA1000BECBB2 /* MapViewController.m */; };
+		2BEDF71C19C0CA1000BECBB2 /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6B919C0CA1000BECBB2 /* Preferences.m */; };
+		2BEDF71D19C0CA1000BECBB2 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6BB19C0CA1000BECBB2 /* SettingsViewController.m */; };
+		2BEDF71E19C0CA1000BECBB2 /* UserLocationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6BD19C0CA1000BECBB2 /* UserLocationsManager.m */; };
+		2BEDF71F19C0CA1000BECBB2 /* GroupedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6C019C0CA1000BECBB2 /* GroupedTableViewCell.m */; };
+		2BEDF72019C0CA1000BECBB2 /* ListingEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6C219C0CA1000BECBB2 /* ListingEventView.m */; };
+		2BEDF72119C0CA1000BECBB2 /* ListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF6C419C0CA1000BECBB2 /* ListingTableViewCell.m */; };
+		2BEDF72719C0CB5400BECBB2 /* Aeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF72319C0CB5400BECBB2 /* Aeris.framework */; };
+		2BEDF72819C0CB5400BECBB2 /* AerisGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF72419C0CB5400BECBB2 /* AerisGoogleMap.framework */; };
+		2BEDF72919C0CB5400BECBB2 /* AerisMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF72519C0CB5400BECBB2 /* AerisMap.framework */; };
+		2BEDF72A19C0CB5400BECBB2 /* AerisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF72619C0CB5400BECBB2 /* AerisUI.framework */; };
+		2BEDF75919C0CBB900BECBB2 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF74119C0CBB900BECBB2 /* GoogleMaps.framework */; };
+		2BEDF75A19C0CBB900BECBB2 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF74319C0CBB900BECBB2 /* Mapbox.framework */; };
+		2BEDF75B19C0CBB900BECBB2 /* MBXMapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF74719C0CBB900BECBB2 /* MBXMapKit.m */; };
+		2BEDF75C19C0CBB900BECBB2 /* MBXOfflineMapDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF74919C0CBB900BECBB2 /* MBXOfflineMapDatabase.m */; };
+		2BEDF75D19C0CBB900BECBB2 /* MBXOfflineMapDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF74B19C0CBB900BECBB2 /* MBXOfflineMapDownloader.m */; };
+		2BEDF75E19C0CBB900BECBB2 /* MBXPointAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF74D19C0CBB900BECBB2 /* MBXPointAnnotation.m */; };
+		2BEDF75F19C0CBB900BECBB2 /* MBXRasterTileOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF74F19C0CBB900BECBB2 /* MBXRasterTileOverlay.m */; };
+		2BEDF76219C0CF7900BECBB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF76119C0CF7900BECBB2 /* main.m */; };
+		2BEDF76E19C0CFF400BECBB2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76319C0CFF400BECBB2 /* AVFoundation.framework */; };
+		2BEDF76F19C0CFF400BECBB2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76419C0CFF400BECBB2 /* CoreData.framework */; };
+		2BEDF77019C0CFF400BECBB2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76519C0CFF400BECBB2 /* CoreLocation.framework */; };
+		2BEDF77119C0CFF400BECBB2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76619C0CFF400BECBB2 /* CoreText.framework */; };
+		2BEDF77219C0CFF400BECBB2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76719C0CFF400BECBB2 /* GLKit.framework */; };
+		2BEDF77319C0CFF400BECBB2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76819C0CFF400BECBB2 /* ImageIO.framework */; };
+		2BEDF77419C0CFF400BECBB2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76919C0CFF400BECBB2 /* libc++.dylib */; };
+		2BEDF77519C0CFF400BECBB2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76A19C0CFF400BECBB2 /* libicucore.dylib */; };
+		2BEDF77619C0CFF400BECBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76B19C0CFF400BECBB2 /* libz.dylib */; };
+		2BEDF77719C0CFF400BECBB2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76C19C0CFF400BECBB2 /* OpenGLES.framework */; };
+		2BEDF77819C0CFF400BECBB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76D19C0CFF400BECBB2 /* SystemConfiguration.framework */; };
+		2BEDF77A19C0D04400BECBB2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF77919C0D04400BECBB2 /* libsqlite3.dylib */; };
+		2BEDF78119C0D31000BECBB2 /* AerisSDKDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF77B19C0D31000BECBB2 /* AerisSDKDemo-Info.plist */; };
+		2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF77E19C0D31000BECBB2 /* InfoPlist.strings */; };
+		2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF78019C0D31000BECBB2 /* Images.xcassets */; };
+		2BEDF78519C0D38B00BECBB2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF78419C0D38B00BECBB2 /* GoogleMaps.bundle */; };
+		2BEDF78C19C0E85000BECBB2 /* AerisResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF78B19C0E85000BECBB2 /* AerisResources.bundle */; };
+		DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AerisSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5EB70919BFCD700013C45C /* AerisSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5EB70C19BFCD700013C45C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2B5EB71019BFCD700013C45C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2B5EB72519BFCD700013C45C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2BEDF60019C0C9C400BECBB2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2BEDF60519C0CA1000BECBB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2BEDF60619C0CA1000BECBB2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2BEDF60819C0CA1000BECBB2 /* AppleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleMapViewController.h; sourceTree = "<group>"; };
+		2BEDF60919C0CA1000BECBB2 /* AppleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleMapViewController.m; sourceTree = "<group>"; };
+		2BEDF60A19C0CA1000BECBB2 /* BarGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF60B19C0CA1000BECBB2 /* BarGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF60C19C0CA1000BECBB2 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		2BEDF60D19C0CA1000BECBB2 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
+		2BEDF66E19C0CA1000BECBB2 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		2BEDF66F19C0CA1000BECBB2 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
+		2BEDF67019C0CA1000BECBB2 /* GoogleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapViewController.h; sourceTree = "<group>"; };
+		2BEDF67119C0CA1000BECBB2 /* GoogleMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapViewController.m; sourceTree = "<group>"; };
+		2BEDF67219C0CA1000BECBB2 /* GraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewController.h; sourceTree = "<group>"; };
+		2BEDF67319C0CA1000BECBB2 /* GraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewController.m; sourceTree = "<group>"; };
+		2BEDF67419C0CA1000BECBB2 /* GroupedListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedListingViewController.h; sourceTree = "<group>"; };
+		2BEDF67519C0CA1000BECBB2 /* GroupedListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedListingViewController.m; sourceTree = "<group>"; };
+		2BEDF67719C0CA1000BECBB2 /* BarGraphsViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarGraphsViewController_iPad.h; sourceTree = "<group>"; };
+		2BEDF67819C0CA1000BECBB2 /* BarGraphsViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarGraphsViewController_iPad.m; sourceTree = "<group>"; };
+		2BEDF67919C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherViewController_iPad.h; sourceTree = "<group>"; };
+		2BEDF67A19C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherViewController_iPad.m; sourceTree = "<group>"; };
+		2BEDF67B19C0CA1000BECBB2 /* IPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPadViewController.h; sourceTree = "<group>"; };
+		2BEDF67C19C0CA1000BECBB2 /* IPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPadViewController.m; sourceTree = "<group>"; };
+		2BEDF67D19C0CA1000BECBB2 /* LineGraphsViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineGraphsViewController_iPad.h; sourceTree = "<group>"; };
+		2BEDF67E19C0CA1000BECBB2 /* LineGraphsViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineGraphsViewController_iPad.m; sourceTree = "<group>"; };
+		2BEDF67F19C0CA1000BECBB2 /* ModelGraphsViewController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGraphsViewController_iPad.h; sourceTree = "<group>"; };
+		2BEDF68019C0CA1000BECBB2 /* ModelGraphsViewController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGraphsViewController_iPad.m; sourceTree = "<group>"; };
+		2BEDF68219C0CA1000BECBB2 /* AdvisoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvisoriesViewController.h; sourceTree = "<group>"; };
+		2BEDF68319C0CA1000BECBB2 /* AdvisoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvisoriesViewController.m; sourceTree = "<group>"; };
+		2BEDF68419C0CA1000BECBB2 /* DailySummariesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailySummariesViewController.h; sourceTree = "<group>"; };
+		2BEDF68519C0CA1000BECBB2 /* DailySummariesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailySummariesViewController.m; sourceTree = "<group>"; };
+		2BEDF68619C0CA1000BECBB2 /* DailySummaryGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailySummaryGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF68719C0CA1000BECBB2 /* DailySummaryGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailySummaryGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF68819C0CA1000BECBB2 /* DetailedWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedWeatherViewController.h; sourceTree = "<group>"; };
+		2BEDF68919C0CA1000BECBB2 /* DetailedWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherViewController.m; sourceTree = "<group>"; };
+		2BEDF68A19C0CA1000BECBB2 /* EarthquakesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakesViewController.h; sourceTree = "<group>"; };
+		2BEDF68B19C0CA1000BECBB2 /* EarthquakesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakesViewController.m; sourceTree = "<group>"; };
+		2BEDF68C19C0CA1000BECBB2 /* ForecastBarGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastBarGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF68D19C0CA1000BECBB2 /* ForecastBarGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastBarGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF68E19C0CA1000BECBB2 /* ForecastLineGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastLineGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF68F19C0CA1000BECBB2 /* ForecastLineGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastLineGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF69019C0CA1000BECBB2 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
+		2BEDF69119C0CA1000BECBB2 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
+		2BEDF69219C0CA1000BECBB2 /* IndicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndicesViewController.h; sourceTree = "<group>"; };
+		2BEDF69319C0CA1000BECBB2 /* IndicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndicesViewController.m; sourceTree = "<group>"; };
+		2BEDF69419C0CA1000BECBB2 /* ModelGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF69519C0CA1000BECBB2 /* ModelGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF69619C0CA1000BECBB2 /* MoonPhasesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoonPhasesViewController.h; sourceTree = "<group>"; };
+		2BEDF69719C0CA1000BECBB2 /* MoonPhasesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoonPhasesViewController.m; sourceTree = "<group>"; };
+		2BEDF69819C0CA1000BECBB2 /* NearbyObservationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearbyObservationsViewController.h; sourceTree = "<group>"; };
+		2BEDF69919C0CA1000BECBB2 /* NearbyObservationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearbyObservationsViewController.m; sourceTree = "<group>"; };
+		2BEDF69A19C0CA1000BECBB2 /* NormalsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalsViewController.h; sourceTree = "<group>"; };
+		2BEDF69B19C0CA1000BECBB2 /* NormalsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalsViewController.m; sourceTree = "<group>"; };
+		2BEDF69C19C0CA1000BECBB2 /* RecentObservationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentObservationsViewController.h; sourceTree = "<group>"; };
+		2BEDF69D19C0CA1000BECBB2 /* RecentObservationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentObservationsViewController.m; sourceTree = "<group>"; };
+		2BEDF69E19C0CA1000BECBB2 /* RecentObsGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentObsGraphViewController.h; sourceTree = "<group>"; };
+		2BEDF69F19C0CA1000BECBB2 /* RecentObsGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentObsGraphViewController.m; sourceTree = "<group>"; };
+		2BEDF6A019C0CA1000BECBB2 /* RecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordsViewController.h; sourceTree = "<group>"; };
+		2BEDF6A119C0CA1000BECBB2 /* RecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordsViewController.m; sourceTree = "<group>"; };
+		2BEDF6A219C0CA1000BECBB2 /* StormCellsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StormCellsViewController.h; sourceTree = "<group>"; };
+		2BEDF6A319C0CA1000BECBB2 /* StormCellsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StormCellsViewController.m; sourceTree = "<group>"; };
+		2BEDF6A419C0CA1000BECBB2 /* StormReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StormReportsViewController.h; sourceTree = "<group>"; };
+		2BEDF6A519C0CA1000BECBB2 /* StormReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StormReportsViewController.m; sourceTree = "<group>"; };
+		2BEDF6A619C0CA1000BECBB2 /* SunMoonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SunMoonViewController.h; sourceTree = "<group>"; };
+		2BEDF6A719C0CA1000BECBB2 /* SunMoonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SunMoonViewController.m; sourceTree = "<group>"; };
+		2BEDF6A819C0CA1000BECBB2 /* TidesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TidesViewController.h; sourceTree = "<group>"; };
+		2BEDF6A919C0CA1000BECBB2 /* TidesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TidesViewController.m; sourceTree = "<group>"; };
+		2BEDF6AA19C0CA1000BECBB2 /* WeekendWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeekendWeatherViewController.h; sourceTree = "<group>"; };
+		2BEDF6AB19C0CA1000BECBB2 /* WeekendWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeekendWeatherViewController.m; sourceTree = "<group>"; };
+		2BEDF6AC19C0CA1000BECBB2 /* LineGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineGraphsViewController.h; sourceTree = "<group>"; };
+		2BEDF6AD19C0CA1000BECBB2 /* LineGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineGraphsViewController.m; sourceTree = "<group>"; };
+		2BEDF6AE19C0CA1000BECBB2 /* ListingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingViewController.h; sourceTree = "<group>"; };
+		2BEDF6AF19C0CA1000BECBB2 /* ListingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingViewController.m; sourceTree = "<group>"; };
+		2BEDF6B019C0CA1000BECBB2 /* LocationSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSearchViewController.h; sourceTree = "<group>"; };
+		2BEDF6B119C0CA1000BECBB2 /* LocationSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSearchViewController.m; sourceTree = "<group>"; };
+		2BEDF6B219C0CA1000BECBB2 /* MapboxMapConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapboxMapConfig.h; sourceTree = "<group>"; };
+		2BEDF6B319C0CA1000BECBB2 /* MapboxMapConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxMapConfig.m; sourceTree = "<group>"; };
+		2BEDF6B419C0CA1000BECBB2 /* MapboxMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapboxMapViewController.h; sourceTree = "<group>"; };
+		2BEDF6B519C0CA1000BECBB2 /* MapboxMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxMapViewController.m; sourceTree = "<group>"; };
+		2BEDF6B619C0CA1000BECBB2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2BEDF6B719C0CA1000BECBB2 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		2BEDF6B819C0CA1000BECBB2 /* Preferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Preferences.h; sourceTree = "<group>"; };
+		2BEDF6B919C0CA1000BECBB2 /* Preferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Preferences.m; sourceTree = "<group>"; };
+		2BEDF6BA19C0CA1000BECBB2 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		2BEDF6BB19C0CA1000BECBB2 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		2BEDF6BC19C0CA1000BECBB2 /* UserLocationsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationsManager.h; sourceTree = "<group>"; };
+		2BEDF6BD19C0CA1000BECBB2 /* UserLocationsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationsManager.m; sourceTree = "<group>"; };
+		2BEDF6BF19C0CA1000BECBB2 /* GroupedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupedTableViewCell.h; sourceTree = "<group>"; };
+		2BEDF6C019C0CA1000BECBB2 /* GroupedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupedTableViewCell.m; sourceTree = "<group>"; };
+		2BEDF6C119C0CA1000BECBB2 /* ListingEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingEventView.h; sourceTree = "<group>"; };
+		2BEDF6C219C0CA1000BECBB2 /* ListingEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingEventView.m; sourceTree = "<group>"; };
+		2BEDF6C319C0CA1000BECBB2 /* ListingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListingTableViewCell.h; sourceTree = "<group>"; };
+		2BEDF6C419C0CA1000BECBB2 /* ListingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListingTableViewCell.m; sourceTree = "<group>"; };
+		2BEDF72319C0CB5400BECBB2 /* Aeris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aeris.framework; sourceTree = "<group>"; };
+		2BEDF72419C0CB5400BECBB2 /* AerisGoogleMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisGoogleMap.framework; sourceTree = "<group>"; };
+		2BEDF72519C0CB5400BECBB2 /* AerisMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMap.framework; sourceTree = "<group>"; };
+		2BEDF72619C0CB5400BECBB2 /* AerisUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisUI.framework; sourceTree = "<group>"; };
+		2BEDF74119C0CBB900BECBB2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		2BEDF74319C0CBB900BECBB2 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		2BEDF74519C0CBB900BECBB2 /* MBXConstantsAndTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXConstantsAndTypes.h; sourceTree = "<group>"; };
+		2BEDF74619C0CBB900BECBB2 /* MBXMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXMapKit.h; sourceTree = "<group>"; };
+		2BEDF74719C0CBB900BECBB2 /* MBXMapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXMapKit.m; sourceTree = "<group>"; };
+		2BEDF74819C0CBB900BECBB2 /* MBXOfflineMapDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXOfflineMapDatabase.h; sourceTree = "<group>"; };
+		2BEDF74919C0CBB900BECBB2 /* MBXOfflineMapDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXOfflineMapDatabase.m; sourceTree = "<group>"; };
+		2BEDF74A19C0CBB900BECBB2 /* MBXOfflineMapDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXOfflineMapDownloader.h; sourceTree = "<group>"; };
+		2BEDF74B19C0CBB900BECBB2 /* MBXOfflineMapDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXOfflineMapDownloader.m; sourceTree = "<group>"; };
+		2BEDF74C19C0CBB900BECBB2 /* MBXPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXPointAnnotation.h; sourceTree = "<group>"; };
+		2BEDF74D19C0CBB900BECBB2 /* MBXPointAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXPointAnnotation.m; sourceTree = "<group>"; };
+		2BEDF74E19C0CBB900BECBB2 /* MBXRasterTileOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBXRasterTileOverlay.h; sourceTree = "<group>"; };
+		2BEDF74F19C0CBB900BECBB2 /* MBXRasterTileOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBXRasterTileOverlay.m; sourceTree = "<group>"; };
+		2BEDF76119C0CF7900BECBB2 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other Sources/main.m"; sourceTree = SOURCE_ROOT; };
+		2BEDF76319C0CFF400BECBB2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2BEDF76419C0CFF400BECBB2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2BEDF76519C0CFF400BECBB2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		2BEDF76619C0CFF400BECBB2 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		2BEDF76719C0CFF400BECBB2 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2BEDF76819C0CFF400BECBB2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2BEDF76919C0CFF400BECBB2 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		2BEDF76A19C0CFF400BECBB2 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		2BEDF76B19C0CFF400BECBB2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		2BEDF76C19C0CFF400BECBB2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2BEDF76D19C0CFF400BECBB2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2BEDF77919C0D04400BECBB2 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		2BEDF77B19C0D31000BECBB2 /* AerisSDKDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AerisSDKDemo-Info.plist"; path = "Other Sources/AerisSDKDemo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		2BEDF77C19C0D31000BECBB2 /* AerisSDKDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AerisSDKDemo-Prefix.pch"; path = "Other Sources/AerisSDKDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		2BEDF77F19C0D31000BECBB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		2BEDF78019C0D31000BECBB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Other Sources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		2BEDF78419C0D38B00BECBB2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		2BEDF78B19C0E85000BECBB2 /* AerisResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AerisResources.bundle; sourceTree = "<group>"; };
+		5A02BD2293174C0DAAA16E30 /* Pods-AerisSDKDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSDKDemo.xcconfig"; path = "Pods/Pods-AerisSDKDemo.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B5EB70619BFCD700013C45C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEDF77A19C0D04400BECBB2 /* libsqlite3.dylib in Frameworks */,
+				2BEDF76E19C0CFF400BECBB2 /* AVFoundation.framework in Frameworks */,
+				2BEDF76F19C0CFF400BECBB2 /* CoreData.framework in Frameworks */,
+				2BEDF77019C0CFF400BECBB2 /* CoreLocation.framework in Frameworks */,
+				2BEDF77119C0CFF400BECBB2 /* CoreText.framework in Frameworks */,
+				2BEDF77219C0CFF400BECBB2 /* GLKit.framework in Frameworks */,
+				2BEDF77319C0CFF400BECBB2 /* ImageIO.framework in Frameworks */,
+				2BEDF77419C0CFF400BECBB2 /* libc++.dylib in Frameworks */,
+				2BEDF77519C0CFF400BECBB2 /* libicucore.dylib in Frameworks */,
+				2BEDF77619C0CFF400BECBB2 /* libz.dylib in Frameworks */,
+				2BEDF77719C0CFF400BECBB2 /* OpenGLES.framework in Frameworks */,
+				2BEDF77819C0CFF400BECBB2 /* SystemConfiguration.framework in Frameworks */,
+				2BEDF72719C0CB5400BECBB2 /* Aeris.framework in Frameworks */,
+				2BEDF60219C0C9C400BECBB2 /* MapKit.framework in Frameworks */,
+				2BEDF72919C0CB5400BECBB2 /* AerisMap.framework in Frameworks */,
+				2BEDF60319C0C9C400BECBB2 /* QuartzCore.framework in Frameworks */,
+				2BEDF72819C0CB5400BECBB2 /* AerisGoogleMap.framework in Frameworks */,
+				2BEDF72A19C0CB5400BECBB2 /* AerisUI.framework in Frameworks */,
+				2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */,
+				2BEDF75919C0CBB900BECBB2 /* GoogleMaps.framework in Frameworks */,
+				2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */,
+				2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */,
+				DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */,
+				2BEDF75A19C0CBB900BECBB2 /* Mapbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B5EB70019BFCD700013C45C = {
+			isa = PBXGroup;
+			children = (
+				2B5EB71219BFCD700013C45C /* AerisSDKDemo */,
+				2BEDF72B19C0CBB900BECBB2 /* Vendor */,
+				2B5EB70B19BFCD700013C45C /* Frameworks */,
+				2B5EB70A19BFCD700013C45C /* Products */,
+				5A02BD2293174C0DAAA16E30 /* Pods-AerisSDKDemo.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		2B5EB70A19BFCD700013C45C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B5EB70919BFCD700013C45C /* AerisSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B5EB70B19BFCD700013C45C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF77919C0D04400BECBB2 /* libsqlite3.dylib */,
+				2BEDF76319C0CFF400BECBB2 /* AVFoundation.framework */,
+				2BEDF76419C0CFF400BECBB2 /* CoreData.framework */,
+				2BEDF76519C0CFF400BECBB2 /* CoreLocation.framework */,
+				2BEDF76619C0CFF400BECBB2 /* CoreText.framework */,
+				2BEDF76719C0CFF400BECBB2 /* GLKit.framework */,
+				2BEDF76819C0CFF400BECBB2 /* ImageIO.framework */,
+				2BEDF76919C0CFF400BECBB2 /* libc++.dylib */,
+				2BEDF76A19C0CFF400BECBB2 /* libicucore.dylib */,
+				2BEDF76B19C0CFF400BECBB2 /* libz.dylib */,
+				2BEDF76C19C0CFF400BECBB2 /* OpenGLES.framework */,
+				2BEDF76D19C0CFF400BECBB2 /* SystemConfiguration.framework */,
+				2BEDF60019C0C9C400BECBB2 /* MapKit.framework */,
+				2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */,
+				2B5EB70C19BFCD700013C45C /* Foundation.framework */,
+				2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */,
+				2B5EB71019BFCD700013C45C /* UIKit.framework */,
+				2B5EB72519BFCD700013C45C /* XCTest.framework */,
+				04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B5EB71219BFCD700013C45C /* AerisSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF72219C0CB5400BECBB2 /* AerisSDK */,
+				2BEDF60419C0CA1000BECBB2 /* Classes */,
+				2B5EB7C919BFCF5A0013C45C /* Other Sources */,
+				2B5EB7D019BFCF5A0013C45C /* Resources */,
+			);
+			path = AerisSDKDemo;
+			sourceTree = "<group>";
+		};
+		2B5EB7C919BFCF5A0013C45C /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF77B19C0D31000BECBB2 /* AerisSDKDemo-Info.plist */,
+				2BEDF77C19C0D31000BECBB2 /* AerisSDKDemo-Prefix.pch */,
+				2BEDF77D19C0D31000BECBB2 /* en.lproj */,
+				2BEDF78019C0D31000BECBB2 /* Images.xcassets */,
+				2BEDF76119C0CF7900BECBB2 /* main.m */,
+			);
+			path = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2B5EB7D019BFCF5A0013C45C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BEDF60419C0CA1000BECBB2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF60519C0CA1000BECBB2 /* AppDelegate.h */,
+				2BEDF60619C0CA1000BECBB2 /* AppDelegate.m */,
+				2BEDF60819C0CA1000BECBB2 /* AppleMapViewController.h */,
+				2BEDF60919C0CA1000BECBB2 /* AppleMapViewController.m */,
+				2BEDF60A19C0CA1000BECBB2 /* BarGraphsViewController.h */,
+				2BEDF60B19C0CA1000BECBB2 /* BarGraphsViewController.m */,
+				2BEDF60C19C0CA1000BECBB2 /* CatalogViewController.h */,
+				2BEDF60D19C0CA1000BECBB2 /* CatalogViewController.m */,
+				2BEDF66E19C0CA1000BECBB2 /* Globals.h */,
+				2BEDF66F19C0CA1000BECBB2 /* Globals.m */,
+				2BEDF67019C0CA1000BECBB2 /* GoogleMapViewController.h */,
+				2BEDF67119C0CA1000BECBB2 /* GoogleMapViewController.m */,
+				2BEDF67219C0CA1000BECBB2 /* GraphViewController.h */,
+				2BEDF67319C0CA1000BECBB2 /* GraphViewController.m */,
+				2BEDF67419C0CA1000BECBB2 /* GroupedListingViewController.h */,
+				2BEDF67519C0CA1000BECBB2 /* GroupedListingViewController.m */,
+				2BEDF67619C0CA1000BECBB2 /* ipad */,
+				2BEDF68119C0CA1000BECBB2 /* iphone */,
+				2BEDF6AC19C0CA1000BECBB2 /* LineGraphsViewController.h */,
+				2BEDF6AD19C0CA1000BECBB2 /* LineGraphsViewController.m */,
+				2BEDF6AE19C0CA1000BECBB2 /* ListingViewController.h */,
+				2BEDF6AF19C0CA1000BECBB2 /* ListingViewController.m */,
+				2BEDF6B019C0CA1000BECBB2 /* LocationSearchViewController.h */,
+				2BEDF6B119C0CA1000BECBB2 /* LocationSearchViewController.m */,
+				2BEDF6B219C0CA1000BECBB2 /* MapboxMapConfig.h */,
+				2BEDF6B319C0CA1000BECBB2 /* MapboxMapConfig.m */,
+				2BEDF6B419C0CA1000BECBB2 /* MapboxMapViewController.h */,
+				2BEDF6B519C0CA1000BECBB2 /* MapboxMapViewController.m */,
+				2BEDF6B619C0CA1000BECBB2 /* MapViewController.h */,
+				2BEDF6B719C0CA1000BECBB2 /* MapViewController.m */,
+				2BEDF6B819C0CA1000BECBB2 /* Preferences.h */,
+				2BEDF6B919C0CA1000BECBB2 /* Preferences.m */,
+				2BEDF6BA19C0CA1000BECBB2 /* SettingsViewController.h */,
+				2BEDF6BB19C0CA1000BECBB2 /* SettingsViewController.m */,
+				2BEDF6BC19C0CA1000BECBB2 /* UserLocationsManager.h */,
+				2BEDF6BD19C0CA1000BECBB2 /* UserLocationsManager.m */,
+				2BEDF6BE19C0CA1000BECBB2 /* views */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		2BEDF67619C0CA1000BECBB2 /* ipad */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF67719C0CA1000BECBB2 /* BarGraphsViewController_iPad.h */,
+				2BEDF67819C0CA1000BECBB2 /* BarGraphsViewController_iPad.m */,
+				2BEDF67919C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.h */,
+				2BEDF67A19C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.m */,
+				2BEDF67B19C0CA1000BECBB2 /* IPadViewController.h */,
+				2BEDF67C19C0CA1000BECBB2 /* IPadViewController.m */,
+				2BEDF67D19C0CA1000BECBB2 /* LineGraphsViewController_iPad.h */,
+				2BEDF67E19C0CA1000BECBB2 /* LineGraphsViewController_iPad.m */,
+				2BEDF67F19C0CA1000BECBB2 /* ModelGraphsViewController_iPad.h */,
+				2BEDF68019C0CA1000BECBB2 /* ModelGraphsViewController_iPad.m */,
+			);
+			path = ipad;
+			sourceTree = "<group>";
+		};
+		2BEDF68119C0CA1000BECBB2 /* iphone */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF68219C0CA1000BECBB2 /* AdvisoriesViewController.h */,
+				2BEDF68319C0CA1000BECBB2 /* AdvisoriesViewController.m */,
+				2BEDF68419C0CA1000BECBB2 /* DailySummariesViewController.h */,
+				2BEDF68519C0CA1000BECBB2 /* DailySummariesViewController.m */,
+				2BEDF68619C0CA1000BECBB2 /* DailySummaryGraphsViewController.h */,
+				2BEDF68719C0CA1000BECBB2 /* DailySummaryGraphsViewController.m */,
+				2BEDF68819C0CA1000BECBB2 /* DetailedWeatherViewController.h */,
+				2BEDF68919C0CA1000BECBB2 /* DetailedWeatherViewController.m */,
+				2BEDF68A19C0CA1000BECBB2 /* EarthquakesViewController.h */,
+				2BEDF68B19C0CA1000BECBB2 /* EarthquakesViewController.m */,
+				2BEDF68C19C0CA1000BECBB2 /* ForecastBarGraphsViewController.h */,
+				2BEDF68D19C0CA1000BECBB2 /* ForecastBarGraphsViewController.m */,
+				2BEDF68E19C0CA1000BECBB2 /* ForecastLineGraphsViewController.h */,
+				2BEDF68F19C0CA1000BECBB2 /* ForecastLineGraphsViewController.m */,
+				2BEDF69019C0CA1000BECBB2 /* ForecastViewController.h */,
+				2BEDF69119C0CA1000BECBB2 /* ForecastViewController.m */,
+				2BEDF69219C0CA1000BECBB2 /* IndicesViewController.h */,
+				2BEDF69319C0CA1000BECBB2 /* IndicesViewController.m */,
+				2BEDF69419C0CA1000BECBB2 /* ModelGraphsViewController.h */,
+				2BEDF69519C0CA1000BECBB2 /* ModelGraphsViewController.m */,
+				2BEDF69619C0CA1000BECBB2 /* MoonPhasesViewController.h */,
+				2BEDF69719C0CA1000BECBB2 /* MoonPhasesViewController.m */,
+				2BEDF69819C0CA1000BECBB2 /* NearbyObservationsViewController.h */,
+				2BEDF69919C0CA1000BECBB2 /* NearbyObservationsViewController.m */,
+				2BEDF69A19C0CA1000BECBB2 /* NormalsViewController.h */,
+				2BEDF69B19C0CA1000BECBB2 /* NormalsViewController.m */,
+				2BEDF69C19C0CA1000BECBB2 /* RecentObservationsViewController.h */,
+				2BEDF69D19C0CA1000BECBB2 /* RecentObservationsViewController.m */,
+				2BEDF69E19C0CA1000BECBB2 /* RecentObsGraphViewController.h */,
+				2BEDF69F19C0CA1000BECBB2 /* RecentObsGraphViewController.m */,
+				2BEDF6A019C0CA1000BECBB2 /* RecordsViewController.h */,
+				2BEDF6A119C0CA1000BECBB2 /* RecordsViewController.m */,
+				2BEDF6A219C0CA1000BECBB2 /* StormCellsViewController.h */,
+				2BEDF6A319C0CA1000BECBB2 /* StormCellsViewController.m */,
+				2BEDF6A419C0CA1000BECBB2 /* StormReportsViewController.h */,
+				2BEDF6A519C0CA1000BECBB2 /* StormReportsViewController.m */,
+				2BEDF6A619C0CA1000BECBB2 /* SunMoonViewController.h */,
+				2BEDF6A719C0CA1000BECBB2 /* SunMoonViewController.m */,
+				2BEDF6A819C0CA1000BECBB2 /* TidesViewController.h */,
+				2BEDF6A919C0CA1000BECBB2 /* TidesViewController.m */,
+				2BEDF6AA19C0CA1000BECBB2 /* WeekendWeatherViewController.h */,
+				2BEDF6AB19C0CA1000BECBB2 /* WeekendWeatherViewController.m */,
+			);
+			path = iphone;
+			sourceTree = "<group>";
+		};
+		2BEDF6BE19C0CA1000BECBB2 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF6BF19C0CA1000BECBB2 /* GroupedTableViewCell.h */,
+				2BEDF6C019C0CA1000BECBB2 /* GroupedTableViewCell.m */,
+				2BEDF6C119C0CA1000BECBB2 /* ListingEventView.h */,
+				2BEDF6C219C0CA1000BECBB2 /* ListingEventView.m */,
+				2BEDF6C319C0CA1000BECBB2 /* ListingTableViewCell.h */,
+				2BEDF6C419C0CA1000BECBB2 /* ListingTableViewCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2BEDF72219C0CB5400BECBB2 /* AerisSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF78B19C0E85000BECBB2 /* AerisResources.bundle */,
+				2BEDF72319C0CB5400BECBB2 /* Aeris.framework */,
+				2BEDF72419C0CB5400BECBB2 /* AerisGoogleMap.framework */,
+				2BEDF72519C0CB5400BECBB2 /* AerisMap.framework */,
+				2BEDF72619C0CB5400BECBB2 /* AerisUI.framework */,
+			);
+			name = AerisSDK;
+			path = ../../AerisSDK;
+			sourceTree = "<group>";
+		};
+		2BEDF72B19C0CBB900BECBB2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF74019C0CBB900BECBB2 /* Google */,
+				2BEDF74219C0CBB900BECBB2 /* Mapbox */,
+			);
+			name = Vendor;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
+		2BEDF74019C0CBB900BECBB2 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF78419C0D38B00BECBB2 /* GoogleMaps.bundle */,
+				2BEDF74119C0CBB900BECBB2 /* GoogleMaps.framework */,
+			);
+			path = Google;
+			sourceTree = "<group>";
+		};
+		2BEDF74219C0CBB900BECBB2 /* Mapbox */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF74319C0CBB900BECBB2 /* Mapbox.framework */,
+				2BEDF74419C0CBB900BECBB2 /* MBXMapKit */,
+			);
+			path = Mapbox;
+			sourceTree = "<group>";
+		};
+		2BEDF74419C0CBB900BECBB2 /* MBXMapKit */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF74519C0CBB900BECBB2 /* MBXConstantsAndTypes.h */,
+				2BEDF74619C0CBB900BECBB2 /* MBXMapKit.h */,
+				2BEDF74719C0CBB900BECBB2 /* MBXMapKit.m */,
+				2BEDF74819C0CBB900BECBB2 /* MBXOfflineMapDatabase.h */,
+				2BEDF74919C0CBB900BECBB2 /* MBXOfflineMapDatabase.m */,
+				2BEDF74A19C0CBB900BECBB2 /* MBXOfflineMapDownloader.h */,
+				2BEDF74B19C0CBB900BECBB2 /* MBXOfflineMapDownloader.m */,
+				2BEDF74C19C0CBB900BECBB2 /* MBXPointAnnotation.h */,
+				2BEDF74D19C0CBB900BECBB2 /* MBXPointAnnotation.m */,
+				2BEDF74E19C0CBB900BECBB2 /* MBXRasterTileOverlay.h */,
+				2BEDF74F19C0CBB900BECBB2 /* MBXRasterTileOverlay.m */,
+			);
+			path = MBXMapKit;
+			sourceTree = "<group>";
+		};
+		2BEDF77D19C0D31000BECBB2 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				2BEDF77E19C0D31000BECBB2 /* InfoPlist.strings */,
+			);
+			name = en.lproj;
+			path = "Other Sources/en.lproj";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B5EB70819BFCD700013C45C /* AerisSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B5EB73519BFCD700013C45C /* Build configuration list for PBXNativeTarget "AerisSDKDemo" */;
+			buildPhases = (
+				45336EFD53E4412BB143761D /* Check Pods Manifest.lock */,
+				2B5EB70519BFCD700013C45C /* Sources */,
+				2B5EB70619BFCD700013C45C /* Frameworks */,
+				2B5EB70719BFCD700013C45C /* Resources */,
+				5645966CA4E545739CD8B09F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AerisSDKDemo;
+			productName = AerisSDKDemo;
+			productReference = 2B5EB70919BFCD700013C45C /* AerisSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B5EB70119BFCD700013C45C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "HAMweather, LLC";
+			};
+			buildConfigurationList = 2B5EB70419BFCD700013C45C /* Build configuration list for PBXProject "AerisSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2B5EB70019BFCD700013C45C;
+			productRefGroup = 2B5EB70A19BFCD700013C45C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B5EB70819BFCD700013C45C /* AerisSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B5EB70719BFCD700013C45C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */,
+				2BEDF78119C0D31000BECBB2 /* AerisSDKDemo-Info.plist in Resources */,
+				2BEDF78C19C0E85000BECBB2 /* AerisResources.bundle in Resources */,
+				2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */,
+				2BEDF78519C0D38B00BECBB2 /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45336EFD53E4412BB143761D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5645966CA4E545739CD8B09F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-AerisSDKDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B5EB70519BFCD700013C45C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BEDF6FF19C0CA1000BECBB2 /* LineGraphsViewController_iPad.m in Sources */,
+				2BEDF71D19C0CA1000BECBB2 /* SettingsViewController.m in Sources */,
+				2BEDF70219C0CA1000BECBB2 /* DailySummariesViewController.m in Sources */,
+				2BEDF6FB19C0CA1000BECBB2 /* GroupedListingViewController.m in Sources */,
+				2BEDF71C19C0CA1000BECBB2 /* Preferences.m in Sources */,
+				2BEDF72119C0CA1000BECBB2 /* ListingTableViewCell.m in Sources */,
+				2BEDF70319C0CA1000BECBB2 /* DailySummaryGraphsViewController.m in Sources */,
+				2BEDF71719C0CA1000BECBB2 /* ListingViewController.m in Sources */,
+				2BEDF71619C0CA1000BECBB2 /* LineGraphsViewController.m in Sources */,
+				2BEDF70119C0CA1000BECBB2 /* AdvisoriesViewController.m in Sources */,
+				2BEDF70919C0CA1000BECBB2 /* IndicesViewController.m in Sources */,
+				2BEDF70B19C0CA1000BECBB2 /* MoonPhasesViewController.m in Sources */,
+				2BEDF75B19C0CBB900BECBB2 /* MBXMapKit.m in Sources */,
+				2BEDF71519C0CA1000BECBB2 /* WeekendWeatherViewController.m in Sources */,
+				2BEDF71319C0CA1000BECBB2 /* SunMoonViewController.m in Sources */,
+				2BEDF71919C0CA1000BECBB2 /* MapboxMapConfig.m in Sources */,
+				2BEDF6FC19C0CA1000BECBB2 /* BarGraphsViewController_iPad.m in Sources */,
+				2BEDF70D19C0CA1000BECBB2 /* NormalsViewController.m in Sources */,
+				2BEDF6F919C0CA1000BECBB2 /* GoogleMapViewController.m in Sources */,
+				2BEDF6C519C0CA1000BECBB2 /* AppDelegate.m in Sources */,
+				2BEDF70E19C0CA1000BECBB2 /* RecentObservationsViewController.m in Sources */,
+				2BEDF75E19C0CBB900BECBB2 /* MBXPointAnnotation.m in Sources */,
+				2BEDF70819C0CA1000BECBB2 /* ForecastViewController.m in Sources */,
+				2BEDF70519C0CA1000BECBB2 /* EarthquakesViewController.m in Sources */,
+				2BEDF71019C0CA1000BECBB2 /* RecordsViewController.m in Sources */,
+				2BEDF71219C0CA1000BECBB2 /* StormReportsViewController.m in Sources */,
+				2BEDF76219C0CF7900BECBB2 /* main.m in Sources */,
+				2BEDF6FA19C0CA1000BECBB2 /* GraphViewController.m in Sources */,
+				2BEDF70719C0CA1000BECBB2 /* ForecastLineGraphsViewController.m in Sources */,
+				2BEDF70619C0CA1000BECBB2 /* ForecastBarGraphsViewController.m in Sources */,
+				2BEDF6C919C0CA1000BECBB2 /* CatalogViewController.m in Sources */,
+				2BEDF75F19C0CBB900BECBB2 /* MBXRasterTileOverlay.m in Sources */,
+				2BEDF71F19C0CA1000BECBB2 /* GroupedTableViewCell.m in Sources */,
+				2BEDF70419C0CA1000BECBB2 /* DetailedWeatherViewController.m in Sources */,
+				2BEDF71E19C0CA1000BECBB2 /* UserLocationsManager.m in Sources */,
+				2BEDF70C19C0CA1000BECBB2 /* NearbyObservationsViewController.m in Sources */,
+				2BEDF6F819C0CA1000BECBB2 /* Globals.m in Sources */,
+				2BEDF70019C0CA1000BECBB2 /* ModelGraphsViewController_iPad.m in Sources */,
+				2BEDF71119C0CA1000BECBB2 /* StormCellsViewController.m in Sources */,
+				2BEDF71419C0CA1000BECBB2 /* TidesViewController.m in Sources */,
+				2BEDF6FD19C0CA1000BECBB2 /* DetailedWeatherViewController_iPad.m in Sources */,
+				2BEDF71A19C0CA1000BECBB2 /* MapboxMapViewController.m in Sources */,
+				2BEDF6FE19C0CA1000BECBB2 /* IPadViewController.m in Sources */,
+				2BEDF6C819C0CA1000BECBB2 /* BarGraphsViewController.m in Sources */,
+				2BEDF75D19C0CBB900BECBB2 /* MBXOfflineMapDownloader.m in Sources */,
+				2BEDF72019C0CA1000BECBB2 /* ListingEventView.m in Sources */,
+				2BEDF6C719C0CA1000BECBB2 /* AppleMapViewController.m in Sources */,
+				2BEDF70F19C0CA1000BECBB2 /* RecentObsGraphViewController.m in Sources */,
+				2BEDF71819C0CA1000BECBB2 /* LocationSearchViewController.m in Sources */,
+				2BEDF71B19C0CA1000BECBB2 /* MapViewController.m in Sources */,
+				2BEDF70A19C0CA1000BECBB2 /* ModelGraphsViewController.m in Sources */,
+				2BEDF75C19C0CBB900BECBB2 /* MBXOfflineMapDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2BEDF77E19C0D31000BECBB2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BEDF77F19C0D31000BECBB2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B5EB73319BFCD700013C45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B5EB73419BFCD700013C45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B5EB73619BFCD700013C45C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A02BD2293174C0DAAA16E30 /* Pods-AerisSDKDemo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/AerisSDK",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/Vendor/Google",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/Vendor/Mapbox",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/AerisSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "Other Sources/AerisSDKDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2B5EB73719BFCD700013C45C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A02BD2293174C0DAAA16E30 /* Pods-AerisSDKDemo.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/AerisSDK",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/Vendor/Google",
+					"/Users/nshipes/Projects/Aeris/iOS/releases/Demos/Aeris-iOS-Library/Vendor/Mapbox",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Other Sources/AerisSDKDemo-Prefix.pch";
+				INFOPLIST_FILE = "Other Sources/AerisSDKDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B5EB70419BFCD700013C45C /* Build configuration list for PBXProject "AerisSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5EB73319BFCD700013C45C /* Debug */,
+				2B5EB73419BFCD700013C45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B5EB73519BFCD700013C45C /* Build configuration list for PBXNativeTarget "AerisSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5EB73619BFCD700013C45C /* Debug */,
+				2B5EB73719BFCD700013C45C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B5EB70119BFCD700013C45C /* Project object */;
+}
