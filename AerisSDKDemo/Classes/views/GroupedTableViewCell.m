@@ -30,7 +30,7 @@
 
 		UILabel *valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(descriptionLabel.frame) + 10.0, 0,
 		                                                                labelWidth, CGRectGetHeight(self.bounds))];
-		valueLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+		valueLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin;
 		valueLabel.font = [UIFont boldSystemFontOfSize:14.0];
 		valueLabel.textColor = [UIColor blackColor];
 		valueLabel.textAlignment = NSTextAlignmentRight;

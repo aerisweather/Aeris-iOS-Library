@@ -6,9 +6,21 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
+/**
+ *  The supported map strategy types.
+ */
+typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
+	/**
+	 *  Apple Maps strategy type.
+	 */
 	AWFMapStrategyTypeApple = 0,
+	/**
+	 *  Google Maps strategy type. This requies the Google Maps iOS SDK linked with your project.
+	 */
 	AWFMapStrategyTypeGoogle,
+	/**
+	 *  MapBox strategy type.
+	 */
 	AWFMapStrategyTypeMapBox
 };
 
@@ -29,6 +41,9 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
 @protocol AWFMapStrategy <NSObject>
 @required
 
+/**
+ *  The strategy type for the map strategy.
+ */
 @property (readonly, nonatomic) AWFMapStrategyType strategyType;
 
 /**
@@ -39,10 +54,31 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  */
 @property (nonatomic, strong) id mapView;
 @property (readonly, nonatomic, strong) AWFWeatherMapConfig *config;
+
+/**
+ *  Returns an array of overlays currently active on the strategy's map view (read-only).
+ */
 @property (nonatomic, strong, readonly) NSArray *overlays;
+
+/**
+ *  Returns an array of annotations currently active on the strategy's map view (read-only).
+ */
 @property (nonatomic, strong, readonly) NSArray *annotations;
+
+/**
+ *  Returns the current visible coordinate bounds of the strategy's map view (read-only).
+ */
 @property (nonatomic, readonly) AWFCoordinateBounds *coordinateBounds;
+
+/**
+ *  Returns the current center coordinate of the strategy's map view (read-only).
+ */
 @property (nonatomic, readonly) CLLocationCoordinate2D centerCoordinate;
+
+/**
+ *  Returns the current zoom level of the strategy's map view (read-only).
+ */
+@property (nonatomic, readonly) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) id animationContainerView;
 
@@ -74,6 +110,13 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  *	overlay object expected by the specific map SDK being used.
  */
 - (void)addOverlay:(id)overlay;
+
+/**
+ *  Adds an array of overlay objects to the map.
+ *
+ *  @param overlays The array of overlay objects to add. These objects can either be a subclass of `AWFOverlay` or a subclass of the
+ *	overlay object expected by the specific map SDK being used.
+ */
 - (void)addOverlays:(NSArray *)overlays;
 
 /**
@@ -93,6 +136,13 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  *	overlay object expected by the specific map SDK being used.
  */
 - (void)removeOverlay:(id)overlay;
+
+/**
+ *  Removes an array of overlay objects from the map.
+ *
+ *  @param overlays The overlay objects to remove. These objects can either be a subclass of `AWFOverlay` or a subclass of the
+ *	overlay object expected by the specific map SDK being used.
+ */
 - (void)removeOverlays:(NSArray *)overlays;
 
 /**
@@ -105,37 +155,178 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  */
 - (NSInteger)indexForOverlay:(id)overlay;
 
+/**
+ *  Forces an overlay to be reloaded and displayed.
+ *
+ *  @param overlay The overlay object whose content you want to draw.
+ */
 - (void)invalidateOverlay:(id)overlay;
+
+/**
+ *  Forces an array of overlays to be reloaded and displayed.
+ *
+ *  @param overlays An array of overlay objects whose contents you want to draw.
+ */
 - (void)invalidateOverlays:(NSArray *)overlays;
 
+
 - (NSArray *)overlaysFromObjects:(NSArray *)objects;
+
+/**
+ *  Returns an array of polygon overlay objects for a series of `AWFGeographicObject` instances. These objects must have a valid polygon string or `AWFGeoPolygon` 
+ *  instance in order for a polygon to be created for it.
+ *
+ *  @param objects An array of `AWFGeographicObject` instances to create polygon overlays for
+ *
+ *  @return An array of polygon objects
+ */
 - (NSArray *)polygonsFromObjects:(NSArray *)objects;
+
+/**
+ *  Returns an array of polygon overlay objects for a series of `AWFGeoPolygon` instances.
+ *
+ *  @param geoPolygons An array of `AWFGeoPolygon` objects to create polygon overlays for
+ *
+ *  @return An array of polygon objects
+ */
 - (NSArray *)polygonsFromGeoPolygons:(NSArray *)geoPolygons;
+
+/**
+ *  Returns an array of polyline overlay objects for a series of `AWFGeoPolygon` instances.
+ *
+ *  @param geoPolygons An array of `AWFGeoPolygon` objects to create polyline overlays for
+ *
+ *  @return An array of polyline objects
+ */
 - (NSArray *)polylinesFromGeoPolygons:(NSArray *)geoPolygons;
+
+/**
+ *  Returns a single overlay object that conforms to the `AWFMultiShapeOverlay` protocol for managing and rendering multiple polygons and polylines into
+ *  a single overlay renderer.
+ *
+ *  @param polygons  An array of polygons to add to the overlay.
+ *  @param polylines An array of polylines to add to the overlay.
+ *
+ *  @return The multi-shape overlay instance
+ */
 - (id)combinedOverlayForPolygons:(NSArray *)polygons polylines:(NSArray *)polylines;
+
+/**
+ *  Iterates through an array of polygon objects and returns an array of polygon overlays that the strategy's map view requires when adding to the map. This 
+ *  method will pull out the overlay instances stored within `AWFPolygon` and `AWFPolyline` objects in order to add them to the map view.
+ *
+ *  @param polygons An array of polygon objects.
+ *
+ *  @return An array of polygon overlay instances that can be added to the map view.
+ */
 - (NSArray *)reducePolygonsToMapPolygons:(NSArray *)polygons;
+
+/**
+ *  Returns a tile data layer initialized with the `URLTemplate` to use for tile URLs.
+ *
+ *  @param URLTemplate The template for generating tile URLs.
+ *
+ *  @return An initialized tile data layer object.
+ */
 - (AWFTileDataLayer *)tileOverlayWithURLTemplate:(NSString *)URLTemplate;
 
 //-----------------------------------------------------------------------------
 // @name Managing Annotations
 //-----------------------------------------------------------------------------
+
+/**
+ *  Adds an array of annotations to the map.
+ *
+ *  @param annotations The array of annotations to add. These objects can either be a subclass of `AWFAnnotation` or a subclass of the
+ *	annotation object expected by the specific map SDK being used.
+ */
 - (void)addAnnotations:(NSArray *)annotations;
+
+/**
+ *  Removes an array of annotation from the map.
+ *
+ *  @param annotations The array of annotations to remove. These objects can either be a subclass of `AWFAnnotation` or a subclass of the
+ *	annotation object expected by the specific map SDK being used.
+ */
 - (void)removeAnnotations:(NSArray *)annotations;
+
+/**
+ *  Returns an array of annotation objects for a series of `AWFGeographicObject` instances. These objects must have a valid coordinate in order for an
+ *  annotation to be created for it.
+ *
+ *  @param objects An array of `AWFGeographicObject` instances to create annotations for
+ *
+ *  @return An array of annotation objects
+ */
 - (NSArray *)annotationsFromObjects:(NSArray *)objects;
 
-
+/**
+ *  Presents the map callout from the `annotation` using the specified `title` and `subtitle`.
+ *
+ *  @param annotation The annotation from which to present the callout.
+ *  @param title      The primary textual content.
+ *  @param subtitle   The secondary textual content. If not provided, the title will only be displayed.
+ */
 - (void)showCalloutFromAnnotation:(id)annotation withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents the map callout from the `annotation` using the specified `contentView`.
+ *
+ *  @param annotation  The annotation from which to present the callout.
+ *  @param contentView The view to display within the callout.
+ */
 - (void)showCalloutFromAnnotation:(id)annotation withContentView:(UIView *)contentView;
+
+/**
+ *  Presents the map callout from the `coordinate` using the specified `title` and `subtitle`.
+ *
+ *  @param coordinate The map coordinate from which to present the callout.
+ *  @param title      The primary textual content.
+ *  @param subtitle   The secondary textual content. If not provided, the title will only be displayed.
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents the map callout from the `coordinate` using the specified `contentView`.
+ *
+ *  @param coordinate  The map coordinate from which to present the callout.
+ *  @param contentView The view to display within the callout.
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
+
+/**
+ *  Adds the annotation on the map for the long press gesture.
+ *
+ *  @param coordinate The coordinate at which to add the annotation.
+ */
 - (void)showAnnotationForLongPressAtCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ *  Removes the annotation for the long press gesture from the map.
+ *
+ *  @param animated `YES` if the removal should be animated, otherwise `NO` and the annotation will be removed immediately.
+ */
 - (void)removeAnnotationForLongPress:(BOOL)animated;
 
 //-----------------------
 // @name Utilities
 //-----------------------
 
+/**
+ *  Changes the center coordinate of the map and optionally animates the change.
+ *
+ *  @param centerCoordinate The new center coordinate for the map.
+ *  @param animated         Specify `YES` if you want the map view to scroll to the new location or `NO` if you want the map to display the new location immediately.
+ */
 - (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate animated:(BOOL)animated;
+
+/**
+ *  Changes the center coordinate and zoom level of the map and optionally animates the change.
+ *
+ *  @param centerCoordinate The new center coordinate for the map.
+ *  @param zoomLevel        The new zoom level for the map.
+ *  @param animated         Specify `YES` if you want the map view to scroll to the new location or `NO` if you want the map to display the new location immediately.
+ */
 - (void)setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate zoomLevel:(NSUInteger)zoomLevel animated:(BOOL)animated;
 
 /**
@@ -159,7 +350,22 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  */
 - (CLLocationCoordinate2D)coordinateForPoint:(CGPoint)point inView:(UIView *)view;
 
+/**
+ *  Returns a Boolean value indicating if the specified coordinate falls within the bounds of the `polygon` overlay.
+ *
+ *  @param coord   The coordinate to test.
+ *  @param polygon The polygon overlay to determine if the coordinate falls within
+ *
+ *  @return `YES` if the coordinate is contained within the polygon, otherwise `NO`.
+ */
 - (BOOL)isCoordinate:(CLLocationCoordinate2D)coord withinPolygon:(id)polygon;
+
+/**
+ *  Forwards a tap gesture to the map strategy in order to determine if an overlay was tapped on the map.
+ *
+ *  @param touchPoint The point that was tapped on the map.
+ *  @param view       The view in which the tap gesture occurred.
+ */
 - (void)forwardTouchAtPoint:(CGPoint)touchPoint inView:(UIView *)view;
 
 @end
@@ -188,8 +394,21 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType) {
  */
 - (void)mapStrategy:(id<AWFMapStrategy>)strategy regionDidChangeToBounds:(AWFCoordinateBounds *)bounds;
 
+/**
+ *  Tells the delegate that a polygon overlay was tapped on the map.
+ *
+ *  @param strategy   The map strategy managing the map view.
+ *  @param polygon    The polygon overlay that was tapped.
+ *  @param coordinate The map coordinate at which the tap was detected.
+ */
 - (void)mapStrategy:(id<AWFMapStrategy>)strategy didTapPolygon:(id)polygon atCoordinate:(CLLocationCoordinate2D)coordinate;
 
+/**
+ *  Tells the delegate that an overlay was added to the map view.
+ *
+ *  @param strategy The map strategy that added the overlay.
+ *  @param overlay  The overlay that was added.
+ */
 - (void)mapStrategy:(id<AWFMapStrategy>)strategy didAddOverlay:(id)overlay;
 
 @end

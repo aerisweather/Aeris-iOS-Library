@@ -56,7 +56,7 @@
 - (void)loadDataForDefaultPlace {
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];
 	AWFRequestOptions *options = [[AWFRequestOptions alloc] init];
-	options.toDate = [[NSDate date] awf_dateByAddingDays:7];
+	options.toDate = [[NSDate date] awf_dateByAddingDays:7 ignoringTime:NO];
 
 	[self loadDataForPlace:place options:options];
 }

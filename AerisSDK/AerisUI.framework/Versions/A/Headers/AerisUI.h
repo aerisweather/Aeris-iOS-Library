@@ -34,10 +34,15 @@
 #import <AerisUI/AWFCollectionViewDailySummaryCell.h>
 
 #import <AerisUI/AWFGraphView.h>
-#import <AerisUI/AWFGraphPoint.h>
-#import <AerisUI/AWFGraphBar.h>
-#import <AerisUI/AWFLineGraphView.h>
-#import <AerisUI/AWFBarGraphView.h>
+#import <AerisUI/AWFGraphSeries.h>
+#import <AerisUI/AWFSeriesItem.h>
+#import <AerisUI/AWFSeriesPoint.h>
+#import <AerisUI/AWFGraphRenderer.h>
+#import <AerisUI/AWFLineGraphRenderer.h>
+#import <AerisUI/AWFBarGraphRenderer.h>
+#import <AerisUI/AWFGraphAxis.h>
+#import <AerisUI/AWFGraphTimeAxis.h>
+#import <AerisUI/AWFGraphCalloutView.h>
 
 #import <AerisUI/AWFCalloutView.h>
 #import <AerisUI/AWFCalloutContentView.h>

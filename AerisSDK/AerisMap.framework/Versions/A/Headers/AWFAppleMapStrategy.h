@@ -20,6 +20,7 @@
 @property (nonatomic, strong, readonly) NSArray *annotations;
 @property (nonatomic, readonly) AWFCoordinateBounds *coordinateBounds;
 @property (nonatomic, readonly) CLLocationCoordinate2D centerCoordinate;
+@property (nonatomic, readonly) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) AWFAnimationContainerView *animationContainerView;
 @property (nonatomic, unsafe_unretained) id<MKMapViewDelegate> mapViewDelegate;

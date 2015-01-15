@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "LineGraphsViewController.h"
+#import "GraphViewController.h"
 
-@interface RecentObsGraphViewController : LineGraphsViewController
+@interface RecentObsGraphViewController : GraphViewController
 
-@property (nonatomic, strong) AWFLineGraphView *tempGraph;
-@property (nonatomic, strong) AWFLineGraphView *precipGraph;
-@property (nonatomic, strong) AWFLineGraphView *windGraph;
-@property (nonatomic, strong) AWFLineGraphView *skyGraph;
+@property (nonatomic, strong) AWFGraphView *tempGraph;
+@property (nonatomic, strong) AWFGraphView *precipGraph;
+@property (nonatomic, strong) AWFGraphView *windGraph;
+@property (nonatomic, strong) AWFGraphView *skyGraph;
 
 @end

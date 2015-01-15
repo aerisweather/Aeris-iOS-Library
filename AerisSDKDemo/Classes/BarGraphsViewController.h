@@ -8,8 +8,6 @@
 
 #import "GraphViewController.h"
 
-@interface BarGraphsViewController : GraphViewController <AWFBarGraphViewDataSource, AWFBarGraphViewDelegate, GraphViewControllerDelegate>
-
-- (AWFBarGraphView *)addGraphViewWithTitle:(NSString *)title yOffset:(CGFloat)yOffset;
+@interface BarGraphsViewController : GraphViewController
 
 @end

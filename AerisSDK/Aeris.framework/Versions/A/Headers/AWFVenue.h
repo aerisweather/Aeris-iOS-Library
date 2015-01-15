@@ -7,8 +7,7 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-#import "AWFGeographicObject.h"
-#import "AWFPlace.h"
+#import <Aeris/AWFGeographicObject.h>
 
 NS_ENUM(NSUInteger, AFVenueType) {
 	AFVenueTypeUnknown = 0,

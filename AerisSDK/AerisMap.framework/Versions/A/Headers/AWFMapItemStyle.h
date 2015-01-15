@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-
+/**
+ *  The `AWFMapItemStyle` provides style information that is used for overlays and annotations when rendered on a map.
+ */
 @interface AWFMapItemStyle : NSObject
 
 /**

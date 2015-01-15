@@ -8,7 +8,7 @@
 
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreLocation/CoreLocation.h>
-#import "AWFGeographicObject.h"
+#import <Aeris/AWFGeographicObject.h>
 
 @class AWFPlace;
 

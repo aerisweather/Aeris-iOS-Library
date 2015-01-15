@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 /**
- *  This category adds utility methods to the CoreFramework's `NSArray` class for providing common functionality.
+ *  Provides extensions to `NSArray` for performing common tasks.
  */
 @interface NSArray (Aeris)
 

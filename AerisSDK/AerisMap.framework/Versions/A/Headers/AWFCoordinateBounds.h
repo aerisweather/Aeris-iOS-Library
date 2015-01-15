@@ -13,9 +13,24 @@
  */
 @interface AWFCoordinateBounds : NSObject
 
+/**
+ *  The northern latitude value of the bounding box.
+ */
 @property (nonatomic, assign) CGFloat north;
+
+/**
+ *  The southern latitude value of the bounding box.
+ */
 @property (nonatomic, assign) CGFloat south;
+
+/**
+ *  The western longitude value of the bounding box.
+ */
 @property (nonatomic, assign) CGFloat west;
+
+/**
+ *  The eastern longitude value of the bounding box.
+ */
 @property (nonatomic, assign) CGFloat east;
 
 /**

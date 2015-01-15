@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFCascadingStyle.h"
+#import <AerisUI/AWFCascadingStyle.h>
 
 @interface AWFAdvisoryStyle : AWFCascadingStyle
 

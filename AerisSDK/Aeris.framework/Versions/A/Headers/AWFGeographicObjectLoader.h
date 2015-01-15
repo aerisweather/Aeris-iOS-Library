@@ -21,15 +21,13 @@
 @interface AWFGeographicObjectLoader : AWFObjectLoader
 
 /**
- *  Requests objects for the specific place. The place must be a valid `AWFPlace` instance.
- *
- *  @param place   The place to use for the request.
- *  @param options An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
- *  @param success The block to be executed on the completion of a successful request. This block has no return value and takes two
- *		arguments: the receiver object loader and an array of associated `AWFObject` instances returned by the request.
- *  @param failure The block to be executed on the failed or unsuccessful request. This block has no return value and takes two arguments:
- *		the receiver object loader and the error that occurred during the request.
- */
+*  Requests objects for the specific place. The place must be a valid `AWFPlace` instance.
+*
+*  @param place           The place to use for the request.
+*  @param options         An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
+ *  @param completionBlock The block to be executed on the completion or failure of a request. This block has no return value and takes two arguments:
+ *      the array of `AWFObject` instances returned by the request and the error that occurred during the request (if any)
+*/
 - (void)getForPlace:(AWFPlace *)place
             options:(AWFRequestOptions *)options
          completion:(AWFObjectLoaderCompletionBlock)completionBlock;
@@ -38,14 +36,12 @@
  *  Requests objects within a circle defined by a center at the specific place's coordinate and a radius. The place must be a valid
  *  `AWFPlace` instance.
  *
- *  @param place   The place to use for the request.
- *  @param radius  The radius from the place's coordinate to include results for. Radius should be provided as a valid distance string,
- *		(e.g., `@"50mi"` or `@"100km"`). If no radius is provided, the default of `@"25mi"` will be used.
- *  @param options An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
- *  @param success The block to be executed on the completion of a successful request. This block has no return value and takes two
- *		arguments: the receiver object loader and an array of associated `AWFObject` instances returned by the request.
- *  @param failure The block to be executed on the failed or unsuccessful request. This block has no return value and takes two arguments:
- *		the receiver object loader and the error that occurred during the request.
+ *  @param place           The place to use for the request.
+ *  @param radius          The radius from the place's coordinate to include results for. Radius should be provided as a valid distance string,
+ *	    (e.g., `@"50mi"` or `@"100km"`). If no radius is provided, the default of `@"25mi"` will be used.
+ *  @param options         An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
+ *  @param completionBlock The block to be executed on the completion or failure of a request. This block has no return value and takes two arguments:
+ *      the array of `AWFObject` instances returned by the request and the error that occurred during the request (if any)
  */
 - (void)getClosestToPlace:(AWFPlace *)place
                    radius:(NSString *)radius
@@ -55,13 +51,11 @@
 /**
  *  Requests objects within a bounding box defined by top-left and bottom-right coordinates.
  *
- *  @param northwestCoordinate The top-left coordinate of the bounding box.
- *  @param southeastCoordinate The bottom-right coordinate of the bounding box.
+ *  @param northwestCoordinate The top-left coordinate of the bounding box
+ *  @param southeastCoordinate The bottom-right coordinate of the bounding box
  *  @param options             An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
- *  @param success             The block to be executed on the completion of a successful request. This block has no return value and takes
- *		two arguments: the receiver object loader and an array of associated `AWFObject` instances returned by the request.
- *  @param failure             The block to be executed on the failed or unsuccessful request. This block has no return value and takes two
- *		arguments: the receiver object loader and the error that occurred during the request.
+ *  @param completionBlock     The block to be executed on the completion or failure of a request. This block has no return value and takes two arguments:
+ *      the array of `AWFObject` instances returned by the request and the error that occurred during the request (if any)
  */
 - (void)getWithinBoundsFromNorthwestCoordinate:(CLLocationCoordinate2D)northwestCoordinate
                            southeastCoordinate:(CLLocationCoordinate2D)southeastCoordinate
@@ -72,13 +66,10 @@
  *  Requests objects within an irregular polygon defined by the a series of coordinates. The specified polygon must be a valid
  *  `AWFGeoPolygon` instance.
  *
- *  @param polygon The polygon
- *  @param options An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
- *  @param success The block to be executed on the completion of a successful request. This block has no return value and takes two
- *		arguments: the receiver object loader and an array of associated `AWFObject` instances returned by the request.
- *  @param failure The block to be executed on the failed or unsuccessful request. This block has no return value and takes two arguments:
- *		the receiver object loader and the error that occurred during the request.
- *  @see `AWFGeoPolygon`
+ *  @param polygon         The polygon
+ *  @param options         An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
+ *  @param completionBlock The block to be executed on the completion or failure of a request. This block has no return value and takes two arguments:
+ *      the array of `AWFObject` instances returned by the request and the error that occurred during the request (if any)
  */
 - (void)getWithinPolygon:(AWFGeoPolygon *)polygon
                  options:(AWFRequestOptions *)options

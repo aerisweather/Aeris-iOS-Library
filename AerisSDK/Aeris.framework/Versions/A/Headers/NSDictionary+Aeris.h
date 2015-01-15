@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ *  Provides extension to `NSDictionary` for performing common tasks.
+ */
 @interface NSDictionary (Aeris)
 
 /**

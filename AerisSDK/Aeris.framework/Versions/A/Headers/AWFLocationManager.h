@@ -39,6 +39,7 @@ typedef void (^AWFLocationManagerCompletionHandler)(CLLocation *location, NSErro
 
 @interface AWFLocationManager : NSObject <CLLocationManagerDelegate>
 
+@property (readonly, nonatomic, strong) CLLocationManager *locationManger;
 @property (nonatomic, strong) CLLocation *lastKnownLocation;
 @property (nonatomic, strong) CLHeading *lastKnownHeading;
 @property (nonatomic, readonly) BOOL locationServicesEnabled;

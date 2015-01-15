@@ -22,6 +22,7 @@
 #import <Aeris/AWFGeoPolygon.h>
 #import <Aeris/AWFLocationManager.h>
 #import <Aeris/AWFWeatherDataType.h>
+#import <Aeris/AWFForecastModel.h>
 
 #import <Aeris/AWFPlacesLoader.h>
 #import <Aeris/AWFVenuesLoader.h>
@@ -40,6 +41,8 @@
 #import <Aeris/AWFTidesLoader.h>
 #import <Aeris/AWFActivitiesLoader.h>
 #import <Aeris/AWFIndicesLoader.h>
+#import <Aeris/AWFThreatsLoader.h>
+#import <Aeris/AWFPhrasesLoader.h>
 #import <Aeris/AWFBatchLoader.h>
 
 #import <Aeris/AWFPlace.h>
@@ -64,7 +67,11 @@
 #import <Aeris/AWFActivity.h>
 #import <Aeris/AWFIndexPeriod.h>
 #import <Aeris/AWFIndex.h>
+#import <Aeris/AWFThreat.h>
+#import <Aeris/AWFPhrase.h>
+#import <Aeris/AWFStormThreat.h>
 
+#import <Aeris/AWFObject+AutoCoding.h>
 #import <Aeris/CLLocation+Aeris.h>
 #import <Aeris/NSDate+Aeris.h>
 #import <Aeris/NSDictionary+Aeris.h>

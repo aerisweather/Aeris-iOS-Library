@@ -6,12 +6,12 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "BarGraphsViewController.h"
+#import "GraphViewController.h"
 
-@interface ForecastBarGraphsViewController : BarGraphsViewController
+@interface ForecastBarGraphsViewController : GraphViewController
 
-@property (nonatomic, strong) AWFBarGraphView *tempGraph;
-@property (nonatomic, strong) AWFBarGraphView *precipGraph;
-@property (nonatomic, strong) AWFBarGraphView *snowGraph;
+@property (nonatomic, strong) AWFGraphView *tempGraph;
+@property (nonatomic, strong) AWFGraphView *precipGraph;
+@property (nonatomic, strong) AWFGraphView *snowGraph;
 
 @end

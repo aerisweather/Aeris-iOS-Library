@@ -87,11 +87,13 @@ extern NSString * const AWFDateFormatTimeZoneLocation;
 
 - (NSString *)awf_dateStringRelativeToNowUsingInterval:(NSTimeInterval)interval;
 - (NSString *)awf_dateStringRelativeToDate:(NSDate *)date usingInterval:(NSTimeInterval)interval;
+
++ (NSDate *)awf_dateFromString:(NSString *)dateString;
 + (NSDate *)awf_dateFromRelativeString:(NSString *)relativeString;
 
-//----------------------
-// @name Relative Dates
-//----------------------
+//-----------------------------------------------------------------------------
+// @name Date Conversions
+//-----------------------------------------------------------------------------
 
 - (NSDate *)awf_nextDay;
 - (NSDate *)awf_previousDay;
@@ -99,11 +101,13 @@ extern NSString * const AWFDateFormatTimeZoneLocation;
 - (NSDate *)awf_nextWeek;
 - (NSDate *)awf_previousWeek;
 
-- (NSDate *)awf_dateByAddingDays:(NSInteger)days;
+- (NSDate *)awf_dateByAddingDays:(NSInteger)days ignoringTime:(BOOL)ignoringTime;
 - (NSDate *)awf_dateByAddingTimeInterval:(NSTimeInterval)interval;
 
 - (NSDate *)awf_nextDateOfDateName:(AWFDay)day;
 - (NSDate *)awf_previousDateOfDateName:(AWFDay)day;
+
+- (NSDate *)awf_dateByIgnoringTime;
 
 //----------------------
 // @name Date Comparisons
@@ -140,6 +144,15 @@ extern NSString * const AWFDateFormatTimeZoneLocation;
 //----------------------
 // @name Date Components
 //----------------------
+
++ (NSDate *)awf_dateForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day;
++ (NSDate *)awf_dateForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
+				   timeZone:(NSTimeZone *)timeZone;
++ (NSDate *)awf_dateForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
+					   hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
++ (NSDate *)awf_dateForYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day
+					   hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
+				   timeZone:(NSTimeZone *)timeZone;
 
 @property (readonly) NSInteger hour;
 @property (readonly) NSInteger minute;

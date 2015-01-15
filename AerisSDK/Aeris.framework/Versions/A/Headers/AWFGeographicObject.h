@@ -10,6 +10,10 @@
 
 @class AWFPlace, AWFRelativeTo;
 
+/**
+ *  An `AWFGeographicObject` object is an `AWFObject` subclass that represents data for a specific geographical location. The geographical location can
+ *  either be a coordinate or a place and is represented by an `AWFPlace` instance.
+ */
 @interface AWFGeographicObject : AWFObject
 
 /**

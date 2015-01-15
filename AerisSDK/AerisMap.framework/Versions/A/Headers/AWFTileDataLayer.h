@@ -18,8 +18,14 @@
  */
 @interface AWFTileDataLayer : AWFDataLayer <AWFAnimatableOverlay, AWFImageAnimationDataSource>
 
-
+/**
+ *  The template for generating tile URLs (read-only).
+ */
 @property (nonatomic, readonly) NSString *URLTemplate;
+
+/**
+ *  The base URL string to use for generating tile URLs.
+ */
 @property (nonatomic, copy) NSString *URLBase;
 
 ///**

@@ -142,15 +142,18 @@
 @property (nonatomic, copy) NSArray *forecast;
 
 /**
- *  Array of coordinates (latitude, longitude) defining a 5-degree cone of error along the forecast path which can be used
- *  to better determine locations along the forecast path of the storm.
+ *  Array of coordinates (latitude, longitude) defining a 20-degree cone of error along the forecast path.
  */
 @property (nonatomic, copy) NSArray *forecastConeWide;
 
 /**
- *  Array of coordinates (latitude, longitude) defining a 20-degree cone of error along the forecast path.
+ *  Array of coordinates (latitude, longitude) defining a 5-degree cone of error along the forecast path which can be used
+ *  to better determine locations along the forecast path of the storm.
  */
 @property (nonatomic, copy) NSArray *forecastConeNarrow;
+
+- (BOOL)affectsPlace:(AWFPlace *)place;
+- (BOOL)isMovingTowardPlace:(AWFPlace *)place;
 
 @end
 

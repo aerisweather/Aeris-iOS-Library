@@ -8,8 +8,6 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
-
-
 /**
  *  `AWFPlacesLoader` provides convenience methods for interacting with the
  *  [`places` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/places) of the

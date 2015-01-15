@@ -140,8 +140,19 @@
 // @name Long Press Gesture
 //-----------------------------------------------------------------------------
 
+/**
+ *  A Boolean value that indicates whether the weather map should show the animated circle during a long press gesture on the map.
+ */
 @property (nonatomic, assign) BOOL showsAnnotationDuringLongPress;
+
+/**
+ *  A Boolean value that indicates whether the weather map should show an annotation on the map at the location of a long press gesture.
+ */
 @property (nonatomic, assign) BOOL showsAnnotationForLongPress;
+
+/**
+ *  The annotation style to use for the long press gesture when enabled.
+ */
 @property (nonatomic, strong) AWFAnnotationStyle *longPressAnnotationStyle;
 
 //-----------------------------------------------------------------------------
@@ -153,12 +164,49 @@
  */
 @property (nonatomic, strong) NSString *mapboxMapId;
 
+/**
+ *  Returns the style object to use when rendering the annotation on the map.
+ *
+ *  @param annotation The annotation to return the style for. This must be an object that conforms to the `AWFStyledAnnotation` protocol.
+ *
+ *  @return The style instance for the annotation
+ */
+- (AWFAnnotationStyle *)styleForAnnotation:(id<AWFStyledAnnotation>)annotation;
 
-- (AWFAnnotationStyle *)styleForAnnotation:(id <AWFStyledAnnotation> )annotation;
-- (AWFMapItemStyle *)styleForPolygon:(id <AWFPolygon> )polygon;
-- (AWFMapItemStyle *)styleForOverlay:(id <MKOverlay> )overlay;
+/**
+ *  Returns the `AWFMapItemStyle` object to use when rendering the polygon on the map.
+ *
+ *  @param polygon The polygon to return the style for
+ *
+ *  @return The style instance for the polygon
+ */
+- (AWFMapItemStyle *)styleForPolygon:(id<AWFPolygon>)polygon;
 
+/**
+ *  Returns the `AWFMapItemStyle` object to use when rendering the overlay on the map.
+ *
+ *  @param overlay The overlay to return the style for
+ *
+ *  @return The style instance for the overlay
+ */
+- (AWFMapItemStyle *)styleForOverlay:(id<MKOverlay>)overlay;
+
+/**
+ *  Returns the request options to use when requesting data for the `layerType`.
+ *
+ *  @param layerType The layer type to return request options for
+ *
+ *  @return The request options for the layer type
+ */
 - (AWFRequestOptions *)requestOptionsForLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Returns the `AWFLegendStyle` object to use when drawing the legend for the `layerType`.
+ *
+ *  @param layerType The layer type to return the legend style for
+ *
+ *  @return The style instance for the layer type
+ */
 - (AWFLegendStyle *)legendStyleForLayerType:(AWFLayerType)layerType;
 
 @end

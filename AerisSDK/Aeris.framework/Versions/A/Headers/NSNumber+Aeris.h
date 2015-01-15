@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
+/**
+ *  Provides extensions to `NSNumber` for performing common tasks.
+ */
 @interface NSNumber (Aeris)
 
 /**

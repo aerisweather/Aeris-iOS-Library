@@ -58,7 +58,7 @@
 /**
  *  Sky coverage as a percentage.
  */
-@property (nonatomic, strong) NSNumber *skyCoverage;
+@property (nonatomic, strong) NSNumber *skyCoverPercentage;
 
 /**
  *  Weather icon for the primary weather type.

@@ -20,6 +20,7 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Radar tile overlay.
 	 */
 	AWFLayerTypeRadar,
+	AWFLayerTypeRadarDev,
 	/**
 	 *  NEXRAD radar overlay (NIDs).
 	 */
@@ -48,30 +49,31 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Estimated snow depth tile overlay.
 	 */
 	AWFLayerTypeSnowDepth,
+	AWFLayerTypeQpf,
 	/**
 	 *  Current surface temperatures tile overlay.
 	 */
-	AWFLayerTypeCurrentTemperatures,
+	AWFLayerTypeTemperatures,
 	/**
 	 *  Current surface wind speeds tile overlay.
 	 */
-	AWFLayerTypeCurrentWinds,
+	AWFLayerTypeWinds,
 	/**
 	 *  Current surface dew points tile overlay.
 	 */
-	AWFLayerTypeCurrentDewPoint,
+	AWFLayerTypeDewPoint,
 	/**
 	 *  Current surface relative humidity tile overlay.
 	 */
-	AWFLayerTypeCurrentHumidity,
+	AWFLayerTypeHumidity,
 	/**
 	 *  Current surface wind chill tile overlay.
 	 */
-	AWFLayerTypeCurrentWindChill,
+	AWFLayerTypeWindChill,
 	/**
 	 *  Current surface heat index tile overlay.
 	 */
-	AWFLayerTypeCurrentHeatIndex,
+	AWFLayerTypeHeatIndex,
 	/**
 	 *  Current oceanic chlorophyll tile overlay.
 	 */
@@ -81,12 +83,26 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 */
 	AWFLayerTypeCurrentSeaSurfaceTemperatures,
 	
-	AWFLayerTypeFutureRadarNAM,
-	AWFLayerTypeFutureRadarRAP,
 	AWFLayerTypeFutureRadarHRRR,
+	AWFLayerTypeFutureRadarNAM4K,
+	AWFLayerTypeFutureRadarNAM12K,
+	AWFLayerTypeFutureRadarRAP,
 	AWFLayerTypeFutureCloudsHRRR,
+	AWFLayerTypeFutureCloudsNAM4K,
+	AWFLayerTypeFutureCloudsNAM12K,
+	AWFLayerTypeFuturePrecip,
 	AWFLayerTypeFuturePrecipHRRR,
+	AWFLayerTypeFuturePrecipNAM4K,
+	AWFLayerTypeFuturePrecipNAM12K,
+//	AWFLayerTypeFutureQpfHRRR,
+//	AWFLayerTypeFutureQpfNAM4K,
+//	AWFLayerTypeFutureQpfNAM12K,
 	AWFLayerTypeFutureWindsHRRR,
+	AWFLayerTypeFutureWindsNAM4K,
+	AWFLayerTypeFutureWindsNAM12K,
+	AWFLayerTypeFutureTemperaturesHRRR,
+	AWFLayerTypeFutureTemperaturesNAM4K,
+	AWFLayerTypeFutureTemperaturesNAM12K,
 	
 	/**
 	 *  Tile overlay combining radar and infrared satellite.
@@ -145,5 +161,14 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	/**
 	 *  Overlay displaying position and intensity of earthquakes.
 	 */
-	AWFLayerTypeEarthquake
+	AWFLayerTypeEarthquake,
+	
+	
+	// Backwards compatibility
+	AWFLayerTypeCurrentTemperatures = AWFLayerTypeTemperatures,
+	AWFLayerTypeCurrentWinds = AWFLayerTypeWinds,
+	AWFLayerTypeCurrentDewPoint = AWFLayerTypeDewPoint,
+	AWFLayerTypeCurrentHumidity = AWFLayerTypeHumidity,
+	AWFLayerTypeCurrentWindChill = AWFLayerTypeWindChill,
+	AWFLayerTypeCurrentHeatIndex = AWFLayerTypeHeatIndex
 };

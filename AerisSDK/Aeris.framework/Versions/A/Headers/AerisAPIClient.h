@@ -8,6 +8,8 @@
 
 #import "AFHTTPRequestOperationManager.h"
 
+#import <Aeris/AWFResponse.h>
+
 extern NSString * const AerisAPIServer;
 extern NSString * const AerisAPIPathPrefix;
 
@@ -56,7 +58,11 @@ extern NSUInteger const AerisAPIErrorCodeInvalidCoordinateBounds;
 extern NSUInteger const AerisAPIErrorCodeInvalidPolygon;
 extern NSUInteger const AerisAPIErrorCodeObjectNotExists;
 
+typedef void (^AWFRequestCompletionBlock)(AFHTTPRequestOperation *operation, AWFResponse *response, NSError *error);
+
 @interface AerisAPIClient : AFHTTPRequestOperationManager
+
+@property (readonly, nonatomic) NSString *serverPath;
 
 + (instancetype)sharedClient;
 
@@ -71,6 +77,11 @@ extern NSUInteger const AerisAPIErrorCodeObjectNotExists;
 //	 parameters:(NSDictionary *)parameters
 //		success:(void (^)(AFHTTPRequestOperation *, id responseObject))success
 //		failure:(void (^)(AFHTTPRequestOperation *, NSError *error))failure;
+
+- (AFHTTPRequestOperation *)GET:(NSString *)URLString
+						expires:(NSTimeInterval)expires
+                     parameters:(NSDictionary *)parameters
+					 completion:(AWFRequestCompletionBlock)completionBlock;
 
 - (BOOL)isResponseSuccessful:(id)responseObject;
 

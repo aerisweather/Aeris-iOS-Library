@@ -36,11 +36,24 @@
 /**
  *  Requests data for the overlay within the region described by the specified coordinate bounds.
  *
- *  @param bounds  The coordinate bounds to request data for.
- *  @param results The completion block when the request finishes or fails.
+ *  @param bounds  The coordinate bounds to request data for
+ *  @param results The completion block when the request finishes or fails
  */
 - (void)loadForMapBounds:(AWFCoordinateBounds *)bounds results:(void (^)(NSArray *results, NSError *error))results;
+
+/**
+ *  Requests data for the overlay within the region described the the specified coordinate bounds and the date range.
+ *
+ *  @param bounds   The coordinate bounds to request data for
+ *  @param fromDate The starting date to use for the request, or `nil` to use the current date and time
+ *  @param toDate   The ending date to use for the request, or `nil` to use the current date and time
+ *  @param results  The completion block when the requet finishes or fails
+ */
 - (void)loadForMapBounds:(AWFCoordinateBounds *)bounds fromDate:(NSDate *)fromDate toDate:(NSDate *)toDate results:(void (^)(NSArray *, NSError *))results;
+
+/**
+ *  Cancels any active requests and prepared for a new request.
+ */
 - (void)reset;
 
 

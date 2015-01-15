@@ -29,14 +29,14 @@
     [super viewDidLoad];
 	
 	// setting `itemSpacing` to 0 for graphs will enable auto-spacing between items and disable horizontal scrolling
-	self.tempGraph.itemSpacing = 0;
-	self.precipGraph.itemSpacing = 0;
-	self.snowGraph.itemSpacing = 0;
-	
-	// wider bars for iPad
-	self.tempGraph.barThickness = 20.0;
-	self.precipGraph.barThickness = 20.0;
-	self.snowGraph.barThickness = 20.0;
+//	self.tempGraph.itemSpacing = 0;
+//	self.precipGraph.itemSpacing = 0;
+//	self.snowGraph.itemSpacing = 0;
+//	
+//	// wider bars for iPad
+//	self.tempGraph.barThickness = 20.0;
+//	self.precipGraph.barThickness = 20.0;
+//	self.snowGraph.barThickness = 20.0;
 	
 	self.scrollView.contentSize = self.view.bounds.size;
 	self.scrollView.scrollEnabled = NO;

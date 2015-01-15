@@ -17,6 +17,7 @@
 @property (readonly, nonatomic, strong) NSArray *annotations;
 @property (readonly, nonatomic) AWFCoordinateBounds *coordinateBounds;
 @property (readonly, nonatomic) CLLocationCoordinate2D centerCoordinate;
+@property (readonly, nonatomic) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) UIView *animationContainerView;
 @property (nonatomic, weak) id<GMSMapViewDelegate> mapViewDelegate;

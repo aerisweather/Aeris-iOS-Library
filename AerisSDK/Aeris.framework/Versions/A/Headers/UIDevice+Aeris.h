@@ -43,6 +43,9 @@ typedef NS_ENUM(NSUInteger, AWFDeviceFamily) {
 	AWFDeviceFamilyAppleTV
 };
 
+/**
+ *  Provides extensions to `UIDevice` for retrieving device model and platform information.
+ */
 @interface UIDevice (Aeris)
 
 /**

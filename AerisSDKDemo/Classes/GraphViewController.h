@@ -8,9 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol GraphViewControllerDelegate;
+@class GraphViewController;
 
-@interface GraphViewController : UIViewController
+@protocol GraphViewControllerDelegate <NSObject>
+
+- (void)graphViewControllerDidStartLoading:(GraphViewController *)graphViewController;
+- (void)graphViewControllerDidFinishLoading:(GraphViewController *)graphViewController;
+- (void)graphViewController:(GraphViewController *)graphViewController didFailLoading:(NSError *)error;
+
+@end
+
+@interface GraphViewController : UIViewController <GraphViewControllerDelegate, AWFGraphViewDelegate>
 
 @property (nonatomic, strong) NSArray *data;
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -23,13 +31,6 @@
 
 - (void)setupGraphs;
 - (void)loadDataForDefaultPlace;
-
-@end
-
-@protocol GraphViewControllerDelegate <NSObject>
-
-- (void)graphViewControllerDidStartLoading:(GraphViewController *)graphViewController;
-- (void)graphViewControllerDidFinishLoading:(GraphViewController *)graphViewController;
-- (void)graphViewController:(GraphViewController *)graphViewController didFailLoading:(NSError *)error;
+- (AWFGraphView *)addGraphViewWithTitle:(NSString *)title series:(AWFGraphSeries *)series yOffset:(CGFloat)yOffset;
 
 @end

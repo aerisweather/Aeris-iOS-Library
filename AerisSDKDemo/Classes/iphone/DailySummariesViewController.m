@@ -156,7 +156,7 @@ static CGFloat cellHeight = 217.0f;
 		[self.eventView showLoading];
 	}
 
-	NSDate *fromDate = [[NSDate date] awf_dateByAddingDays:-7];
+	NSDate *fromDate = [[NSDate date] awf_dateByAddingDays:-7 ignoringTime:YES];
 	[self.obsLoader getObservationSummaryForPlace:place fromDate:fromDate toDate:nil options:options completion:^(NSArray *objects, NSError *error) {
 	    if (error) {
 	        [self.eventView showMessage:NSLocalizedString(@"An error occurred while requesting the weather data.", nil)];

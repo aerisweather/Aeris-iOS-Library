@@ -8,13 +8,44 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+/**
+ *  Earthquakes with a magnitude of less than 3.0.
+ */
 extern NSString *const AerisAPIFilterEarthquakesMini;
+
+/**
+ *  Earthquakes with a magnitude from 3.0 to 3.9.
+ */
 extern NSString *const AerisAPIFilterEarthquakesMinor;
+
+/**
+ *  Earthquakes with a magnitude from 4.0 to 4.9.
+ */
 extern NSString *const AerisAPIFilterEarthquakesLight;
+
+/**
+ *  Earthquakes with a magnitude from 5.0 to 5.9.
+ */
 extern NSString *const AerisAPIFilterEarthquakesModerate;
+
+/**
+ *  Earthquakes with a magnitude from 6.0 to 6.9.
+ */
 extern NSString *const AerisAPIFilterEarthquakesStrong;
+
+/**
+ *  Earthquakes with a magnitude from 7.0 to 7.9.
+ */
 extern NSString *const AerisAPIFilterEarthquakesMajor;
+
+/**
+ *  Earthquakes with a magnitude of 8.0 or greater.
+ */
 extern NSString *const AerisAPIFilterEarthquakesGreat;
+
+/**
+ *  Earthquakes with a depth of less than 70km.
+ */
 extern NSString *const AerisAPIFilterEarthquakesShallow;
 
 /**

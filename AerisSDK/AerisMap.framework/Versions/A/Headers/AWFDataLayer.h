@@ -74,4 +74,6 @@
  */
 + (NSArray *)layerTypesForCombinedLayerType:(AWFLayerType)layerType;
 
++ (AWFLayerType)futureLayerTypeForType:(AWFLayerType)layerType forecastModel:(AWFForecastModelType)modelType;
+
 @end

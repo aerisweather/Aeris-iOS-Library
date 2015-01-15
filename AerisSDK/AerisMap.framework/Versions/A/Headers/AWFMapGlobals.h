@@ -50,6 +50,13 @@ AWFLayerType AWFLayerTypeFromString(NSString *string);
  */
 NSString* AWFNameForLayerType(AWFLayerType type);
 
+/**
+ *  Returns `YES` if the layer type is any type of image overlay.
+ *
+ *  @param type The `AWFLayerType` to check.
+ *
+ *  @return `YES` if the layer type is an overlay, otherwise `NO`.
+ */
 BOOL AWFIsOverlayType(AWFLayerType type);
 
 /**
@@ -108,19 +115,11 @@ BOOL AWFIsPolygonLayerType(AWFLayerType type);
  *  @return `YES` if the layer type is a future overlay, otherwise `NO`.
  */
 BOOL AWFIsFutureLayerType(AWFLayerType type);
+BOOL AWFIsFutureGroupLayerType(AWFLayerType type);
 
 //-----------------------
 // @name Utilities
 //-----------------------
-
-/**
- *  Returns a string formatted to contain the data from a map coordinate.
- *
- *  @param coord The map coordinate to format.
- *
- *  @return A string that corresponds to the map coordinate.
- */
-NSString *AWFStringFromCLLocationCoordinate2D(CLLocationCoordinate2D coord);
 
 /**
  *  Converts a map scale to a zoom level.

@@ -96,6 +96,10 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *  accessing the API directly.
  */
 @property (nonatomic) NSString *queryString;
+
+/**
+ *  Returns an array of `AWFRequestQuery` instances currently assigned.
+ */
 @property (readonly, nonatomic, strong) NSArray *queries;
 
 /**
@@ -103,6 +107,10 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *  parameter when accessing the API directly.
  */
 @property (nonatomic) NSString *filterString;
+
+/**
+ *  Returns an array of `AWFRequestFilter` instances currently assigned.
+ */
 @property (readonly, nonatomic, strong) NSArray *filters;
 
 /**
@@ -164,9 +172,14 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
 @property (nonatomic, copy) NSString *periodSort;
 
 /**
+ *  The endpoint data type to use for a request. An endpoint data type should be one of the subendpoints supported by an API endpoint.
+ */
+@property (nonatomic, copy) NSString *dataType;
+
+/**
  *  Creates a new empty `AWFRequestOptions` instance.
  *
- *  @return The empty instance.
+ *  @return The empty instance
  */
 + (instancetype)options;
 
@@ -175,7 +188,7 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *
  *  @param dictionary A dictionary of values to assign to the instance. These must be valid API parameter keys.
  *
- *  @return The instance instantiated with the specified dictionary of values.
+ *  @return The instantiated instance from the `dictionary`
  */
 + (instancetype)requestOptionsFromDictionary:(NSDictionary *)dictionary;
 
@@ -184,9 +197,18 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *
  *  @param queryString The query string to populate the new instance with.
  *
- *  @return The initialized instance.
+ *  @return The initialized instance from the `queryString`
  */
 + (instancetype)requestOptionsFromQueryString:(NSString *)queryString;
+
+/**
+ *  Creates and returns a new `AWFRequestOptions` instance initialized using the given URL path.
+ *
+ *  @param URLPath URL path to create the instance from
+ *
+ *  @return The initialized instance from the `URLPath`
+ */
++ (instancetype)requestOptionsFromURLPath:(NSString *)URLPath;
 
 /**
  *  Returns a dictionary representation of the options defined in the request object. This is often used when passing the options as
@@ -196,8 +218,17 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
 
 /**
  *  Returns a formatted URL query string representation of the options defined in the request option.
+ *
+ *  @return The formatted URL query string from the receiver.
  */
 - (NSString *)optionsAsQueryString;
+
+/**
+ *  Returns a formatted URL query string representation of the options defined in the request option, but eliminating the place value from the string.
+ *
+ *  @return The formatted URL query string from the receiver ignoring the place value.
+ */
+- (NSString *)optionsAsQueryStringIgnoringPlace;
 
 //-----------------------------------------------------------------------------
 // @name Filtering Results

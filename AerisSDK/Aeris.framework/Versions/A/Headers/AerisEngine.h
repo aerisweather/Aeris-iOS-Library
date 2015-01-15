@@ -15,7 +15,7 @@ extern NSString *const AWFEngineIsReady;
  *  throughout the entire SDK. Before you can perform any data requests using the SDK, you must first initialize this `AerisEngine` instance
  *  with your account credentials:
  *
- *		[AerisEngine engineWithKey:@"__ACCOUNT_ID__" secret:@"__CLIENT_SECRET_KEY__"];
+ *	`[AerisEngine engineWithKey:@"__ACCOUNT_ID__" secret:@"__CLIENT_SECRET_KEY__"];`
  */
 @interface AerisEngine : NSObject
 

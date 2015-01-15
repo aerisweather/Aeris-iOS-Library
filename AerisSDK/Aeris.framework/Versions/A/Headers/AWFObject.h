@@ -63,6 +63,9 @@
 	
 @end
 
+/**
+ *  An `AWFObject` object is the base model object used to represent all data returned from the API using object loaders.
+ */
 @interface AWFObject : NSObject <AWFObjectMappable>
 
 @property (nonatomic, assign, getter = isModified) BOOL modified;

@@ -8,8 +8,6 @@
 
 #import "GraphViewController.h"
 
-@interface LineGraphsViewController : GraphViewController <AWFLineGraphViewDataSource, AWFLineGraphViewDelegate, GraphViewControllerDelegate>
-
-- (AWFLineGraphView *)addGraphViewWithTitle:(NSString *)title yOffset:(CGFloat)yOffset;
+@interface LineGraphsViewController : GraphViewController
 
 @end

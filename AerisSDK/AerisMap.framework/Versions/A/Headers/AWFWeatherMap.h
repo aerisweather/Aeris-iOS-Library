@@ -48,14 +48,31 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 @property (nonatomic, strong) NSDate *timelineStartDate;
 
 /**
+ *  Starting time interval relative to the current date and time for the map's animation timeline.
+ */
+@property (readonly, nonatomic) NSTimeInterval timelineStartOffset;
+
+/**
  *  The ending date for the animation's timeline.
  */
 @property (nonatomic, strong) NSDate *timelineEndDate;
 
 /**
+ *  Ending time interval relative to the current date and time for the map's animation timeline.
+ */
+@property (readonly, nonatomic) NSTimeInterval timelineEndOffset;
+
+/**
  *  The current date of the animation's timeline for which data is being displayed no the map.
  */
 @property (readonly, nonatomic) NSDate *timelineCurrentTime;
+
+/**
+ *  Forecast model type to be used for all active future data layers (when supported).
+ */
+@property (assign, nonatomic) AWFForecastModelType forecastModelType;
+
+@property (nonatomic, strong) UIView *futureIndicatorView;
 
 /**
  *  The map view managed by this weather map instance.
@@ -80,6 +97,12 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  */
 @property (nonatomic, assign) id <AWFWeatherMapDelegate> delegate;
 @property (nonatomic, assign) id <AWFWeatherMapDataSource> dataSource;
+
+/**
+ *  Controls the number of times the map animation should repeat after its initial loop. Setting this value to `-1` will loop the animation endlessly 
+ *  until it is stopped.
+ */
+@property (nonatomic, assign) NSInteger animationRepeatCount;
 
 /**
  *  A Boolean value indicating whether the weather map is currently animating.
@@ -259,6 +282,9 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  */
 - (void)disableAutoRefresh;
 
+/**
+ *  Updates all point data layers by requesting data for the current map bounds.
+ */
 - (void)updatePointDataForCurrentMapBounds;
 
 //-----------------------------------------------------------------------------
@@ -299,6 +325,16 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 //-----------------------------------------------------------------------------
 
 /**
+ *  Returns the current center coordiante for the visible map bounds.
+ */
+- (CLLocationCoordinate2D)currentCenterCoordinateForMap;
+
+/**
+ *  Returns the current zoom level for the visible map.
+ */
+- (NSInteger)currentZoomLevelForMap;
+
+/**
  *  Changes the center coordinate and zoom level of the map view and optionally animates the change.
  *
  *  @param centerCoordinate The new center coordinate for the map.
@@ -312,9 +348,38 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 // @name Presenting and Dismissing the Callout
 //-----------------------------------------------------------------------------
 
+/**
+ *  Presents a callout view from an annotation using the specified title and subtitle.
+ *
+ *  @param annotation The map annotation to present the callout from.
+ *  @param title      The title to display.
+ *  @param subtitle   The subtitle, or detail, text to display. If not provided, just the title will appear with the callout.
+ */
 - (void)showCalloutFromAnnotation:(id)annotation withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents a callout view from an annotation using the specified view.
+ *
+ *  @param annotation  The map annotation to present the callout from.
+ *  @param contentView The view to display within the callout.
+ */
 - (void)showCalloutFromAnnotation:(id)annotation withContentView:(UIView *)contentView;
+
+/**
+ *  Presents a callout view from a specific coordinate using the provided title and subtitle.
+ *
+ *  @param coordinate The map coordinate to present the callout from.
+ *  @param title      The title to display.
+ *  @param subtitle   The subtitle, or detail, text to display. If not provided, just the title will appear with the callout.
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents a callout view from a specific coordinate using the provided view.
+ *
+ *  @param coordinate  The map coordinate to present the callout from.
+ *  @param contentView The view to display within the callout.
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
 
 //-----------------------------------------------------------------------------
@@ -336,5 +401,19 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @return The dictionary of supported layer types.
  */
 + (NSDictionary *)supportedDataLayers;
+
+/**
+ *  Returns an array of all of the supported forecast model types.
+ *
+ *  The returned array contains one NSDictionary object for each forecast model type and include's the forecast model's type and name:
+ *
+ *  `{@"type": @(AWFForecastModelTypeHRRR), @"name": @"HRRR"}`
+ *
+ *  This array of supported forecast model types is often used to dynamically generate menus or listings of the available forecast models 
+ *  {@link AWFWeatherMap} supports.
+ *
+ *  @return The array of supported forecast model types.
+ */
++ (NSArray *)supportedForecastModels;
 
 @end

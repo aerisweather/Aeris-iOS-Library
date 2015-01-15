@@ -8,6 +8,8 @@
 
 #import <Aeris/AWFGeographicObject.h>
 
+@class AWFGeoPolygon;
+
 @interface AWFAdvisory : AWFGeographicObject
 
 /**
@@ -56,10 +58,14 @@
 @property (nonatomic, strong) NSDate *added;
 
 /**
- *  A comma-delimited string of coordinates (latitude, longitude) defining the boundary for the advisory.
+ *  A comma-delimited string of coordinates (longitude, latitude) defining the boundary for the advisory.
  *
  *  Typically this is only used for certain short-fuse advisories, such as tornado and severe thunderstorm warnings.
  */
 @property (nonatomic, copy) NSString *polygon;
+@property (readonly, nonatomic) AWFGeoPolygon *geoPolygon;
+
++ (NSDictionary *)colorMappingsForTypes;
++ (UIColor *)colorForAdvisoryWithType:(NSString *)type;
 
 @end

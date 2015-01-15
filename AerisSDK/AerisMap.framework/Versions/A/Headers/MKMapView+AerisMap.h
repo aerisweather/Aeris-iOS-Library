@@ -81,8 +81,8 @@
 /**
  *  Calculates the coordinate bounds at the corners of the tile at a specific grid location and zoom level.
  *
- *  @param x <#x description#>
- *  @param y <#y description#>
+ *  @param x The tile's x coordinate.
+ *  @param y The tile's y coordinate.
  *
  *  @return An {@link AWFCoordinateBounds} instance with the calculated coordinates for the four corners and center.
  */

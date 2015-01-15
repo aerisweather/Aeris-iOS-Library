@@ -204,6 +204,9 @@
  */
 @property (assign, nonatomic) CGFloat endDelay;
 
+
+@property (assign, nonatomic) NSInteger repeatCount;
+
 /**
  *  Total time, in seconds, of the animation based on the start and end dates.
  */

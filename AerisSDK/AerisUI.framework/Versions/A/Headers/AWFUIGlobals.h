@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#define AF_IMAGE(name) [UIImage imageNamed:[NSString stringWithFormat:@"AerisUI.bundle/images/%@", [name stringByReplacingOccurrencesOfString:@"gif" withString:@"png"]]]
-#define AF_WXICON(name) [UIImage imageNamed:[NSString stringWithFormat:@"AerisUI.bundle/wxicons/%@", [name stringByReplacingOccurrencesOfString:@"gif" withString:@"png"]]]
-
 #ifndef UIViewAutoresizingFlexibleSize
 	#define UIViewAutoresizingFlexibleSize UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
 #endif

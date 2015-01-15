@@ -28,6 +28,10 @@ extern NSString *const AerisAPIFilterObservationsPWS;
  */
 extern NSString *const AerisAPIFilterObservationsAll;
 
+extern NSString *const AerisAPIObservationDataTypeRecent;
+extern NSString *const AerisAPIObservationDataTypeArchive;
+extern NSString *const AerisAPIObservationDataTypeSummary;
+
 @class AWFPlace, AWFRequestOptions;
 
 /**

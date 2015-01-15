@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
 // Testing for specific iOS versions
 #define AWF_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
@@ -67,4 +68,13 @@ BOOL AWFIsValidZipcodeString(id object);
 BOOL AWFIsValidCoordinateString(id object);
 BOOL AWFIsNumber(id object);
 BOOL AWFIsInteger(id object);
+
+/**
+ *  Returns a string formatted to contain the data from a map coordinate.
+ *
+ *  @param coord The map coordinate to format.
+ *
+ *  @return A string that corresponds to the map coordinate.
+ */
+NSString *AWFStringFromCLLocationCoordinate2D(CLLocationCoordinate2D coord);
 

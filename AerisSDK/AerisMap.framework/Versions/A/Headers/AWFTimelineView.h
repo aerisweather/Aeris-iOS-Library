@@ -8,6 +8,7 @@
 
 
 @class AWFTimelineView;
+@class AWFTimelineBarView, AWFTimelinePositionView;
 
 @protocol AWFTimelineViewDelegate <NSObject>
 @optional
@@ -24,6 +25,8 @@
 @property (nonatomic, strong) NSDate *endDate;
 @property (readonly, nonatomic, assign) CGFloat position;
 
+@property (readonly, nonatomic, strong) AWFTimelineBarView *barView;
+@property (readonly, nonatomic, strong) AWFTimelinePositionView *positionView;
 @property (readonly, nonatomic, strong) UIButton *playButton;
 @property (readonly, nonatomic, strong) UIButton *nowButton;
 
@@ -33,5 +36,29 @@
 - (void)showLoading:(BOOL)loading;
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
 - (void)updatePositionForCurrentTime;
+
+@end
+
+@interface AWFTimelineBarView : UIView
+
+@property (nonatomic, assign) CGFloat progress;
+@property (nonatomic, assign) CGFloat futurePosition;
+@property (nonatomic, strong) UIColor *barFillColor;
+@property (nonatomic, strong) UIColor *futureBarFillColor;
+@property (nonatomic, strong) UIColor *barStrokeColor;
+
+@end
+
+@interface AWFTimelinePositionView : UIView
+
+@property (readonly, nonatomic, strong) UILabel *textLabel;
+@property (readonly, nonatomic, strong) UILabel *detailTextLabel;
+@property (nonatomic, assign) CGFloat radius;
+@property (nonatomic, strong) UIColor *fillColor;
+@property (nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, assign) CGFloat strokeWidth;
+@property (nonatomic, assign) BOOL pressed;
+
+- (void)showLoading:(BOOL)loading;
 
 @end
