@@ -13,6 +13,6 @@ For complete details and instructions on installing and getting started with the
 
 ### Need Support?
 
-Feel free to [submit a new ticket](http://helpdesk.hamweather.com) with any questions, bug reports or feature suggestions you have. You can also reach out to us on Twitter at [@hwaeris](https://twitter.com/hwaeris).
+Feel free to [submit a new ticket](http://helpdesk.hamweather.com) with any questions, bug reports or feature suggestions you have. You can also reach out to us on Twitter at [@AerisDeveloper](https://twitter.com/AerisDeveloper).
 
 ![image](http://www.hamweather.com/v2/img/docs/ios/Aeris-iOS-SDK-2.0.png)
