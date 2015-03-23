@@ -55,6 +55,11 @@
 @property (nonatomic, strong) AWFGraphCalloutView *calloutView;
 
 /**
+ *  The view in which the graph's callout view should be constrained to for positioning. The default value is `[UIApplication sharedApplication].keyWindow`.
+ */
+@property (nonatomic, strong) UIView *constrainedViewForCallout;
+
+/**
  *  Whether zooming the graph view is enabled. If enabled, double-tapping on the graph's series container view will zoom into the graph one level, 
  *  while tapping with two fingers will zoom the graph back out one level. Pinching to zoom is also permitted when zoom is enabled.
  */

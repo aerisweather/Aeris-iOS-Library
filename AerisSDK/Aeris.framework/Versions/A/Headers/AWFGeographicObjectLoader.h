@@ -48,6 +48,11 @@
                   options:(AWFRequestOptions *)options
                completion:(AWFObjectLoaderCompletionBlock)completionBlock;
 
+- (void)getWithinCircleAtCoordinate:(CLLocationCoordinate2D)centerCoordinate
+							 radius:(NSString *)radius
+							options:(AWFRequestOptions *)options
+						 completion:(AWFObjectLoaderCompletionBlock)completionBlock;
+
 /**
  *  Requests objects within a bounding box defined by top-left and bottom-right coordinates.
  *
