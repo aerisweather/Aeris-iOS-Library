@@ -15,12 +15,10 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 */
 	AWFLayerTypeNone = 0,
 	
-	
 	/**
 	 *  Radar tile overlay.
 	 */
 	AWFLayerTypeRadar,
-	AWFLayerTypeRadarDev,
 	/**
 	 *  NEXRAD radar overlay (NIDs).
 	 */

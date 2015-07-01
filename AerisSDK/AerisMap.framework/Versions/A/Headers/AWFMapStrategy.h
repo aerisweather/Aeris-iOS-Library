@@ -260,6 +260,9 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  */
 - (NSArray *)annotationsFromObjects:(NSArray *)objects;
 
+- (void)selectAnnotation:(id)annotation;
+- (void)deselectCurrentlySelectedAnnotation;
+
 /**
  *  Presents the map callout from the `annotation` using the specified `title` and `subtitle`.
  *
@@ -300,6 +303,11 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param coordinate The coordinate at which to add the annotation.
  */
 - (void)showAnnotationForLongPressAtCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ *  Dismisses the active callout, if any, from the map.
+ */
+- (void)dismissCallout;
 
 /**
  *  Removes the annotation for the long press gesture from the map.

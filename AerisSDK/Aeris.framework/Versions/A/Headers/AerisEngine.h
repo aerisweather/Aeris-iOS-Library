@@ -50,6 +50,11 @@ extern NSString *const AWFEngineIsReady;
 @property (nonatomic, copy, readonly) NSString *apiVersion;
 
 /**
+ *  Whether the API engine is using secure HTTPS requests. Default is `NO`. Use `setSecure:` to change this value.
+ */
+@property (nonatomic, readonly) BOOL secure;
+
+/**
  *  The version of the SDK.
  */
 @property (readonly, nonatomic) NSString *sdkVersion;
@@ -61,6 +66,7 @@ extern NSString *const AWFEngineIsReady;
  *  @param consumerSecret The client secret key to be used for all requests.
  */
 + (void)engineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret;
++ (void)secureEngineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret;
 
 /**
  *  Initializes the framework API engine with the proper consumer key and secret values for the desired account and a specific
@@ -71,6 +77,7 @@ extern NSString *const AWFEngineIsReady;
  *  @param version        The version of the API to use for all requests. If not provided, the most recent version will be used.
  */
 + (void)engineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret version:(NSString *)version;
++ (void)secureEngineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret version:(NSString *)version;
 
 /**
  *	Returns the current AerisEngine singleton instance.

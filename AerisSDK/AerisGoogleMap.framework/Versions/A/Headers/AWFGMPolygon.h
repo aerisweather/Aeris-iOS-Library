@@ -13,7 +13,7 @@
 
 @interface AWFGMPolygon : AWFPolygon <AWFPolygon>
 
-@property (readonly, nonatomic, copy) NSString *identifier;
+@property (nonatomic, copy) NSString *identifier;
 @property (readonly, nonatomic, strong) AWFObject *modelObject;
 @property (readonly, nonatomic, strong) GMSPolygon *overlay;
 

@@ -382,6 +382,11 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
 
+/**
+ *  Dismisses the active callout, if any, from the map.
+ */
+- (void)dismissCallout;
+
 //-----------------------------------------------------------------------------
 // @name Class Methods
 //-----------------------------------------------------------------------------

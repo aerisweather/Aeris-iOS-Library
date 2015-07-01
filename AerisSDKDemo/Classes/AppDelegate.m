@@ -14,9 +14,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-	
-	
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];	
 	
 	[AerisEngine engineWithKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AerisEngine enableDebug];

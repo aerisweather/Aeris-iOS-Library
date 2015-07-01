@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, AWFWeatherMapLegendPosition) {
 
 - (void)addLegendForLayerType:(AWFLayerType)layerType;
 - (void)removeLegendForLayerType:(AWFLayerType)layerType;
+- (BOOL)hasLegendForLayerType:(AWFLayerType)layerType;
 - (void)show:(BOOL)show animated:(BOOL)animated;
 - (CGRect)contentFrame;
 

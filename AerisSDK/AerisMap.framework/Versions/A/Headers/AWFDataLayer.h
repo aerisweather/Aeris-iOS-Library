@@ -7,8 +7,11 @@
 //
 
 #import <MapKit/MapKit.h>
+
 #import "AWFMapStrategy.h"
 #import "AWFLayerType.h"
+
+@protocol AWFDataLayerDelegate;
 
 /**
  *  An `AWFOverlay` object is the base class that represents an layer type on a map. This base class should not be 
@@ -38,6 +41,11 @@
 @property (nonatomic, strong) AWFCoordinateBounds *visibleBounds;
 
 /**
+ *  The receiver's delegate.
+ */
+@property (nonatomic, assign) id<AWFDataLayerDelegate> delegate;
+
+/**
  *  Initializes and returns the overlay object and associates it with the specified map strategy.
  *
  *  @param manager The map strategy object to use for managing the overlay.
@@ -46,9 +54,9 @@
  */
 - (id)initWithStrategy:(id<AWFMapStrategy>)manager;
 
-//------------------------
+//-----------------------------------------------------------------------------
 // @name Class Methods
-//------------------------
+//-----------------------------------------------------------------------------
 
 /**
  *  Returns a dictionary that maps each {@link AWFLayerType} to its corresponding data code.
@@ -74,6 +82,47 @@
  */
 + (NSArray *)layerTypesForCombinedLayerType:(AWFLayerType)layerType;
 
+/**
+ *  A Boolean indicating whether or not the specified `layerType` is included in the `combinedLayerType`.
+ *
+ *  @param layerType         The layer type to check for
+ *  @param combinedLayerType The combined layer type to check
+ *
+ *  @return `YES` if `layerType` is included in `combinedLayerType`, otherwise `NO`
+ */
++ (BOOL)isLayerType:(AWFLayerType)layerType includedInCombinedLayerType:(AWFLayerType)combinedLayerType;
+
+/**
+ *  Returns the `AWFLayerType` associated with the specified `layerType` and `modelType`.
+ *
+ *  @param layerType The layer type to use
+ *  @param modelType The model type to use
+ *
+ *  @return The `AWFLayerType` for the `layerType` and `modelType`
+ */
 + (AWFLayerType)futureLayerTypeForType:(AWFLayerType)layerType forecastModel:(AWFForecastModelType)modelType;
+
+@end
+
+
+@protocol AWFDataLayerDelegate <NSObject>
+
+@optional
+
+/**
+ *  Tells the delegate that the data layer will remove an array of annotation from the map. This is called before the `annotations` property on the data layer will be reset with a new value.
+ *
+ *  @param dataLayer   The data layer that will remove annotations
+ *  @param annotations An array of annotations that will be removed
+ */
+- (void)dataLayer:(AWFDataLayer *)dataLayer willRemoveAnnotations:(NSArray *)annotations;
+
+/**
+ *  Tells the delegate that the data layer will remove an array of overlays from the map. This is called before the `overlays` property on the data layer will be reset with a new value.
+ *
+ *  @param dataLayer The data layer that will remove overlays
+ *  @param overlays  An array of overlays that will be removed
+ */
+- (void)dataLayer:(AWFDataLayer *)dataLayer willRemoveOverlays:(NSArray *)overlays;
 
 @end

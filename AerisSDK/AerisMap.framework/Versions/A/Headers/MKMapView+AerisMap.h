@@ -26,7 +26,25 @@
  */
 - (MKZoomScale)awf_zoomScale;
 
+/**
+ *  Sets the map's center coordinate and zoom level.
+ *
+ *  @param centerCoordinate The center coordinate for the map
+ *  @param zoomLevel        The zoom level
+ *  @param animated         A Boolean indicating whether or not the change should be animated
+ */
 - (void)awf_setCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate zoomLevel:(NSUInteger)zoomLevel animated:(BOOL)animated;
+
+/**
+ *  Returns a new coordinate based on a coordinate, point offset and zoom level regardless of the map's current zoom level.
+ *
+ *  @param centerCoordinate The coordinate from which to calculate the offset from
+ *  @param offset           The pixel offset from the `coordinate`
+ *  @param zoomLevel        The zoom level to use for the calculation
+ *
+ *  @return A new coordinate that is `offset` pixels from `centerCoordinate` for the given `zoomLevel`
+ */
+- (CLLocationCoordinate2D)awf_coordinateByOffsettingCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate offset:(UIOffset)offset zoomLevel:(NSUInteger)zoomLevel;
 
 //----------------------
 // @name Coordinate Bounds

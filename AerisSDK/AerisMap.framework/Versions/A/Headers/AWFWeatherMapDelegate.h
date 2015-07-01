@@ -44,6 +44,13 @@
  */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didRemoveLayerType:(AWFLayerType)layerType;
 
+/**
+ *  Tells the delegate the timeline range changed.
+ *
+ *  @param weatherMap The weather map whose timeline was changed
+ *  @param fromDate   The start date of the timeline
+ *  @param toDate     The end date of the timeline
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didUpdateTimelineRangeFromDate:(NSDate *)fromDate toDate:(NSDate *)toDate;
 
 //------------------------
@@ -86,6 +93,12 @@
  *  @param weatherMap The weather map that finished loading data.
  */
 - (void)weatherMapDidFinishLoadingAnimationData:(AWFWeatherMap *)weatherMap;
+
+/**
+ *  Tells the delegate the weather map cancelled loading data required for the animation.
+ *
+ *  @param weatherMap The weather map that cancelled loading data
+ */
 - (void)weatherMapDidCancelLoadingAnimationData:(AWFWeatherMap *)weatherMap;
 
 /**

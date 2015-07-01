@@ -155,6 +155,7 @@
  */
 @property (nonatomic, strong) AWFAnnotationStyle *longPressAnnotationStyle;
 
+
 //-----------------------------------------------------------------------------
 // @name Mapbox Support
 //-----------------------------------------------------------------------------
@@ -174,6 +175,18 @@
 - (AWFAnnotationStyle *)styleForAnnotation:(id<AWFStyledAnnotation>)annotation;
 
 /**
+ *  Returns the annotation style configuration for the given `layerType`.
+ *
+ *  The returned value may be an instance of `AWFMapItemStyle` or an `NSDictionary`. If an `NSDictionary` is returned, then styles are assigned by
+ *  the annotation type they represent.
+ *
+ *  @param layerType The layer type to return the style configuration for
+ *
+ *  @return The annotation style configuration for the `layerType`
+ */
+- (id)annotationStyleConfigForLayerType:(AWFLayerType)layerType;
+
+/**
  *  Returns the `AWFMapItemStyle` object to use when rendering the polygon on the map.
  *
  *  @param polygon The polygon to return the style for
@@ -183,6 +196,18 @@
 - (AWFMapItemStyle *)styleForPolygon:(id<AWFPolygon>)polygon;
 
 /**
+ *  Returns the polygon style configuration for the given `layerType`.
+ *
+ *  The returned value may be an instance of `AWFMapItemStyle` or an `NSDictionary`. If an `NSDictionary` is returned, then styles are assigned by
+ *  the annotation type they represent.
+ *
+ *  @param layerType The layer type to return the style configuration for
+ *
+ *  @return The polygon style configuration for the `layerType`
+ */
+- (id)polygonStyleConfigForLayerType:(AWFLayerType)layerType;
+
+/**
  *  Returns the `AWFMapItemStyle` object to use when rendering the overlay on the map.
  *
  *  @param overlay The overlay to return the style for
@@ -190,6 +215,18 @@
  *  @return The style instance for the overlay
  */
 - (AWFMapItemStyle *)styleForOverlay:(id<MKOverlay>)overlay;
+
+/**
+ *  Returns the overlay style configuration for the given `layerType`.
+ *
+ *  The returned value may be an instance of `AWFMapItemStyle` or an `NSDictionary`. If an `NSDictionary` is returned, then styles are assigned by
+ *  the annotation type they represent.
+ *
+ *  @param layerType The layer type to return the style configuration for
+ *
+ *  @return The overlay style configuration for the `layerType`
+ */
+- (id)overlayStyleConfigForLayerType:(AWFLayerType)layerType;
 
 /**
  *  Returns the request options to use when requesting data for the `layerType`.
@@ -208,5 +245,64 @@
  *  @return The style instance for the layer type
  */
 - (AWFLegendStyle *)legendStyleForLayerType:(AWFLayerType)layerType;
+
+
+//-----------------------------------------------------------------------------
+// @name Setting Layer Styles and Options
+//-----------------------------------------------------------------------------
+
+/**
+ *  Sets the annotation style configuration for the given `layerType`.
+ *
+ *  The provided `style` value may either be an instance of `AWFMapItemStyle` or `NSDictionary`. If an `AWFMapItemStyle` is given, then all annotations
+ *  for the layer type will be styled using the same configuration regardless of type or group. If an `NSDictionary` is given, then the dictionary must
+ *  provide `AWFMapItemStyle` instances for the desired annotation type or group.
+ *
+ *  @param style     The style configuration as an `AWFMapItemStyle` or `NSDictionary`
+ *  @param layerType The layer type to assign the style to
+ */
+- (void)setAnnotationStyle:(id)style forLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Sets the overlay style configuration for the given 'layerType'.
+ *
+ *  The provided `style` value may either be an instance of `AWFMapItemStyle` or `NSDictionary`. If an `AWFMapItemStyle` is given, then all overlays
+ *  for the layer type will be styled using the same configuration regardless of type or group. If an `NSDictionary` is given, then the dictionary must
+ *  provide `AWFMapItemStyle` instances for the desired overlay type or group.
+ *
+ *  @param style     The style configuration as an `AWFMapItemStyle` or `NSDictionary`
+ *  @param layerType The layer type to assign the style to
+ */
+- (void)setOverlayStyle:(id)style forLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Sets the polygon style configuration for the given 'layerType`.
+ *
+ *  The provided `style` value may either be an instance of `AWFMapItemStyle` or `NSDictionary`. If an `AWFMapItemStyle` is given, then all polygons
+ *  for the layer type will be styled using the same configuration regardless of type or group. If an `NSDictionary` is given, then the dictionary must
+ *  provide `AWFMapItemStyle` instances for the desired polygon type or group.
+ *
+ *  @param style     The style configuration as an `AWFMapItemStyle` or `NSDictionary`
+ *  @param layerType The layer type to assign the style to
+ */
+- (void)setPolygonStyle:(id)style forLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Sets the legend style for the given `layerType`.
+ *
+ *  @param style     The `AWFLegendStyle` instance
+ *  @param layerType The layer type to assign the legend style to
+ */
+- (void)setLegendStyle:(AWFLegendStyle *)style forLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Sets the request options to use when requesting data for the given `layerType`. 
+ *
+ *  Request options are currently only supported for point and polygon data layers. Image and tile layers do not use request options when loading data.
+ *
+ *  @param options   The `AWFRequestOptions` instance
+ *  @param layerType The layer type to assign the request options to
+ */
+- (void)setRequestOptions:(AWFRequestOptions *)options forLayerType:(AWFLayerType)layerType;
 
 @end

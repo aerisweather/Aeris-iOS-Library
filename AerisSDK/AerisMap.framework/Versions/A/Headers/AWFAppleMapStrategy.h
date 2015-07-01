@@ -11,6 +11,10 @@
 
 @class AWFAnimationContainerView, AWFAnnotation;
 
+/**
+ *  An `AWFAppleMapStrategy` object implements the `AWFMapStrategy` protocol and provides the necessary functionality for managing a `AWFWeatherMap` configured
+ *  with an `MKMapView` instance.
+ */
 @interface AWFAppleMapStrategy : NSObject <AWFMapStrategy, MKMapViewDelegate>
 
 @property (readonly, nonatomic) AWFMapStrategyType strategyType;

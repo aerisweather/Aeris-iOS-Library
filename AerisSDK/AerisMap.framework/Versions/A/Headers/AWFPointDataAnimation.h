@@ -64,11 +64,6 @@
 /**
  *  The object that acts as the data source of the receiving animation.
  */
-@property (nonatomic, assign) id<AWFPointDataAnimationDataSource> dataSource;
-
-/**
- *  The object that acts as the data source of the receiving animation.
- */
 @property (nonatomic, assign) id<AWFPointDataAnimationDelegate> delegate;
 
 @end

@@ -10,7 +10,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreGraphics/CoreGraphics.h>
 
-NS_ENUM(NSUInteger, AWFUserTrackingMode) {
+typedef NS_ENUM(NSUInteger, AWFUserTrackingMode) {
 	AWFUserTrackingModeNone = 0,
 	AWFUserTrackingModeFollow,
 	AWFUserTrackingModeFollowWithHeading,
@@ -18,7 +18,7 @@ NS_ENUM(NSUInteger, AWFUserTrackingMode) {
 	AWFUserTrackingModeSearching
 };
 
-NS_ENUM(NSUInteger, AWFLocationAccuracy) {
+typedef NS_ENUM(NSUInteger, AWFLocationAccuracy) {
 	AWFLocationAccuracyNone = 0,
 	AWFLocationAccuracyPoor,
 	AWFLocationAccuracyGood,

@@ -1,7 +1,9 @@
-platform :ios, '6.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
 
 target :AerisSDKDemo, :exclusive => true do
 	xcodeproj 'AerisSDKDemo.xcodeproj'
+	pod 'GoogleMaps'
 	pod 'AFNetworking'
 	pod 'PAPreferences'
 end

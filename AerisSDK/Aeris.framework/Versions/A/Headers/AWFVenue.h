@@ -1,5 +1,5 @@
 //
-//  AFVenue.h
+//  AWFVenue.h
 //  Aeris
 //
 //  Created by Nicholas Shipes on 9/6/13.
@@ -9,13 +9,13 @@
 #import <CoreLocation/CoreLocation.h>
 #import <Aeris/AWFGeographicObject.h>
 
-NS_ENUM(NSUInteger, AFVenueType) {
-	AFVenueTypeUnknown = 0,
-	AFVenueTypeGas,
-	AFVenueTypeLodging,
-	AFVenueTypeFood,
-	AFVenueTypeMedical,
-	AFVenueTypeEmergencyRoom
+typedef NS_ENUM(NSUInteger, AWFVenueType) {
+	AWFVenueTypeUnknown = 0,
+	AWFVenueTypeGas,
+	AWFVenueTypeLodging,
+	AWFVenueTypeFood,
+	AWFVenueTypeMedical,
+	AWFVenueTypeEmergencyRoom
 };
 
 @interface AWFVenue : AWFGeographicObject
@@ -36,6 +36,6 @@ NS_ENUM(NSUInteger, AFVenueType) {
 
 @property (nonatomic, readonly) BOOL isFoursquareVenue;
 	
-+ (NSString *)filterStringForVenueType:(enum AFVenueType)venueType;
++ (NSString *)filterStringForVenueType:(enum AWFVenueType)venueType;
 
 @end

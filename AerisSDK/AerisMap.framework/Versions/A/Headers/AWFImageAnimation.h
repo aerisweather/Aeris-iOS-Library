@@ -58,11 +58,6 @@
 @property (nonatomic, assign) BOOL isFutureAnimation;
 
 /**
- *  The object that acts as the data source of the receiving animation.
- */
-@property (nonatomic, assign) id<AWFImageAnimationDataSource> dataSource;
-
-/**
  *  Returns the image in the series that is closest to the specified date and time.
  *
  *	This method is called playback of the animation to update the animation's currently displayed image. If no image is found

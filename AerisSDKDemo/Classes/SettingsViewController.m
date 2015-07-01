@@ -7,6 +7,7 @@
 //
 
 #import "SettingsViewController.h"
+#import "GroupedTableViewCell.h"
 
 @interface SettingsViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -14,6 +15,8 @@
 @end
 
 static NSString *cellIdentifier = @"SettingsCell";
+static NSString *valueCellIdentifier = @"SettingsValueCell";
+
 static NSString *kUserPrefStyleKey = @"style";
 
 @implementation SettingsViewController
@@ -53,8 +56,9 @@ static NSString *kUserPrefStyleKey = @"style";
 	self.tableView.dataSource = self;
 	self.tableView.delegate = self;
 	[self.view addSubview:self.tableView];
-    
-   [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+	
+	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+	[self.tableView registerClass:[GroupedTableViewCell class] forCellReuseIdentifier:valueCellIdentifier];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -91,7 +95,11 @@ static NSString *kUserPrefStyleKey = @"style";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+	NSString *identifier = cellIdentifier;
+	if (indexPath.section == 3) {
+		identifier = valueCellIdentifier;
+	}
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
 	NSDictionary *item = self.sections[indexPath.section][@"items"][indexPath.row];
 	cell.textLabel.text = item[@"name"];
@@ -132,6 +140,10 @@ static NSString *kUserPrefStyleKey = @"style";
 			default:
 				break;
 		}
+	}
+	else if (indexPath.section == 3) {
+		GroupedTableViewCell *debugCell = (GroupedTableViewCell *)cell;
+		debugCell.valueLabel.text = item[@"value"];
 	}
 	
 	cell.accessoryType = (selected) ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;

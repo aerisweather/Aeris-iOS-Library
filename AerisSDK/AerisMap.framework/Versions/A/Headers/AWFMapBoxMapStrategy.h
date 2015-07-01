@@ -8,9 +8,12 @@
 
 #import <AerisMap/AWFAppleMapStrategy.h>
 
+/**
+ *  An `AWFAppleMapStrategy` object implements the `AWFMapStrategy` protocol and provides the necessary functionality for managing a `AWFWeatherMap` configured
+ *  with an `MKMapView` instance and MapBox base map.
+ */
 @interface AWFMapBoxMapStrategy : AWFAppleMapStrategy
 
-@property (readonly, nonatomic) AWFMapStrategyType strategyType;
 @property (nonatomic, strong) MKMapView *mapView;
 
 @end

@@ -55,5 +55,9 @@
 
 #import <AerisMap/AWFWeatherMapViewController.h>
 #import <AerisMap/AWFMapOptionsViewController.h>
+#import <AerisMap/AWFTableSection.h>
+#import <AerisMap/AWFTableSectionRow.h>
+
+#import <AerisMap/AWFMKAnnotationView.h>
 
 #import <AerisMap/MKMapView+AerisMap.h>

@@ -17,6 +17,8 @@ typedef NS_ENUM(NSUInteger, AWFDevicePlatform) {
 	AWFDevicePlatformIPhone5,
 	AWFDevicePlatformIPhone5S,
 	AWFDevicePlatformIPhone5C,
+	AWFDevicePlatformIPhone6,
+	AWFDevicePlatformIPhone6Plus,
 	
 	AWFDevicePlatformIPad1,
 	AWFDevicePlatformIPad2,
@@ -25,12 +27,16 @@ typedef NS_ENUM(NSUInteger, AWFDevicePlatform) {
 	AWFDevicePlatformIPad4,
 	AWFDevicePlatformIPadAir,
 	AWFDevicePlatformIPadMini2,
+	AWFDevicePlatformIPadAir2,
+	AWFDevicePlatformIPadMini3,
 	
 	AWFDevicePlatformIPod1G,
 	AWFDevicePlatformIPod2G,
 	AWFDevicePlatformIPod3G,
 	AWFDevicePlatformIPod4G,
 	AWFDevicePlatformIPod5G,
+	
+	AWFDevicePlatformAppleWatch,
 	
 	AWFDevicePlatformSimulator
 };
@@ -40,7 +46,8 @@ typedef NS_ENUM(NSUInteger, AWFDeviceFamily) {
 	AWFDeviceFamilyiPhone,
 	AWFDeviceFamilyiPod,
 	AWFDeviceFamilyiPad,
-	AWFDeviceFamilyAppleTV
+	AWFDeviceFamilyAppleTV,
+	AWFDeviceFamilyAppleWatch
 };
 
 /**

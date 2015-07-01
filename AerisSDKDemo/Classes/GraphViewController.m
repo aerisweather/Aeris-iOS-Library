@@ -74,7 +74,7 @@
 	[self.scrollView addSubview:titleLabel];
 	
 	AWFGraphView *graphView = [[AWFGraphView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(titleLabel.frame) + 5.0, CGRectGetWidth(self.view.frame), 200.0)];
-	graphView.backgroundColor = [[AWFCascadingStyle style].viewControllerBackgroundColor awf_adjustBrightness:1.04];
+	//graphView.backgroundColor = [[AWFCascadingStyle style].viewControllerBackgroundColor awf_adjustBrightness:1.04];
 	graphView.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 	graphView.series = series;
 	[self.scrollView addSubview:graphView];
