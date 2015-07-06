@@ -17,7 +17,7 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisOrientation) {
 	AWFGraphAxisOrientationTop
 };
 
-@class AWFGraphView;
+@class AWFGraphView, AWFTextStyleSpec;
 
 @interface AWFGraphAxis : NSObject
 
@@ -57,9 +57,24 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisOrientation) {
 @property (nonatomic, assign) NSInteger minimumPixelsPerTick;
 
 /**
+ *  The color used for axis ticks.
+ */
+@property (nonatomic, strong) UIColor *tickColor;
+
+/**
+ *  The color used for the axis grid lines.
+ */
+@property (nonatomic, strong) UIColor *gridColor;
+
+/**
  *  The unit name to display on the axis.
  */
 @property (nonatomic, copy) NSString *unit;
+
+/**
+ *  The text style spec to apply to the axis labels.
+ */
+@property (nonatomic, strong) AWFTextStyleSpec *textStyle;
 
 /**
  *  Whether the axis should be positioned statically within the graph view.

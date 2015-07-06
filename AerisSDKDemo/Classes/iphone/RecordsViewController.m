@@ -38,7 +38,7 @@
 	
 	AWFRequestOptions *options = [[AWFRequestOptions alloc] init];
 	options.limit = 50;
-	options.fromDateString = @"-24 hours";
+	options.fromDateString = @"-72 hours";
 	
 	[self loadDataClosestToPlace:place radius:@"150mi" options:options];
 }

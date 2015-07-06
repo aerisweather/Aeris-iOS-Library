@@ -15,7 +15,10 @@
 #import <AerisMap/AWFWeatherMapConfig.h>
 #import <AerisMap/AWFWeatherMapDelegate.h>
 #import <AerisMap/AWFMapStrategy.h>
+
 #import <AerisMap/AWFAppleMapStrategy.h>
+#import <AerisMap/AWFMKImageDataLayer.h>
+#import <AerisMap/AWFMKTileDataLayer.h>
 
 #import <AerisMap/AWFDataLayer.h>
 #import <AerisMap/AWFImageDataLayer.h>

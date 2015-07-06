@@ -3,6 +3,7 @@ platform :ios, '7.0'
 
 target :AerisSDKDemo, :exclusive => true do
 	xcodeproj 'AerisSDKDemo.xcodeproj'
+	pod 'MBXMapKit'
 	pod 'GoogleMaps'
 	pod 'AFNetworking'
 	pod 'PAPreferences'

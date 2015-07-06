@@ -10,11 +10,12 @@
 		2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70C19BFCD700013C45C /* Foundation.framework */; };
 		2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */; };
 		2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB71019BFCD700013C45C /* UIKit.framework */; };
-		2BA706151B436C9100239E11 /* Aeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA706101B436C9100239E11 /* Aeris.framework */; };
-		2BA706161B436C9100239E11 /* AerisGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA706111B436C9100239E11 /* AerisGoogleMap.framework */; };
-		2BA706171B436C9100239E11 /* AerisMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA706121B436C9100239E11 /* AerisMap.framework */; };
-		2BA706181B436C9100239E11 /* AerisResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BA706131B436C9100239E11 /* AerisResources.bundle */; };
-		2BA706191B436C9100239E11 /* AerisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA706141B436C9100239E11 /* AerisUI.framework */; };
+		2B9A9EC51B4AEE31002777B0 /* Aeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A9EBF1B4AEE31002777B0 /* Aeris.framework */; };
+		2B9A9EC61B4AEE31002777B0 /* AerisGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A9EC01B4AEE31002777B0 /* AerisGoogleMap.framework */; };
+		2B9A9EC71B4AEE31002777B0 /* AerisMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A9EC11B4AEE31002777B0 /* AerisMap.framework */; };
+		2B9A9EC81B4AEE31002777B0 /* AerisMapboxMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A9EC21B4AEE31002777B0 /* AerisMapboxMap.framework */; };
+		2B9A9EC91B4AEE31002777B0 /* AerisResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B9A9EC31B4AEE31002777B0 /* AerisResources.bundle */; };
+		2B9A9ECA1B4AEE31002777B0 /* AerisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B9A9EC41B4AEE31002777B0 /* AerisUI.framework */; };
 		2BEDF60219C0C9C400BECBB2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60019C0C9C400BECBB2 /* MapKit.framework */; };
 		2BEDF60319C0C9C400BECBB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */; };
 		2BEDF6C519C0CA1000BECBB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF60619C0CA1000BECBB2 /* AppDelegate.m */; };
@@ -89,11 +90,12 @@
 		2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2B5EB71019BFCD700013C45C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2B5EB72519BFCD700013C45C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2BA706101B436C9100239E11 /* Aeris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aeris.framework; sourceTree = "<group>"; };
-		2BA706111B436C9100239E11 /* AerisGoogleMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisGoogleMap.framework; sourceTree = "<group>"; };
-		2BA706121B436C9100239E11 /* AerisMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMap.framework; sourceTree = "<group>"; };
-		2BA706131B436C9100239E11 /* AerisResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AerisResources.bundle; sourceTree = "<group>"; };
-		2BA706141B436C9100239E11 /* AerisUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisUI.framework; sourceTree = "<group>"; };
+		2B9A9EBF1B4AEE31002777B0 /* Aeris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aeris.framework; sourceTree = "<group>"; };
+		2B9A9EC01B4AEE31002777B0 /* AerisGoogleMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisGoogleMap.framework; sourceTree = "<group>"; };
+		2B9A9EC11B4AEE31002777B0 /* AerisMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMap.framework; sourceTree = "<group>"; };
+		2B9A9EC21B4AEE31002777B0 /* AerisMapboxMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMapboxMap.framework; sourceTree = "<group>"; };
+		2B9A9EC31B4AEE31002777B0 /* AerisResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AerisResources.bundle; sourceTree = "<group>"; };
+		2B9A9EC41B4AEE31002777B0 /* AerisUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisUI.framework; sourceTree = "<group>"; };
 		2BEDF60019C0C9C400BECBB2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2BEDF60519C0CA1000BECBB2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -216,13 +218,13 @@
 			files = (
 				2BEDF77A19C0D04400BECBB2 /* libsqlite3.dylib in Frameworks */,
 				2BEDF76E19C0CFF400BECBB2 /* AVFoundation.framework in Frameworks */,
-				2BA706191B436C9100239E11 /* AerisUI.framework in Frameworks */,
+				2B9A9ECA1B4AEE31002777B0 /* AerisUI.framework in Frameworks */,
 				2BEDF76F19C0CFF400BECBB2 /* CoreData.framework in Frameworks */,
-				2BA706161B436C9100239E11 /* AerisGoogleMap.framework in Frameworks */,
 				2BEDF77019C0CFF400BECBB2 /* CoreLocation.framework in Frameworks */,
 				2BEDF77119C0CFF400BECBB2 /* CoreText.framework in Frameworks */,
 				2BEDF77219C0CFF400BECBB2 /* GLKit.framework in Frameworks */,
 				2BEDF77319C0CFF400BECBB2 /* ImageIO.framework in Frameworks */,
+				2B9A9EC61B4AEE31002777B0 /* AerisGoogleMap.framework in Frameworks */,
 				2BEDF77419C0CFF400BECBB2 /* libc++.dylib in Frameworks */,
 				2BEDF77519C0CFF400BECBB2 /* libicucore.dylib in Frameworks */,
 				2BEDF77619C0CFF400BECBB2 /* libz.dylib in Frameworks */,
@@ -233,9 +235,10 @@
 				2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */,
 				2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */,
 				2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */,
-				2BA706171B436C9100239E11 /* AerisMap.framework in Frameworks */,
 				DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */,
-				2BA706151B436C9100239E11 /* Aeris.framework in Frameworks */,
+				2B9A9EC51B4AEE31002777B0 /* Aeris.framework in Frameworks */,
+				2B9A9EC71B4AEE31002777B0 /* AerisMap.framework in Frameworks */,
+				2B9A9EC81B4AEE31002777B0 /* AerisMapboxMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,11 +322,12 @@
 		2BA7060F1B436C9100239E11 /* AerisSDK */ = {
 			isa = PBXGroup;
 			children = (
-				2BA706101B436C9100239E11 /* Aeris.framework */,
-				2BA706111B436C9100239E11 /* AerisGoogleMap.framework */,
-				2BA706121B436C9100239E11 /* AerisMap.framework */,
-				2BA706131B436C9100239E11 /* AerisResources.bundle */,
-				2BA706141B436C9100239E11 /* AerisUI.framework */,
+				2B9A9EBF1B4AEE31002777B0 /* Aeris.framework */,
+				2B9A9EC01B4AEE31002777B0 /* AerisGoogleMap.framework */,
+				2B9A9EC11B4AEE31002777B0 /* AerisMap.framework */,
+				2B9A9EC21B4AEE31002777B0 /* AerisMapboxMap.framework */,
+				2B9A9EC31B4AEE31002777B0 /* AerisResources.bundle */,
+				2B9A9EC41B4AEE31002777B0 /* AerisUI.framework */,
 			);
 			name = AerisSDK;
 			path = ../../AerisSDK;
@@ -523,7 +527,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA706181B436C9100239E11 /* AerisResources.bundle in Resources */,
+				2B9A9EC91B4AEE31002777B0 /* AerisResources.bundle in Resources */,
 				2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */,
 				2BEDF78119C0D31000BECBB2 /* AerisSDKDemo-Info.plist in Resources */,
 				2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */,

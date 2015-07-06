@@ -14,13 +14,21 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];	
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	
+	if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
+		UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil];
+		[[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+	}
+	
 	
 	[AerisEngine engineWithKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AerisEngine enableDebug];
 	
 	// must initialize Google Maps SDK with proper API key before using
 	[GMSServices provideAPIKey:@"__GOOGLE_API_KEY__"];
+	// must initialize Mapbox with proper token
+	[MBXMapKit setAccessToken:@"__MAPBOX_KEY__"];
 	
 	// set the global style to use for Aeris weather views
 	[AWFCascadingStyle setDefaultStyle:[AWFCascadingStyle style]];

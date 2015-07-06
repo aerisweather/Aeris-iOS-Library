@@ -19,8 +19,10 @@
 #import <Aeris/Aeris.h>
 #import <AerisUI/AerisUI.h>
 #import <AerisMap/AerisMap.h>
+#import <AerisMapboxMap/AerisMapboxMap.h>
 #import <AerisGoogleMap/AerisGoogleMap.h>
 
+#import <MBXMapKit/MBXMapKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 
 #import "Globals.h"
