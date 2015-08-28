@@ -10,6 +10,11 @@
 #import <AerisUI/AWFGraphSeries.h>
 #import <AerisUI/AWFGraphRenderer.h>
 
+typedef NS_ENUM(NSUInteger, AWFSeriesModifier) {
+	AWFSeriesModifierNone = 0,
+	AWFSeriesModifierSum
+};
+
 typedef NSString *(^AWFGraphValueFormatter)(CGFloat value);
 
 @class AWFGraphRenderer, AWFGraphView, AWFSeriesPoint;
@@ -64,9 +69,16 @@ typedef NSString *(^AWFGraphValueFormatter)(CGFloat value);
 @property (nonatomic, assign) BOOL constrainToPositiveValues;
 
 /**
- *  Whether the time value should be ignored for date-specific values.
+ *  Whether the time value should be ignored for date-specific values. Default is `NO`.
  */
 @property (nonatomic, assign) BOOL ignoreTime;
+
+/**
+ *  Whether zero values should be ignored in the series. Default is `NO`.
+ */
+@property (nonatomic, assign) BOOL ignoreZeroValues;
+
+@property (nonatomic, assign) AWFSeriesModifier modifier;
 
 //-----------------------------------------------------------------------------
 // @name Styling a Series Item

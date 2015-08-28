@@ -51,6 +51,13 @@
  */
 + (NSDictionary *)propertyRelationships;
 
+/**
+ *  Returns the API property key mapped to the model object's property name.
+ *
+ *  @param propertyName The model object's property name of which to return the mapped property key
+ */
++ (NSString *)remotePropertyNameMappedToPropertyName:(NSString *)propertyName;
+
 @optional
 
 /**

@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Radar tile overlay.
 	 */
 	AWFLayerTypeRadar,
+	AWFLayerTypeRadarDev,
 	/**
 	 *  NEXRAD radar overlay (NIDs).
 	 */

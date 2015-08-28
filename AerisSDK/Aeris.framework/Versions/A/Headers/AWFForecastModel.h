@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, AWFForecastModelType) {
 	 *  An invalid or unknown model type.
 	 */
 	AWFForecastModelTypeUnknown = 0,
+	AWFForecastModelTypeAeris,
 	/**
 	 *  NDFD (National Digital Forecast Database) model.
 	 */
@@ -22,6 +23,11 @@ typedef NS_ENUM(NSInteger, AWFForecastModelType) {
 	 *  HRRR (High Resolution Rapid Refresh) model.
 	 */
 	AWFForecastModelTypeHRRR,
+	/**
+	 *  HRRR (High Resolution Rapid Refresh) sub-hourly model.
+	 */
+	AWFForecastModelTypeHRRRSub,
+	
 	/**
 	 *  NAM (North Americal Mesoscale) model at a 4km resolution.
 	 */
@@ -33,7 +39,9 @@ typedef NS_ENUM(NSInteger, AWFForecastModelType) {
 	/**
 	 *  GFS (Global Forecast System) model.
 	 */
-	AWFForecastModelTypeGFS
+	AWFForecastModelTypeGFS,
+	AWFForecastModelTypeGFSMOS,
+	AWFForecastModelTypeGEFS
 };
 
 @interface AWFForecastModel : NSObject

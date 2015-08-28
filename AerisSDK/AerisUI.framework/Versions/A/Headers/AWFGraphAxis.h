@@ -97,6 +97,7 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisOrientation) {
  *  Redraws the axis.
  */
 - (void)renderAxis;
+- (void)updateLayout;
 
 /**
  *  Updates the axis for the specified zoom scale.

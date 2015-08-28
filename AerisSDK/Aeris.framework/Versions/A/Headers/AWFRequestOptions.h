@@ -53,7 +53,7 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *
  *  @since 2.0
  */
-@interface AWFRequestOptions : NSObject
+@interface AWFRequestOptions : NSObject <NSCopying>
 
 /**
  *  The place to use for the request. This corresponds to the `AerisAPIParamKeyPlace`, or `p`, parameter when accessing the API directly.

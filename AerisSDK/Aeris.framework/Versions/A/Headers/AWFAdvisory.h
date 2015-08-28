@@ -66,6 +66,8 @@
 @property (readonly, nonatomic) AWFGeoPolygon *geoPolygon;
 
 + (NSDictionary *)colorMappingsForTypes;
++ (NSDictionary *)namesByType;
+
 + (UIColor *)colorForAdvisoryWithType:(NSString *)type;
 
 @end

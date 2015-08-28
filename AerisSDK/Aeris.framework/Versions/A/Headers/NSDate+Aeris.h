@@ -108,6 +108,7 @@ extern NSString * const AWFDateFormatTimeZoneLocation;
 - (NSDate *)awf_previousDateOfDateName:(AWFDay)day;
 
 - (NSDate *)awf_dateByIgnoringTime;
+- (NSDate *)awf_dateByIgnoringSeconds;
 
 //----------------------
 // @name Date Comparisons

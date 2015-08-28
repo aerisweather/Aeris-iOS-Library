@@ -57,6 +57,25 @@
 	#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
+//-----------------------------------------------------------------------------
+// @name Unit Conversions
+//-----------------------------------------------------------------------------
+
+CGFloat AWFConvertFtoC(CGFloat value);
+CGFloat AWFConvertCtoF(CGFloat value);
+CGFloat AWFConvertMPHtoKMH(CGFloat value);
+CGFloat AWFConvertKMHtoMPH(CGFloat value);
+CGFloat AWFConvertMPHtoKTS(CGFloat value);
+CGFloat AWFConvertKMHtoKTS(CGFloat value);
+CGFloat AWFConvertKTStoMPH(CGFloat value);
+CGFloat AWFConvertKTStoKMH(CGFloat value);
+CGFloat AWFConvertMItoKM(CGFloat value);
+CGFloat AWFConvertKMtoMI(CGFloat value);
+CGFloat AWFConvertINtoCM(CGFloat value);
+CGFloat AWFConvertCMtoIN(CGFloat value);
+CGFloat AWFConvertINtoMB(CGFloat value);
+CGFloat AWFConvertMBtoIN(CGFloat value);
+
 /**
  * Tests if an object is a non-empty string.
  */

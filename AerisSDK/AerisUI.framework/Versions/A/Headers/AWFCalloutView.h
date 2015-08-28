@@ -67,6 +67,29 @@ extern NSTimeInterval kAWFCalloutViewRepositionDelayForUIScrollView;
 // your own touches to any accessory views, since CALayer doesn't relay touch events.
 - (void)presentCalloutFromRect:(CGRect)rect inLayer:(CALayer *)layer constrainedToLayer:(CALayer *)constrainedLayer animated:(BOOL)animated;
 
+/**
+ *  Updates the callout position by providing a new target rect and view.
+ *
+ *  @param rect            The rect to move the callout to
+ *  @param view            The view in which the callout will appear
+ *  @param constrainedView The view in which the callout should be constrained to
+ */
+- (void)moveCalloutToRect:(CGRect)rect inView:(UIView *)view constrainedToView:(UIView *)constrainedView;
+
+/**
+ *  Updates the callout position by providing a new target rect and layer.
+ *
+ *  @param rect             The rect to move the callout to
+ *  @param layer            The layer in which the callout will appear
+ *  @param constrainedLayer The layer in which the callout will be constrained to
+ */
+- (void)moveCalloutToRect:(CGRect)rect inLayer:(CALayer *)layer constrainedToLayer:(CALayer *)constrainedLayer;
+
+/**
+ *  Dismisses the callout.
+ *
+ *  @param animated A Boolean indicating if the dismissal should be animated using a fade out effect.
+ */
 - (void)dismissCalloutAnimated:(BOOL)animated;
 
 // For subclassers. You can override this method to provide your own custom animation for presenting/dismissing the callout.

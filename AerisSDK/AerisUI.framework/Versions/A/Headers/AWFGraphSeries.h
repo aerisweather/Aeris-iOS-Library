@@ -57,6 +57,12 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisType) {
 @property (readonly, nonatomic) NSArray *items;
 
 /**
+ *  The default request options to be used when requesting data for the series and is applied to each individual series item unless that item overrides 
+ *  the corresponding value. The default is `nil`.
+ */
+@property (strong, nonatomic) AWFRequestOptions *dataRequestOptions;
+
+/**
  *  The delegate's receiver.
  *
  *  A graph series sends messages to its delegate regarding changes to its data loading state.

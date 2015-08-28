@@ -46,6 +46,7 @@ typedef NS_ENUM(NSInteger, AWFGraphRendererType) {
  *  Updates all series items managed by this renderer.
  */
 - (void)update;
+- (void)reset;
 
 /**
  *  Updates all series items managed by this renderer for the specified zoom scale.

@@ -68,6 +68,16 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 @property (readonly, nonatomic) NSDate *timelineCurrentTime;
 
 /**
+ *  Returns an array of layer types currently active on the map.
+ */
+@property (readonly, nonatomic) NSArray *activeLayerTypes;
+
+/**
+ *  Returns an array of codes corresponding to the active layer types currently active on the map.
+ */
+@property (readonly, nonatomic) NSArray *activeLayerTypeCodes;
+
+/**
  *  Forecast model type to be used for all active future data layers (when supported).
  */
 @property (assign, nonatomic) AWFForecastModelType forecastModelType;
@@ -151,13 +161,6 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @return An initialized weather map object or `nil` if the object couldn't be created.
  */
 - (instancetype)initWithMapView:(id)mapView config:(AWFWeatherMapConfig *)mapConfig;
-
-/**
- *  Returns an array of layer types currently active on the map.
- *
- *  @return The array of active layer types.
- */
-- (NSArray *)activeLayerTypes;
 
 //-----------------------------------------------------------------------------
 // @name Managing Overlay Types

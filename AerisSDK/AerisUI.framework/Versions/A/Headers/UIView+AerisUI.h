@@ -29,4 +29,6 @@
  */
 - (void)awf_removeEasingFunctionForKeyPath:(NSString *)keyPath;
 
+- (void)awf_debug;
+
 @end

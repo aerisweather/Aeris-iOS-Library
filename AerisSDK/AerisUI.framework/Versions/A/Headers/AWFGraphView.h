@@ -82,6 +82,8 @@
  */
 - (void)reloadData;
 
+- (void)resetGraph;
+
 /**
  *  Determines whether the graph should appear in its loading state. When in a loading state, an activity indicator view is displayed above the graph until
  *  this method is called with a value of `NO`.
