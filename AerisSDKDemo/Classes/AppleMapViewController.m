@@ -14,6 +14,7 @@
 
 @implementation AppleMapViewController
 
+@synthesize isMapSetup = _isMapSetup;
 
 
 @end

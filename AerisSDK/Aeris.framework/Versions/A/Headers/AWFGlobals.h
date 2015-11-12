@@ -11,6 +11,10 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
+#import "AWFWeatherDataType.h"
+#import "AWFMeasurement.h"
+#import "NSBundle+Aeris.h"
+
 // Testing for specific iOS versions
 #define AWF_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
 #define AWF_SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
@@ -57,6 +61,10 @@
 	#define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
+//#define AWFLocalizedString(key, comment) NSLocalizedStringFromTableInBundle(key, @"Localizable", [NSBundle aerisBundle], comment)
+
+NSString * AWFLocalizedString(NSString *key, NSString *comment);
+
 //-----------------------------------------------------------------------------
 // @name Unit Conversions
 //-----------------------------------------------------------------------------
@@ -75,6 +83,9 @@ CGFloat AWFConvertINtoCM(CGFloat value);
 CGFloat AWFConvertCMtoIN(CGFloat value);
 CGFloat AWFConvertINtoMB(CGFloat value);
 CGFloat AWFConvertMBtoIN(CGFloat value);
+
+NSString * AWFUnitForWeatherDataType(AWFWeatherDataType type, BOOL metric);
+NSString * AWFUnitForMeasurement(AWFMeasurement type, BOOL metric);
 
 /**
  * Tests if an object is a non-empty string.

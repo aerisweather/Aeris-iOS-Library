@@ -198,10 +198,10 @@ static CGFloat cellHeight = 139.0f;
 - (void)updateForecastView:(AWFForecastDetailView *)forecastView withPeriod:(AWFForecastPeriod *)period {
 	NSNumber *temp = (period.isDay) ? period.maxTempF : period.minTempF;
 		
-	forecastView.tempTextLabel.text = [NSString stringWithFormat:@"%i", [temp integerValue]];
+	forecastView.tempTextLabel.text = [NSString stringWithFormat:@"%li", (long)[temp integerValue]];
 	forecastView.weatherTextLabel.text = period.weather;
 	forecastView.iconImageView.image = [AWFImage weatherIconNamed:period.icon];
-	forecastView.windsTextLabel.text = [NSString stringWithFormat:@"%@ %i mph", period.windDirection, [period.windSpeedMPH integerValue]];
+	forecastView.windsTextLabel.text = [NSString stringWithFormat:@"%@ %li mph", period.windDirection, (long)[period.windSpeedMPH integerValue]];
 	
 	// show snow instead of precip if predicted
 	if ([[period.weather lowercaseString] rangeOfString:@"snow"].location != NSNotFound) {

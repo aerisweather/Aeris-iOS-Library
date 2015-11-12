@@ -18,6 +18,7 @@ extern NSString * const AerisAPIActionClosest;
 extern NSString * const AerisAPIActionWithin;
 extern NSString * const AerisAPIActionSearch;
 extern NSString * const AerisAPIActionAffects;
+extern NSString * const AerisAPIActionContains;
 
 extern NSString * const AerisAPIParamKeyClientKey;
 extern NSString * const AerisAPIParamKeyClientSecret;
@@ -35,6 +36,9 @@ extern NSString * const AerisAPIParamKeyObject;
 extern NSString * const AerisAPIParamKeyPeriodLimit;
 extern NSString * const AerisAPIParamKeyPeriodSkip;
 extern NSString * const AerisAPIParamKeyPeriodSort;
+extern NSString * const AerisAPIParamKeyFormat;
+
+extern NSString * const AerisAPIOutputFormatGeoJSON;
 
 extern NSString * const AerisAPIResponseKeySuccess;
 extern NSString * const AerisAPIResponseKeyError;

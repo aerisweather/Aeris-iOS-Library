@@ -8,6 +8,19 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFTideFilterHigh;
+extern NSString * const AWFTideFilterLow;
+extern NSString * const AWFTideFilterHighLow;
+
+extern NSString * const AWFTideFieldStationId;
+extern NSString * const AWFTideFieldDateTime;
+extern NSString * const AWFTideFieldType;
+extern NSString * const AWFTideFieldHeightFT;
+extern NSString * const AWFTideFieldHeightM;
+extern NSString * const AWFTideFieldCity;
+extern NSString * const AWFTideFieldState;
+extern NSString * const AWFTideFieldCountry;
+
 @class AWFTideStation;
 
 /**

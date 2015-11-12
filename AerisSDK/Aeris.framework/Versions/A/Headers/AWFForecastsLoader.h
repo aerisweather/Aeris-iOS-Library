@@ -8,6 +8,13 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFForecastFilterDay;
+extern NSString * const AWFForecastFilterDayNight;
+extern NSString * const AWFForecastFilter1Hour;
+extern NSString * const AWFForecastFilter3Hour;
+extern NSString * const AWFForecastFilter6Hour;
+extern NSString * const AWFForecastFilter12Hour;
+
 /**
  *  `AWFForecastsLoader` provides convenience methods for interacting with the
  *  [`forecasts` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/forecasts) of the Aeris API. All requests will

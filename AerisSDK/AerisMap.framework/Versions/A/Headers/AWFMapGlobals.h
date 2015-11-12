@@ -12,6 +12,8 @@
 // @name Paths
 //-----------------------
 
+extern NSString * const AerisTileServer;
+
 //typedef struct {
 //	CLLocationCoordinate2D northwest;
 //	CLLocationCoordinate2D southwest;

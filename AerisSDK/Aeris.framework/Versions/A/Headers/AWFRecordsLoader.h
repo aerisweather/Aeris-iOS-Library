@@ -8,6 +8,32 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * AWFRecordFilterPrecip;
+extern NSString * AWFRecordFilterSnow;
+extern NSString * AWFRecordFilterMaxTemp;
+extern NSString * AWFRecordFilterMinTemp;
+extern NSString * AWFRecordFilterLowMaxTemp;
+extern NSString * AWFRecordFilterHighMinTemp;
+extern NSString * AWFRecordFilterPrecipTrace;
+extern NSString * AWFRecordFilterPrecipNoTrace;
+extern NSString * AWFRecordFilterTied;
+extern NSString * AWFRecordFilterNotTied;
+
+extern NSString * AWFRecordFieldDay;
+extern NSString * AWFRecordFieldMonth;
+extern NSString * AWFRecordFieldYear;
+extern NSString * AWFRecordFieldType;
+extern NSString * AWFRecordFieldEvent;
+extern NSString * AWFRecordFieldCode;
+extern NSString * AWFRecordFieldValue;
+extern NSString * AWFRecordFieldTrace;
+extern NSString * AWFRecordFieldTied;
+extern NSString * AWFRecordFieldPreviousValue;
+extern NSString * AWFRecordFieldPreviousYear;
+extern NSString * AWFRecordFieldCity;
+extern NSString * AWFRecordFieldState;
+extern NSString * AWFRecordFieldCountry;
+
 /**
  *  `AWFRecordsLoader` provides convenience methods for interacting with the
  *  [`records` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/records) of the Aeris API. All requests will

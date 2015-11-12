@@ -28,4 +28,7 @@ typedef NS_ENUM(NSUInteger, AWFLogLevel) {
 
 + (void)setLoggingLevel:(AWFLogLevel)level;
 
++ (void)traceStack;
++ (void)logExecutionTimeOfBlock:(void (^)())block key:(NSString *)key;
+
 @end

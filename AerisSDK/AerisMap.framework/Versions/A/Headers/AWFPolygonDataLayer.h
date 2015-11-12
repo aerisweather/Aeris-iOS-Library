@@ -10,7 +10,7 @@
 
 @interface AWFPolygonDataLayer : AWFDataLayer
 
-@property (nonatomic, strong) NSArray *polygons;
+@property (readonly, nonatomic, strong) NSArray *polygons;
 
 /**
  *  The options to use when requesting data for the overlay.
@@ -34,6 +34,8 @@
  *  @param results  The completion block when the requet finishes or fails
  */
 - (void)loadForMapBounds:(AWFCoordinateBounds *)bounds fromDate:(NSDate *)fromDate toDate:(NSDate *)toDate results:(void (^)(NSArray *, NSError *))results;
+
+- (void)loadForMapWithResults:(void (^)(NSArray *results, NSError *error))results;
 
 /**
  *  Cancels any active requests and prepared for a new request.

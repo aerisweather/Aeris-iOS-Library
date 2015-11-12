@@ -33,6 +33,8 @@
  */
 - (NSArray *)skipPropertiesForSerialization;
 
+- (void)performFinalDecodingFromJSON:(NSDictionary *)JSON;
+
 /**
  *  Called when the property mapping and assignment process has been completed. This allows your subclass object to perform
  *  additional property and object manipulation based on what was assigned.

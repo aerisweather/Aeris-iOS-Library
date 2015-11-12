@@ -140,6 +140,7 @@ extern NSString * const AWFDateFormatTimeZoneLocation;
 
 + (NSTimeZone *)awf_timeZoneFromISO8601String:(NSString *)iso8601;
 + (void)awf_setDefaultTimezone:(NSTimeZone *)timeZone;
++ (NSTimeZone *)awf_defaultTimezone;
 - (NSInteger)awf_GMTOffsetSeconds;
 
 //----------------------

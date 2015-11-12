@@ -20,6 +20,8 @@
 @property (readonly, nonatomic) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) UIView *animationContainerView;
+@property (readonly, nonatomic, strong) AWFCalloutView *calloutView;
+
 @property (nonatomic, weak) id<GMSMapViewDelegate> mapViewDelegate;
 
 /**

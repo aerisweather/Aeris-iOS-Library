@@ -38,4 +38,9 @@
  */
 + (instancetype)style;
 
+/**
+ *  Returns a dictionary of legend view labels associated with their style/group identifiers.
+ */
++ (NSDictionary *)labelsByIdentifier;
+
 @end

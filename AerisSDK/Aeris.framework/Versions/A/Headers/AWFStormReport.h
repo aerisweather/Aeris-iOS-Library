@@ -26,6 +26,11 @@
 @property (nonatomic, copy) NSString *type;
 
 /**
+ *  Category of weather report based on report type.
+ */
+@property (nonatomic, copy) NSString *category;
+
+/**
  *  Brief description of the event, usually contains the location or relative distance from a populated place.
  */
 @property (nonatomic, copy) NSString *name;

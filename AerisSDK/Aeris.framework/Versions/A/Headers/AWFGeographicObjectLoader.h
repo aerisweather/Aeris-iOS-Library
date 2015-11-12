@@ -80,6 +80,27 @@
                  options:(AWFRequestOptions *)options
               completion:(AWFObjectLoaderCompletionBlock)completionBlock;
 
+/**
+ *  Requests objects that contain the specified place, if any. This action is normally associated with endpoints that contain polygon data and returns only
+ *  the objects associated with each polygon that contains the place.
+ *
+ *  @param place           The place that must be contain within an object's polygon
+ *  @param options         An `AWFRequestOptions` instance containing additional parameters to be used with the request (optional).
+ *  @param completionBlock The block to be executed on the completion or failure of a request. This block has no return value and takes two arguments:
+ *      the array of `AWFObject` instances returned by the request and the error that occurred during the request (if any)
+ */
+- (void)getContainingPlace:(AWFPlace *)place
+				   options:(AWFRequestOptions *)options
+				completion:(AWFObjectLoaderCompletionBlock)completionBlock;
+
+- (void)getPlacesAffectedByObject:(id)object
+						  options:(AWFRequestOptions *)options
+					   completion:(AWFObjectLoaderCompletionBlock)completionBlock;
+
+- (void)getPlacesAffectedByObjectWithId:(NSString *)objectId
+								options:(AWFRequestOptions *)options
+							 completion:(AWFObjectLoaderCompletionBlock)completionBlock;
+
 //-------------------------
 // @name Deprecated Methods
 //-------------------------

@@ -15,12 +15,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+#if TARGET_IPHONE_SIMULATOR
+#endif
 	
 	if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)]) {
 		UIUserNotificationSettings *notificationSettings = [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil];
 		[[UIApplication sharedApplication] registerUserNotificationSettings:notificationSettings];
+	} else {
 	}
-	
 	
 	[AerisEngine engineWithKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AerisEngine enableDebug];

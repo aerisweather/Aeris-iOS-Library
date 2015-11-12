@@ -21,6 +21,7 @@ static NSString *stateKey	= @"state";
 static NSString *countryKey	= @"country";
 static NSString *latKey		= @"lat";
 static NSString *lonKey		= @"lon";
+static NSString *tznameKey	= @"tzname";
 
 @implementation UserLocationsManager
 
@@ -52,6 +53,7 @@ static NSString *lonKey		= @"lon";
 			AWFPlace *place = [AWFPlace placeWithCity:name state:state country:country];
 			place.latitude = ([loc objectForKey:latKey]) ? [loc objectForKey:latKey] : nil;
 			place.longitude = ([loc objectForKey:lonKey]) ? [loc objectForKey:lonKey] : nil;
+			place.tzname = ([loc objectForKey:tznameKey]) ? [loc objectForKey:tznameKey] : nil;
 			
 			[places addObject:place];
 		}];
@@ -72,6 +74,7 @@ static NSString *lonKey		= @"lon";
 		AWFPlace *place = [AWFPlace placeWithCity:name state:state country:country];
 		place.latitude = ([loc objectForKey:latKey]) ? [loc objectForKey:latKey] : nil;
 		place.longitude = ([loc objectForKey:lonKey]) ? [loc objectForKey:lonKey] : nil;
+		place.tzname = ([loc objectForKey:tznameKey]) ? [loc objectForKey:tznameKey] : nil;
 		
 		// make sure location exists in saved locations already
 		if (![self containsLocation:place]) {
@@ -144,8 +147,9 @@ static NSString *lonKey		= @"lon";
 	NSString *country = (place.country) ? place.country : @"";
 	NSNumber *lat = (place.latitude) ? place.latitude : @0;
 	NSNumber *lon = (place.longitude) ? place.longitude : @0;
+	NSString *tzname = (place.timeZone) ? place.timeZone.name : @"";
 	
-	return @{nameKey: place.name, stateKey: state, countryKey: country, latKey: lat, lonKey: lon};
+	return @{nameKey: place.name, stateKey: state, countryKey: country, latKey: lat, lonKey: lon, tznameKey: tzname};
 }
 
 - (void)updateUserPreferences {

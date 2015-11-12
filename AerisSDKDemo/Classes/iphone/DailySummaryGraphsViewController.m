@@ -81,7 +81,7 @@
 		self.loader = [[AWFObservationsLoader alloc] init];
 		self.loader.options.dataType = AerisAPIObservationDataTypeSummary;
 		self.loader.options.periodLimit = 14;
-		self.loader.options.periodSort = [NSString stringWithFormat:@"dt:%i", AWFRequestSortDescending];
+		self.loader.options.periodSort = [NSString stringWithFormat:@"dt:%li", (long)AWFRequestSortDescending];
 		self.loader.options.fromDate = [[NSDate date] awf_dateByAddingDays:-14 ignoringTime:YES];
 	}
 	self.loader.options.place = place;

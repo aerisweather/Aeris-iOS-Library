@@ -8,26 +8,37 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
-/**
- *  Request filter that only returns official METAR observation stations.
- */
+extern NSString * const AWFObservationFilterAll;
+extern NSString * const AWFObservationFilterMetar;
+extern NSString * const AWFObservationFilterMesonet;
+extern NSString * const AWFObservationFilterPWS;
+extern NSString * const AWFObservationFilterOfficial;
+extern NSString * const AWFObservationFilterHasPrecip;
+
+extern NSString * const AWFObservationFieldStationId;
+extern NSString * const AWFObservationFieldDateTime;
+extern NSString * const AWFObservationFieldName;
+extern NSString * const AWFObservationFieldState;
+extern NSString * const AWFObservationFieldCountry;
+extern NSString * const AWFObservationFieldElevation;
+extern NSString * const AWFObservationFieldTemp;
+extern NSString * const AWFObservationFieldDewPoint;
+extern NSString * const AWFObservationFieldHumidity;
+extern NSString * const AWFObservationFieldWind;
+extern NSString * const AWFObservationFieldWindDirection;
+extern NSString * const AWFObservationFieldWindGust;
+extern NSString * const AWFObservationFieldPressure;
+extern NSString * const AWFObservationFieldPrecip;
+
+extern NSString * const AWFObservationDataTypeRecent;
+extern NSString * const AWFObservationDataTypeArchive;
+extern NSString * const AWFObservationDataTypeSummary;
+
+// keep for backwards compatability with previous versions
 extern NSString *const AerisAPIFilterObservationsMetar;
-
-/**
- *  Request filter that only returns MESONET observation stations.
- */
 extern NSString *const AerisAPIFilterObservationsMesonet;
-
-/**
- *  Request filter that only returns PWS (Personal Weather Station) stations.
- */
 extern NSString *const AerisAPIFilterObservationsPWS;
-
-/**
- *  Request filter that returns any type of observation station.
- */
 extern NSString *const AerisAPIFilterObservationsAll;
-
 extern NSString *const AerisAPIObservationDataTypeRecent;
 extern NSString *const AerisAPIObservationDataTypeArchive;
 extern NSString *const AerisAPIObservationDataTypeSummary;

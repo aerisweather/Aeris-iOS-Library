@@ -16,10 +16,9 @@
 		CGFloat leftInset = (AWF_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) ? 15.0 : 20.0;
 		CGFloat rightInset = (AWF_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) ? 10.0 : 20.0;
 		CGRect contentFrame = UIEdgeInsetsInsetRect(self.bounds, UIEdgeInsetsMake(0, leftInset, 0, rightInset));
-		CGFloat labelWidth = floorf((CGRectGetWidth(contentFrame) - 10.0) / 2.0);
 
 		UILabel *descriptionLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(contentFrame), 0,
-		                                                                      labelWidth, CGRectGetHeight(self.bounds))];
+		                                                                      CGRectGetWidth(contentFrame) * 0.4 - 5, CGRectGetHeight(self.bounds))];
 		descriptionLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight;
 		descriptionLabel.font = [UIFont systemFontOfSize:14.0];
 		descriptionLabel.textColor = [UIColor blackColor];
@@ -29,7 +28,7 @@
 		[self addSubview:descriptionLabel];
 
 		UILabel *valueLabel = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMaxX(descriptionLabel.frame) + 10.0, 0,
-		                                                                labelWidth, CGRectGetHeight(self.bounds))];
+		                                                                CGRectGetWidth(contentFrame) * 0.6 - 5, CGRectGetHeight(self.bounds))];
 		valueLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleLeftMargin;
 		valueLabel.font = [UIFont boldSystemFontOfSize:14.0];
 		valueLabel.textColor = [UIColor blackColor];

@@ -21,6 +21,11 @@
 @property (copy, nonatomic) NSString *title;
 
 /**
+ *  The text to display for the section's footer.
+ */
+@property (copy, nonatomic) NSString *footerTitle;
+
+/**
  *  An array of `AWFTableSectionRow` instances to display within the section.
  */
 @property (readonly, strong, nonatomic) NSArray *rows;

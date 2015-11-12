@@ -57,6 +57,8 @@
  */
 @property (nonatomic, assign) BOOL isFutureAnimation;
 
+@property (nonatomic, assign) BOOL crossfade;
+
 /**
  *  Returns the image in the series that is closest to the specified date and time.
  *
@@ -68,5 +70,7 @@
  *  @return The image closest to the specified date.
  */
 - (UIImage *)imageClosestToTime:(NSDate *)time;
+
+- (void)setHasNoAnimationData;
 
 @end

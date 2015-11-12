@@ -84,6 +84,9 @@ extern NSString *const AWFEngineIsReady;
  */
 + (AerisEngine *)currentEngine;
 
+/**
+ *  Enables all detailed debug output throughout the SDK. By default, just errors and warnings out output.
+ */
 + (void)enableDebug;
 
 /**

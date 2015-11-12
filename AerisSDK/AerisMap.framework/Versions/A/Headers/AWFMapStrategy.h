@@ -81,6 +81,7 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
 @property (nonatomic, readonly) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) id animationContainerView;
+@property (readonly, nonatomic, strong) AWFCalloutView *calloutView;
 
 /**
  *  The receiver's delegate.
@@ -288,6 +289,7 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param subtitle   The secondary textual content. If not provided, the title will only be displayed.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+- (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
  *  Presents the map callout from the `coordinate` using the specified `contentView`.
@@ -296,6 +298,7 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param contentView The view to display within the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
+- (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
  *  Adds the annotation on the map for the long press gesture.
@@ -307,7 +310,7 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
 /**
  *  Dismisses the active callout, if any, from the map.
  */
-- (void)dismissCallout;
+- (void)dismissCalloutAnimated:(BOOL)animated;
 
 /**
  *  Removes the annotation for the long press gesture from the map.

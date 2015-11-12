@@ -120,6 +120,21 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 */
 	AWFLayerTypeWarning,
 	
+	/**
+	 *  Overlay displaying daily convective outlook polygons for the supported risk levels.
+	 */
+	AWFLayerTypeConvectiveOutlook,
+	
+	/**
+	 *  Overlay displaying daily fire weather outlook polygons.
+	 */
+	AWFLayerTypeFireOutlook,
+	
+	/**
+	 *  Overlay displaying daily drought index polygons for the supported drought severities.
+	 */
+	AWFLayerTypeDroughtIndex,
+	
 	
 	/**
 	 *

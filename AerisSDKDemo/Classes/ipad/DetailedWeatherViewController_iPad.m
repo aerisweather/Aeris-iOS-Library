@@ -144,10 +144,10 @@ static CGFloat cellHeight = 122.0f;
 				windStr = @"Calm";
 			}
 			
-			weakObsView.tempTextLabel.text = [NSString stringWithFormat:@"%i%@", [obs.tempF integerValue], AWFDegree];
+			weakObsView.tempTextLabel.text = [NSString stringWithFormat:@"%li%@", (long)[obs.tempF integerValue], AWFDegree];
 			weakObsView.weatherTextLabel.text = obs.weather;
 			weakObsView.iconImageView.image = [AWFImage weatherIconNamed:obs.icon];
-			weakObsView.feelslikeTextLabel.text = [NSString stringWithFormat:@"Feels Like %i%@", [obs.feelslikeF integerValue], AWFDegree];
+			weakObsView.feelslikeTextLabel.text = [NSString stringWithFormat:@"Feels Like %li%@", (long)[obs.feelslikeF integerValue], AWFDegree];
 			weakObsView.windsTextLabel.text = windStr;
 			weakObsView.dewpointTextLabel.text = [NSString stringWithFormat:@"%i%@", [obs.dewpointF intValue], AWFDegree];
 			weakObsView.humidityTextLabel.text = [NSString stringWithFormat:@"%i%%", [obs.humidity intValue]];

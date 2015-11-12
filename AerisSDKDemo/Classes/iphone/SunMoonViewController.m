@@ -69,7 +69,7 @@
 			NSUInteger min = diff - (hr * 60);
 			
 			groupedCell.descriptionLabel.text = NSLocalizedString(@"Total Daylight", nil);
-			groupedCell.valueLabel.text = [NSString stringWithFormat:@"%i hr, %i min", hr, min];
+			groupedCell.valueLabel.text = [NSString stringWithFormat:@"%lu hr, %lu min", (unsigned long)hr, (unsigned long)min];
 			break;
 		}
 		case 3: {

@@ -8,7 +8,7 @@
 
 #import "LocationSearchViewController.h"
 
-extern NSString * const kAWFDemoDefaultPlaceChanged = @"AWFDemoDefaultPlaceChanged";
+NSString * const kAWFDemoDefaultPlaceChanged = @"AWFDemoDefaultPlaceChanged";
 
 @interface LocationSearchViewController ()
 @property (nonatomic, strong) UITableView *tableView;
@@ -141,7 +141,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 		
 		options.limit = 50;
 		options.filterString = @"poi";
-		options.sort = [NSString stringWithFormat:@"pop:%i", AWFRequestSortDescending];
+		options.sort = [NSString stringWithFormat:@"pop:%li", (long)AWFRequestSortDescending];
 		
 		if ([parts count] == 1) {
 			// do a "starts with" search since it's just a name

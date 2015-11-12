@@ -8,6 +8,30 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFNormalFilterDaily;
+extern NSString * const AWFNormalFilterMonthly;
+extern NSString * const AWFNormalFilterYearly;
+extern NSString * const AWFNormalFilterHasTemp;
+extern NSString * const AWFNormalFilterHasPrecip;
+extern NSString * const AWFNormalFilterHasSnow;
+
+extern NSString * const AWFNormalFieldStationId;
+extern NSString * const AWFNormalFieldName;
+extern NSString * const AWFNormalFieldState;
+extern NSString * const AWFNormalFieldCountry;
+extern NSString * const AWFNormalFieldMonth;
+extern NSString * const AWFNormalFieldDay;
+extern NSString * const AWFNormalFieldMonthDay;
+extern NSString * const AWFNormalFieldMaxTemp;
+extern NSString * const AWFNormalFieldMinTemp;
+extern NSString * const AWFNormalFieldAverageTemp;
+extern NSString * const AWFNormalFieldHeatingDegreeDays;
+extern NSString * const AWFNormalFieldCoolingDegreeDays;
+extern NSString * const AWFNormalFieldMonthlyPrecip;
+extern NSString * const AWFNormalFieldYearlyPrecip;
+extern NSString * const AWFNormalFieldMonthlySnow;
+extern NSString * const AWFNormalFieldYearlySnow;
+
 @class AWFNormalStation;
 
 /**

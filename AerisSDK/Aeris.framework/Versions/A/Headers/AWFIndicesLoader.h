@@ -9,6 +9,16 @@
 #import <Aeris/AWFGeographicObjectLoader.h>
 #import <Aeris/AWFIndexPeriod.h>
 
+extern NSString * const AWFIndexFilterDay;
+extern NSString * const AWFIndexFilterDayNight;
+extern NSString * const AWFIndexFilterAllStations;
+
+extern NSString * const AWFIndexDataTypeArthritis;
+extern NSString * const AWFIndexDataTypeColdFlu;
+extern NSString * const AWFIndexDataTypeMigrane;
+extern NSString * const AWFIndexDataTypeSinus;
+extern NSString * const AWFIndexDataTypeOutdoor;
+
 /**
  *  `AWFIndicesLoader` provides convenience methods for interacting with the
  *  [`indices` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/indices) of the Aeris API. All requests will

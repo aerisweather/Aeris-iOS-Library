@@ -66,8 +66,14 @@ static NSString *cellIdentifier = @"GroupedListingCellIdentifier";
 				weakSelf.results = @[];
 				[weakSelf.eventView showNoResultsMessage];
 			}
+			
+			[weakSelf dataDidFinishLoading];
 		}];
 	}
+}
+
+- (NSString *)cellIdentifierForIndexPath:(NSIndexPath *)indexPath {
+	return cellIdentifier;
 }
 
 #pragma mark - UITableViewDataSource 
@@ -81,7 +87,8 @@ static NSString *cellIdentifier = @"GroupedListingCellIdentifier";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+	NSString *identifier = [self cellIdentifierForIndexPath:indexPath];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
 	[self handleConfigurationOfCell:cell forIndexPath:indexPath];
 	
 	return cell;

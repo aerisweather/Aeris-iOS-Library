@@ -152,7 +152,23 @@
  */
 @property (nonatomic, copy) NSArray *forecastConeNarrow;
 
+/**
+ *  A Boolean indicating whether the storm cell is affecting the specified place by comparing distance and whether or not the storm cell is moving
+ *  toward the location.
+ *
+ *  @param place The place to determine if the cell is affecting
+ *
+ *  @return `YES` if the cell is affecting the place, otherwise `NO`
+ */
 - (BOOL)affectsPlace:(AWFPlace *)place;
+
+/**
+ *  A Boolean indicating whether the storm cell is approaching the specified place based on the cell's distance and moving direction.
+ *
+ *  @param place The place to determine if the cell is approaching
+ *
+ *  @return `YES` if the cell is apporaching the place, otherwise `NO`
+ */
 - (BOOL)isMovingTowardPlace:(AWFPlace *)place;
 
 @end

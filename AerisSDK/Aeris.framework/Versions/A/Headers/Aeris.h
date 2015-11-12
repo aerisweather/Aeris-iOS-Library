@@ -20,8 +20,10 @@
 #import <Aeris/AWFRequestFilter.h>
 #import <Aeris/AWFRequestQuery.h>
 #import <Aeris/AWFGeoPolygon.h>
+#import <Aeris/AWFRangeSummary.h>
 #import <Aeris/AWFLocationManager.h>
 #import <Aeris/AWFWeatherDataType.h>
+#import <Aeris/AWFMeasurement.h>
 #import <Aeris/AWFForecastModel.h>
 
 #import <Aeris/AWFPlacesLoader.h>
@@ -43,6 +45,8 @@
 #import <Aeris/AWFIndicesLoader.h>
 #import <Aeris/AWFThreatsLoader.h>
 #import <Aeris/AWFPhrasesLoader.h>
+#import <Aeris/AWFConvectiveLoader.h>
+#import <Aeris/AWFDroughtLoader.h>
 #import <Aeris/AWFBatchLoader.h>
 
 #import <Aeris/AWFPlace.h>
@@ -59,9 +63,12 @@
 #import <Aeris/AWFRecord.h>
 #import <Aeris/AWFEarthquake.h>
 #import <Aeris/AWFStormReport.h>
+#import <Aeris/AWFStormReportSummary.h>
 #import <Aeris/AWFLightningStrike.h>
 #import <Aeris/AWFStormCell.h>
+#import <Aeris/AWFStormCellSummary.h>
 #import <Aeris/AWFFire.h>
+#import <Aeris/AWFFireOutlook.h>
 #import <Aeris/AWFTide.h>
 #import <Aeris/AWFTideStation.h>
 #import <Aeris/AWFActivity.h>
@@ -70,7 +77,10 @@
 #import <Aeris/AWFThreat.h>
 #import <Aeris/AWFPhrase.h>
 #import <Aeris/AWFStormThreat.h>
+#import <Aeris/AWFConvectiveOutlook.h>
+#import <Aeris/AWFDroughtIndex.h>
 
+#import <Aeris/NSBundle+Aeris.h>
 #import <Aeris/AWFObject+AutoCoding.h>
 #import <Aeris/CLLocation+Aeris.h>
 #import <Aeris/NSDate+Aeris.h>

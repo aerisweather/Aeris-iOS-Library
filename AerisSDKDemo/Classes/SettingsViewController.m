@@ -91,7 +91,7 @@ static NSString *kUserPrefStyleKey = @"style";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [self.sections[section][@"items"] count];
+	return [(NSArray *)self.sections[section][@"items"] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

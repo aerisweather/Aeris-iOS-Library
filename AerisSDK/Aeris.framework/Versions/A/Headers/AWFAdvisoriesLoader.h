@@ -8,6 +8,35 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFAdvisoryFilterAll;
+extern NSString * const AWFAdvisoryFilterCounty;
+extern NSString * const AWFAdvisoryFilterWarning;
+extern NSString * const AWFAdvisoryFilterWatch;
+extern NSString * const AWFAdvisoryFilterAdvisory;
+extern NSString * const AWFAdvisoryFilterOutlook;
+extern NSString * const AWFAdvisoryFilterStatement;
+extern NSString * const AWFAdvisoryFilterSevere;
+extern NSString * const AWFAdvisoryFilterFlood;
+extern NSString * const AWFAdvisoryFilterTropical;
+extern NSString * const AWFAdvisoryFilterWinter;
+extern NSString * const AWFAdvisoryFilterMarine;
+extern NSString * const AWFAdvisoryFilterNonPrecip;
+extern NSString * const AWFAdvisoryFilterForecast;
+extern NSString * const AWFAdvisoryFilterWind;
+extern NSString * const AWFAdvisoryFilterFire;
+extern NSString * const AWFAdvisoryFilterTsunami;
+extern NSString * const AWFAdvisoryFilterSynopsis;
+
+extern NSString * const AWFAdvisoryFieldType;
+extern NSString * const AWFAdvisoryFieldWeatherZone;
+extern NSString * const AWFAdvisoryFieldState;
+extern NSString * const AWFAdvisoryFieldSignificance;
+extern NSString * const AWFAdvisoryFieldPriority;
+extern NSString * const AWFAdvisoryFieldName;
+extern NSString * const AWFAdvisoryFieldCountry;
+extern NSString * const AWFAdvisoryFieldDateIssued;
+extern NSString * const AWFAdvisoryFieldDateExpires;
+
 /**
  *  `AWFAdvisoriesLoader` provides convenience methods for interacting with the
  *  [`advisories` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/advisories) of the Aeris API. All requests will

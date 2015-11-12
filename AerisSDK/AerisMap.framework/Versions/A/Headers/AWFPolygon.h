@@ -62,6 +62,7 @@
  *  @return An initialized polygon object.
  */
 + (instancetype)polygonWithGeoPolygon:(AWFGeoPolygon *)geoPolygon;
++ (instancetype)polygonWithGeoPolygon:(AWFGeoPolygon *)geoPolygon object:(AWFObject *)object;
 
 /**
  *  Creates and returns an empty `AWFPolygon` instance. This instance will not create a polygon overlay instance required for the map.
@@ -69,5 +70,8 @@
  *  @return An initialized empty polygon object.
  */
 + (instancetype)polygon;
+
+- (instancetype)initWithGeographicObject:(AWFGeographicObject *)object;
+- (instancetype)initWithGeoPolygon:(AWFGeoPolygon *)geoPolygon object:(AWFObject *)object;
 
 @end

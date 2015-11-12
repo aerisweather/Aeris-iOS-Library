@@ -54,7 +54,7 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisOrientation) {
 /**
  *  The minimum number of pixels allowed between ticks.
  */
-@property (nonatomic, assign) NSInteger minimumPixelsPerTick;
+@property (nonatomic, assign) CGFloat minimumPixelsPerTick;
 
 /**
  *  The color used for axis ticks.

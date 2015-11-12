@@ -96,6 +96,13 @@
 @property (nonatomic, assign) NSTimeInterval animationEndDelay;
 
 /**
+ *  A Boolean that determines whether image overlays should crossfade between intervals during animation playback.
+ *
+ *  The default value of this property is `NO`.
+ */
+@property (nonatomic, assign) BOOL animationCrossfadeEnabled;
+
+/**
  *  The maximum number of images to request for an animation.
  *
  *	If the total number of images available within the animation's time range is greater than this value, the image intervals will
@@ -237,6 +244,8 @@
  */
 - (AWFRequestOptions *)requestOptionsForLayerType:(AWFLayerType)layerType;
 
+- (NSString *)requestActionForLayerType:(AWFLayerType)layerType;
+
 /**
  *  Returns the `AWFLegendStyle` object to use when drawing the legend for the `layerType`.
  *
@@ -304,5 +313,7 @@
  *  @param layerType The layer type to assign the request options to
  */
 - (void)setRequestOptions:(AWFRequestOptions *)options forLayerType:(AWFLayerType)layerType;
+
+- (void)setRequestAction:(NSString *)action forLayerType:(AWFLayerType)layerType;
 
 @end

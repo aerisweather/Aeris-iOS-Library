@@ -8,6 +8,20 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFStormCellFilterHail;
+extern NSString * const AWFStormCellFilterRotating;
+extern NSString * const AWFStormCellFilterTornadic;
+
+extern NSString * const AWFStormCellFieldDateTime;
+extern NSString * const AWFStormCellFieldHail;
+extern NSString * const AWFStormCellFieldSevereHail;
+extern NSString * const AWFStormCellFieldHailSize;
+extern NSString * const AWFStormCellFieldTVS;
+extern NSString * const AWFStormCellFieldRotation;
+extern NSString * const AWFStormCellFieldCity;
+extern NSString * const AWFStormCellFieldState;
+extern NSString * const AWFStormCellFieldCountry;
+
 /**
  *  `AWFStormCellsLoader` provides convenience methods for interacting with the
  *  [`stormcells` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/stormcells) of the Aeris API. All requests will
@@ -45,5 +59,7 @@
 - (void)getPlacesAffectedByStormCellWithId:(NSString *)cellId
                                    options:(AWFRequestOptions *)options
                                 completion:(AWFObjectLoaderCompletionBlock)completionBlock;
+
+- (void)getCurrentStormCellSummary:(AWFRequestOptions *)options completion:(AWFObjectLoaderCompletionBlock)completionBlock;
 
 @end

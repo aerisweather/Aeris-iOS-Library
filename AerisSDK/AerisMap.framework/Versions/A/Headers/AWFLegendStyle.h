@@ -13,6 +13,7 @@
 @property (nonatomic, strong) id items;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, strong) NSArray *displayOrderForItemGroups;
+@property (nonatomic, strong) NSArray *displayOrderForItems;
 
 @property (nonatomic, assign) UIEdgeInsets labelEdgeInsets;
 @property (nonatomic, strong) AWFTextStyleSpec *labelTextSpec;

@@ -149,7 +149,7 @@ static CGFloat cellHeight = 217.0f;
 	// load forecast
 	AWFRequestOptions *options = [[AWFRequestOptions alloc] init];
 	options.periodLimit = 7;
-	options.periodSort = [NSString stringWithFormat:@"dt:%i", AWFRequestSortDescending];
+	options.periodSort = [NSString stringWithFormat:@"dt:%li", (long)AWFRequestSortDescending];
 
 	// only show loader if we haven't already populated the view once
 	if (self.summary) {

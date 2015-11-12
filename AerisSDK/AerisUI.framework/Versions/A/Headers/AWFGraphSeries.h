@@ -62,6 +62,9 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisType) {
  */
 @property (strong, nonatomic) AWFRequestOptions *dataRequestOptions;
 
+@property (nonatomic, assign) BOOL containsTimeBasedData;
+@property (nonatomic, assign) NSTimeInterval roundingTimeInterval;
+
 /**
  *  The delegate's receiver.
  *
@@ -141,6 +144,9 @@ typedef NS_ENUM(NSInteger, AWFGraphAxisType) {
  *  @param axis  The axis the value is on
  */
 - (AWFSeriesPoint *)closestPointForAllSeriesToValue:(CGFloat)value forAxis:(AWFGraphAxisType)axis;
+
+- (BOOL)containsData;
+- (void)cancelLoading;
 
 @end
 

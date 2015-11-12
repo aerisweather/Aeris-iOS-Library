@@ -48,6 +48,7 @@
 	dewpointItem.strokeColor = [UIColor blueColor];
 	
 	AWFGraphSeries *tempSeries = [AWFGraphSeries seriesWithItems:@[tempItem, feelsLikeItem, dewpointItem]];
+	tempSeries.roundingTimeInterval = AWFHourInterval;
 	AWFGraphView *tempGraph = [self addGraphViewWithTitle:NSLocalizedString(@"Temperature + Dewpoint", nil) series:tempSeries yOffset:10.0];
 	self.tempGraph = tempGraph;
 	

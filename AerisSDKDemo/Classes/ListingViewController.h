@@ -21,5 +21,6 @@
 
 - (void)handleConfigurationOfCell:(UITableViewCell *)cell forIndexPath:(NSIndexPath *)indexPath;
 - (void)handleCellSelectionForIndexPath:(NSIndexPath *)indexPath;
+- (void)dataDidFinishLoading;
 
 @end

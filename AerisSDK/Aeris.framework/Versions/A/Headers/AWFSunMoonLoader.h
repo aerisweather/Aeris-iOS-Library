@@ -8,6 +8,11 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFSunMoonFilterSun;
+extern NSString * const AWFSunMoonFilterTwilight;
+extern NSString * const AWFSunMoonFilterMoon;
+extern NSString * const AWFSunMoonFilterMoonPhase;
+
 /**
  *  `AWFSunMoonLoader` provides convenience methods for interacting with the
  *  [`sunmoon` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/sunmoon) of the Aeris API. All requests will

@@ -158,4 +158,6 @@ typedef NSString *(^AWFGraphValueFormatter)(CGFloat value);
  */
 - (NSString *)formatValue:(CGFloat)value;
 
+- (BOOL)containsData;
+
 @end

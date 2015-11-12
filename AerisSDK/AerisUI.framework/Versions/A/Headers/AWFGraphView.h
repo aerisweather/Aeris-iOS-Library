@@ -225,4 +225,6 @@
  */
 - (void)graphView:(AWFGraphView *)graphView didDeselectItemForSeries:(AWFSeriesItem *)seriesItem atIndex:(NSInteger)index;
 
+- (void)graphView:(AWFGraphView *)graphView didPanToValueOnXAxis:(CGFloat)xValue;
+
 @end

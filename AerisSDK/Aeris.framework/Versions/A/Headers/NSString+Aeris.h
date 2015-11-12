@@ -115,4 +115,38 @@
 
 - (NSString *)awf_stringByReplacingPattern:(NSString *)pattern withString:(NSString *)replacementString;
 
+//-----------------------------------------------------------------------------
+// @name Hashes
+//-----------------------------------------------------------------------------
+
+/**
+ *  Returns a string of the MD5 digest of the receiver.
+ */
+- (NSString *)awf_MD5;
+
+/**
+ *  Returns a string of the SHA1 digest of the receiver.
+ */
+- (NSString *)awf_SHA1;
+
+/**
+ *  Returns a string of the SHA224 digest of the receiver.
+ */
+- (NSString *)awf_SHA224;
+
+/**
+ *  Returns a string of the SHA256 digest of the receiver.
+ */
+- (NSString *)awf_SHA256;
+
+/**
+ *  Returns a string of the SHA384 digest of the receiver.
+ */
+- (NSString *)awf_SHA384;
+
+/**
+ *  Returns a string of the SHA512 digest of the receiver.
+ */
+- (NSString *)awf_SHA512;
+
 @end

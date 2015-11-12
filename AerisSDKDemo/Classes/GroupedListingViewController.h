@@ -11,5 +11,6 @@
 @interface GroupedListingViewController : ListingViewController
 
 - (void)loadDataForPlace:(AWFPlace *)place options:(AWFRequestOptions *)options;
+- (NSString *)cellIdentifierForIndexPath:(NSIndexPath *)indexPath;
 
 @end

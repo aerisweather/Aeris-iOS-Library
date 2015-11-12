@@ -14,7 +14,7 @@
 
 //#import "AWFCoordinateBounds.h"
 
-@interface AWFGeoPolygon : NSObject
+@interface AWFGeoPolygon : NSObject <NSCoding>
 
 /**
  *  Returns the array of coordinates that comprises the polygon bounds.
@@ -45,6 +45,8 @@
  */
 @property (nonatomic, readonly) CGFloat area;
 
+@property (nonatomic, strong) NSArray *interiorPolygons;
+
 /**
  *  Initializes and returns a polygon object defined by the array of coordinate values and their order.
  *
@@ -64,6 +66,7 @@
  *  @return The initialized polygon instance.
  */
 - (instancetype)initWithArrayOfPoints:(NSArray *)points;
+- (instancetype)initWithArrayOfPoints:(NSArray *)points startingWithLongitude:(BOOL)startsWithLongitude;
 
 /**
  *  Initializes and returns a polygon object defined by the polygon string.
@@ -113,5 +116,7 @@
  *  @return `YES` if the polygon contains the coordinate, otherwise `NO`.
  */
 - (BOOL)containsCoordinate:(CLLocationCoordinate2D)coord;
+
++ (NSArray *)polygonsFromGeoJSON:(NSDictionary *)geoJSON;
 
 @end

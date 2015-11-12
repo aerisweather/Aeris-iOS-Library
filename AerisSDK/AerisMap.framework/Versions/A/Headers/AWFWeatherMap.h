@@ -11,6 +11,10 @@
 #import "AWFWeatherMapDelegate.h"
 #import "AWFLayerType.h"
 
+extern NSString * const AWFWeatherMapWillStartAnimating;
+extern NSString * const AWFWeatherMapDidStartAnimating;
+extern NSString * const AWFWeatherMapDidStopAnimating;
+
 typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 	AWFWeatherMapTypeApple = 0,
 	AWFWeatherMapTypeGoogle,
@@ -93,6 +97,8 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  An object that needs to receive all delegate messages from the specific mapping SDK being used.
  */
 @property (nonatomic, weak) id mapViewDelegate;
+
+@property (readonly, nonatomic, unsafe_unretained) AWFCalloutView *calloutView;
 
 /**
  *  The configuration object associated with the weather map.
@@ -376,6 +382,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @param subtitle   The subtitle, or detail, text to display. If not provided, just the title will appear with the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+- (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
  *  Presents a callout view from a specific coordinate using the provided view.
@@ -384,6 +391,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @param contentView The view to display within the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
+- (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
  *  Dismisses the active callout, if any, from the map.

@@ -12,6 +12,9 @@
 
 @interface AWFThreat : AWFGeographicObject
 
+/**
+ *  Array of `AWFThreatPeriod` instances for the current and future periods as supported.
+ */
 @property (nonatomic, strong) NSArray *periods;
 
 @end
@@ -19,7 +22,14 @@
 
 @interface AWFThreatPeriod : AWFObject
 
+/**
+ *  GMT date for the period.
+ */
 @property (nonatomic, strong) NSDate *timestamp;
+
+/**
+ *  The storm threat for the period, or `nil` if no threat exists.
+ */
 @property (nonatomic, strong) AWFStormThreat *stormThreat;
 
 @end

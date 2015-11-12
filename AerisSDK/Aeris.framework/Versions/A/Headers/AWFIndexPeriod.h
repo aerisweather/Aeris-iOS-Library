@@ -13,7 +13,8 @@ typedef NS_ENUM (NSUInteger, AWFIndexType) {
 	AWFIndexTypeArthritis,
 	AWFIndexTypeColdFlu,
 	AWFIndexTypeMigraine,
-	AWFIndexTypeSinus
+	AWFIndexTypeSinus,
+	AWFIndexTypeOutdoor
 };
 
 @class AWFIndex;

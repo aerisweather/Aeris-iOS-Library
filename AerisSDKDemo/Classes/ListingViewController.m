@@ -76,6 +76,8 @@ static NSString *cellIdentifier = @"ListingCellIdentifier";
 				weakSelf.results = @[];
 				[weakSelf.eventView showNoResultsMessage];
 			}
+			
+			[weakSelf dataDidFinishLoading];
 		}];
 	}
 }
@@ -85,6 +87,10 @@ static NSString *cellIdentifier = @"ListingCellIdentifier";
 }
 
 - (void)handleCellSelectionForIndexPath:(NSIndexPath *)indexPath {
+	// subclassing controllers should override to provide necessary functionality
+}
+
+- (void)dataDidFinishLoading {
 	// subclassing controllers should override to provide necessary functionality
 }
 

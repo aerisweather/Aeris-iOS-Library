@@ -60,6 +60,8 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  */
 @property (nonatomic, strong) AWFPlace *place;
 
+@property (nonatomic, copy) NSString *identifier;
+
 /**
  *  A string of comma-separated latitude/longitude coordinates defining a bounding region. This corresponds to the `AerisAPIParamKeyPlace`,
  *  or `p`, parameter when accessing the API directly and using a coordinate region instead of a single place.
@@ -90,6 +92,8 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *  directly.
  */
 @property (nonatomic, assign) NSUInteger radiusKM;
+
+@property (nonatomic) NSString *radiusString;
 
 /**
  *  The query string to use when performing a search request. This corresponds to the `AerisAPIParamKeyQuery`, or `query`, parameter when
@@ -175,6 +179,15 @@ typedef NS_ENUM (NSUInteger, AWFRequestOperator) {
  *  The endpoint data type to use for a request. An endpoint data type should be one of the subendpoints supported by an API endpoint.
  */
 @property (nonatomic, copy) NSString *dataType;
+
+//-----------------------------------------------------------------------------
+// @name Output Format
+//-----------------------------------------------------------------------------
+
+/**
+ *  The format type for the request response. The default is the standard Aeris API response as a JSON object.
+ */
+@property (nonatomic, copy) NSString *format;
 
 /**
  *  Creates a new empty `AWFRequestOptions` instance.

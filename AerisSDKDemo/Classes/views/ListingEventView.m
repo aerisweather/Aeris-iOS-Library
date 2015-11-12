@@ -120,12 +120,10 @@
 										  indicatorSize.width, indicatorSize.height);
 	
 	CGRect contentFrame = UIEdgeInsetsInsetRect(self.bounds, UIEdgeInsetsMake(20.0, 20.0, 20.0, 20.0));
-	CGSize messageSize = [self.messageLabel.text sizeWithFont:self.messageLabel.font
-											constrainedToSize:contentFrame.size
-												lineBreakMode:NSLineBreakByWordWrapping];
+	CGSize messageSize = [self.messageLabel.text boundingRectWithSize:contentFrame.size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.messageLabel.font} context:nil].size;
 	
 	if (AWFIsNonEmptyString(self.detailedMessageLabel.text)) {
-		CGSize detailsSize = [self.detailedMessageLabel.text sizeWithFont:self.detailedMessageLabel.font constrainedToSize:contentFrame.size lineBreakMode:NSLineBreakByWordWrapping];
+		CGSize detailsSize = [self.detailedMessageLabel.text boundingRectWithSize:contentFrame.size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: self.detailedMessageLabel.font} context:nil].size;
 		
 		CGFloat totalHeight = messageSize.height + 20.0 + detailsSize.height;
 		CGFloat marginY = (CGRectGetHeight(contentFrame) - totalHeight) / 2.0;

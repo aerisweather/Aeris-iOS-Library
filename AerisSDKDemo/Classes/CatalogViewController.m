@@ -33,6 +33,9 @@
 #import "RecordsViewController.h"
 #import "StormCellsViewController.h"
 #import "EarthquakesViewController.h"
+#import "ConvectiveOutlookViewController.h"
+#import "ThreatsViewController.h"
+#import "DroughtMonitorViewController.h"
 #import "AppleMapViewController.h"
 #import "GoogleMapViewController.h"
 #import "MapboxMapViewController.h"
@@ -42,6 +45,7 @@
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSCache *controllerCache;
 @property (nonatomic, strong) UINavigationController *settingsController;
+@property (nonatomic, strong) LocationSearchViewController *searchController;
 @end
 
 static NSString *cellIdentifier = @"AFCatalogCell";
@@ -73,7 +77,8 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 			                 @{ @"title": NSLocalizedString(@"Moon Phases", nil), @"class": [MoonPhasesViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Climate Normals", nil), @"class": [NormalsViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Today's Tides", nil), @"class": [TidesViewController class] },
-			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] }
+			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] },
+							 @{ @"title": NSLocalizedString(@"Drought Monitor", nil), @"class": [DroughtMonitorViewController class] }
 			];
 
 			graphItems = @[@{ @"title": NSLocalizedString(@"Forecast (Line)", nil), @"class": [LineGraphsViewController_iPad class] },
@@ -91,7 +96,8 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 			                 @{ @"title": NSLocalizedString(@"Moon Phases", nil), @"class": [MoonPhasesViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Climate Normals", nil), @"class": [NormalsViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Today's Tides", nil), @"class": [TidesViewController class] },
-			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] }
+			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] },
+							 @{ @"title": NSLocalizedString(@"Drought Monitor", nil), @"class": [DroughtMonitorViewController class] }
 			];
 
 			graphItems = @[@{ @"title": NSLocalizedString(@"Forecast (Line)", nil), @"class": [ForecastLineGraphsViewController class] },
@@ -105,7 +111,9 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 		                         @{ @"title": NSLocalizedString(@"Nearby Storm Cells", nil), @"class": [StormCellsViewController class] },
 		                         @{ @"title": NSLocalizedString(@"Nearby Storm Reports", nil), @"class": [StormReportsViewController class] },
 		                         @{ @"title": NSLocalizedString(@"Nearby Records", nil), @"class": [RecordsViewController class] },
-		                         @{ @"title": NSLocalizedString(@"Nearby Earthquakes", nil), @"class": [EarthquakesViewController class] }
+		                         @{ @"title": NSLocalizedString(@"Nearby Earthquakes", nil), @"class": [EarthquakesViewController class] },
+								 @{ @"title": NSLocalizedString(@"Nearby Threats", nil), @"class": [ThreatsViewController class] },
+								 @{ @"title": NSLocalizedString(@"Convective Outlook", nil), @"class": [ConvectiveOutlookViewController class] }
 		];
 
 		NSArray *imageItems = @[ //@{@"title": NSLocalizedString(@"Static Map Viewer", nil), @"class": [NSObject class]},
@@ -144,10 +152,11 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 
 	// if no default location set yet, just use the user's current location
 	if (![[UserLocationsManager sharedManager] defaultLocation]) {
+		__weak typeof(self) weakSelf = self;
 		[AWFPlace getCurrentLocationWithCompletion:^(AWFPlace *place, NSError *error) {
 		    if (error) {
 		        NSLog(@"Failed to get current location! %@", error);
-
+				[weakSelf showLocationSearch];
 		        return;
 			}
 
@@ -159,7 +168,7 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 		    [placesLoader getClosestToPlace:place radius:@"10mi" options:options completion:^(NSArray *objects, NSError *error) {
 		        if (error) {
 		            NSLog(@"Failed to get place from current location! %@", error);
-
+					[weakSelf showLocationSearch];
 		            return;
 				}
 
@@ -185,6 +194,13 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 	[self.navigationController presentViewController:self.settingsController animated:YES completion:nil];
 }
 
+- (void)showLocationSearch {
+	if (!self.searchController) {
+		self.searchController = [[LocationSearchViewController alloc] initWithNibName:nil bundle:nil];
+	}
+	[self.navigationController pushViewController:self.searchController animated:YES];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -192,7 +208,7 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [self.categories[section][@"items"] count];
+	return [(NSArray *)self.categories[section][@"items"] count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {

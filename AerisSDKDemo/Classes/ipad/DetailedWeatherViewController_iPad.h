@@ -7,8 +7,7 @@
 //
 
 #import "IPadViewController.h"
-
-@protocol CatalogViewControllerDelegate;
+#import "CatalogViewController.h"
 
 @interface DetailedWeatherViewController_iPad : IPadViewController <UICollectionViewDataSource, UICollectionViewDelegate, UISplitViewControllerDelegate, CatalogViewControllerDelegate>
 

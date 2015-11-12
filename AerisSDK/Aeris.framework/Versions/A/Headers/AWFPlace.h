@@ -67,6 +67,9 @@ typedef void (^AWFPlaceGeolocateCompletionBlock)(AWFPlace *place, NSError *error
  */
 @property (nonatomic, copy) NSString *county;
 
+/**
+ *  Full place name formatted with the state and country when available.
+ */
 @property (nonatomic, readonly) NSString *formattedNameFull;
 
 /**
@@ -143,7 +146,6 @@ typedef void (^AWFPlaceGeolocateCompletionBlock)(AWFPlace *place, NSError *error
  */
 @property (nonatomic, strong) NSNumber *population;
 
-
 /**
  Creates and returns an autoreleased `AWFPlace` instance with a city, state and country.
  */
@@ -166,7 +168,16 @@ typedef void (^AWFPlaceGeolocateCompletionBlock)(AWFPlace *place, NSError *error
  */
 + (AWFPlace *)placeWithZipcode:(NSString *)zipcode;
 
+/**
+ *  Instantiates and returns an `AWFPlace` instance with the provided place string. The string can be in the format of `city,state,country`, 
+ *  `city,country`, `lat,lon`, or `zipcode`, etc.
+ *
+ *  @param string The place string
+ *
+ *  @return A place created from the provided place string
+ */
 + (AWFPlace *)placeFromString:(NSString *)string;
+
 
 + (void)getCurrentLocationWithCompletion:(AWFPlaceGeolocateCompletionBlock)completionBlock;
 
@@ -193,6 +204,13 @@ typedef void (^AWFPlaceGeolocateCompletionBlock)(AWFPlace *place, NSError *error
 // @name Place Comparisons
 //-----------------------------------------------------------------------------
 
+/**
+ *  Determines whether the receiver is equal to the specified place by comparing the place name.
+ *
+ *  @param place The place to compare
+ *
+ *  @return `YES` if the receiver's name is equal to the `place`, otherwise `NO`
+ */
 - (BOOL)isEqualToPlaceByComparingName:(AWFPlace *)place;
 
 @end

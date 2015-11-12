@@ -14,6 +14,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherDataType) {
 	AWFWeatherDataTypeTemperature,
 	AWFWeatherDataTypeMaxTemperature,
 	AWFWeatherDataTypeMinTemperature,
+	AWFWeatherDataTypeAverageTemperature,
 	AWFWeatherDataTypeDewPoint,
 	AWFWeatherDataTypeHumidity,
 	AWFWeatherDataTypeWindSpeed,
@@ -23,5 +24,10 @@ typedef NS_ENUM (NSUInteger, AWFWeatherDataType) {
 	AWFWeatherDataTypeAccumulatedPrecipitation,
 	AWFWeatherDataTypeSnowfall,
 	AWFWeatherDataTypeAccumulatedSnowfall,
-	AWFWeatherDataTypeSolarRadiation
+	AWFWeatherDataTypeSnowDepth,
+	AWFWeatherDataTypePOP,
+	AWFWeatherDataTypeSolarRadiation,
+	AWFWeatherDataTypeFeelsLike,
+	AWFWeatherDataTypeWindChill,
+	AWFWeatherDataTypeHeatIndex
 };

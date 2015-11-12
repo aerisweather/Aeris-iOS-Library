@@ -49,6 +49,9 @@ extern NSTimeInterval kAWFCalloutViewRepositionDelayForUIScrollView;
 // Custom "content" view that can be any width/height. If this is set, title/subtitle/titleView/subtitleView are all ignored.
 @property (nonatomic, retain) UIView *contentView;
 
+/// Custom content view margin
+@property (nonatomic, assign) UIEdgeInsets contentViewInset;
+
 // calloutOffset is the offset in screen points from the top-middle of the annotation view, where the anchor of the callout should be shown.
 @property (nonatomic, assign) CGPoint calloutOffset;
 
@@ -91,6 +94,13 @@ extern NSTimeInterval kAWFCalloutViewRepositionDelayForUIScrollView;
  *  @param animated A Boolean indicating if the dismissal should be animated using a fade out effect.
  */
 - (void)dismissCalloutAnimated:(BOOL)animated;
+
+/**
+ *  Updates the callout's layout and size by recalculating the size needed for its subviews, specifically when changing the contentView bounds.
+ *
+ *  @param animated A Boolean indicating whether the layout change should be animated
+ */
+- (void)updateLayoutAnimated:(BOOL)animated;
 
 // For subclassers. You can override this method to provide your own custom animation for presenting/dismissing the callout.
 - (CAAnimation *)animationWithType:(AWFCalloutAnimation)type presenting:(BOOL)presenting;

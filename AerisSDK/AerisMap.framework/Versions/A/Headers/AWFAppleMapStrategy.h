@@ -27,6 +27,8 @@
 @property (nonatomic, readonly) NSInteger zoomLevel;
 
 @property (readonly, nonatomic, strong) AWFAnimationContainerView *animationContainerView;
+@property (readonly, nonatomic, strong) AWFCalloutView *calloutView;
+
 @property (nonatomic, unsafe_unretained) id<MKMapViewDelegate> mapViewDelegate;
 
 /**

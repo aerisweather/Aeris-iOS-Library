@@ -63,11 +63,30 @@
  *  Typically this is only used for certain short-fuse advisories, such as tornado and severe thunderstorm warnings.
  */
 @property (nonatomic, copy) NSString *polygon;
+
+/**
+ *  A `AWFGeoPolygon` instance created from the string of coordinates found in `polygon`, if any.
+ */
 @property (readonly, nonatomic) AWFGeoPolygon *geoPolygon;
 
+/**
+ *  Returns a dictionary of `UIColor` instances mapped to their respective advisory VTEC codes. This is the standard advisory color associations used by the
+ *  National Weather Service (NWS) and those used with the advisory map overlay.
+ */
 + (NSDictionary *)colorMappingsForTypes;
+
+/**
+ *  Returns a dictionary of advisory names mapped to their respective advisory VTEC codes.
+ */
 + (NSDictionary *)namesByType;
 
+/**
+ *  Returns the standard color associated with the specific advisory VTEC code.
+ *
+ *  @param type The advisory VTEC code to return the color for
+ *
+ *  @return A `UIColor` instance for the advisory type
+ */
 + (UIColor *)colorForAdvisoryWithType:(NSString *)type;
 
 @end

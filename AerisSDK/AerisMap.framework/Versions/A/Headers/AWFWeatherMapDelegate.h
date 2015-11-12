@@ -122,6 +122,7 @@
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didPresentCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
 - (void)weatherMap:(AWFWeatherMap *)weatherMap willDismissCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didDismissCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
+- (void)weatherMap:(AWFWeatherMap *)weatherMap calloutAccessoryControlTapped:(UIControl *)control;
 
 @end
 

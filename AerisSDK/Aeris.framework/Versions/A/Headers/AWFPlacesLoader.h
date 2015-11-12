@@ -8,6 +8,38 @@
 
 #import <Aeris/AWFGeographicObjectLoader.h>
 
+extern NSString * const AWFPlaceFilterAirport;
+extern NSString * const AWFPlaceFilterAmusement;
+extern NSString * const AWFPlaceFilterBridge;
+extern NSString * const AWFPlaceFilterCamp;
+extern NSString * const AWFPlaceFilterChurch;
+extern NSString * const AWFPlaceFilterCounty;
+extern NSString * const AWFPlaceFilterDivision;
+extern NSString * const AWFPlaceFilterFeature;
+extern NSString * const AWFPlaceFilterFort;
+extern NSString * const AWFPlaceFilterGolf;
+extern NSString * const AWFPlaceFilterLake;
+extern NSString * const AWFPlaceFilterNeighborhood;
+extern NSString * const AWFPlaceFilterParish;
+extern NSString * const AWFPlaceFilterPark;
+extern NSString * const AWFPlaceFilterPOI;
+extern NSString * const AWFPlaceFilterPort;
+extern NSString * const AWFPlaceFilterPopulatedPlace;
+extern NSString * const AWFPlaceFilterReserve;
+extern NSString * const AWFPlaceFilterSchool;
+extern NSString * const AWFPlaceFilterStadium;
+extern NSString * const AWFPlaceFilterTemple;
+extern NSString * const AWFPlaceFilterTrail;
+extern NSString * const AWFPlaceFilterTunnel;
+extern NSString * const AWFPlaceFilterUniversity;
+extern NSString * const AWFPlaceFilterWorship;
+
+extern NSString * const AWFPlaceFieldName;
+extern NSString * const AWFPlaceFieldAltName;
+extern NSString * const AWFPlaceFieldState;
+extern NSString * const AWFPlaceFieldCountry;
+extern NSString * const AWFPlaceFieldPopulation;
+
 /**
  *  `AWFPlacesLoader` provides convenience methods for interacting with the
  *  [`places` endpoint](http://www.hamweather.com/support/documentation/aeris/endpoints/places) of the

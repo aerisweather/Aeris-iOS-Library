@@ -8,6 +8,12 @@
 
 #import <Aeris/AWFGeographicObject.h>
 
+extern NSString * const AWFLightningStrikeFilterAll;
+extern NSString * const AWFLightningStrikeFilterCloudToGround;
+extern NSString * const AWFLightningStrikeFilterCloudToCloud;
+
+extern NSString * const AWFLightningStrikeFieldDateTime;
+
 @interface AWFLightningStrike : AWFGeographicObject
 
 /**
@@ -16,12 +22,12 @@
 @property (nonatomic, strong) NSDate *timestamp;
 
 /**
- *
+ *  Type of lightning strike, either cloud-to-cloud (IC) or cloud-to-ground (CG).
  */
 @property (nonatomic, copy) NSString *pulseType;
 
 /**
- *
+ *  Peak electric current in amps.
  */
 @property (nonatomic, strong) NSNumber *peakAmperage;
 
