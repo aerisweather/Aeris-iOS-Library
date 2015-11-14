@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = 'Aeris-iOS-Library'
+  s.name         = 'AerisWeather'
   s.version      = '2.2.0'
   s.summary      = 'Quickly integrate the Aeris Weather API data and map overlays into your iOS apps.'
   s.description  = <<-DESC
@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.author       = { 'AerisWeather, LLC' => 'http://aerisweather.com' }
   s.source       = { :git => 'https://github.com/aerisweather/Aeris-iOS-Library.git', :tag => s.version.to_s }
 
-  s.vendored_frameworks = 'AerisSDK/Aeris.framework'
-  s.resources = 'AerisSDK/Aeris.bundle'
+  s.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
+  s.resources = 'AerisWeatherSDK/Aeris.bundle'
   s.framework = 'Foundation'
   s.dependency 'AFNetworking', '~> 2.6'
 
@@ -22,24 +22,29 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'AerisUI' do |ui|
-    ui.vendored_frameworks = 'AerisSDK/AerisUI.framework'
-    ui.resources = 'AerisSDK/AerisUI.bundle'
+    ui.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
+    ui.resources = 'AerisWeatherSDK/AerisUI.bundle'
     ui.framework = 'UIKit'
   end
 
   s.subspec 'AerisMap' do |map|
-    map.vendored_frameworks = 'AerisSDK/AerisMap.framework'
+    map.vendored_frameworks = 'AerisWeatherSDK/AerisMap.framework'
     map.framework = 'MapKit'
+    map.dependency 'AerisWeather/AerisUI'
   end
 
   s.subspec 'AerisMapboxMap' do |mapbox|
-    mapbox.vendored_frameworks = 'AerisSDK/AerisMapboxMap.framework'
+    mapbox.vendored_frameworks = 'AerisWeatherSDK/AerisMapboxMap.framework'
     mapbox.dependency 'MBXMapKit'
+    mapbox.dependency 'AerisWeather/AerisUI'
+    mapbox.dependency 'AerisWeather/AerisMap'
   end
 
   s.subspec 'AerisGoogleMap' do |google|
-    google.vendored_frameworks = 'AerisSDK/AerisGoogleMap.framework'
+    google.vendored_frameworks = 'AerisWeatherSDK/AerisGoogleMap.framework'
     google.dependency 'GoogleMaps'
+    google.dependency 'AerisWeather/AerisUI'
+    google.dependency 'AerisWeather/AerisMap'
   end
 
 end
