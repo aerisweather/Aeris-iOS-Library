@@ -41,7 +41,7 @@ The AerisWeather SDK is broken up into multiple frameworks, allowing you to only
 4. Import the necessary umbrella headers for the AerisWeather components you wish to use (e.g. *Aeris*, *AerisUI*, *AerisMap*, etc):
    	* With `use_frameworks!` in your Podfile
     	* Swift: `import Aeris`
-    	* Objective-C: `#import <Aeris/Aeris.h>` (or with Modules enabled: `@import PureLayout;`)
+    	* Objective-C: `#import <Aeris/Aeris.h>`
 	* Without `use_frameworks!` in your Podfile
     	* Swift: Add `#import "<Aeris/Aeris.h>"` to your bridging header.
     	* Objective-C: `#import "<Aeris/Aeris.h>"`
