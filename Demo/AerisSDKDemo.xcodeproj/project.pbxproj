@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70C19BFCD700013C45C /* Foundation.framework */; };
-		2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */; };
-		2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5EB71019BFCD700013C45C /* UIKit.framework */; };
-		2BA9DB101BF513F4003D664F /* Aeris.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9DB091BF513F4003D664F /* Aeris.bundle */; };
-		2BA9DB111BF513F4003D664F /* Aeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA9DB0A1BF513F4003D664F /* Aeris.framework */; };
-		2BA9DB121BF513F4003D664F /* AerisGoogleMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA9DB0B1BF513F4003D664F /* AerisGoogleMap.framework */; };
-		2BA9DB131BF513F4003D664F /* AerisMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA9DB0C1BF513F4003D664F /* AerisMap.framework */; };
-		2BA9DB141BF513F4003D664F /* AerisMapboxMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA9DB0D1BF513F4003D664F /* AerisMapboxMap.framework */; };
-		2BA9DB151BF513F4003D664F /* AerisUI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9DB0E1BF513F4003D664F /* AerisUI.bundle */; };
-		2BA9DB161BF513F4003D664F /* AerisUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA9DB0F1BF513F4003D664F /* AerisUI.framework */; };
 		2BA9DB881BF51A4D003D664F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB201BF51A4D003D664F /* AppDelegate.m */; };
 		2BA9DB891BF51A4D003D664F /* AppleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB221BF51A4D003D664F /* AppleMapViewController.m */; };
 		2BA9DB8A1BF51A4D003D664F /* BarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB241BF51A4D003D664F /* BarGraphsViewController.m */; };
@@ -68,22 +58,7 @@
 		2BA9DBB81BF51A4D003D664F /* ListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB851BF51A4D003D664F /* ListingTableViewCell.m */; };
 		2BA9DBB91BF51A4D003D664F /* MultilineTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB871BF51A4D003D664F /* MultilineTextTableViewCell.m */; };
 		2BA9DBBB1BF51B2E003D664F /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA9DBBA1BF51B2E003D664F /* Launch.storyboard */; };
-		2BEDF60219C0C9C400BECBB2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60019C0C9C400BECBB2 /* MapKit.framework */; };
-		2BEDF60319C0C9C400BECBB2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF60119C0C9C400BECBB2 /* QuartzCore.framework */; };
 		2BEDF76219C0CF7900BECBB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF76119C0CF7900BECBB2 /* main.m */; };
-		2BEDF76E19C0CFF400BECBB2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76319C0CFF400BECBB2 /* AVFoundation.framework */; };
-		2BEDF76F19C0CFF400BECBB2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76419C0CFF400BECBB2 /* CoreData.framework */; };
-		2BEDF77019C0CFF400BECBB2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76519C0CFF400BECBB2 /* CoreLocation.framework */; };
-		2BEDF77119C0CFF400BECBB2 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76619C0CFF400BECBB2 /* CoreText.framework */; };
-		2BEDF77219C0CFF400BECBB2 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76719C0CFF400BECBB2 /* GLKit.framework */; };
-		2BEDF77319C0CFF400BECBB2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76819C0CFF400BECBB2 /* ImageIO.framework */; };
-		2BEDF77419C0CFF400BECBB2 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76919C0CFF400BECBB2 /* libc++.dylib */; };
-		2BEDF77519C0CFF400BECBB2 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76A19C0CFF400BECBB2 /* libicucore.dylib */; };
-		2BEDF77619C0CFF400BECBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76B19C0CFF400BECBB2 /* libz.dylib */; };
-		2BEDF77719C0CFF400BECBB2 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76C19C0CFF400BECBB2 /* OpenGLES.framework */; };
-		2BEDF77819C0CFF400BECBB2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF76D19C0CFF400BECBB2 /* SystemConfiguration.framework */; };
-		2BEDF77A19C0D04400BECBB2 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BEDF77919C0D04400BECBB2 /* libsqlite3.dylib */; };
-		2BEDF78119C0D31000BECBB2 /* AerisSDKDemo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF77B19C0D31000BECBB2 /* AerisSDKDemo-Info.plist */; };
 		2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF77E19C0D31000BECBB2 /* InfoPlist.strings */; };
 		2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF78019C0D31000BECBB2 /* Images.xcassets */; };
 		DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */; };
@@ -96,13 +71,6 @@
 		2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2B5EB71019BFCD700013C45C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2B5EB72519BFCD700013C45C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		2BA9DB091BF513F4003D664F /* Aeris.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Aeris.bundle; sourceTree = "<group>"; };
-		2BA9DB0A1BF513F4003D664F /* Aeris.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Aeris.framework; sourceTree = "<group>"; };
-		2BA9DB0B1BF513F4003D664F /* AerisGoogleMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisGoogleMap.framework; sourceTree = "<group>"; };
-		2BA9DB0C1BF513F4003D664F /* AerisMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMap.framework; sourceTree = "<group>"; };
-		2BA9DB0D1BF513F4003D664F /* AerisMapboxMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisMapboxMap.framework; sourceTree = "<group>"; };
-		2BA9DB0E1BF513F4003D664F /* AerisUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AerisUI.bundle; sourceTree = "<group>"; };
-		2BA9DB0F1BF513F4003D664F /* AerisUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AerisUI.framework; sourceTree = "<group>"; };
 		2BA9DB1F1BF51A4D003D664F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2BA9DB201BF51A4D003D664F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		2BA9DB211BF51A4D003D664F /* AppleMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleMapViewController.h; sourceTree = "<group>"; };
@@ -232,29 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BEDF77A19C0D04400BECBB2 /* libsqlite3.dylib in Frameworks */,
-				2BEDF76E19C0CFF400BECBB2 /* AVFoundation.framework in Frameworks */,
-				2BA9DB161BF513F4003D664F /* AerisUI.framework in Frameworks */,
-				2BEDF76F19C0CFF400BECBB2 /* CoreData.framework in Frameworks */,
-				2BEDF77019C0CFF400BECBB2 /* CoreLocation.framework in Frameworks */,
-				2BEDF77119C0CFF400BECBB2 /* CoreText.framework in Frameworks */,
-				2BEDF77219C0CFF400BECBB2 /* GLKit.framework in Frameworks */,
-				2BEDF77319C0CFF400BECBB2 /* ImageIO.framework in Frameworks */,
-				2BA9DB121BF513F4003D664F /* AerisGoogleMap.framework in Frameworks */,
-				2BEDF77419C0CFF400BECBB2 /* libc++.dylib in Frameworks */,
-				2BEDF77519C0CFF400BECBB2 /* libicucore.dylib in Frameworks */,
-				2BEDF77619C0CFF400BECBB2 /* libz.dylib in Frameworks */,
-				2BEDF77719C0CFF400BECBB2 /* OpenGLES.framework in Frameworks */,
-				2BEDF77819C0CFF400BECBB2 /* SystemConfiguration.framework in Frameworks */,
-				2BEDF60219C0C9C400BECBB2 /* MapKit.framework in Frameworks */,
-				2BEDF60319C0C9C400BECBB2 /* QuartzCore.framework in Frameworks */,
-				2B5EB70F19BFCD700013C45C /* CoreGraphics.framework in Frameworks */,
-				2B5EB71119BFCD700013C45C /* UIKit.framework in Frameworks */,
-				2B5EB70D19BFCD700013C45C /* Foundation.framework in Frameworks */,
 				DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */,
-				2BA9DB111BF513F4003D664F /* Aeris.framework in Frameworks */,
-				2BA9DB131BF513F4003D664F /* AerisMap.framework in Frameworks */,
-				2BA9DB141BF513F4003D664F /* AerisMapboxMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +254,6 @@
 		2B5EB71219BFCD700013C45C /* AerisSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2BA9DB081BF513F4003D664F /* AerisSDK */,
 				2BA9DB1E1BF51A4D003D664F /* Classes */,
 				2B5EB7C919BFCF5A0013C45C /* Other Sources */,
 				2B5EB7D019BFCF5A0013C45C /* Resources */,
@@ -334,21 +279,6 @@
 				2BA9DBBA1BF51B2E003D664F /* Launch.storyboard */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		2BA9DB081BF513F4003D664F /* AerisSDK */ = {
-			isa = PBXGroup;
-			children = (
-				2BA9DB091BF513F4003D664F /* Aeris.bundle */,
-				2BA9DB0A1BF513F4003D664F /* Aeris.framework */,
-				2BA9DB0B1BF513F4003D664F /* AerisGoogleMap.framework */,
-				2BA9DB0C1BF513F4003D664F /* AerisMap.framework */,
-				2BA9DB0D1BF513F4003D664F /* AerisMapboxMap.framework */,
-				2BA9DB0E1BF513F4003D664F /* AerisUI.bundle */,
-				2BA9DB0F1BF513F4003D664F /* AerisUI.framework */,
-			);
-			name = AerisSDK;
-			path = ../../AerisSDK;
 			sourceTree = "<group>";
 		};
 		2BA9DB1E1BF51A4D003D664F /* Classes */ = {
@@ -544,7 +474,7 @@
 		2B5EB70119BFCD700013C45C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "AerisWeather, LLC";
 			};
 			buildConfigurationList = 2B5EB70419BFCD700013C45C /* Build configuration list for PBXProject "AerisSDKDemo" */;
@@ -569,10 +499,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA9DB101BF513F4003D664F /* Aeris.bundle in Resources */,
-				2BA9DB151BF513F4003D664F /* AerisUI.bundle in Resources */,
 				2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */,
-				2BEDF78119C0D31000BECBB2 /* AerisSDKDemo-Info.plist in Resources */,
 				2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */,
 				2BA9DBBB1BF51B2E003D664F /* Launch.storyboard in Resources */,
 			);
@@ -704,6 +631,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -773,6 +701,7 @@
 				GCC_PREFIX_HEADER = "Other Sources/AerisSDKDemo-Prefix.pch";
 				INFOPLIST_FILE = "Other Sources/AerisSDKDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aerisweather.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -793,6 +722,7 @@
 				GCC_PREFIX_HEADER = "Other Sources/AerisSDKDemo-Prefix.pch";
 				INFOPLIST_FILE = "Other Sources/AerisSDKDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aerisweather.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
