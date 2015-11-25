@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AerisWeather'
-  s.version      = '2.2.0'
+  s.version      = '2.2.1'
   s.summary      = 'Quickly integrate the Aeris Weather API data and map overlays into your iOS apps.'
   s.description  = <<-DESC
                       The Aeris iOS Weather Framework allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the Aeris API backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
