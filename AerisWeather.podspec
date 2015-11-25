@@ -13,38 +13,41 @@ Pod::Spec.new do |s|
   s.author       = { 'AerisWeather, LLC' => 'http://aerisweather.com' }
   s.source       = { :git => 'https://github.com/aerisweather/Aeris-iOS-Library.git', :tag => s.version.to_s }
 
-  s.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
-  s.resources = 'AerisWeatherSDK/Aeris.bundle'
-  s.framework = 'Foundation'
-  s.dependency 'AFNetworking', '~> 2.6'
-
   s.platform     = :ios, '7.0'
   s.requires_arc = true
+  s.default_subspecs = 'Aeris'
 
-  s.subspec 'AerisUI' do |ui|
-    ui.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
-    ui.resources = 'AerisWeatherSDK/AerisUI.bundle'
-    ui.framework = 'UIKit'
+  s.subspec 'Aeris' do |ss|
+    ss.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
+    ss.resources = 'AerisWeatherSDK/Aeris.bundle'
+    ss.framework = 'Foundation'
+    ss.dependency 'AFNetworking', '~> 2.6'
   end
 
-  s.subspec 'AerisMap' do |map|
-    map.vendored_frameworks = 'AerisWeatherSDK/AerisMap.framework'
-    map.framework = 'MapKit'
-    map.dependency 'AerisWeather/AerisUI'
+  s.subspec 'AerisUI' do |ss|
+    ss.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
+    ss.resources = 'AerisWeatherSDK/AerisUI.bundle'
+    ss.framework = 'UIKit'
   end
 
-  s.subspec 'AerisMapboxMap' do |mapbox|
-    mapbox.vendored_frameworks = 'AerisWeatherSDK/AerisMapboxMap.framework'
-    mapbox.dependency 'MBXMapKit'
-    mapbox.dependency 'AerisWeather/AerisUI'
-    mapbox.dependency 'AerisWeather/AerisMap'
+  s.subspec 'AerisMap' do |ss|
+    ss.vendored_frameworks = 'AerisWeatherSDK/AerisMap.framework'
+    ss.framework = 'MapKit'
+    ss.dependency 'AerisWeather/AerisUI'
   end
 
-  s.subspec 'AerisGoogleMap' do |google|
-    google.vendored_frameworks = 'AerisWeatherSDK/AerisGoogleMap.framework'
-    google.dependency 'GoogleMaps'
-    google.dependency 'AerisWeather/AerisUI'
-    google.dependency 'AerisWeather/AerisMap'
+  s.subspec 'AerisMapboxMap' do |ss|
+    ss.vendored_frameworks = 'AerisWeatherSDK/AerisMapboxMap.framework'
+    ss.dependency 'MBXMapKit'
+    ss.dependency 'AerisWeather/AerisUI'
+    ss.dependency 'AerisWeather/AerisMap'
+  end
+
+  s.subspec 'AerisGoogleMap' do |ss|
+    ss.vendored_frameworks = 'AerisWeatherSDK/AerisGoogleMap.framework'
+    ss.dependency 'GoogleMaps'
+    ss.dependency 'AerisWeather/AerisUI'
+    ss.dependency 'AerisWeather/AerisMap'
   end
 
 end
