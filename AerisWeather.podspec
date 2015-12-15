@@ -18,33 +18,43 @@ Pod::Spec.new do |s|
   s.default_subspecs = 'Aeris'
 
   s.subspec 'Aeris' do |ss|
+    ss.module_name = 'Aeris'
     ss.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
+    ss.public_header_files = 'AerisWeatherSDK/Aeris.framework/**/*.h'
     ss.resources = 'AerisWeatherSDK/Aeris.bundle'
     ss.framework = 'Foundation'
     ss.dependency 'AFNetworking', '~> 2.6'
   end
 
   s.subspec 'AerisUI' do |ss|
+    ss.module_name = 'AerisUI'
     ss.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
+    ss.public_header_files = 'AerisWeatherSDK/AerisUI.framework/**/*.h'
     ss.resources = 'AerisWeatherSDK/AerisUI.bundle'
     ss.framework = 'UIKit'
   end
 
   s.subspec 'AerisMap' do |ss|
+    ss.module_name = 'AerisMap'
     ss.vendored_frameworks = 'AerisWeatherSDK/AerisMap.framework'
+    ss.public_header_files = 'AerisWeatherSDK/AerisMap.framework/**/*.h'
     ss.framework = 'MapKit'
     ss.dependency 'AerisWeather/AerisUI'
   end
 
   s.subspec 'AerisMapboxMap' do |ss|
+    ss.module_name = 'AerisMapboxMap'
     ss.vendored_frameworks = 'AerisWeatherSDK/AerisMapboxMap.framework'
+    ss.public_header_files = 'AerisWeatherSDK/AerisMapboxMap.framework/**/*.h'
     ss.dependency 'MBXMapKit'
     ss.dependency 'AerisWeather/AerisUI'
     ss.dependency 'AerisWeather/AerisMap'
   end
 
   s.subspec 'AerisGoogleMap' do |ss|
+    ss.module_name = 'AerisGoogleMap'
     ss.vendored_frameworks = 'AerisWeatherSDK/AerisGoogleMap.framework'
+    ss.public_header_files = 'AerisWeatherSDK/AerisGoogleMap.framework/**/*.h'
     ss.dependency 'GoogleMaps'
     ss.dependency 'AerisWeather/AerisUI'
     ss.dependency 'AerisWeather/AerisMap'
