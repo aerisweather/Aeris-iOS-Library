@@ -1,0 +1,6 @@
+framework module AerisMapboxMap {
+    umbrella header "AerisMapboxMap.h"
+
+    export *
+    module * { export * }
+}
