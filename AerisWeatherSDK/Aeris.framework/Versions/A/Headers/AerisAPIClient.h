@@ -6,8 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AFHTTPRequestOperationManager.h"
-
+#import <AFNetworking/AFNetworking.h>
 #import <Aeris/AWFResponse.h>
 
 extern NSString * const AerisAPIServer;

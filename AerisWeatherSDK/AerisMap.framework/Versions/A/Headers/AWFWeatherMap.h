@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AWFWeatherMapConfig.h"
-#import "AWFWeatherMapDelegate.h"
-#import "AWFLayerType.h"
+#import <AerisMap/AWFWeatherMapConfig.h>
+#import <AerisMap/AWFWeatherMapDelegate.h>
+#import <AerisMap/AWFLayerType.h>
 
 extern NSString * const AWFWeatherMapWillStartAnimating;
 extern NSString * const AWFWeatherMapDidStartAnimating;

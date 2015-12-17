@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Aeris/Aeris.h>
 #import <AerisUI/AWFGraphSeries.h>
 #import <AerisUI/AWFGraphRenderer.h>
 

@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <Aeris/Aeris.h>
+
 extern NSString * const AWFRecordAnnotationTypePrecip;
 extern NSString * const AWFRecordAnnotationTypeSnow;
 extern NSString * const AWFRecordAnnotationTypeMaxTemp;

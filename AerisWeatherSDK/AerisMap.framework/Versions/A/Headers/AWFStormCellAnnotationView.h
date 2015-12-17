@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFMKAnnotationView.h"
+#import <AerisMap/AWFMKAnnotationView.h>
 
 @interface AWFStormCellAnnotationView : AWFMKAnnotationView
 

@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 #if CGFLOAT_IS_DOUBLE
 #define AWFFloat double
 #else

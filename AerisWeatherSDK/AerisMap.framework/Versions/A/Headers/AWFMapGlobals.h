@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFLayerType.h"
+#import <MapKit/MapKit.h>
+#import <AerisMap/AWFLayerType.h>
 
 //-----------------------
 // @name Paths

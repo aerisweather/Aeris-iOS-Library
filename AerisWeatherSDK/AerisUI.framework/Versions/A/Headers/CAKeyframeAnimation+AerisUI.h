@@ -7,7 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import "AWFEasing.h"
+#import <AerisUI/AWFEasing.h>
 
 @interface CAKeyframeAnimation (AerisUI)
 

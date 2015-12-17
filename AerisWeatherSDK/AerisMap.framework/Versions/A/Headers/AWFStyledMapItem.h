@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import <Aeris/AWFGeographicObject.h>
+#import <Aeris/Aeris.h>
 #import <AerisMap/AWFLayerType.h>
 
 /**

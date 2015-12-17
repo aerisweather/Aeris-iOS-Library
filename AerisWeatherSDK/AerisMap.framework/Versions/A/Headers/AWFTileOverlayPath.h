@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  *  The `AWFTileOverlayPath` class provides an object used to specify the index values for a single tile.

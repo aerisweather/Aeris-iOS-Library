@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFDataLayer.h"
+#import <AerisMap/AWFDataLayer.h>
 
 @class AWFCoordinateBounds;
 @protocol AWFImageDataLayer;

@@ -6,9 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-#import "AWFAnimation.h"
+#import <MapKit/MapKit.h>
+#import <AerisMap/AWFAnimation.h>
 
 @class AWFAnimation;
 

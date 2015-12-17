@@ -7,6 +7,7 @@
 //
 
 #import <GoogleMaps/GoogleMaps.h>
+#import <AerisMap/AerisMap.h>
 
 @interface AWFGMMultiShapeOverlay : GMSGroundOverlay <AWFStyledMapItem, AWFMultiShapeOverlay>
 

@@ -6,4 +6,6 @@
 //  Copyright (c) 2015 AerisWeather, LLC. All rights reserved.
 //
 
+#import <AerisMap/AerisMap.h>
+
 #import <AerisMapboxMap/AWFMapboxMapStrategy.h>

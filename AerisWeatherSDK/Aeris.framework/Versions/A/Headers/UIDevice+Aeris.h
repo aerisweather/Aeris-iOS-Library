@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 typedef NS_ENUM(NSUInteger, AWFDevicePlatform) {
 	AWFDevicePlatformUnknown = 0,
 	

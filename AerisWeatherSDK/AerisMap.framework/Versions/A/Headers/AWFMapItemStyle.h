@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 /**
  *  The `AWFMapItemStyle` provides style information that is used for overlays and annotations when rendered on a map.
  */

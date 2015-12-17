@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, AWFIcon) {
 	AWFIconPlay = 0,

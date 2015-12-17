@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFLayerType.h"
+#import <UIKit/UIKit.h>
+#import <AerisMap/AWFLayerType.h>
 
 typedef NS_ENUM(NSInteger, AWFWeatherMapLegendPosition) {
 	AWFWeatherMapLegendPositionTop = 0,

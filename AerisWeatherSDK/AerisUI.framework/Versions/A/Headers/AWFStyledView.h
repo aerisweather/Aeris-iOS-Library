@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 typedef NS_ENUM (NSUInteger, AWFLayout) {
 	AWFLayoutVertical = 0,
 	AWFLayoutHorizontal

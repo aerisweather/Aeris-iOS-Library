@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AWFLayerType.h"
+#import <AerisMap/AWFLayerType.h>
 
 /**
  *  An `AWFOverlayMetadata` object loads and stores additional information about an overlay, specifically a tile or 

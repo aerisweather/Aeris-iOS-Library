@@ -7,6 +7,7 @@
 //
 
 #import <MapKit/MapKit.h>
+#import <Aeris/Aeris.h>
 
 @class AWFGeographicObject;
 

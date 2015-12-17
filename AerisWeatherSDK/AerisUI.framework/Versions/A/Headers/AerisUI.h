@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <Aeris/Aeris.h>
+
 #import <AerisUI/AWFUIGlobals.h>
 #import <AerisUI/AWFCascadingStyle.h>
 #import <AerisUI/AWFAdvisoryStyle.h>
@@ -45,6 +47,7 @@
 #import <AerisUI/AWFGraphCalloutView.h>
 
 #import <AerisUI/AWFCalloutView.h>
+#import <AerisUI/AWFLegacyCalloutView.h>
 #import <AerisUI/AWFCalloutContentView.h>
 #import <AerisUI/AWFImage.h>
 #import <AerisUI/AWFIconSet.h>
@@ -61,3 +64,5 @@
 #import <AerisUI/UIImage+AerisUI.h>
 #import <AerisUI/UIView+AerisUI.h>
 #import <AerisUI/UIBezierPath+AerisUI.h>
+
+#import <AerisUI/AWFStyledView+Private.h>

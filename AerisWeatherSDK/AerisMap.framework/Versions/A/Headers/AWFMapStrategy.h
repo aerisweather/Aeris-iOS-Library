@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import <AerisUI/AerisUI.h>
+
 /**
  *  The supported map strategy types.
  */

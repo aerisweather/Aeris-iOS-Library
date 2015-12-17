@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
 #import <Aeris/AWFGeographicObject.h>
 
 @interface AWFStormCell : AWFGeographicObject

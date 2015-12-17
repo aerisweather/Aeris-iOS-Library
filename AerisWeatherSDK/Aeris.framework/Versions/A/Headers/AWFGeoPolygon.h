@@ -6,10 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
-
 #import <Aeris/CLLocation+Aeris.h>
 
 //#import "AWFCoordinateBounds.h"

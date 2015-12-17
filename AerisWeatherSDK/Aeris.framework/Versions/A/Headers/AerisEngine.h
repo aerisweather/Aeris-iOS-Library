@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <Aeris/AWFLog.h>
 
 extern NSString *const AWFEngineIsReady;

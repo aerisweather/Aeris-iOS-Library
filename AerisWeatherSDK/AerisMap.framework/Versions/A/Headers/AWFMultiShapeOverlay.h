@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 typedef NS_ENUM(NSUInteger, AWFArrowheadType) {
 	AWFArrowheadTypeNone = 0,
 	AWFArrowheadTypeHead,

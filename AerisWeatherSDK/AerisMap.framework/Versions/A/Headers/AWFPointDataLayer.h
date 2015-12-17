@@ -6,10 +6,10 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFDataLayer.h"
-#import "AWFAnimatableOverlay.h"
-#import "AWFPointDataAnimation.h"
-#import "AWFMapGlobals.h"
+#import <AerisMap/AWFDataLayer.h>
+#import <AerisMap/AWFAnimatableOverlay.h>
+#import <AerisMap/AWFPointDataAnimation.h>
+#import <AerisMap/AWFMapGlobals.h>
 
 @class AWFCoordinateBounds, AWFPointDataAnimation;
 

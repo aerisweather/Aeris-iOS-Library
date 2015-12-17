@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <AerisUI/AerisUI.h>
+
 /**
  *  A `AWFBasicControlView` is a small view that provides a play/stop button for controlling a weather map's animation and displays the current time and
  *  date for the map's timeline.

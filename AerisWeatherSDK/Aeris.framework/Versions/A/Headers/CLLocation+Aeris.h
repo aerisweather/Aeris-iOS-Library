@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+
 static const double kAWFDegreesToRadians = M_PI / 180.0;
 static const double kAWFRadiansToDegrees = 180.0 / M_PI;
 static const double kAWFEarthRadius = 6371.01;

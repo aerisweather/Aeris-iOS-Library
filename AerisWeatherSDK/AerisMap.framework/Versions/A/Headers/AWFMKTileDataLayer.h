@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <MapKit/MapKit.h>
 #import <AerisMap/AWFTileDataLayer.h>
 
 @class AWFMKTileOverlay;

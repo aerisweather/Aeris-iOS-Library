@@ -19,11 +19,8 @@ typedef NS_ENUM(NSUInteger, AWFLogLevel) {
 @interface AWFLog : NSObject
 
 + (void)debug:(NSString *)format,...;
-
 + (void)info:(NSString *)format,...;
-
 + (void)warn:(NSString *)format,...;
-
 + (void)error:(NSString *)format,...;
 
 + (void)setLoggingLevel:(AWFLogLevel)level;

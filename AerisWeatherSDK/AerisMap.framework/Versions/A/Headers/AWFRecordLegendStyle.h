@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFDataLegendStyle.h"
+#import <AerisMap/AWFDataLegendStyle.h>
 
 @interface AWFRecordLegendStyle : AWFDataLegendStyle
 

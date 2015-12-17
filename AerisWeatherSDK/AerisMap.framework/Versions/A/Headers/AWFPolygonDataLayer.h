@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFDataLayer.h"
+#import <Aeris/Aeris.h>
+#import <AerisMap/AWFDataLayer.h>
 
 @interface AWFPolygonDataLayer : AWFDataLayer
 

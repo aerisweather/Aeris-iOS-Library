@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFDataLayer.h"
-#import "AWFAnimatableOverlay.h"
-#import "AWFImageAnimation.h"
+#import <AerisMap/AWFDataLayer.h>
+#import <AerisMap/AWFAnimatableOverlay.h>
+#import <AerisMap/AWFImageAnimation.h>
 
 @class AWFOverlayMetadata, AWFMapStrategy, AWFTileOverlayPath, AWFOverlayMetadata;
 @protocol AWFTileDataLayer, AWFTileDataSource;

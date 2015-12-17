@@ -10,10 +10,9 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
-
-#import "AWFWeatherDataType.h"
-#import "AWFMeasurement.h"
-#import "NSBundle+Aeris.h"
+#import <Aeris/AWFWeatherDataType.h>
+#import <Aeris/AWFMeasurement.h>
+#import <Aeris/NSBundle+Aeris.h>
 
 // Testing for specific iOS versions
 #define AWF_SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)

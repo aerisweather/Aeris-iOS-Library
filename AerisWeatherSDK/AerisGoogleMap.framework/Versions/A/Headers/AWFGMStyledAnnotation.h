@@ -7,7 +7,7 @@
 //
 
 #import <GoogleMaps/GoogleMaps.h>
-#import <AerisMap/AWFStyledAnnotation.h>
+#import <AerisMap/AerisMap.h>
 
 @class AWFObject, AWFAnnotationStyle;
 

@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFWeatherMap.h"
+#import <UIKit/UIKit.h>
+#import <AerisMap/AWFWeatherMap.h>
 
 @class AWFWeatherMapConfig, AWFTimelineView, AWFBasicControlView, AWFWeatherMapLegendView;
 

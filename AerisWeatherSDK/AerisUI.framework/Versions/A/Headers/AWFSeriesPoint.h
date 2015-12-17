@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 /**
  *  `AWFSeriesPoint` represents a single data point on a graph within a series. The values for both x- and y-axis should be defined for the series 

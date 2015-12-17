@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFLayerType.h"
+#import <AerisUI/AerisUI.h>
+#import <AerisMap/AWFLayerType.h>
 
 @interface AWFLegendStyle : NSObject
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFAnimation.h"
+#import <AerisMap/AWFAnimation.h>
 
 @class AWFOverlayMetadata, AWFCoordinateBounds;
 

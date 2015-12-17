@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFAnnotationStyle.h"
+#import <AerisMap/AWFAnnotationStyle.h>
 
 @interface AWFStormCellAnnotationStyle : AWFAnnotationStyle
 

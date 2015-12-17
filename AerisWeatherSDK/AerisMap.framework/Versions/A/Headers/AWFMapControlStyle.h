@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <AerisUI/AerisUI.h>
 
 @interface AWFMapControlStyle : AWFCascadingStyle
 

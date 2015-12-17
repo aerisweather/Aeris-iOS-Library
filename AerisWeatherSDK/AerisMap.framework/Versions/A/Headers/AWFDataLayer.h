@@ -7,9 +7,8 @@
 //
 
 #import <MapKit/MapKit.h>
-
-#import "AWFMapStrategy.h"
-#import "AWFLayerType.h"
+#import <AerisMap/AWFMapStrategy.h>
+#import <AerisMap/AWFLayerType.h>
 
 @protocol AWFDataLayerDelegate;
 

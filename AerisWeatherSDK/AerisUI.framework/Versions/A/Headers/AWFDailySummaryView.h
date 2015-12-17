@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <Aeris/Aeris.h>
 #import <AerisUI/AWFWeatherView.h>
 
 @interface AWFDailySummaryView : AWFWeatherView

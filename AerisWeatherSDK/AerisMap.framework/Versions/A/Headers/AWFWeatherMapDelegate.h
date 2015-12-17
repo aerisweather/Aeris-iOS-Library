@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "AWFLayerType.h"
+#import <AerisUI/AerisUI.h>
+#import <AerisMap/AWFLayerType.h>
 
 @class AWFWeatherMap;
 

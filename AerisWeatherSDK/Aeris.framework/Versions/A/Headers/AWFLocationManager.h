@@ -6,9 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import <CoreGraphics/CoreGraphics.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, AWFUserTrackingMode) {
 	AWFUserTrackingModeNone = 0,

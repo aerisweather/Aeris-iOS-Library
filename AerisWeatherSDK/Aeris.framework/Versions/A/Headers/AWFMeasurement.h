@@ -6,6 +6,8 @@
 //  Copyright © 2015 Aeris Weather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 typedef NS_ENUM(NSUInteger, AWFMeasurement) {
 	AWFMeasurementNone = 0,
 	AWFMeasurementTemperature,

@@ -7,7 +7,6 @@
 //
 
 #import <CoreLocation/CoreLocation.h>
-
 #import <Aeris/AWFObjectLoader.h>
 #import <Aeris/AWFGlobals.h>
 

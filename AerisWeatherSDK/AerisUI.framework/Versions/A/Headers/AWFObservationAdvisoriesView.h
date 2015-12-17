@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import "AWFWeatherView.h"
+#import <Aeris/Aeris.h>
+#import <AerisUI/AWFWeatherView.h>
 
 @interface AWFObservationAdvisoriesView : AWFWeatherView
 

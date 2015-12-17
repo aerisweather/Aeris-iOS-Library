@@ -28,6 +28,7 @@
 
 #import <Aeris/AWFPlacesLoader.h>
 #import <Aeris/AWFVenuesLoader.h>
+#import <Aeris/AWFCountriesLoader.h>
 #import <Aeris/AWFObservationsLoader.h>
 #import <Aeris/AWFForecastsLoader.h>
 #import <Aeris/AWFAdvisoriesLoader.h>
@@ -52,6 +53,7 @@
 #import <Aeris/AWFPlace.h>
 #import <Aeris/AWFRelativeTo.h>
 #import <Aeris/AWFVenue.h>
+#import <Aeris/AWFCountry.h>
 #import <Aeris/AWFObservation.h>
 #import <Aeris/AWFObservationSummary.h>
 #import <Aeris/AWFForecast.h>
@@ -90,3 +92,4 @@
 #import <Aeris/NSObject+Aeris.h>
 #import <Aeris/NSArray+Aeris.h>
 #import <Aeris/UIDevice+Aeris.h>
+#import <Aeris/NSCachedURLResponse+Aeris.h>

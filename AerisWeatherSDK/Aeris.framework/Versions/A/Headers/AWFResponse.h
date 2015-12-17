@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+
 /**
  *  An `AWFResponse` object handles the JSON dictionary object returned from the API and performs validation to check for errors and whether or not the
  *  response was successful.

@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-#import "AWFAnimation.h"
+#import <AerisMap/AWFAnimation.h>
 
 /**
  *  An `AWFAnimationTimeline` object is a subclass of `AWFAnimation` that manages and controls multiple

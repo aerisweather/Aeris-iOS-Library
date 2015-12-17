@@ -6,7 +6,8 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import <Aeris/Aeris.h>
 #import <AerisMap/AWFLayerType.h>
 
 @class AWFMapItemStyle;
