@@ -56,6 +56,10 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *	will always return an instance of {@link MKMapView} for this property.
  */
 @property (nonatomic, strong) id mapView;
+
+/**
+ *  The weather map configuration associated with the weather map.
+ */
 @property (readonly, nonatomic, strong) AWFWeatherMapConfig *config;
 
 /**
@@ -83,7 +87,14 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  */
 @property (nonatomic, readonly) NSInteger zoomLevel;
 
+/**
+ *  The internal view used for rendering animated tile and image data.
+ */
 @property (readonly, nonatomic, strong) id animationContainerView;
+
+/**
+ *  The internal callout view for displaying annotation and gestural information on the map.
+ */
 @property (readonly, nonatomic, strong) AWFCalloutView *calloutView;
 
 /**
@@ -172,7 +183,6 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param overlays An array of overlay objects whose contents you want to draw.
  */
 - (void)invalidateOverlays:(NSArray *)overlays;
-
 
 - (NSArray *)overlaysFromObjects:(NSArray *)objects;
 
@@ -264,7 +274,26 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  */
 - (NSArray *)annotationsFromObjects:(NSArray *)objects;
 
+/**
+ *  Returns an array of text annotation objects for a series of `AWFGeographicObject` instances. These objects must have a valid coordinate in order for an
+ *  annotation to be created for it.
+ *
+ *  @param objects An array of `AWFGeographicObject` instances to create annotations for
+ *
+ *  @return An array of annotation objects
+ */
+- (NSArray *)textAnnotationsFromObjects:(NSArray *)objects;
+
+/**
+ *  Selects the specified `annotation`.
+ *
+ *  @param annotation The annotation to select
+ */
 - (void)selectAnnotation:(id)annotation;
+
+/**
+ *  Deselects any currently selected annotation, if any.
+ */
 - (void)deselectCurrentlySelectedAnnotation;
 
 /**
@@ -292,6 +321,16 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param subtitle   The secondary textual content. If not provided, the title will only be displayed.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents the map callout from the `coordinate` using with specified `title` and `subtitle` and optional accessory views.
+ *
+ *  @param coordinate         The map coordinate from which to present the callout
+ *  @param title              The callout title
+ *  @param subtitle           The callout subtitle. If not provided, the title will only be displayed
+ *  @param leftAccessoryView  The view to display to the left of the title
+ *  @param rightAccessoryView The view to display to the right of the title
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
@@ -301,6 +340,15 @@ typedef NS_ENUM(NSUInteger, AWFMapStrategyType){
  *  @param contentView The view to display within the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
+
+/**
+ *  Presents the map callout from the `coordinate` using the specified `contentView` and optional accessory views.
+ *
+ *  @param coordinate         The map coordinate from which to present the callout
+ *  @param contentView        The view to display within the callout
+ *  @param leftAccessoryView  The view to display to the left of the content view
+ *  @param rightAccessoryView The view to display to the right of the content view
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**

@@ -10,19 +10,35 @@
 #import <AerisMap/AWFWeatherMapConfig.h>
 #import <AerisMap/AWFWeatherMapDelegate.h>
 #import <AerisMap/AWFLayerType.h>
+#import <AerisMap/AWFTextPointDataLayer.h>
 
 extern NSString * const AWFWeatherMapWillStartAnimating;
 extern NSString * const AWFWeatherMapDidStartAnimating;
 extern NSString * const AWFWeatherMapDidStopAnimating;
 
-typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
+/**
+ *  Weather map type options to determine which mapping library to use
+ */
+typedef NS_ENUM(NSUInteger, AWFWeatherMapType) {
+	/**
+	 *  Apple's MapKit
+	 */
 	AWFWeatherMapTypeApple = 0,
+	/**
+	 *  GoogleMaps SDK
+	 */
 	AWFWeatherMapTypeGoogle,
+	/**
+	 *  Mapbox tiles via MapKit
+	 */
 	AWFWeatherMapTypeMapbox,
+	/**
+	 *  Apple's MapKit
+	 */
 	AWFWeatherMapTypeDefault = AWFWeatherMapTypeApple
 };
 
-@class AWFDataLayer, AWFAnimationTimeline;
+@class AWFDataLayer, AWFTextPointDataLayer, AWFAnimationTimeline;
 
 /**
  *  An `AWFWeatherMap` object provides a complete interface for displaying weather-related overlays and data on a map view. You
@@ -86,6 +102,9 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  */
 @property (assign, nonatomic) AWFForecastModelType forecastModelType;
 
+/**
+ *  The view indicating when the map's timeline is in the future.
+ */
 @property (nonatomic, strong) UIView *futureIndicatorView;
 
 /**
@@ -98,6 +117,9 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  */
 @property (nonatomic, weak) id mapViewDelegate;
 
+/**
+ *  The internal callout view used for annotations and long press gestures.
+ */
 @property (readonly, nonatomic, unsafe_unretained) AWFCalloutView *calloutView;
 
 /**
@@ -111,8 +133,14 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *	A weather map sends messages to its delegate regarding the addition and removal of weather overlays, animation status changes, and forwards
  *	respective messages from the interval map view object.
  */
-@property (nonatomic, assign) id <AWFWeatherMapDelegate> delegate;
-@property (nonatomic, assign) id <AWFWeatherMapDataSource> dataSource;
+@property (nonatomic, assign) id<AWFWeatherMapDelegate> delegate;
+
+/**
+ *  The receiver's data source.
+ *
+ *  A weather map requests data from its data source when displaying map elements, such as callouts and annotations.
+ */
+@property (nonatomic, assign) id<AWFWeatherMapDataSource> dataSource;
 
 /**
  *  Controls the number of times the map animation should repeat after its initial loop. Setting this value to `-1` will loop the animation endlessly 
@@ -175,7 +203,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Adds a single layer type to the map.
  *
- *  @param layerType The {@link AFLayerType} to add to the map.
+ *  @param layerType The {@link AWFLayerType} to add to the map.
  */
 - (void)addLayerType:(AWFLayerType)layerType;
 
@@ -189,15 +217,15 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Adds an layer type to the map above an existing layer type.
  *
- *  @param layerType      The {@link AFLayerType} to add to the map.
- *  @param otherLayerType The {@link AFLayerType} to insert the target layer type above.
+ *  @param layerType      The {@link AWFLayerType} to add to the map.
+ *  @param otherLayerType The {@link AWFLayerType} to insert the target layer type above.
  */
 - (void)addLayerType:(AWFLayerType)layerType aboveLayerType:(AWFLayerType)otherLayerType;
 
 /**
  *  Adds an layer type to the map above an existing layer type.
  *
- *  @param layerType The {@link AFLayerType} to add to the map.
+ *  @param layerType The {@link AWFLayerType} to add to the map.
  *  @param overlay     The overlay to insert the target layer type above. This object must conform to the MKOverlay protocol.
  */
 - (void)addLayerType:(AWFLayerType)layerType aboveOverlay:(AWFDataLayer *)overlay;
@@ -205,15 +233,15 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Adds an layer type to the map below an existing layer type.
  *
- *  @param layerType      The {@link AFLayerType} to add to the map.
- *  @param otherLayerType The {@link AFLayerType} to insert the target layer type below.
+ *  @param layerType      The {@link AWFLayerType} to add to the map.
+ *  @param otherLayerType The {@link AWFLayerType} to insert the target layer type below.
  */
 - (void)addLayerType:(AWFLayerType)layerType belowLayerType:(AWFLayerType)otherLayerType;
 
 /**
  *  Adds an layer type to the map below an existing layer type.
  *
- *  @param layerType The {@link AFLayerType} to add to the map.
+ *  @param layerType The {@link AWFLayerType} to add to the map.
  *  @param overlay     The overlay to insert the target layer type below. This object must conform to the MKOverlay protocol.
  */
 - (void)addLayerType:(AWFLayerType)layerType belowOverlay:(AWFDataLayer *)overlay;
@@ -221,7 +249,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Inserts an layer type to the map at the specified index.
  *
- *  @param layerType The {@link AFLayerType} to add to the map.
+ *  @param layerType The {@link AWFLayerType} to add to the map.
  *  @param index       The index at which to place the overlay. If this value is greater than the number of overlays on the map, the overlay will be
  * inserted at the top of the overlay stack.
  */
@@ -230,7 +258,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Removes an layer type from the map.
  *
- *  @param layerType The {@link AFLayerType} to remove from the map.
+ *  @param layerType The {@link AWFLayerType} to remove from the map.
  */
 - (void)removeLayerType:(AWFLayerType)layerType;
 
@@ -244,7 +272,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Returns `YES` if the layer type exists on the map.
  *
- *  @param layerType The {@link AFLayerType} to check if it exists.
+ *  @param layerType The {@link AWFLayerType} to check if it exists.
  *
  *  @return `YES` if the map contains the layer type, otherwise `NO`.
  */
@@ -253,11 +281,64 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Returns the overlay object associated with the specified layer type.
  *
- *  @param layerType The {@link AFLayerType} to return the overlay object for.
+ *  @param layerType The {@link AWFLayerType} to return the overlay object for.
  *
  *  @return The `AWFDataLayer` instance for the specified layer type.
  */
 - (AWFDataLayer *)dataLayerForType:(AWFLayerType)layerType;
+
+//-----------------------------------------------------------------------------
+// @name Text Data Layers
+//-----------------------------------------------------------------------------
+
+/**
+ *  Adds a text data layer on the map for the specified `layerType` and request options.
+ *
+ *  @param layerType The `AWFLayerType` to show point data for
+ *  @param options   The `AWFRequestOptions` to use when requesting point data
+ */
+- (void)addTextDataForLayerType:(AWFLayerType)layerType options:(AWFRequestOptions *)options;
+
+/**
+ *  Updates the text formatter and request options for the text data layer associated with the specified `layerType`.
+ *
+ *  @param layerType The `AWFLayerType` to update text data for
+ *  @param formatter The text formatter to use when rendering text point data
+ *  @param options   The `AWFRequestOptions` to use when requesting point data
+ */
+- (void)updateTextDataForLayerType:(AWFLayerType)layerType formatter:(AWFTextPointDataFormatter)formatter options:(AWFRequestOptions *)options;
+
+/**
+ *  Removes the text data layer associated with the specified `layerType`.q
+ *
+ *  @param layerType The `AWFLayerType` to remove text data for
+ */
+- (void)removeTextDataForLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Returns the text data layer associated with the specified `layerType`.
+ *
+ *  @param layerType The `AWFLayerType` to return the text data layer for, if any
+ *
+ *  @return The `AWFTextPointDataLayer` associated with the `layerType`
+ */
+- (AWFTextPointDataLayer *)textDataLayerForLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Returns `YES` if the text data layer exists on the map for the specified `layerType`.
+ *
+ *  @param layerType The {@link AWFLayerType} to check if text data exists.
+ *
+ *  @return `YES` if the map contains text data for the layer type, otherwise `NO`.
+ */
+- (BOOL)containsTextDataForLayerType:(AWFLayerType)layerType;
+
+/**
+ *  Reloads the text data for the associated `layerType` on the map.
+ *
+ *  @param layerType The `AWFLayerType` to reload text data for
+ */
+- (void)reloadTextDataForLayerType:(AWFLayerType)layerType;
 
 //-----------------------------------------------------------------------------
 // @name Updating Map Data
@@ -266,7 +347,7 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
 /**
  *  Updates the existing layer type.
  *
- *  @param layerType The {@link AFLayerType} to update on the map.
+ *  @param layerType The {@link AWFLayerType} to update on the map.
  */
 - (void)refreshLayerType:(AWFLayerType)layerType;
 
@@ -382,6 +463,16 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @param subtitle   The subtitle, or detail, text to display. If not provided, just the title will appear with the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ *  Presents a callout view from a specific coordinate using the provided title and subtitle with optional left and right accessory views.
+ *
+ *  @param coordinate         The map coordinate to present the callout from
+ *  @param title              The title to display
+ *  @param subtitle           The subtitle, or detail, text to display. If not provided, just the title will appear with the callout.
+ *  @param leftAccessoryView  The view to display to the left of the title and subtitle
+ *  @param rightAccessoryView The view to display to the right of the title and subtitle
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withTitle:(NSString *)title subtitle:(NSString *)subtitle leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**
@@ -391,6 +482,15 @@ typedef NS_ENUM (NSUInteger, AWFWeatherMapType) {
  *  @param contentView The view to display within the callout.
  */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView;
+
+/**
+ *  Presents a callout view from a specific coordinate using the provided view with optional left and right accessory views.
+ *
+ *  @param coordinate         The map coordinate to present the callout from
+ *  @param contentView        The view to display within the callout
+ *  @param leftAccessoryView  The view to display to the left of the content view
+ *  @param rightAccessoryView The view to display to the right of the content view
+ */
 - (void)showCalloutAtCoordinate:(CLLocationCoordinate2D)coordinate withContentView:(UIView *)contentView leftAccessoryView:(UIView *)leftAccessoryView rightAccessoryView:(UIView *)rightAccessoryView;
 
 /**

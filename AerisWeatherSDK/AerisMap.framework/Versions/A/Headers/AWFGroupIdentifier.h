@@ -27,7 +27,33 @@ extern NSString * const AWFLightningStrikeAnnotationTypeAge30To45;
 extern NSString * const AWFLightningStrikeAnnotationTypeAge45To60;
 extern NSString * const AWFLightningStrikeAnnotationTypeAge60;
 
-extern NSString * const AWFEarthquakeAnnotationTypeMagnitude;
+extern NSString * const AWFEarthquakeAnnotationTypeMini;
+extern NSString * const AWFEarthquakeAnnotationTypeMinor;
+extern NSString * const AWFEarthquakeAnnotationTypeLight;
+extern NSString * const AWFEarthquakeAnnotationTypeModerate;
+extern NSString * const AWFEarthquakeAnnotationTypeStrong;
+extern NSString * const AWFEarthquakeAnnotationTypeMajor;
+extern NSString * const AWFEarthquakeAnnotationTypeGreat;
+extern NSString * const AWFEarthquakeAnnotationTypeCatastrophic;
+
+extern NSString * const AWFStormReportAnnotationTypeAvalanche;
+extern NSString * const AWFStormReportAnnotationTypeBlizzard;
+extern NSString * const AWFStormReportAnnotationTypeFire;
+extern NSString * const AWFStormReportAnnotationTypeFlood;
+extern NSString * const AWFStormReportAnnotationTypeFog;
+extern NSString * const AWFStormReportAnnotationTypeIce;
+extern NSString * const AWFStormReportAnnotationTypeHail;
+extern NSString * const AWFStormReportAnnotationTypeLightning;
+extern NSString * const AWFStormReportAnnotationTypeRain;
+extern NSString * const AWFStormReportAnnotationTypeSnow;
+extern NSString * const AWFStormReportAnnotationTypeTides;
+extern NSString * const AWFStormReportAnnotationTypeTornado;
+extern NSString * const AWFStormReportAnnotationTypeWind;
+
+extern NSString * const AWFFireAnnotationTypeSmall;
+extern NSString * const AWFFireAnnotationTypeMedium;
+extern NSString * const AWFFireAnnotationTypeLarge;
+extern NSString * const AWFFireAnnotationTypeCritical;
 
 @interface AWFGroupIdentifier : NSObject
 

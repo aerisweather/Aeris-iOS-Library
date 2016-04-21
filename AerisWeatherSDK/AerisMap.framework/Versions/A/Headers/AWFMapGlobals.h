@@ -15,13 +15,6 @@
 
 extern NSString * const AerisTileServer;
 
-//typedef struct {
-//	CLLocationCoordinate2D northwest;
-//	CLLocationCoordinate2D southwest;
-//	CLLocationCoordinate2D northeast;
-//	CLLocationCoordinate2D southeast;
-//} AFMapCoordinateBounds;
-
 //-----------------------
 // @name Overlay Type Conversions
 //-----------------------
@@ -102,6 +95,15 @@ BOOL AWFIsGroundTileOverlay(AWFLayerType type);
 BOOL AWFIsPointDataLayerType(AWFLayerType type);
 
 /**
+ *  Returns `YES` if the layer type is a text data overlay.
+ *
+ *  @param type The {@link AWFLayerType} to check.
+ *
+ *  @return `YES` if the layer type is a text data overlay, otherwise `NO`.
+ */
+BOOL AWFIsTextPointDataLayerType(AWFLayerType type);
+
+/**
  *  Returns `YES` if the layer type is a polygon overlay.
  *
  *  @param type The {@link AWFLayerType} to check.
@@ -111,14 +113,24 @@ BOOL AWFIsPointDataLayerType(AWFLayerType type);
 BOOL AWFIsPolygonLayerType(AWFLayerType type);
 
 /**
- *  Returns `YES` is the layer type if a future overlay.
+ *  Returns `YES` if the layer type is a future overlay.
  *
  *  @param type The {@link AWFLayerType} to check.
  *
  *  @return `YES` if the layer type is a future overlay, otherwise `NO`.
  */
 BOOL AWFIsFutureLayerType(AWFLayerType type);
+
+/**
+ *  Returns `YES` if the layer type represents a type group.
+ *
+ *  @param type The {@link AWFLayerType} to check.
+ *
+ *  @return `YES` if the layer type is a group, otherwise `NO`
+ */
 BOOL AWFIsFutureGroupLayerType(AWFLayerType type);
+
+BOOL AWFIsFutureModelLayerType(AWFLayerType type);
 
 //-----------------------
 // @name Utilities

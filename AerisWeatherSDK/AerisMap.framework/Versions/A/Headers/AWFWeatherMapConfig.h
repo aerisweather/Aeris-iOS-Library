@@ -62,7 +62,7 @@
 @property (nonatomic, assign) MKOverlayLevel tileOverlayLevel;
 
 /**
- *  All default request options to be used for each data layer, keyed by their associated `AFLayerType` value.
+ *  All default request options to be used for each data layer, keyed by their associated `AWFLayerType` value.
  */
 @property (nonatomic, strong) NSDictionary *dataRequestOptions;
 
@@ -143,6 +143,11 @@
  *  the overlay is invalidated and redrawn at each interval. This applies to image and tile data layers only.
  */
 @property (nonatomic, assign) BOOL timelineScrubbingEnabled;
+
+/**
+ *  A Boolean value indicating whether to display text point data on the map while tile data is animating. The default is `NO`.
+ */
+@property (nonatomic, assign) BOOL showTextDataWhileAnimating;
 
 //-----------------------------------------------------------------------------
 // @name Long Press Gesture
@@ -245,6 +250,13 @@
  */
 - (AWFRequestOptions *)requestOptionsForLayerType:(AWFLayerType)layerType;
 
+/**
+ *  Returns the request action to use when requesting data for the `layerType`.
+ *
+ *  @param layerType The layer type to return the request action for
+ *
+ *  @return The request action for the layer type, if any
+ */
 - (NSString *)requestActionForLayerType:(AWFLayerType)layerType;
 
 /**
@@ -306,6 +318,15 @@
 - (void)setLegendStyle:(AWFLegendStyle *)style forLayerType:(AWFLayerType)layerType;
 
 /**
+ *  Sets the legend style for the given weather `dataType`. This can be used to configure a legend style for a general weather data type group, such as temperatures 
+ *  or wind speed, that will be used for both past and future layer types.
+ *
+ *  @param style    The `AWFLegendStyle` instance
+ *  @param dataType The weather data type to assign the legend style to
+ */
+- (void)setLegendStyle:(AWFLegendStyle *)style forWeatherDataType:(AWFWeatherDataType)dataType;
+
+/**
  *  Sets the request options to use when requesting data for the given `layerType`. 
  *
  *  Request options are currently only supported for point and polygon data layers. Image and tile layers do not use request options when loading data.
@@ -315,6 +336,12 @@
  */
 - (void)setRequestOptions:(AWFRequestOptions *)options forLayerType:(AWFLayerType)layerType;
 
+/**
+ *  Sets the request action to use when requesting data for the given `layerType`.
+ *
+ *  @param action    The action string, such as "within" or "search"
+ *  @param layerType The layer type to assign the request action to
+ */
 - (void)setRequestAction:(NSString *)action forLayerType:(AWFLayerType)layerType;
 
 @end

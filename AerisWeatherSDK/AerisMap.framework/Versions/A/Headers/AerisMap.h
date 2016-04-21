@@ -20,6 +20,7 @@
 #import <AerisMap/AWFDataLayer.h>
 #import <AerisMap/AWFImageDataLayer.h>
 #import <AerisMap/AWFPointDataLayer.h>
+#import <AerisMap/AWFTextPointDataLayer.h>
 #import <AerisMap/AWFPolygonDataLayer.h>
 #import <AerisMap/AWFTileDataLayer.h>
 #import <AerisMap/AWFMultiDataLayer.h>
@@ -29,9 +30,7 @@
 #import <AerisMap/AWFMultiShapeOverlay.h>
 #import <AerisMap/AWFAnnotation.h>
 #import <AerisMap/AWFImageOverlay.h>
-#import <AerisMap/AWFTileOverlay.h>
 #import <AerisMap/AWFTileOverlayPath.h>
-#import <AerisMap/AWFTileOverlayView.h>
 #import <AerisMap/AWFPolygon.h>
 #import <AerisMap/AWFPolyline.h>
 #import <AerisMap/AWFPolygonView.h>
@@ -41,6 +40,8 @@
 #import <AerisMap/AWFGroupIdentifier.h>
 #import <AerisMap/AWFMapItemStyle.h>
 #import <AerisMap/AWFAnnotationStyle.h>
+#import <AerisMap/AWFTextLabelAnnotation.h>
+#import <AerisMap/AWFTextAnnotationStyle.h>
 #import <AerisMap/AWFEarthquakeAnnotationStyle.h>
 #import <AerisMap/AWFFireAnnotationStyle.h>
 #import <AerisMap/AWFLightningStrikeAnnotationStyle.h>
@@ -65,6 +66,8 @@
 #import <AerisMap/AWFRecordLegendStyle.h>
 #import <AerisMap/AWFTemperatureLegendStyle.h>
 #import <AerisMap/AWFWindLegendStyle.h>
+#import <AerisMap/AWFSnowDepthLegendStyle.h>
+#import <AerisMap/AWFFutureSnowLegendStyle.h>
 
 #import <AerisMap/AWFAnimation.h>
 #import <AerisMap/AWFAnimationTimeline.h>
@@ -91,5 +94,6 @@
 #import <AerisMap/AWFEarthquakeAnnotationView.h>
 #import <AerisMap/AWFLightningStrikeAnnotationView.h>
 #import <AerisMap/AWFStormCellAnnotationView.h>
+#import <AerisMap/AWFTextLabelAnnotationView.h>
 
 #import <AerisMap/MKMapView+AerisMap.h>

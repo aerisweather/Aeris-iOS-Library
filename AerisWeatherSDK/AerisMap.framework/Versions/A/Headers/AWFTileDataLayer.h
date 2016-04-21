@@ -1,5 +1,5 @@
 //
-//  AWFTileOverlay.h
+//  AWFTileDataLayer.h
 //  AerisMap
 //
 //  Created by Nicholas Shipes on 10/17/13.
@@ -23,10 +23,7 @@
  */
 @property (nonatomic, readonly) NSString *URLTemplate;
 
-/**
- *  The base URL string to use for generating tile URLs.
- */
-@property (nonatomic, copy) NSString *URLBase;
+@property (nonatomic, strong) NSArray *layerTypeCodes;
 
 ///**
 // *  The overlay object that is added to a map.
@@ -45,6 +42,10 @@
  *  Current date of the data being used in the data layer.
  */
 @property (nonatomic, strong) NSDate *date;
+
+@property (nonatomic, strong) NSString *interval;
+
+@property (nonatomic, assign) BOOL isFutureLayer;
 
 /**
  *  The animation object associated with the data layer.

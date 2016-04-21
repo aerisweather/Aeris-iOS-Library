@@ -70,6 +70,12 @@
  *  @param weatherMap The weather map that stopped animating.
  */
 - (void)weatherMapDidStopAnimating:(AWFWeatherMap *)weatherMap;
+
+/**
+ *  Tells the delegate that the weather map reset the animation. This typically happens only when the animation's start and/or end dates change.
+ *
+ *  @param weatherMap The weather map that reset the animation
+ */
 - (void)weatherMapDidResetAnimation:(AWFWeatherMap *)weatherMap;
 
 /**
@@ -114,14 +120,80 @@
 // @name Responding to Gestures
 //-----------------------------------------------------------------------------
 
+/**
+ *  Tells the delegate that a long press gesture started at the specified map coordinate.
+ *
+ *  @param weatherMap The weather map receiving the gesture
+ *  @param coordinate The map coordinate where the gesture started
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didStartLongPressGestureAtCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ *  Tells the delegate that a long press gesture completed at the specified map coordinate
+ *
+ *  @param weatherMap The weather map receiving the gesture
+ *  @param coordinate The map coordinate where the gesture occurred
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didReceiveLongPressGestureAtCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ *  Tells the delegate that the long press gesture was cancelled before completing.
+ *
+ *  @param weatherMap The weather map receiving the gesture
+ */
 - (void)weatherMapDidCancelLongPressGesture:(AWFWeatherMap *)weatherMap;
+
+/**
+ *  Tells the delegate that an `AWFPolygon` was tapped on the map.
+ *
+ *  @param weatherMap The weather map containing the polygon
+ *  @param polygon    The polygon that was tapped
+ *  @param coordinate The map coordinate where the tap occurred
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didTapPolygon:(id<AWFPolygon>)polygon atCoordinate:(CLLocationCoordinate2D)coordinate;
+
+/**
+ *  Tells the delegate that the weather map is about to present a callout view for the specified annotation.
+ *
+ *  @param weatherMap  The weather map presenting the callout
+ *  @param calloutView The callout view
+ *  @param annotation  The annotation from which the callout will present from
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap willPresentCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
+
+/**
+ *  Tells the delegate that the weather map has presented a callout view for the specified annotation.
+ *
+ *  @param weatherMap  The weather map that presented the callout
+ *  @param calloutView The callout view
+ *  @param annotation  The annotation from which the callout was presented from
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didPresentCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
+
+/**
+ *  Tells the delegate that the weather map is about to dismiss a callout view for the specified annotation.
+ *
+ *  @param weatherMap  The weather map that will dismiss the callout
+ *  @param calloutView The callout view
+ *  @param annotation  The annotation from which the callout was presented from
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap willDismissCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
+
+/**
+ *  Tells the delegate that the weather map has dismissed a callout view for the specified annotation.
+ *
+ *  @param weatherMap  The weather map that dismissed the callout
+ *  @param calloutView The callout view
+ *  @param annotation  The annotation from which the callout was presented from
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap didDismissCalloutView:(AWFCalloutView *)calloutView forAnnotation:(id)annotation;
+
+/**
+ *  Tells the delegate that an accessory view was tapped for the displayed callout view.
+ *
+ *  @param weatherMap The weather map containing the callout view
+ *  @param control    The accessory view that was tapped
+ */
 - (void)weatherMap:(AWFWeatherMap *)weatherMap calloutAccessoryControlTapped:(UIControl *)control;
 
 @end

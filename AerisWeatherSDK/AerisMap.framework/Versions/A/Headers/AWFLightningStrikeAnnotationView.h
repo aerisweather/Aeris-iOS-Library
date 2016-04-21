@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFMKAnnotationView.h>
 
+/**
+ *  An `AWFLightningStrikeAnnotationView` object is an `AWFMKAnnotationView` subclass to represent lightning-related annotations on a weather map.
+ */
 @interface AWFLightningStrikeAnnotationView : AWFMKAnnotationView
 
 @end

@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFBarLegendStyle.h>
 
+/**
+ *  An `AWFWindLegendStyle` object provides the style specifications to be used for a wind speed legend view.
+ */
 @interface AWFWindLegendStyle : AWFBarLegendStyle
 
 @end

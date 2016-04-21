@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFPolygonStyle.h>
 
+/**
+ *  An `AWFDroughtIndexPolygonStyle` object provides the style specifications to be used for a drought index polygon's representation on a map.
+ */
 @interface AWFDroughtIndexPolygonStyle : AWFPolygonStyle
 
 @end

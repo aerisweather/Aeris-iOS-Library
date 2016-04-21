@@ -29,6 +29,11 @@
 @property (nonatomic, strong) AWFRequestOptions *requestOptions;
 
 /**
+ *  The minimum distance, in points, between rendered points for the overlay. Default is `0`, meaning all points will be rendered.
+ */
+@property (nonatomic, assign) CGFloat minimumInteritemDistance;
+
+/**
  *  The animation object associated with the overlay.
  */
 @property (nonatomic, strong) AWFPointDataAnimation *animation;

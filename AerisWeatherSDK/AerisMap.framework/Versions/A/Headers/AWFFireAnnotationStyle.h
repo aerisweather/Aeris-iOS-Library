@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFFireAnnotationStyle` object provides the style specifications to be used for a fire-related annotation's representation on a map.
+ */
 @interface AWFFireAnnotationStyle : AWFAnnotationStyle
 
 @end

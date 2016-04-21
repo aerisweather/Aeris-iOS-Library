@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFBarLegendStyle.h>
 
+/**
+ *  An `AWFSnowDepthLegendStyle` object provides the style specifications to be used for a temperature legend view.
+ */
 @interface AWFTemperatureLegendStyle : AWFBarLegendStyle
 
 @end

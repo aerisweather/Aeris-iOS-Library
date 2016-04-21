@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFRecordAnnotationStyle` object provides the style specifications to be used for a record-related annotation's representation on a map.
+ */
 @interface AWFRecordAnnotationStyle : AWFAnnotationStyle
 
 @end

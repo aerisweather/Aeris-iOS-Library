@@ -10,8 +10,15 @@
 
 @class AWFImageOverlay;
 
+/**
+ *  An `AWFMKImageDataLayer` object is a subclass of `AWFImageDataLayer` that provides the necessary `MKOverlay` instance to use with Apple's MapKit for displaying
+ *  a single static image overlay on an `MKMapView` instance.
+ */
 @interface AWFMKImageDataLayer : AWFImageDataLayer <AWFImageDataLayer>
 
+/**
+ *  The `MKOverlay` instance managing the image.
+ */
 @property (readonly, nonatomic, strong) AWFImageOverlay *overlay;
 
 @end

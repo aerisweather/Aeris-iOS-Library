@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFMapItemStyle.h>
 
+/**
+ *  An `AWFPolygonStyle` object provides the style specifications to be used for a polygon's representation on a map.
+ */
 @interface AWFPolygonStyle : AWFMapItemStyle
 
 @end

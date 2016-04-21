@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFLightningStrikeAnnotationStyle` object provides the style specifications to be used for a lightning-related annotation's representation on a map.
+ */
 @interface AWFLightningStrikeAnnotationStyle : AWFAnnotationStyle
 
 @end

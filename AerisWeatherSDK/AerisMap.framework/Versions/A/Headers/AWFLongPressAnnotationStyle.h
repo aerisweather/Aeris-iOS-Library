@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFLongPressAnnotationStyle` object provides the style specifications to be used for representing a long press on a weather map.
+ */
 @interface AWFLongPressAnnotationStyle : AWFAnnotationStyle
 
 @end

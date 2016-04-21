@@ -101,6 +101,15 @@
  */
 + (AWFLayerType)futureLayerTypeForType:(AWFLayerType)layerType forecastModel:(AWFForecastModelType)modelType;
 
+/**
+ *  Returns the `AWFWeatherDataType` associated with the specified `layerType`.
+ *
+ *  @param layerType The layer type
+ *
+ *  @return The `AWFWeatherDataType` for the `layerType`, or `AWFWeatherDataTypeNone` if not specified
+ */
++ (AWFWeatherDataType)weatherDataTypeForLayerType:(AWFLayerType)layerType;
+
 @end
 
 

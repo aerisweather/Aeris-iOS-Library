@@ -175,6 +175,11 @@ typedef NS_ENUM(NSUInteger, AWFMapOption) {
  */
 @property (assign, nonatomic) AWFLayerType layerType;
 
+/**
+ *  Instantiates and returns an `AWFTableLayerTypeRow` instance initialized with the specified `title` and `layerType`.
+ *
+ *  @return An initialized `AWFTableLayerTypeRow`
+ */
 + (instancetype)rowWithTitle:(NSString *)title layerType:(AWFLayerType)layerType;
 
 @end

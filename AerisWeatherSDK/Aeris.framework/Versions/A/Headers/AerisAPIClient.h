@@ -62,27 +62,21 @@ extern NSUInteger const AerisAPIErrorCodeInvalidCoordinateBounds;
 extern NSUInteger const AerisAPIErrorCodeInvalidPolygon;
 extern NSUInteger const AerisAPIErrorCodeObjectNotExists;
 
-typedef void (^AWFRequestCompletionBlock)(AFHTTPRequestOperation *operation, AWFResponse *response, NSError *error);
+typedef void (^AWFRequestCompletionBlock)(NSURLSessionDataTask *operation, AWFResponse *response, NSError *error);
 
-@interface AerisAPIClient : AFHTTPRequestOperationManager
+@interface AerisAPIClient : AFHTTPSessionManager
 
 @property (readonly, nonatomic) NSString *serverPath;
 
 + (instancetype)sharedClient;
 
-- (AFHTTPRequestOperation *)GET:(NSString *)URLString
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
 						expires:(NSTimeInterval)expires
                      parameters:(NSDictionary *)parameters
-                        success:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
-                        failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
+                        success:(void (^)(NSURLSessionDataTask *operation, id responseObject))success
+                        failure:(void (^)(NSURLSessionDataTask *operation, NSError *error))failure;
 
-//- (void)getPath:(NSString *)path
-//		expires:(NSTimeInterval)expires
-//	 parameters:(NSDictionary *)parameters
-//		success:(void (^)(AFHTTPRequestOperation *, id responseObject))success
-//		failure:(void (^)(AFHTTPRequestOperation *, NSError *error))failure;
-
-- (AFHTTPRequestOperation *)GET:(NSString *)URLString
+- (NSURLSessionDataTask *)GET:(NSString *)URLString
 						expires:(NSTimeInterval)expires
                      parameters:(NSDictionary *)parameters
 					 completion:(AWFRequestCompletionBlock)completionBlock;

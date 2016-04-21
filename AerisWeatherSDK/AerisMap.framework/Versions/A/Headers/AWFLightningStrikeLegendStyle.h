@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFDataLegendStyle.h>
 
+/**
+ *  An `AWFLightningStrikeLegendStyle` object provides the style specifications to be used for a lightning strike legend view.
+ */
 @interface AWFLightningStrikeLegendStyle : AWFDataLegendStyle
 
 @end

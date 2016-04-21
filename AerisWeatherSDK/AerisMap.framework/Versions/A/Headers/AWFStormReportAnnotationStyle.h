@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFStormReportAnnotationStyle` object provides the style specifications to be used for a storm report-related annotation's representation on a map.
+ */
 @interface AWFStormReportAnnotationStyle : AWFAnnotationStyle
 
 @end

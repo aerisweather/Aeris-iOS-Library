@@ -15,6 +15,7 @@
 
 #import <AerisGoogleMap/AWFGMAnnotation.h>
 #import <AerisGoogleMap/AWFGMStyledAnnotation.h>
+#import <AerisGoogleMap/AWFGMTextLabelAnnotation.h>
 #import <AerisGoogleMap/AWFGMPolyline.h>
 #import <AerisGoogleMap/AWFGMPolygon.h>
 #import <AerisGoogleMap/AWFGMMultiShapeOverlay.h>

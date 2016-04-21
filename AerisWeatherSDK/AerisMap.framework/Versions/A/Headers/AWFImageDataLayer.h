@@ -12,7 +12,7 @@
 @protocol AWFImageDataLayer;
 
 /**
- *  An `AWFImageOverlay` object represents a overlay that contains a single image on a map.
+ *  An `AWFImageDataLayer` object represents a overlay that contains a single image on a map.
  */
 @interface AWFImageDataLayer : AWFDataLayer
 

@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFPolygonStyle.h>
 
+/**
+ *  An `AWFWarningPolygonStyle` object provides the style specifications to be used for a warning polygon's representation on a map.
+ */
 @interface AWFWarningPolygonStyle : AWFPolygonStyle
 
 @end

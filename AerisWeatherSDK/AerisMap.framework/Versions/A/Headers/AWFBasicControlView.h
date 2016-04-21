@@ -39,9 +39,26 @@
  */
 @property (nonatomic, assign) NSDate *currentTime;
 
+
+/**
+ *  The default frame of the view.
+ */
 + (CGRect)defaultFrame;
 
+/**
+ *  Updates the loading progress indicator based on the download progress when requesting remote data required for the animation.
+ *
+ *  @param progress The download progress of animation data, from `0.0` (none) to `1.0` (complete).
+ *  @param animated A Boolean indicating whether or not the update should be animated.
+ */
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
+
+/**
+ *  Whether or not to display the loading indicator. This is used when data has to be requested from a remote source before an animation
+ *  can begin playback.
+ *
+ *  @param loading A Boolean indicating whether or not to display the loading indicator.
+ */
 - (void)showLoading:(BOOL)loading;
 
 @end

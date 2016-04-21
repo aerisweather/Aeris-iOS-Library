@@ -8,10 +8,25 @@
 
 #import <AerisUI/AerisUI.h>
 
+/**
+ *  An `AWFObservationCalloutContentView` object is a `AWFCalloutContentView` subclass that displays a temperature value and weather icon within a weather
+ *  map's callout view. This class is typically used on a long press gesture on the weather map to display current weather conditions at that coordinate.
+ */
 @interface AWFObservationCalloutContentView : AWFCalloutContentView
 
+/**
+ *  The temperature text label.
+ */
 @property (readonly, nonatomic, strong) UILabel *tempLabel;
+
+/**
+ *  The icon image view.
+ */
 @property (readonly, nonatomic, strong) UIImageView *iconView;
+
+/**
+ *  A Boolean value indicated whether the view currently has data.
+ */
 @property (nonatomic, assign) BOOL hasData;
 
 @end

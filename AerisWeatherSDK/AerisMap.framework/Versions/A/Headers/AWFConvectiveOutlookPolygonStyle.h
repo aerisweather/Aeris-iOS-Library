@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFPolygonStyle.h>
 
+/**
+ *  An `AWFConvectiveOutlookPolygonStyle` object provides the style specifications to be used for a convective outlook polygon's representation on a map.
+ */
 @interface AWFConvectiveOutlookPolygonStyle : AWFPolygonStyle
 
 @end

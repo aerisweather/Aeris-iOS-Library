@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFBarLegendStyle.h>
 
+/**
+ *  An `AWFAccumulatedPrecipLegendStyle` object provides the style specifications to be used for an accumulated precipitation legend view.
+ */
 @interface AWFAccumulatedPrecipLegendStyle : AWFBarLegendStyle
 
 @end

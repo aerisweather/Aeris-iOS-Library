@@ -8,7 +8,9 @@
 
 #import <AerisMap/AWFBarLegendStyle.h>
 
+/**
+ *  An `AWFRadarLegendStyle` object provides the style specifications to be used for a radar legend view.
+ */
 @interface AWFRadarLegendStyle : AWFBarLegendStyle
-
 
 @end

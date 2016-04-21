@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFDataLegendStyle.h>
 
+/**
+ *  An `AWFRecordLegendStyle` object provides the style specifications to be used for a records legend view.
+ */
 @interface AWFRecordLegendStyle : AWFDataLegendStyle
 
 @end

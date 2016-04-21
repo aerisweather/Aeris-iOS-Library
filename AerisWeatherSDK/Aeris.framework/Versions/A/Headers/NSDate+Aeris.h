@@ -43,6 +43,7 @@ extern NSTimeInterval const AWFYearInterval;
 
 extern NSString * const AWFDateFormatYear;
 extern NSString * const AWFDateFormatMonth;
+extern NSString * const AWFDateFormatMonthWithZeroPadding;
 extern NSString * const AWFDateFormatMonthName;
 extern NSString * const AWFDateFormatMonthNameFull;
 extern NSString * const AWFDateFormatDate;
@@ -56,6 +57,7 @@ extern NSString * const AWFDateFormatHourWithZeroPadding;
 extern NSString * const AWFDateFormatHour24;
 extern NSString * const AWFDateFormatHour24WithZeroPadding;
 extern NSString * const AWFDateFormatMinutes;
+extern NSString * const AWFDateFormatMinutesWithZeroPadding;
 extern NSString * const AWFDateFormatSeconds;
 extern NSString * const AWFDateFormatPeriod;
 extern NSString * const AWFDateFormatTimeZoneName;

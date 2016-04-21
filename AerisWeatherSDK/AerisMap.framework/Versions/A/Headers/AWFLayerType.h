@@ -21,7 +21,7 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Radar tile overlay.
 	 */
 	AWFLayerTypeRadar,
-	AWFLayerTypeRadarDev,
+	
 	/**
 	 *  NEXRAD radar overlay (NIDs).
 	 */
@@ -30,10 +30,7 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Black and white infrared satellite tile overlay.
 	 */
 	AWFLayerTypeSatellite,
-	/**
-	 *  Black and white visible satellite tile overlay.
-	 */
-	AWFLayerTypeSatelliteVisible,
+
 	/**
 	 *  High-resolution black and white visible satellite tile overlay.
 	 */
@@ -46,19 +43,24 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Weather advisories and alerts tile overlay.
 	 */
 	AWFLayerTypeAdvisory,
+	
+	AWFLayerTypeLightningStrikeDensity,
+	
 	/**
 	 *  Estimated snow depth tile overlay.
 	 */
 	AWFLayerTypeSnowDepth,
+	AWFLayerTypeSnowDepthGlobal,
+	
 	AWFLayerTypeQpf,
 	/**
 	 *  Current surface temperatures tile overlay.
 	 */
-	AWFLayerTypeTemperatures,
+	AWFLayerTypeTemperature,
 	/**
 	 *  Current surface wind speeds tile overlay.
 	 */
-	AWFLayerTypeWinds,
+	AWFLayerTypeWind,
 	/**
 	 *  Current surface dew points tile overlay.
 	 */
@@ -75,6 +77,9 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *  Current surface heat index tile overlay.
 	 */
 	AWFLayerTypeHeatIndex,
+	
+	AWFLayerType1HourPrecip,
+	
 	/**
 	 *  Current oceanic chlorophyll tile overlay.
 	 */
@@ -82,40 +87,35 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	/**
 	 *  Current sea surface temperatures tile overlay.
 	 */
-	AWFLayerTypeCurrentSeaSurfaceTemperatures,
+	AWFLayerTypeCurrentSeaSurfaceTemperature,
+	
+	AWFLayerTypeRoadCondition,
 	
 	AWFLayerTypeFutureRadarHRRR,
 	AWFLayerTypeFutureRadarNAM4K,
 	AWFLayerTypeFutureRadarNAM12K,
-	AWFLayerTypeFutureRadarRAP,
-	AWFLayerTypeFutureCloudsHRRR,
 	AWFLayerTypeFutureCloudsNAM4K,
-	AWFLayerTypeFutureCloudsNAM12K,
 	AWFLayerTypeFuturePrecip,
-	AWFLayerTypeFuturePrecipHRRR,
 	AWFLayerTypeFuturePrecipNAM4K,
 	AWFLayerTypeFuturePrecipNAM12K,
-//	AWFLayerTypeFutureQpfHRRR,
-//	AWFLayerTypeFutureQpfNAM4K,
-//	AWFLayerTypeFutureQpfNAM12K,
+	AWFLayerTypeFutureRain,
+	AWFLayerTypeFutureRainHRRR,
+	AWFLayerTypeFutureRainNAM4K,
+	AWFLayerTypeFutureRainNAM12K,
+	AWFLayerTypeFutureRainGFS,
+	AWFLayerTypeFutureSnow,
+	AWFLayerTypeFutureSnowNAM4K,
+	AWFLayerTypeFutureSnowNAM12K,
+	AWFLayerTypeFutureSnowGFS,
 	AWFLayerTypeFutureWindsHRRR,
 	AWFLayerTypeFutureWindsNAM4K,
 	AWFLayerTypeFutureWindsNAM12K,
 	AWFLayerTypeFutureTemperaturesHRRR,
 	AWFLayerTypeFutureTemperaturesNAM4K,
 	AWFLayerTypeFutureTemperaturesNAM12K,
-	
-	/**
-	 *  Tile overlay combining radar and infrared satellite.
-	 */
-	AWFLayerTypeRadarSatellite,
-	/**
-	 *  Tile overlay combining radar and weather advisories.
-	 */
-	AWFLayerTypeRadarAdvisory,
-	
-	AWFLayerTypeFutureRadarCloudsHRRR,
-	
+	AWFLayerTypeFutureTemperaturesGFS,
+	AWFLayerTypeFutureRoadCondition,
+	AWFLayerTypeFutureRoadConditionIndex,
 	
 	/**
 	 *  Overlay displaying short-fuse warning polygons (tornado, severe thunderstorm, flash flood, etc).
@@ -142,18 +142,7 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	 *
 	 */
 	AWFLayerTypeObservation,
-	/**
-	 *
-	 */
-	AWFLayerTypeRiver,
-	/**
-	 *
-	 */
-	AWFLayerTypeTide,
-	/**
-	 *
-	 */
-	AWFLayerTypeBuoy,
+
 	/**
 	 *  Overlay displaying storm cell data, including current and forecast positions.
 	 */
@@ -177,14 +166,5 @@ typedef NS_ENUM(NSUInteger, AWFLayerType) {
 	/**
 	 *  Overlay displaying position and intensity of earthquakes.
 	 */
-	AWFLayerTypeEarthquake,
-	
-	
-	// Backwards compatibility
-	AWFLayerTypeCurrentTemperatures = AWFLayerTypeTemperatures,
-	AWFLayerTypeCurrentWinds = AWFLayerTypeWinds,
-	AWFLayerTypeCurrentDewPoint = AWFLayerTypeDewPoint,
-	AWFLayerTypeCurrentHumidity = AWFLayerTypeHumidity,
-	AWFLayerTypeCurrentWindChill = AWFLayerTypeWindChill,
-	AWFLayerTypeCurrentHeatIndex = AWFLayerTypeHeatIndex
+	AWFLayerTypeEarthquake
 };

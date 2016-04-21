@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFAnnotationStyle.h>
 
+/**
+ *  An `AWFStormCellAnnotationStyle` object provides the style specifications to be used for a storm cell-related annotation's representation on a map.
+ */
 @interface AWFStormCellAnnotationStyle : AWFAnnotationStyle
 
 @end

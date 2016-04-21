@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFPolygonStyle.h>
 
+/**
+ *  An `AWFFireOutlookPolygonStyle` object provides the style specifications to be used for a fire outlook polygon's representation on a map.
+ */
 @interface AWFFireOutlookPolygonStyle : AWFPolygonStyle
 
 @end

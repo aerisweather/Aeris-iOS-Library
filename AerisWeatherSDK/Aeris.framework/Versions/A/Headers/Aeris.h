@@ -16,6 +16,8 @@
 #import <Aeris/AWFObjectLoader.h>
 #import <Aeris/AWFObject.h>
 #import <Aeris/AWFGeographicObject.h>
+#import <Aeris/AWFRequest.h>
+#import <Aeris/AWFResponse.h>
 #import <Aeris/AWFRequestOptions.h>
 #import <Aeris/AWFRequestFilter.h>
 #import <Aeris/AWFRequestQuery.h>
@@ -48,6 +50,8 @@
 #import <Aeris/AWFPhrasesLoader.h>
 #import <Aeris/AWFConvectiveLoader.h>
 #import <Aeris/AWFDroughtLoader.h>
+#import <Aeris/AWFPrecipitationLoader.h>
+#import <Aeris/AWFWinterLoader.h>
 #import <Aeris/AWFBatchLoader.h>
 
 #import <Aeris/AWFPlace.h>
@@ -81,6 +85,9 @@
 #import <Aeris/AWFStormThreat.h>
 #import <Aeris/AWFConvectiveOutlook.h>
 #import <Aeris/AWFDroughtIndex.h>
+#import <Aeris/AWFPrecipitationEstimate.h>
+#import <Aeris/AWFPrecipitationPeriod.h>
+#import <Aeris/AWFSnowDepth.h>
 
 #import <Aeris/NSBundle+Aeris.h>
 #import <Aeris/AWFObject+AutoCoding.h>

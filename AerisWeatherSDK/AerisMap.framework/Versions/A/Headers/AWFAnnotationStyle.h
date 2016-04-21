@@ -72,12 +72,29 @@
  */
 @property (nonatomic, assign) BOOL shouldAnimate;
 
+/**
+ *  The number of seconds to display the annotation before hiding when part of a weather map animation.
+ */
 @property (nonatomic, assign) NSTimeInterval animationSecondsToHideAfterDisplaying;
 
+/**
+ *  The initial transform to apply to the annotation view when animating. Default is `CATransform3DIdentity`.
+ */
 @property (nonatomic, assign) CATransform3D transform;
+
+/**
+ *  The `CAAnimation` instance to use when presenting the annotation.
+ */
 @property (nonatomic, strong) CAAnimation *inAnimation;
+
+/**
+ *  The `CAAnimation` instance to use when dismissing the annotation.
+ */
 @property (nonatomic, strong) CAAnimation *outAnimation;
 
+/**
+ *  The image to display for the annotation.
+ */
 @property (nonatomic, strong) UIImage *icon;
 
 /**
@@ -108,7 +125,18 @@
  */
 - (UIImage *)imageFromStyle;
 
+/**
+ *  Presents the annotation view by applying the `inAnimation` animation to the specified `layer`.
+ *
+ *  @param layer The layer to apply the animation to
+ */
 - (void)applyPresentationAnimationToLayer:(CALayer *)layer;
+
+/**
+ *  Dismisses the annotation view by applying the `outAnimation` animation to the specified `layer`.
+ *
+ *  @param layer The layer to apply the animation to
+ */
 - (void)applyDismissAnimationToLayer:(CALayer *)layer;
 
 @end

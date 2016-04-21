@@ -8,6 +8,9 @@
 
 #import <AerisMap/AWFMKAnnotationView.h>
 
+/**
+ *  An `AWFStormCellAnnotationView` object is an `AWFMKAnnotationView` subclass to represent storm cell-related annotations on a weather map.
+ */
 @interface AWFStormCellAnnotationView : AWFMKAnnotationView
 
 @end

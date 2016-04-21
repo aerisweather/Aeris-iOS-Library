@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM (NSUInteger, AWFWeatherDataType) {
-	AWFWeatherDataTypeWeather = 0,
+	AWFWeatherDataTypeNone = 0,
+	AWFWeatherDataTypeWeather,
 	AWFWeatherDataTypeSkyCover,
 	AWFWeatherDataTypeLight,
 	AWFWeatherDataTypeVisibility,
