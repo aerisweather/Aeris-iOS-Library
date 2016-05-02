@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     ss.public_header_files = 'AerisWeatherSDK/Aeris.framework/**/*.h'
     ss.resources = 'AerisWeatherSDK/Aeris.bundle'
     ss.framework = 'Foundation'
-    ss.dependency 'AFNetworking', '~> 2.6'
+    ss.dependency 'AFNetworking', '~> 3.0'
   end
 
   s.subspec 'AerisUI' do |ss|
