@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23C566349BC3A0F380836AF3 /* libPods-AerisSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0F98F6FD7EB901B83B193C7 /* libPods-AerisSDKDemo.a */; };
 		2BA9DB881BF51A4D003D664F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB201BF51A4D003D664F /* AppDelegate.m */; };
 		2BA9DB891BF51A4D003D664F /* AppleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB221BF51A4D003D664F /* AppleMapViewController.m */; };
 		2BA9DB8A1BF51A4D003D664F /* BarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA9DB241BF51A4D003D664F /* BarGraphsViewController.m */; };
@@ -61,11 +62,9 @@
 		2BEDF76219C0CF7900BECBB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BEDF76119C0CF7900BECBB2 /* main.m */; };
 		2BEDF78219C0D31000BECBB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF77E19C0D31000BECBB2 /* InfoPlist.strings */; };
 		2BEDF78319C0D31000BECBB2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BEDF78019C0D31000BECBB2 /* Images.xcassets */; };
-		DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AerisSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5EB70919BFCD700013C45C /* AerisSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5EB70C19BFCD700013C45C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,8 +190,9 @@
 		2BEDF77C19C0D31000BECBB2 /* AerisSDKDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AerisSDKDemo-Prefix.pch"; path = "Other Sources/AerisSDKDemo-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		2BEDF77F19C0D31000BECBB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		2BEDF78019C0D31000BECBB2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Other Sources/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		70ADACD707EA64B4E2166FF6 /* Pods-AerisSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
-		C55405D229A1A310F4644359 /* Pods-AerisSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A0F98F6FD7EB901B83B193C7 /* libPods-AerisSDKDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AerisSDKDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0859CF20A4DCAC434A6CEA /* Pods-AerisSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSDKDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E918626A9D0C063B7D0E3050 /* Pods-AerisSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSDKDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,7 +200,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF450D7E8C304DBC872EC7C0 /* libPods-AerisSDKDemo.a in Frameworks */,
+				23C566349BC3A0F380836AF3 /* libPods-AerisSDKDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +213,7 @@
 				2B5EB71219BFCD700013C45C /* AerisSDKDemo */,
 				2B5EB70B19BFCD700013C45C /* Frameworks */,
 				2B5EB70A19BFCD700013C45C /* Products */,
-				B4A0FDB9A5EF20212D214EA1 /* Pods */,
+				72DACD1519A126936B0167AA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,7 +246,7 @@
 				2B5EB70E19BFCD700013C45C /* CoreGraphics.framework */,
 				2B5EB71019BFCD700013C45C /* UIKit.framework */,
 				2B5EB72519BFCD700013C45C /* XCTest.framework */,
-				04D27820EC6D43B3B62EDA64 /* libPods-AerisSDKDemo.a */,
+				A0F98F6FD7EB901B83B193C7 /* libPods-AerisSDKDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -437,11 +437,11 @@
 			path = "Other Sources/en.lproj";
 			sourceTree = SOURCE_ROOT;
 		};
-		B4A0FDB9A5EF20212D214EA1 /* Pods */ = {
+		72DACD1519A126936B0167AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C55405D229A1A310F4644359 /* Pods-AerisSDKDemo.debug.xcconfig */,
-				70ADACD707EA64B4E2166FF6 /* Pods-AerisSDKDemo.release.xcconfig */,
+				BC0859CF20A4DCAC434A6CEA /* Pods-AerisSDKDemo.debug.xcconfig */,
+				E918626A9D0C063B7D0E3050 /* Pods-AerisSDKDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -453,12 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5EB73519BFCD700013C45C /* Build configuration list for PBXNativeTarget "AerisSDKDemo" */;
 			buildPhases = (
-				45336EFD53E4412BB143761D /* Check Pods Manifest.lock */,
+				DD704AA6325BFCF909DB3796 /* 📦 Check Pods Manifest.lock */,
 				2B5EB70519BFCD700013C45C /* Sources */,
 				2B5EB70619BFCD700013C45C /* Frameworks */,
 				2B5EB70719BFCD700013C45C /* Resources */,
-				5645966CA4E545739CD8B09F /* Copy Pods Resources */,
-				B226B31C4F5694AB28B8EC20 /* Embed Pods Frameworks */,
+				4386F2962BA28536C96EE704 /* 📦 Embed Pods Frameworks */,
+				69B823E961A36CEEACC31B3C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -509,29 +509,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45336EFD53E4412BB143761D /* Check Pods Manifest.lock */ = {
+		4386F2962BA28536C96EE704 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5645966CA4E545739CD8B09F /* Copy Pods Resources */ = {
+		69B823E961A36CEEACC31B3C /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,19 +539,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B226B31C4F5694AB28B8EC20 /* Embed Pods Frameworks */ = {
+		DD704AA6325BFCF909DB3796 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerisSDKDemo/Pods-AerisSDKDemo-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -704,7 +704,7 @@
 		};
 		2B5EB73619BFCD700013C45C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C55405D229A1A310F4644359 /* Pods-AerisSDKDemo.debug.xcconfig */;
+			baseConfigurationReference = BC0859CF20A4DCAC434A6CEA /* Pods-AerisSDKDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -726,7 +726,7 @@
 		};
 		2B5EB73719BFCD700013C45C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70ADACD707EA64B4E2166FF6 /* Pods-AerisSDKDemo.release.xcconfig */;
+			baseConfigurationReference = E918626A9D0C063B7D0E3050 /* Pods-AerisSDKDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
