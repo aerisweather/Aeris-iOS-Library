@@ -9,7 +9,7 @@
 #import <MapKit/MapKit.h>
 #import <AerisMap/AWFMapStrategy.h>
 
-@class AWFAnimationContainerView, AWFAnnotation;
+@class AWFMKAnimationContainerView, AWFAnnotation;
 
 /**
  *  An `AWFAppleMapStrategy` object implements the `AWFMapStrategy` protocol and provides the necessary functionality for managing a `AWFWeatherMap` configured
@@ -26,7 +26,7 @@
 @property (nonatomic, readonly) CLLocationCoordinate2D centerCoordinate;
 @property (nonatomic, readonly) NSInteger zoomLevel;
 
-@property (readonly, nonatomic, strong) AWFAnimationContainerView *animationContainerView;
+@property (readonly, nonatomic, strong) AWFMKAnimationContainerView *animationContainerView;
 @property (readonly, nonatomic, strong) AWFCalloutView *calloutView;
 
 @property (nonatomic, unsafe_unretained) id<MKMapViewDelegate> mapViewDelegate;

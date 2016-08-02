@@ -8,7 +8,7 @@
 
 #import <AerisMap/AWFImageDataLayer.h>
 
-@class AWFImageOverlay;
+@class AWFMKImageOverlay;
 
 /**
  *  An `AWFMKImageDataLayer` object is a subclass of `AWFImageDataLayer` that provides the necessary `MKOverlay` instance to use with Apple's MapKit for displaying
@@ -19,6 +19,6 @@
 /**
  *  The `MKOverlay` instance managing the image.
  */
-@property (readonly, nonatomic, strong) AWFImageOverlay *overlay;
+@property (readonly, nonatomic, strong) AWFMKImageOverlay *overlay;
 
 @end

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AerisWeather'
-  s.version      = '2.3.5'
+  s.version      = '2.3.6'
   s.summary      = 'Quickly integrate the Aeris Weather API data and map overlays into your iOS apps.'
   s.description  = <<-DESC
                       The Aeris iOS Weather Framework allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the Aeris API backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
@@ -20,7 +20,9 @@ Pod::Spec.new do |s|
   s.subspec 'Aeris' do |ss|
     ss.header_dir = 'Aeris'
     ss.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
-    ss.resources = 'AerisWeatherSDK/Aeris.bundle'
+    ss.resource_bundle = {
+      'Aeris' => ['AerisWeatherSDK/Aeris.bundle/*']
+    }
     ss.framework = 'Foundation'
     ss.dependency 'AFNetworking', '~> 3.0'
   end
@@ -28,7 +30,9 @@ Pod::Spec.new do |s|
   s.subspec 'AerisUI' do |ss|
     ss.header_dir = 'AerisUI'
     ss.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
-    ss.resources = 'AerisWeatherSDK/AerisUI.bundle'
+    ss.resource_bundle = {
+      'AerisUI' => ['AerisWeatherSDK/AerisUI.bundle/*']
+    }
     ss.framework = 'UIKit'
     ss.dependency 'AerisWeather/Aeris'
   end
