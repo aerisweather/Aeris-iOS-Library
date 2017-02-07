@@ -61,7 +61,8 @@ Here's more information from Apple's Developer Forums regarding the issue: [http
 
 1. Checkout or download the [Aeris-iOS-Libary repo](https://github.com/aerisweather/Aeris-iOS-Library).
 2. Add the necessary Aeris framework components to your Xcode target from the downloaded files. These components are located under the **AerisWeatherSDK** directory.
-3. Import the necessary framework headers for each Aeris component you are using (e.g. *Aeris*, *AerisUI*, *AerisMap*, etc) where needed within your project:
+3. Add the [AFNetworking library](https://github.com/AFNetworking/AFNetworking) (version 3.0 or higher) to your project according to its specific setup and installation instructions.
+4. Import the necessary framework headers for each Aeris component you are using (e.g. *Aeris*, *AerisUI*, *AerisMap*, etc) where needed within your project:
 
 	```objc
  	#import <Aeris/Aeris.h>
