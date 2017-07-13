@@ -102,4 +102,6 @@ extern NSString *const AWFEngineIsReady;
  */
 + (BOOL)isEngineReady;
 
++ (void)reloadPermissions;
+
 @end
