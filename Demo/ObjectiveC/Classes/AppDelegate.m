@@ -25,7 +25,7 @@
 	} else {
 	}
 	
-	[AerisEngine engineWithKey:@"XqikgxLTkXBLFhPPNj1Z7" secret:@"k8VjxV5jsSEOy5ETjrv7nY76i0al9jK3ZPJ4Y97m"];
+	[AerisEngine engineWithKey:@"__API_KEY__" secret:@"__SECRET_KEY__"];
 	[AerisEngine enableDebug];
 	
 	// must initialize Google Maps SDK with proper API key before using

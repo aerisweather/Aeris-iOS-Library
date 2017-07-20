@@ -2,12 +2,23 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 inhibit_all_warnings!
 
-target 'AerisSDKDemo' do
-	project 'AerisSDKDemo.xcodeproj'
+workspace 'AerisSDKDemo.xcworkspace'
+
+def common_pods
 	pod 'AerisWeather'
 	pod 'AerisWeather/AerisUI'
 	pod 'AerisWeather/AerisMap'
 	pod 'AerisWeather/AerisMapboxMap'
 	pod 'AerisWeather/AerisGoogleMap'
 	pod 'PAPreferences'
+end
+
+target 'AerisSDKDemo-ObjC' do
+	project 'ObjectiveC/AerisSDKDemo-ObjC.xcodeproj'
+	common_pods
+end
+
+target 'AerisSDKDemo-Swift' do
+	project 'Swift/AerisSDKDemo-Swift.xcodeproj'
+	common_pods
 end
