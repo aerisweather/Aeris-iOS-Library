@@ -52,6 +52,7 @@
 #import <Aeris/AWFDroughtLoader.h>
 #import <Aeris/AWFPrecipitationLoader.h>
 #import <Aeris/AWFWinterLoader.h>
+#import <Aeris/AWFRiversLoader.h>
 #import <Aeris/AWFBatchLoader.h>
 
 #import <Aeris/AWFPlace.h>
@@ -88,6 +89,8 @@
 #import <Aeris/AWFPrecipitationEstimate.h>
 #import <Aeris/AWFPrecipitationPeriod.h>
 #import <Aeris/AWFSnowDepth.h>
+#import <Aeris/AWFRiver.h>
+#import <Aeris/AWFRiverGauge.h>
 
 #import <Aeris/NSBundle+Aeris.h>
 #import <Aeris/AWFObject+AutoCoding.h>

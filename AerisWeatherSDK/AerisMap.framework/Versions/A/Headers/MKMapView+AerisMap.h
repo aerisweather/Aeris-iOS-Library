@@ -12,6 +12,8 @@
 
 @interface MKMapView (AerisMap)
 
++ (NSUInteger)awf_zoomLevelForZoomScale:(MKZoomScale)zoomScale;
+
 /**
  *  Returns the current zoom level as an integer from 1 to 20 based on the map's current zoom scale and region.
  *
@@ -105,5 +107,22 @@
  *  @return An {@link AWFCoordinateBounds} instance with the calculated coordinates for the four corners and center.
  */
 - (AWFCoordinateBounds *)af_coordinateBoundsForTileAtX:(NSUInteger)x y:(NSUInteger)y;
+
+/**
+ Returns the x, y, and z coordinates of a map tile for a given map rect and zoom level.
+ */
++ (MKTileOverlayPath)awf_tilePathForMapRect:(MKMapRect)mapRect zoomLevel:(NSInteger)zoomLevel;
+
+/**
+ Returns a map rect for a given map tile's x, y, and z coordinates.
+ */
++ (MKMapRect)awf_mapRectForTilePath:(MKTileOverlayPath)path;
+
+/**
+ Returns the width of a tile when the map is at a given zoom level
+ */
++ (NSUInteger)awf_worldTileWidthForZoomLevel:(NSUInteger)zoomLevel;
+
++ (CGPoint)awf_mercatorTileOriginForMapRect:(MKMapRect)mapRect;
 
 @end

@@ -31,6 +31,11 @@ typedef NS_ENUM(NSInteger, AWFForecastModelType) {
 	AWFForecastModelTypeHRRRSub,
 	
 	/**
+	 *  NAM (North Americal Mesoscale) model.
+	 */
+	AWFForecastModelTypeNAM,
+	
+	/**
 	 *  NAM (North Americal Mesoscale) model at a 4km resolution.
 	 */
 	AWFForecastModelTypeNAM4K,
