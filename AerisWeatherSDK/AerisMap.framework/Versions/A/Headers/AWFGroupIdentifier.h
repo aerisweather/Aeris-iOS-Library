@@ -55,6 +55,16 @@ extern NSString * const AWFFireAnnotationTypeMedium;
 extern NSString * const AWFFireAnnotationTypeLarge;
 extern NSString * const AWFFireAnnotationTypeCritical;
 
+extern NSString * const AWFRiverAnnotationTypeMajor;
+extern NSString * const AWFRiverAnnotationTypeModerate;
+extern NSString * const AWFRiverAnnotationTypeMinor;
+extern NSString * const AWFRiverAnnotationTypeNearFlood;
+extern NSString * const AWFRiverAnnotationTypeNoFlood;
+extern NSString * const AWFRiverAnnotationTypeNotDefined;
+extern NSString * const AWFRiverAnnotationTypeLowWater;
+extern NSString * const AWFRiverAnnotationTypeOldData;
+extern NSString * const AWFRiverAnnotationTypeOutOfService;
+
 @interface AWFGroupIdentifier : NSObject
 
 + (NSArray *)identifiersForObjectClass:(Class)objectClass;

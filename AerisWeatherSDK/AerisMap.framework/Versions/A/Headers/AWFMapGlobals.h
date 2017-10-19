@@ -65,27 +65,6 @@ BOOL AWFIsOverlayType(AWFLayerType type);
 BOOL AWFIsTileLayerType(AWFLayerType type);
 
 /**
- *  Returns `YES` if the layer type is a combined tile overlay.
- *
- *  @param type The {@link AWFLayerType} to check.
- *
- *  @return `YES` if the layer type is a combined tile overlay, otherwise `NO`.
- */
-BOOL AWFIsCombinedTileLayerType(AWFLayerType type);
-
-/**
- *  Returns `YES` if the layer type is a ground tile overlay.
- *
- *	A ground tile overlay is one that covers most or all of the map and is always inserted below non-ground overlays
- *	when added to the map.
- *
- *  @param type The {@link AWFLayerType} to check.
- *
- *  @return `YES` if the layer type is a ground tile overlay, otherwise `NO`.
- */
-BOOL AWFIsGroundTileOverlay(AWFLayerType type);
-
-/**
  *  Returns `YES` if the layer type is a point data overlay.
  *
  *  @param type The {@link AWFLayerType} to check.
@@ -128,9 +107,32 @@ BOOL AWFIsFutureLayerType(AWFLayerType type);
  *
  *  @return `YES` if the layer type is a group, otherwise `NO`
  */
-BOOL AWFIsFutureGroupLayerType(AWFLayerType type);
+BOOL AWFIsFutureOnlyLayerType(AWFLayerType type);
 
 BOOL AWFIsFutureModelLayerType(AWFLayerType type);
+
+AWFLayerType AWFFutureLayerTypeForLayerType(AWFLayerType type);
+
+/**
+ *  Returns `YES` if the layer type is a combined tile overlay.
+ *
+ *  @param type The {@link AWFLayerType} to check.
+ *
+ *  @return `YES` if the layer type is a combined tile overlay, otherwise `NO`.
+ */
+BOOL AWFIsCombinedTileLayerType(AWFLayerType type);
+
+/**
+ *  Returns `YES` if the layer type is a ground tile overlay.
+ *
+ *	A ground tile overlay is one that covers most or all of the map and is always inserted below non-ground overlays
+ *	when added to the map.
+ *
+ *  @param type The {@link AWFLayerType} to check.
+ *
+ *  @return `YES` if the layer type is a ground tile overlay, otherwise `NO`.
+ */
+BOOL AWFIsGroundTileOverlay(AWFLayerType type);
 
 //-----------------------
 // @name Utilities
