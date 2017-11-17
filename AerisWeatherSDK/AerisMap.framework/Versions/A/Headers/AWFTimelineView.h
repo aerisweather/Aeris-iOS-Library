@@ -11,6 +11,8 @@
 @class AWFTimelineView;
 @class AWFTimelineBarView, AWFTimelinePositionView;
 
+typedef NSString * (^AWFTimelineDateFormatter)(NSDate *date);
+
 /**
  *  The `AWFTimelineViewDelegate` protocol defines a set of optional methods that you can use to receive messages related to updates or changes
  *  to a timeline.
@@ -67,6 +69,26 @@
  *  The timeline bar view.
  */
 @property (readonly, nonatomic, strong) AWFTimelineBarView *barView;
+
+/**
+ The height to use for the timeline bar view.
+ */
+@property (nonatomic, assign) CGFloat barHeight;
+
+/**
+ A formatter block that is used to format the time string displayed above the position indicator.
+ */
+@property (nonatomic, copy) AWFTimelineDateFormatter timeFormatter;
+
+/**
+ A formatter block that is used to format the date string displayed below the position indicator.
+ */
+@property (nonatomic, copy) AWFTimelineDateFormatter dateFormatter;
+
+/**
+ The color used for the timeline control buttons.
+ */
+@property (nonatomic, strong) UIColor *buttonColor;
 
 /**
  *  The circular view indicating the timeline's current position.
@@ -134,20 +156,35 @@
 @property (nonatomic, assign) CGFloat futurePosition;
 
 /**
- *  The fill color used to indicate the portion of the timeline that has been loaded based on the `progress` value.
+ The base fill color of the timeline bar.
  */
 @property (nonatomic, strong) UIColor *barFillColor;
+
+/**
+ *  The stroke color to apply around the timeline bar.
+ */
+@property (nonatomic, strong) UIColor *barStrokeColor;
+
+/**
+ The stroke width for the timeline bar.
+ */
+@property (nonatomic, assign) CGFloat barStrokeWidth;
+
+/**
+The fill color used to indicate the portion of the timeline that has been loaded based on the `progress` value.
+ */
+@property (nonatomic, strong) UIColor *progressBarFillColor;
+
+/**
+ The amount the inner progress bar should be inset from the timeline bar's bounds.
+ */
+@property (nonatomic, assign) UIEdgeInsets progressBarInsets;
 
 /**
  *  The fill color used to indiciate the time range in the future. The timeline bar will be filled with this color from the position along the timeline bar indicated
  *  by `futurePosition` and extend to the right bounds of the bar.
  */
 @property (nonatomic, strong) UIColor *futureBarFillColor;
-
-/**
- *  The stroke color to apply around the timeline bar.
- */
-@property (nonatomic, strong) UIColor *barStrokeColor;
 
 @end
 
@@ -191,7 +228,7 @@
 /**
  *  A Boolean indicating whether or not the indicator should appear in a pressed state. When in a pressed state, the indicator increases in scale.
  */
-@property (nonatomic, assign) BOOL pressed;
+@property (nonatomic, assign, getter=isPressed) BOOL pressed;
 
 /**
  *  Whether or not to update the indicator to the loading state. When in a loading state, the indiciator is scaled up to reveal an animated loading indicator
