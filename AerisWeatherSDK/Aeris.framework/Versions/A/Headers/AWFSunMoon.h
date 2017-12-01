@@ -35,6 +35,18 @@
 @property (nonatomic, strong) NSDate *sunTransit;
 
 /**
+ `YES` if the sun is not expected to set, otherwise `NO`.
+ */
+@property (nonatomic, strong) NSNumber *midnightSun;
+@property (readonly, nonatomic) BOOL isMidnightSun;
+
+/**
+ `YES` if the sun is not expected to rise, otherwise `NO`.
+ */
+@property (nonatomic, strong) NSNumber *polarNight;
+@property (readonly, nonatomic) BOOL isPolarNight;
+
+/**
  *  GMT date for the first civil twilight.
  */
 @property (nonatomic, strong) NSDate *twilightCivilBegin;
@@ -77,6 +89,16 @@
  *  GMT date for the moon set.
  */
 @property (nonatomic, strong) NSDate *moonset;
+
+/**
+ Date at which point the moon is overhead, or `nil` if not expected.
+ */
+@property (nonatomic, strong) NSDate *moonTransit;
+
+/**
+ Date at which point the moon is underfoot, or `nil` if not expected.
+ */
+@property (nonatomic, strong) NSDate *moonUnderfoot;
 
 /**
  *  Moon phase as a percentage.
