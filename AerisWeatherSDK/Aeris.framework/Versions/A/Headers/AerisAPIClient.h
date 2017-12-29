@@ -10,7 +10,8 @@
 #import <Aeris/AWFResponse.h>
 
 extern NSString * const AerisAPIServer;
-extern NSString * const AerisAPISecureServer;
+extern NSString * const AerisAMPServer;
+
 extern NSString * const AerisAPIPathPrefix;
 
 extern NSString * const AerisAPIActionClosest;

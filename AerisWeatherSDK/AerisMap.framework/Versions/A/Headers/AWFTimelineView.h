@@ -206,6 +206,11 @@ The fill color used to indicate the portion of the timeline that has been loaded
 @property (readonly, nonatomic, strong) UILabel *detailTextLabel;
 
 /**
+ The activity loading indicator displayed when timeline data is being requested.
+ */
+@property (readonly, nonatomic, strong) UIActivityIndicatorView *indicatorView;
+
+/**
  *  The corner radius for the indicator.
  */
 @property (nonatomic, assign) CGFloat radius;

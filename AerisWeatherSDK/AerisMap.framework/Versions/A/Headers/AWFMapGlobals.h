@@ -10,12 +10,6 @@
 #import <AerisMap/AWFLayerType.h>
 
 //-----------------------
-// @name Paths
-//-----------------------
-
-extern NSString * const AerisTileServer;
-
-//-----------------------
 // @name Overlay Type Conversions
 //-----------------------
 

@@ -51,11 +51,6 @@ extern NSString *const AWFEngineIsReady;
 @property (nonatomic, copy, readonly) NSString *apiVersion;
 
 /**
- *  Whether the API engine is using secure HTTPS requests. Default is `NO`. Use `setSecure:` to change this value.
- */
-@property (nonatomic, readonly) BOOL secure;
-
-/**
  *  The version of the SDK.
  */
 @property (readonly, nonatomic) NSString *sdkVersion;
@@ -67,7 +62,6 @@ extern NSString *const AWFEngineIsReady;
  *  @param consumerSecret The client secret key to be used for all requests.
  */
 + (void)engineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret;
-+ (void)secureEngineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret;
 
 /**
  *  Initializes the framework API engine with the proper consumer key and secret values for the desired account and a specific
@@ -78,7 +72,40 @@ extern NSString *const AWFEngineIsReady;
  *  @param version        The version of the API to use for all requests. If not provided, the most recent version will be used.
  */
 + (void)engineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret version:(NSString *)version;
-+ (void)secureEngineWithKey:(NSString *)consumerKey secret:(NSString *)consumerSecret version:(NSString *)version;
+
+/**
+ Returns the server path to use for all API requests.
+ */
++ (NSString *)apiServerPath;
+
+/**
+ Sets the server path to use for all data API requests.
+ 
+ You shouldn't need to set this value unless you are using your own CDN in front of all Aeris data API requests. Setting this value to `nil` will use the default
+ server path for all data API requests. This value must contain the protocol and host for the server:
+ 
+ `[AerisEngine setApiServerPath:@"https://cdn.mydomain.com"];`
+
+ @param serverPath The custom server path to use for data API requests
+ */
++ (void)setApiServerPath:(NSString *)serverPath;
+
+/**
+ Returns the server path to use for all map API requests.
+ */
++ (NSString *)ampServerPath;
+
+/**
+ Sets the server path to use for all map API requests.
+ 
+ You shouldn't need to set this value unless you are using your own CDN in front of all Aeris Maps API requests. Setting this value to `nil` will use the default
+ server path for all map API requests. This value must contain the protocol and host for the server:
+ 
+ `[AerisEngine setAmpServerPath:@"https://cdn.mydomain.com"];`
+
+ @param serverPath The custom server path to use for map API requests
+ */
++ (void)setAmpServerPath:(NSString *)serverPath;
 
 /**
  *	Returns the current AerisEngine singleton instance.
