@@ -17,8 +17,11 @@ The AerisWeather SDK is broken up into multiple modules, allowing you to only in
 * **AerisGoogleMapKit.framework** - Extension of the AerisMapKit module to support using the Google Maps SDK.
 	* requires AerisWeatherKit.framework, AerisMapKit.framework
 	* requires [Google Maps SDK](https://developers.google.com/maps/documentation/ios-sdk/)
+
+### Migrating from 2.0
+We have a [migration guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/3.0-migration-guide/) available to help you transition to version 3.0 of the SDK if you're projects are already using 2.0.
 	
-## Setup
+## Installation
 
 We have in-depth [installation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/installation/) and [setup](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) guides available for you to get started using the Aeris Weather SDK for iOS. 
 
