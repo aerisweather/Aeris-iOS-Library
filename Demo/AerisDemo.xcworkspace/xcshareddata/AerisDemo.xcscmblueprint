@@ -1,0 +1,51 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "22B127E105C1F0898BDE46C97689E7B84A459E66",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3A17263A70CC26C3BC2F5D8D21D68820A59BC0BC" : 0,
+    "AF75E6269283F4E16CA12E346187A440A601C9AD" : 0,
+    "22B127E105C1F0898BDE46C97689E7B84A459E66" : 0,
+    "E73B9A6B44A0DA411766305529C812AEE2ADDCEF" : 0,
+    "D759C6927D02C50BFA335C0B12BD3C092E0E5453" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E0E87361-D876-4C76-8F0B-C4535E88DF67",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3A17263A70CC26C3BC2F5D8D21D68820A59BC0BC" : "..\/Libraries\/aerismapkit-ios",
+    "AF75E6269283F4E16CA12E346187A440A601C9AD" : "..\/Libraries\/aeriscore-ios",
+    "22B127E105C1F0898BDE46C97689E7B84A459E66" : "aerisdemo-ios\/",
+    "E73B9A6B44A0DA411766305529C812AEE2ADDCEF" : "..\/Libraries\/aerisweatherkit-ios",
+    "D759C6927D02C50BFA335C0B12BD3C092E0E5453" : "..\/Libraries\/aeriscoreui-ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AerisDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AerisDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/hamweather\/aerisdemo-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "22B127E105C1F0898BDE46C97689E7B84A459E66"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/hamweather\/aerismapkit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3A17263A70CC26C3BC2F5D8D21D68820A59BC0BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/hamweather\/aeriscore-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AF75E6269283F4E16CA12E346187A440A601C9AD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/hamweather\/aeriscoreui-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D759C6927D02C50BFA335C0B12BD3C092E0E5453"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/hamweather\/aerisweatherkit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E73B9A6B44A0DA411766305529C812AEE2ADDCEF"
+    }
+  ]
+}

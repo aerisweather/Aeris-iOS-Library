@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'AerisWeather'
-  s.version      = '2.3.15'
+  s.version      = '3.0.0-beta.1'
   s.summary      = 'Quickly integrate the Aeris Weather API data and map overlays into your iOS apps.'
   s.description  = <<-DESC
                       The Aeris iOS Weather Framework allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the Aeris API backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
@@ -13,51 +13,51 @@ Pod::Spec.new do |s|
   s.author       = { 'AerisWeather, LLC' => 'http://aerisweather.com' }
   s.source       = { :git => 'https://github.com/aerisweather/Aeris-iOS-Library.git', :tag => s.version.to_s }
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '9.0'
   s.requires_arc = true
-  s.default_subspecs = 'Aeris'
+  s.default_subspecs = 'Data'
 
-  s.subspec 'Aeris' do |ss|
-    ss.header_dir = 'Aeris'
-    ss.vendored_frameworks = 'AerisWeatherSDK/Aeris.framework'
-    ss.resource_bundle = {
-      'Aeris' => ['AerisWeatherSDK/Aeris.bundle/*']
-    }
+
+  s.subspec 'Core' do |ss|
+    ss.header_dir = 'AerisCore'
+    ss.vendored_frameworks = 'SDK/AerisCore.framework'
     ss.framework = 'Foundation'
-    ss.dependency 'AFNetworking', '~> 3.0'
   end
 
-  s.subspec 'AerisUI' do |ss|
-    ss.header_dir = 'AerisUI'
-    ss.vendored_frameworks = 'AerisWeatherSDK/AerisUI.framework'
-    ss.resource_bundle = {
-      'AerisUI' => ['AerisWeatherSDK/AerisUI.bundle/*']
-    }
+  s.subspec 'CoreUI' do |ss|
+    ss.header_dir = 'AerisCoreUI'
+    ss.vendored_frameworks = 'SDK/AerisCoreUI.framework'
     ss.framework = 'UIKit'
-    ss.dependency 'AerisWeather/Aeris'
   end
 
-  s.subspec 'AerisMap' do |ss|
-    ss.header_dir = 'AerisMap'
-    ss.vendored_frameworks = 'AerisWeatherSDK/AerisMap.framework'
+  s.subspec 'Data' do |ss|
+    ss.header_dir = 'AerisWeatherKit'
+    ss.vendored_frameworks = 'SDK/AerisWeatherKit.framework'
+    ss.resource_bundle = {
+      # 'Aeris' => ['SDK/AerisWeatherKit.bundle/*']
+    }
+    ss.framework = "UIKit"
+  end
+
+  s.subspec 'Maps' do |ss|
+    ss.header_dir = 'AerisMapKit'
+    ss.vendored_frameworks = 'SDK/AerisMapKit.framework'
     ss.framework = 'MapKit'
-    ss.dependency 'AerisWeather/AerisUI'
+    ss.dependency 'AerisWeather/CoreUI'
   end
 
-  s.subspec 'AerisMapboxMap' do |ss|
-    ss.header_dir = 'AerisMapboxMap'
-    ss.vendored_frameworks = 'AerisWeatherSDK/AerisMapboxMap.framework'
-    ss.dependency 'MBXMapKit'
-    ss.dependency 'AerisWeather/AerisUI'
-    ss.dependency 'AerisWeather/AerisMap'
+  s.subspec 'Mapbox' do |ss|
+    ss.header_dir = 'AerisMapboxMapKit'
+    ss.vendored_frameworks = 'SDK/AerisMapboxMapKit.framework'
+    ss.dependency 'Mapbox-iOS-SDK'
+    ss.dependency 'AerisWeather/Maps'
   end
 
-  s.subspec 'AerisGoogleMap' do |ss|
-    ss.header_dir = 'AerisGoogleMap'
-    ss.vendored_frameworks = 'AerisWeatherSDK/AerisGoogleMap.framework'
+  s.subspec 'Google' do |ss|
+    ss.header_dir = 'AerisGoogleMapKit'
+    ss.vendored_frameworks = 'SDK/AerisGoogleMapKit.framework'
     ss.dependency 'GoogleMaps'
-    ss.dependency 'AerisWeather/AerisUI'
-    ss.dependency 'AerisWeather/AerisMap'
+    ss.dependency 'AerisWeather/Maps'
   end
 
 end

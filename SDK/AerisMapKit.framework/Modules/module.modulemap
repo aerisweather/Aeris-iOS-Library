@@ -1,0 +1,6 @@
+framework module AerisMapKit {
+  umbrella header "AerisMapKit.h"
+
+  export *
+  module * { export * }
+}
