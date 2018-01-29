@@ -1,24 +1,29 @@
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '7.0'
-inhibit_all_warnings!
 
-workspace 'AerisSDKDemo.xcworkspace'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+use_frameworks!
+
+workspace 'AerisDemo.xcworkspace'
 
 def common_pods
-	pod 'AerisWeather'
-	pod 'AerisWeather/AerisUI'
-	pod 'AerisWeather/AerisMap'
-	pod 'AerisWeather/AerisMapboxMap'
-	pod 'AerisWeather/AerisGoogleMap'
-	pod 'PAPreferences'
+	pod 'AerisWeather', :podspec => '../AerisWeather.podspec'
+	pod 'AerisWeather/Maps', :podspec => '../AerisWeather.podspec'
+	pod 'AerisWeather/Mapbox', :podspec => '../AerisWeather.podspec'
+	pod 'AerisWeather/Google', :podspec => '../AerisWeather.podspec'
 end
 
-target 'AerisSDKDemo-ObjC' do
-	project 'ObjectiveC/AerisSDKDemo-ObjC.xcodeproj'
+target :AerisObjCDemo do
+	project 'AerisDemo.xcodeproj'
 	common_pods
 end
 
-target 'AerisSDKDemo-Swift' do
-	project 'Swift/AerisSDKDemo-Swift.xcodeproj'
+target :AerisSwiftDemo do
+	project 'AerisDemo.xcodeproj'
 	common_pods
+end
+
+pre_install do |installer|
+	def installer.verify_no_static_framework_transitive_dependencies; end
 end

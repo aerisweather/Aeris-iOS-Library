@@ -1,0 +1,6 @@
+framework module AerisCore {
+  umbrella header "AerisCore.h"
+
+  export *
+  module * { export * }
+}
