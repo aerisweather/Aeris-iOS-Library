@@ -14,20 +14,6 @@
 
 @implementation DailySummaryGraphsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-	if (self) {
-		
-	}
-
-	return self;
-}
-
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointDailySummaryGraphs];
-}
-
 - (void)setupGraphs {
 	// temps
 	AWFWeatherSeriesItem *highTempItem = [[AWFWeatherSeriesItem alloc] init];

@@ -47,7 +47,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointIndices];
 
 	[self loadDataForDefaultPlace];
 }

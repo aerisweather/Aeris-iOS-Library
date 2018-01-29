@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.main.bounds)
 		window?.backgroundColor = UIColor.white
 		
-		AerisWeather.start(withApiKey: "wgE96YE3scTQLKjnqiMsv", secret: "nmq7XMXlOY7JyfuNZenfVTjsKCFnITbi8WBPbWDz")
+		AerisWeather.start(withApiKey: "__CLIENT_ID__", secret: "__CLIENT_SECRET__")
 		
 		// create default place if one doesn't exist yet
 		if UserLocationsManager.shared().defaultLocation() == nil {

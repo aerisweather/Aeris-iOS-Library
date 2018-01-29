@@ -74,7 +74,6 @@ static CGFloat cellHeight = 60.0f;
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointRecentObs];
 	
 	__weak typeof(self) weakSelf = self;
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];

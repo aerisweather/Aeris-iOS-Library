@@ -76,11 +76,6 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	[self.tableView reloadData];
 }
 
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointLocationSearch];
-}
-
 #pragma mark - Private
 
 - (void)searchUsingCurrentLocation:(id)sender {

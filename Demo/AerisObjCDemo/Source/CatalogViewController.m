@@ -153,7 +153,6 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointMenu];
 
 	// if no default location set yet, just use the user's current location
 	if (![[UserLocationsManager sharedManager] defaultLocation]) {

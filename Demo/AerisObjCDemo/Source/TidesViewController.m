@@ -32,7 +32,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointTides];
 	
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];
 	AWFWeatherRequestOptions *options = [[AWFWeatherRequestOptions alloc] init];

@@ -73,7 +73,6 @@ static NSString *forecastCellIdentifier = @"ForecastCell";
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointForecast];
 	
 	__weak typeof(self) weakSelf = self;
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];
