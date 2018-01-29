@@ -1,6 +1,0 @@
-framework module AerisUI {
-    umbrella header "AerisUI.h"
-    
-    export *
-    module * { export * }
-}

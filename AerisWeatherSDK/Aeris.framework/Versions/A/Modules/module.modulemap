@@ -1,6 +1,0 @@
-framework module Aeris {
-    umbrella header "Aeris.h"
-
-    export *
-    module * { export * }
-}
