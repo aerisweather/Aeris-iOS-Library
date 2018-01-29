@@ -13,11 +13,6 @@
 
 @implementation RecentObsGraphViewController
 
-- (void)viewDidAppear:(BOOL)animated {
-	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointRecentObsGraphs];
-}
-
 - (void)setupGraphs {
 	
 	// temperature

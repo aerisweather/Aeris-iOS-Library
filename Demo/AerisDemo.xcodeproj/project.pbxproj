@@ -7,18 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B138CFB201FA42300FDE6AF /* AerisMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF5201FA42300FDE6AF /* AerisMapKit.framework */; };
-		2B138CFC201FA42300FDE6AF /* AerisMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF5201FA42300FDE6AF /* AerisMapKit.framework */; };
-		2B138CFD201FA42300FDE6AF /* AerisMapboxMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF6201FA42300FDE6AF /* AerisMapboxMapKit.framework */; };
-		2B138CFE201FA42300FDE6AF /* AerisMapboxMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF6201FA42300FDE6AF /* AerisMapboxMapKit.framework */; };
-		2B138CFF201FA42300FDE6AF /* AerisCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF7201FA42300FDE6AF /* AerisCore.framework */; };
-		2B138D00201FA42300FDE6AF /* AerisCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF7201FA42300FDE6AF /* AerisCore.framework */; };
-		2B138D01201FA42300FDE6AF /* AerisCoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF8201FA42300FDE6AF /* AerisCoreUI.framework */; };
-		2B138D02201FA42300FDE6AF /* AerisCoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF8201FA42300FDE6AF /* AerisCoreUI.framework */; };
-		2B138D03201FA42300FDE6AF /* AerisGoogleMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF9201FA42300FDE6AF /* AerisGoogleMapKit.framework */; };
-		2B138D04201FA42300FDE6AF /* AerisGoogleMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CF9201FA42300FDE6AF /* AerisGoogleMapKit.framework */; };
-		2B138D05201FA42300FDE6AF /* AerisWeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CFA201FA42300FDE6AF /* AerisWeatherKit.framework */; };
-		2B138D06201FA42300FDE6AF /* AerisWeatherKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B138CFA201FA42300FDE6AF /* AerisWeatherKit.framework */; };
 		2B1491BB1FEC1CA2004BB807 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491B91FEC1CA2004BB807 /* Main.storyboard */; };
 		2B1491BD1FEC1CA2004BB807 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491BC1FEC1CA2004BB807 /* Assets.xcassets */; };
 		2B1491C01FEC1CA2004BB807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491BE1FEC1CA2004BB807 /* LaunchScreen.storyboard */; };
@@ -183,6 +171,8 @@
 		2BB1C8CF1FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C81FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m */; };
 		2BB1C8D01FEC3C4200BD4DA2 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8CB1FEC3C4200BD4DA2 /* DetailedWeatherViewController.m */; };
 		2BF107151FF58F7A005BFBA4 /* AerisDemoSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3CA72437786472D617F58EAE /* Pods_AerisObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3752ED2D4D2F6F296BC9E6A8 /* Pods_AerisObjCDemo.framework */; };
+		AE34B4B644B98CCD9BF94CFF /* Pods_AerisSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 480D7324982E85C9600B3AE0 /* Pods_AerisSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,12 +233,6 @@
 /* Begin PBXFileReference section */
 		117CA1EC219FCEF71E640362 /* Pods-AerisObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		263CC8C9FDF0E983001D4B77 /* Pods-AerisSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
-		2B138CF5201FA42300FDE6AF /* AerisMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisMapKit.framework; path = ../SDK/AerisMapKit.framework; sourceTree = "<group>"; };
-		2B138CF6201FA42300FDE6AF /* AerisMapboxMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisMapboxMapKit.framework; path = ../SDK/AerisMapboxMapKit.framework; sourceTree = "<group>"; };
-		2B138CF7201FA42300FDE6AF /* AerisCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCore.framework; path = ../SDK/AerisCore.framework; sourceTree = "<group>"; };
-		2B138CF8201FA42300FDE6AF /* AerisCoreUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCoreUI.framework; path = ../SDK/AerisCoreUI.framework; sourceTree = "<group>"; };
-		2B138CF9201FA42300FDE6AF /* AerisGoogleMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisGoogleMapKit.framework; path = ../SDK/AerisGoogleMapKit.framework; sourceTree = "<group>"; };
-		2B138CFA201FA42300FDE6AF /* AerisWeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisWeatherKit.framework; path = ../SDK/AerisWeatherKit.framework; sourceTree = "<group>"; };
 		2B1491B11FEC1CA2004BB807 /* AerisObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1491BA1FEC1CA2004BB807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B1491BC1FEC1CA2004BB807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -460,7 +444,9 @@
 		2BB1C8CC1FEC3C4200BD4DA2 /* ModelGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGraphsViewController.h; sourceTree = "<group>"; };
 		2BB1C8D11FEC3CDD00BD4DA2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 		2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AerisDemoSupport.xcodeproj; path = AerisDemoSupport/AerisDemoSupport.xcodeproj; sourceTree = "<group>"; };
+		3752ED2D4D2F6F296BC9E6A8 /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACC64EC3C793D49AC003E9D /* Pods-AerisSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		480D7324982E85C9600B3AE0 /* Pods_AerisSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA5F45D9CBC085A44D34768 /* Pods-AerisObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -469,12 +455,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B138D01201FA42300FDE6AF /* AerisCoreUI.framework in Frameworks */,
-				2B138CFD201FA42300FDE6AF /* AerisMapboxMapKit.framework in Frameworks */,
-				2B138CFB201FA42300FDE6AF /* AerisMapKit.framework in Frameworks */,
-				2B138D05201FA42300FDE6AF /* AerisWeatherKit.framework in Frameworks */,
-				2B138D03201FA42300FDE6AF /* AerisGoogleMapKit.framework in Frameworks */,
-				2B138CFF201FA42300FDE6AF /* AerisCore.framework in Frameworks */,
+				3CA72437786472D617F58EAE /* Pods_AerisObjCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,12 +463,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B138D02201FA42300FDE6AF /* AerisCoreUI.framework in Frameworks */,
-				2B138CFE201FA42300FDE6AF /* AerisMapboxMapKit.framework in Frameworks */,
-				2B138CFC201FA42300FDE6AF /* AerisMapKit.framework in Frameworks */,
-				2B138D06201FA42300FDE6AF /* AerisWeatherKit.framework in Frameworks */,
-				2B138D04201FA42300FDE6AF /* AerisGoogleMapKit.framework in Frameworks */,
-				2B138D00201FA42300FDE6AF /* AerisCore.framework in Frameworks */,
+				AE34B4B644B98CCD9BF94CFF /* Pods_AerisSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,12 +473,8 @@
 		0DFFC019771DF046DFE78DCA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B138CF7201FA42300FDE6AF /* AerisCore.framework */,
-				2B138CF8201FA42300FDE6AF /* AerisCoreUI.framework */,
-				2B138CF9201FA42300FDE6AF /* AerisGoogleMapKit.framework */,
-				2B138CF6201FA42300FDE6AF /* AerisMapboxMapKit.framework */,
-				2B138CF5201FA42300FDE6AF /* AerisMapKit.framework */,
-				2B138CFA201FA42300FDE6AF /* AerisWeatherKit.framework */,
+				3752ED2D4D2F6F296BC9E6A8 /* Pods_AerisObjCDemo.framework */,
+				480D7324982E85C9600B3AE0 /* Pods_AerisSwiftDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

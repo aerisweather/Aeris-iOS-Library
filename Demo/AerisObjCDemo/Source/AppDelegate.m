@@ -18,17 +18,15 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
 #if TARGET_IPHONE_SIMULATOR
-	NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
 #endif
-	[Fabric with:@[CrashlyticsKit]];
 	
-	[AerisWeather startWithApiKey:@"wgE96YE3scTQLKjnqiMsv" secret:@"nmq7XMXlOY7JyfuNZenfVTjsKCFnITbi8WBPbWDz"];
+	[AerisWeather startWithApiKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AWFLogger setLoggingLevel:AWFLogLevelDebug];
 	
 	// must initialize Google Maps SDK with proper API key before using
-	[GMSServices provideAPIKey:@"AIzaSyBbkmhjf8EBV1YiYLWfybc6BzM0ua8A728"];
+	[GMSServices provideAPIKey:@"__GOOGLE_KEY__"];
 	// must initialize Mapbox with proper token
-	[MGLAccountManager setAccessToken:@"pk.eyJ1IjoidTEwaW50IiwiYSI6InQtMnZvTkEifQ.c8mhXquPE7_xoB3P4Ag8cA"];
+	[MGLAccountManager setAccessToken:@"__MAPBOX_KEY__"];
 	
 	// set the global style to use for Aeris weather views
 	[AWFCascadingStyle setDefaultStyle:[AWFCascadingStyle style]];

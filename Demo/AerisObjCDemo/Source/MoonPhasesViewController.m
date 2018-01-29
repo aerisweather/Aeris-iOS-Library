@@ -32,7 +32,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointMoonPhases];
 	
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];
 	

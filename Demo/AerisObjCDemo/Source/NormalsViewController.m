@@ -32,7 +32,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
-	//[TestFlight passCheckpoint:TFCheckpointNormals];
 	
 	AWFPlace *place = [[UserLocationsManager sharedManager] defaultLocation];
 	
