@@ -28,6 +28,7 @@ Pod::Spec.new do |s|
     ss.header_dir = 'AerisCoreUI'
     ss.vendored_frameworks = 'SDK/AerisCoreUI.framework'
     ss.framework = 'UIKit'
+    ss.dependency 'AerisWeather/Core'
   end
 
   s.subspec 'Data' do |ss|
@@ -36,14 +37,14 @@ Pod::Spec.new do |s|
     ss.resource_bundle = {
       # 'Aeris' => ['SDK/AerisWeatherKit.bundle/*']
     }
-    ss.framework = "UIKit"
+    ss.dependency 'AerisWeather/CoreUI'
   end
 
   s.subspec 'Maps' do |ss|
     ss.header_dir = 'AerisMapKit'
     ss.vendored_frameworks = 'SDK/AerisMapKit.framework'
     ss.framework = 'MapKit'
-    ss.dependency 'AerisWeather/CoreUI'
+    ss.dependency 'AerisWeather/Data'
   end
 
   s.subspec 'Mapbox' do |ss|

@@ -1,83 +1,106 @@
-Aeris iOS Weather SDK 2.0
+AerisWeather iOS SDK 3.0
 =============
 
-The [Aeris iOS Weather Framework](http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/) allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the [Aeris API](http://www.aerisweather.com/support/docs/api/) backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
+The [AerisWeather SDK for iOS](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/) allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the [Aeris Weather API](http://www.aerisweather.com/support/docs/api/) and [Aeris Maps Platform (AMP)](http://www.aerisweather.com/support/docs/maps/) backends for weather data and imagery and makes integrating your application with your Aeris Weather account considerably easier and more efficient.
 
-## Components
+## Aeris Modules
 
-The AerisWeather SDK is broken up into multiple frameworks, allowing you to only include the components you need. However, some of the components have dependencies on one or more of the others as it simple builds upon them. 
+The AerisWeather SDK is broken up into multiple modules, allowing you to only include the components you need. However, some of the components have dependencies on one or more of the others as it simple builds upon them. 
 
-* **Aeris.framework** - Base library used to interact with and parse Aeris Weather API data. 
-* **AerisUI.framework** - UI utilities and components, (graphs, views) and built-in weather views
-	* requires Aeris.framework
-* **AerisMap.framework** - Fully functional interactive weather map using the Aeris Overlays service.
-	* requires Aeris.framework, AerisUI.framework
-* **AerisMapboxMap.framework** - Extension of the AerisMap library to support using Mapbox base maps
-	* requires Aeris.framework, AerisUI.framework, AerisMap.framework
-	* requires [MBXMapKit](https://github.com/mapbox/mbxmapkit)
-* **AerisGoogleMap.framework** - Extension of the AerisMap library to support using the Google Maps SDK.
-	* requires Aeris.framework, AerisUI.framework, AerisMap.framework
-	* requires [GoogleMaps](https://developers.google.com/maps/documentation/ios-sdk/)
+* **AerisWeatherKit.framework** - Core weather library used to interact with and parse Aeris Weather API data.
+	* requires the core *AerisCore* and *AerisCoreUI* modules that are also distributed with the SDK. 
+* **AerisMapKit.framework** - Complete interactive weather map solution utilizing the Aeris Maps (AMP) API.
+	* requires AerisWeatherKit.framework
+* **AerisMapboxMapKit.framework** - Extension of the AerisMapKit module to support the Mapbox iOS SDK
+	* requires AerisWeatherKit.framework, AerisMapKit.framework
+	* requires [Mapbox iOS SDK](https://www.mapbox.com/ios-sdk/)
+* **AerisGoogleMapKit.framework** - Extension of the AerisMapKit module to support using the Google Maps SDK.
+	* requires AerisWeatherKit.framework, AerisMapKit.framework
+	* requires [Google Maps SDK](https://developers.google.com/maps/documentation/ios-sdk/)
 	
 ## Setup
 
-### Using [CocoaPods](http://cocoapods.org)
+We have in-depth [installation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/installation/) and [setup](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) guides available for you to get started using the Aeris Weather SDK for iOS. 
 
-1. Add the pod `AerisWeather` to your Podfile. This will add the base Aeris.framework as a dependency to your project.
+The following are basic installation instructions to follow to get the SDK integrated with your project based on your desired method. Select one of the following methods to integrate the SDK based on your preferred method, but don't use more than one method as that will result in duplicate copies of the SDK and compiler errors.
+
+### CocoaPods
+1. Make sure you have CocoaPods installed and working. If you don't have CocoaPods installed on your system, follow the [installation instructions](https://guides.cocoapods.org/using/getting-started.html) to get started. If you're new to or unfamiliar with CocoaPods, also make sure to review its [usage guide](https://guides.cocoapods.org/using/using-cocoapods.html) to learn more about how to get started with CocoaPods for your project.
+2. Add the `AerisWeather` pod to your `Podfile`. This will add the base AerisWeatherKit.framework and its core dependencies to your project.
 	
 	```ruby
 	pod 'AerisWeather'
 	```
-2. If you wish to install additional AerisWeather components, add them as dependencies to your Podfile as well:
+	
+3. If you want to also use any of the weather mapping functionality available in our iOS SDK, you'll need to also include the `Maps` pod:
 
 	```ruby
-	pod 'AerisWeather/AerisUI'
-	pod 'AerisWeather/AerisMap'
-	pod 'AerisWeather/AerisMapboxMap'
-	pod 'AerisWeather/AerisGoogleMap'
+	pod 'AerisWeather/Maps'
+	
+	# include this if using Mapbox for maps in your project
+	pod 'AerisWeather/Mapbox'
+	
+	# or include this if using Google Maps for maps in your project
+	pod 'AerisWeather/GoogleMaps'
+	```
+		
+4. Run `pod install` from the Terminal at the root of your project where your `Podfile` is located.
+5. Open your `*.xcworkspace` with Xcode and follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK. **Note:** Do NOT use `*.xcodeproj` as you'll receive `ld: library not found` errors for the Aeris Weather SDK libraries.
+
+### Carthage
+1. Install the latest version of [Carthage](https://github.com/Carthage/Carthage#installing-carthage).
+2. Add the following to your `Cartfile`:
+	
+	```ruby
+	github ....
 	```
 
-3. Run `pod install` from Terminal, then open your project's `.xcworkspace` file to launch Xcode.
-4. Import the necessary umbrella headers for the AerisWeather components you wish to use (e.g. *Aeris*, *AerisUI*, *AerisMap*, etc):
-   	* With `use_frameworks!` in your Podfile
-    	* Swift: `import Aeris`
-    	* Objective-C: `#import <Aeris/Aeris.h>`, or with Modules enabled: `@import Aeris;`
-	* Without `use_frameworks!` in your Podfile
-    	* Swift: Add `#import "<Aeris/Aeris.h>"` to your bridging header.
-    	* Objective-C: `#import "<Aeris/Aeris.h>"`
-    	
-##### Fixing Xcode's "Include of non-modular header inside framework module" Error #####
-If you are using Xcode 7.1 or higher and have included the AerisWeather libraries as dependencies using CocoaPods, you will likely receive an error when compiling about "Include of non-modular header inside framework module". To resolve this issue, you must:
+3. Run `carthage update`.
+4. With your project open in Xcode, select your **Target**. Under the **General** tab, find **Embedded Binaries** and then click the **+** button.
+5. Click the **Add Other...** button, navigate to the `Aeris###`.framework` files under **Carthage > Build > iOS** and select them. Do NOT check the **Destination: Copy items if needed** checkbox when prompted.
+6. Under the **Build Phases* tab of your **Target**, click the **+** button on the top-left and select **New Run Script Phase**. Setup the build phase as follows, and make sure this phase is below the **Embed Frameworks** phase:
 
-1.  Set your project target's `CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES` flag to `YES`. This configuration setting can also be found under your target's **Build Settings > Allow Non-modular Includes in Framework Modules** within Xcode.
-2.  If your project is in Swift and still get this error after completing #1, you will need to remove any paths to the AerisWeather frameworks within your target's **Header Search Paths** configuration. CocoaPods configuration will typically include the path to each Pod dependency even if that same path is included in your target's **Framework Search Paths**.
-
-Here's more information from Apple's Developer Forums regarding the issue: [https://forums.developer.apple.com/message/78028](https://forums.developer.apple.com/message/78028)
-
-> The compiler will run into issues if the same header file is accessible both through Header Search Paths (`-I`, `-isystem`) and Framework Search Paths (`-F`, `-iframework`), even if there are symbolic links involved. In these cases, you should prefer using Framework Search Paths. (Note that this invalid configuration may be generated by external systems, such as CocoaPods.)
-
-
-### Manually from Github
-
-1. Checkout or download the [Aeris-iOS-Libary repo](https://github.com/aerisweather/Aeris-iOS-Library).
-2. Add the necessary Aeris framework components to your Xcode target from the downloaded files. These components are located under the **AerisWeatherSDK** directory.
-3. Add the [AFNetworking library](https://github.com/AFNetworking/AFNetworking) (version 3.0 or higher) to your project according to its specific setup and installation instructions.
-4. Import the necessary framework headers for each Aeris component you are using (e.g. *Aeris*, *AerisUI*, *AerisMap*, etc) where needed within your project:
-
-	```objc
- 	#import <Aeris/Aeris.h>
- 	#import <AerisUI/AerisUI.h>
- 	#import <AerisMap/AerisMap.h>
- 	...
+	```sh
+	Shell /bin/sh
+	
+	bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCore.framework/strip-frameworks.sh"
+	
+	Show environment variables in build log: Checked
+	Run script only when installing: Not checked
+	
+	Input Files: Empty
+	Output Files: Empty
 	```
+		
+7. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK.
 
-## Demo
+### Dynamic Frameworks
+1. Download the SDK from our [Github repository](https://github.com/aerisweather/Aeris-iOS-Library) that also contains our demo application. The repo will contain a compressed file archive for you to download.
+2. With your project open in Xcode, select your **Target**. Under the **General** tab, find **Embedded Binaries** and then click the **+** button.
+3. Click the **Add Other...** button, navigate to the `Aeris###`.framework` files under **Carthage > Build > iOS** and select them. Make sure to check the **Destination: Copy items if needed** checkbox when prompted.
+4. Under the **Build Phases* tab of your **Target**, click the **+** button on the top-left and select **New Run Script Phase**. Setup the build phase as follows, and make sure this phase is below the **Embed Frameworks** phase:
 
-Check out the included demo project, under the **AerisSDKDemo** directory, which contains a variety of example views using different components of the SDK, including the built-in weather views and weather maps with different mapping libraries. Since the project's dependencies (specifically AFNetworking) in the demo project are installed and managed using [CocoaPods](http://cocoapods.org), you will need to open the **AerisSDKDemo/AerisSDKDemo.xcworkspace**.
+	```sh
+	Shell /bin/sh
+	
+	bash "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCore.framework/strip-frameworks.sh"
+	
+	Show environment variables in build log: Checked
+	Run script only when installing: Not checked
+	
+	Input Files: Empty
+	Output Files: Empty
+	```
+		
+5. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK.
 
-The various components of the Aeris iOS Weather SDK are located under the **AerisSDK** directory. These are the libraries you will be using within your own custom projects.
+## Demo Application
 
-For complete details and instructions on installing and getting started with the Aeris iOS Weather SDK, refer to our complete [usage and API documentation](http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/).
+Check out the included demo project, under the **Demo** directory, which contains a variety of example views using different components of the SDK, including pre-built weather views and weather maps utilizing different mapping libraries. Since the project's Aeris Weather SDK dependencies in the demo project are installed and managed using [CocoaPods](http://cocoapods.org), you will need to open the **Demo/AerisDemo.xcworkspace**.
+
+The various frameworks of the Aeris iOS Weather SDK are located under the **SDK** directory. These are the libraries you will be using within your own custom projects.
+
+For complete details and instructions on installing and getting started with the Aeris iOS Weather SDK, refer to our complete [Getting Started and API documentation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/).
 
 ## Need Support?
 
