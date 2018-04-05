@@ -10,15 +10,14 @@
 
 NSString * const kAWFDemoDefaultPlaceChanged = @"AWFDemoDefaultPlaceChanged";
 
-@interface LocationSearchViewController ()
+@interface LocationSearchViewController () <UISearchResultsUpdating>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) AWFPlaces *places;
 @property (nonatomic, strong) NSArray *results;
 @property (nonatomic, strong) NSArray *geoResults;
 @property (nonatomic, strong) NSMutableArray *searchResults;
-@property (nonatomic, strong) UISearchDisplayController *searchController;
-- (void)searchUsingCurrentLocation:(id)sender;
-- (void)searchWithString:(NSString *)searchValue;
+@property (nonatomic, strong) UISearchController *searchController;
+@property (nonatomic, strong) UITableViewController *searchResultsController;
 @end
 
 static NSString *cellIdentifier = @"LocationCellIdentifier";
@@ -37,6 +36,9 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	self.extendedLayoutIncludesOpaqueBars = YES;
+	self.definesPresentationContext = YES;
+	
 	// button to allow seaching for locations based on current geolocation of user
 	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Locate", nil)
 																			  style:UIBarButtonItemStylePlain
@@ -49,18 +51,17 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	[self.view addSubview:tableView];
 	self.tableView = tableView;
 	
-	UISearchBar *searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 0)];
-	searchBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-	searchBar.delegate = self;
-	[searchBar sizeToFit];
-	tableView.tableHeaderView = searchBar;
+	UITableViewController *searchResultsController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+	searchResultsController.tableView.dataSource = self;
+	searchResultsController.tableView.delegate = self;
 	
-	UISearchDisplayController *searchController = [[UISearchDisplayController alloc] initWithSearchBar:searchBar contentsController:self];
-	searchController.delegate = self;
-	searchController.searchResultsDataSource = self;
-	searchController.searchResultsDelegate = self;
-	[searchController.searchResultsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+	UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:searchResultsController];
+	searchController.searchResultsUpdater = self;
+	searchController.hidesNavigationBarDuringPresentation = NO;
+	[searchResultsController.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+	tableView.tableHeaderView = searchController.searchBar;
 	self.searchController = searchController;
+	self.searchResultsController = searchResultsController;
 	
 	[NSLayoutConstraint activateConstraints:@[[tableView.topAnchor constraintEqualToAnchor:self.view.topAnchor],
 											  [tableView.leftAnchor constraintEqualToAnchor:self.view.leftAnchor],
@@ -77,6 +78,10 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 }
 
 #pragma mark - Private
+
+- (BOOL)isSearching {
+	return self.searchController.isActive && [self.searchController.searchBar.text awf_isEmpty];
+}
 
 - (void)searchUsingCurrentLocation:(id)sender {
 	__weak typeof(self) weakSelf = self;
@@ -102,88 +107,6 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	}];
 }
 
-- (void)searchWithString:(NSString *)searchValue {
-	NSArray *parts = [searchValue componentsSeparatedByString:@","];
-	
-	__weak typeof(self) weakSelf = self;
-	AWFPlace *place;
-	AWFWeatherRequestOptions *options = [AWFWeatherRequestOptions options];
-	options.limit = 1;
-	
-	if (AWFIsValidCoordinateString(searchValue)) {
-		CGFloat lat = [[[parts objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] floatValue];
-		CGFloat lon = [[[parts objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] floatValue];
-		place = [AWFPlace placeWithLatitude:lat longitude:lon];
-		
-		[self.places getClosestToPlace:place radius:@"50mi" options:options completion:^(AWFWeatherEndpointResult * _Nullable result) {
-			if (result.error) {
-				NSLog(@"Places search based on coordinate failed! %@", result.error);
-				return;
-			}
-			
-			NSArray *objects = (result.results) ? result.results : @[];
-			weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
-			[weakSelf.searchController.searchResultsTableView reloadData];
-		}];
-	}
-	else if (AWFIsValidZipcodeString(searchValue)) {
-		NSString *zipcode = [searchValue stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-		[self.places searchUsingZipcode:zipcode options:options completion:^(AWFWeatherEndpointResult * _Nullable result) {
-			if (result.error) {
-				NSLog(@"Places search based on zip code failed! %@", result.error);
-				return;
-			}
-			
-			NSArray *objects = (result.results) ? result.results : @[];
-			weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
-			[weakSelf.searchController.searchResultsTableView reloadData];
-		}];
-	}
-	else if (![searchValue awf_isNumber] && AWFIsValidPlaceString(searchValue)) {
-		options.limit = 50;
-		options.filterString = @"poi";
-//		options.sort = [NSString stringWithFormat:@"pop:%li", (long)AWFRequestSortDescending];
-		
-		if ([parts count] == 1) {
-			// do a "starts with" search since it's just a name
-			[self.places searchUsingNameStartingWith:[searchValue lowercaseString] options:options completion:^(AWFWeatherEndpointResult * _Nullable result) {
-				if (result.error) {
-					NSLog(@"Places search based on name starts with failed! %@", result.error);
-					return;
-				}
-				
-				NSArray *objects = (result.results) ? result.results : @[];
-				weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
-				[weakSelf.searchController.searchResultsTableView reloadData];
-			}];
-		} else {
-			NSString *name = [[parts objectAtIndex:0] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-			NSString *state = ([parts count] > 1) ? [[parts objectAtIndex:1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : nil;
-			NSString *country = ([parts count] > 2) ? [[parts objectAtIndex:2] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] : nil;
-			
-			// if state or country are only one letter, do a "starts with" query for those
-			if (state.length == 1) {
-				state = [NSString stringWithFormat:@"^%@", state];
-			}
-			
-			if (country.length == 1) {
-				country = [NSString stringWithFormat:@"^%@", country];
-			}
-			
-			[self.places searchUsingName:[name lowercaseString] state:[state lowercaseString] country:[country lowercaseString] options:options completion:^(AWFWeatherEndpointResult * _Nullable result) {
-				if (result.error) {
-					NSLog(@"Places search based on name failed! %@", result.error);
-					return;
-				}
-				
-				NSArray *objects = (result.results) ? result.results : @[];
-				weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
-				[weakSelf.searchController.searchResultsTableView reloadData];
-			}];
-		}
-	}
-}
-
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -191,7 +114,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-	if (tableView != self.searchController.searchResultsTableView) {
+	if (tableView != self.searchResultsController.tableView) {
 		if (section == 0) {
 			return NSLocalizedString(@"Saved Locations", nil);
 		} else if (section == 1) {
@@ -202,10 +125,9 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	if (tableView == self.searchController.searchResultsTableView) {
+	if (tableView == self.searchResultsController.tableView) {
 		return [self.searchResults count];
-	}
-	else {
+	} else {
 		if (section == 0) {
 			return [self.results count];
 		} else if (section == 1) {
@@ -230,10 +152,9 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	}
 	
 	AWFPlace *place;
-	if (tableView == self.searchController.searchResultsTableView) {
+	if (tableView == self.searchResultsController.tableView) {
 		place = (AWFPlace *)self.searchResults[indexPath.row];
-	}
-	else {
+	} else {
 		if (indexPath.section == 0) {
 			// places stored in `results` are dictionarys from NSUserDefaults, so convert back to AWFPlace instances
 			place = (AWFPlace *)self.results[indexPath.row];
@@ -274,7 +195,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	// store this location as the active one for all weather views
 	AWFPlace *place;
-	if (tableView == self.searchDisplayController.searchResultsTableView) {
+	if (tableView == self.searchResultsController.tableView) {
 		place = (AWFPlace *)self.searchResults[indexPath.row];
 		
 		// only add this place if it doesn't already exist in user prefs
@@ -286,8 +207,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 			// end searching
 			self.searchController.active = NO;
 		}
-	}
-	else {
+	} else {
 		if (indexPath.section == 0) {
 			place = (AWFPlace *)self.results[indexPath.row];
 		} else if (indexPath.section == 1) {
@@ -300,7 +220,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	[self.tableView reloadData];
 	
 	// trigger notification that our default location changed (mainly to force iPad view to update)
-	NSDictionary *userInfo = (place) ? @{@"place": place} : nil;
+	NSDictionary *userInfo = (place) ? @{@"pinlace": place} : nil;
 	[[NSNotificationCenter defaultCenter] postNotificationName:kAWFDemoDefaultPlaceChanged object:self userInfo:userInfo];
 	
 	[tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -309,11 +229,11 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-	return (tableView != self.searchController.searchResultsTableView && indexPath.section == 0);
+	return (tableView != self.searchResultsController.tableView && indexPath.section == 0);
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-	if (tableView != self.searchController.searchResultsTableView) {
+	if (tableView != self.searchResultsController.tableView) {
 		if (editingStyle == UITableViewCellEditingStyleDelete) {
 			AWFPlace *placeToDelete = (AWFPlace *)[self.results objectAtIndex:indexPath.row];
 			[[UserLocationsManager sharedManager] removeLocation:placeToDelete];
@@ -326,25 +246,68 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	}
 }
 
-#pragma mark - UISearchBarDelegate
+#pragma mark - UISearchResultsUpdating
 
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
-	[self.searchResults removeAllObjects];
-	[self.searchController.searchResultsTableView reloadData];
+typedef void (^AWFDebounceFunction)(void);
+AWFDebounceFunction AWFDebounce(double delay, dispatch_queue_t queue, dispatch_block_t block) {
+//	dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, queue);
+//
+//	if (timer) {
+//		dispatch_source_set_timer(timer, dispatch_time(DISPATCH_TIME_NOW, delay * NSEC_PER_SEC), DISPATCH_TIME_FOREVER, (1ull * NSEC_PER_SEC) / 10);
+//		dispatch_source_set_event_handler(timer, block);
+//		dispatch_resume(timer);
+//	}
+//
+//	return timer;
+	
+	__block dispatch_time_t lastFireTime = 0;
+	__block int64_t dispatchDelay = (int64_t)delay * NSEC_PER_SEC;
+	
+	void (^debounceTrigger)(void) = ^{
+		lastFireTime = dispatch_time(DISPATCH_TIME_NOW, 0);
+		dispatch_after(dispatch_time(DISPATCH_TIME_NOW, dispatchDelay), queue, ^{
+			int64_t now = dispatch_time(DISPATCH_TIME_NOW, 0);
+			int64_t when = dispatch_time(lastFireTime, dispatchDelay);
+			if (now >= when) {
+				block();
+			}
+		});
+	};
+	
+	return debounceTrigger;
 }
 
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-	if (searchText.length >= 3) {
+- (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
+	if (searchController.searchBar.text.length >= 3) {
 		[self.places cancel];
-		[self searchWithString:searchText];
+		
+		static AWFDebounceFunction _debounce = nil;
+		if (!_debounce) {
+			__weak typeof(self) weakSelf = self;
+			dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+			_debounce = AWFDebounce(1.0, queue, ^{
+				dispatch_async(dispatch_get_main_queue(), ^{
+					NSString *query = searchController.searchBar.text;
+					[weakSelf.places searchUsingString:query options:nil completion:^(AWFWeatherEndpointResult * _Nullable result) {
+						if (result.error) {
+							NSLog(@"Location search failed - %@", result.error);
+							return;
+						}
+						
+						NSArray *objects = (result.results) ? result.results : @[];
+						weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
+						[weakSelf.searchResultsController.tableView reloadData];
+					}];
+				});
+			});
+		}
+		
+		_debounce();
+
 	} else {
 		[self.searchResults removeAllObjects];
-		[self.searchController.searchResultsTableView reloadData];
+		[self.searchResultsController.tableView reloadData];
 	}
-}
-
-- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-	[self searchWithString:searchBar.text];
 }
 
 @end

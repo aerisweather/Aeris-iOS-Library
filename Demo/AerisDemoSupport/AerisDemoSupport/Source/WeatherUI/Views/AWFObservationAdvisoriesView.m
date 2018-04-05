@@ -47,7 +47,6 @@
 	[scrollView addSubview:contentView];
 	self.contentView = contentView;
 	
-	UILayoutGuide *layoutGuides = self.layoutMarginsGuide;
 	[NSLayoutConstraint activateConstraints:@[[headerView.topAnchor constraintEqualToAnchor:self.topAnchor],
 											  [headerView.leftAnchor constraintEqualToAnchor:self.leftAnchor],
 											  [headerView.rightAnchor constraintEqualToAnchor:self.rightAnchor],
