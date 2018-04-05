@@ -11,7 +11,3 @@
 //#import <AerisWeatherKit/AerisWeatherKit.h>
 
 #import <AerisDemoSupport/AerisDemoSupport.h>
-
-#import <Fabric/Fabric.h>
-#import <Crashlytics/Crashlytics.h>
-
