@@ -62,7 +62,6 @@
 		2BD7698C1FF412BB00F758C9 /* AWFObservationAdvisoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769501FF412BB00F758C9 /* AWFObservationAdvisoriesView.m */; };
 		2BD769911FF412BB00F758C9 /* AWFObservationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769551FF412BB00F758C9 /* AWFObservationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD769921FF412BB00F758C9 /* AWFObservationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769561FF412BB00F758C9 /* AWFObservationView.m */; };
-		5D7848D2BFD30EE8D23CB201 /* Pods_AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B80F269FF21DFB364BB20 /* Pods_AerisDemoSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -137,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7848D2BFD30EE8D23CB201 /* Pods_AerisDemoSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +329,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD769141FF4127A00F758C9 /* Build configuration list for PBXNativeTarget "AerisDemoSupport" */;
 			buildPhases = (
-				85ED23B799A1E9B4ACE9C7AA /* [CP] Check Pods Manifest.lock */,
 				2BD769071FF4127A00F758C9 /* Sources */,
 				2BD769081FF4127A00F758C9 /* Frameworks */,
 				2BD769091FF4127A00F758C9 /* Headers */,
 				2BD7690A1FF4127A00F758C9 /* Resources */,
-				7387DFA9B1B659BB43F1A060 /* [CP] Copy Pods Resources */,
 				2BB4F4791FF59B1100FF518E /* Create Module Map */,
 			);
 			buildRules = (
@@ -404,42 +400,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset +u\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\"\n#/bin/ln -sfh Versions/Current/Modules \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n/bin/ln -sfh \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\" \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n\ncat > \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\" << _EOF_\nframework module ${PROJECT_NAME} {\n    umbrella header \"${PROJECT_NAME}.h\"\n    \n    export *\n    module * { export * }\n}\n_EOF_\n\necho \"Framework module map created at ${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\"";
-		};
-		7387DFA9B1B659BB43F1A060 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		85ED23B799A1E9B4ACE9C7AA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AerisDemoSupport-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -606,10 +566,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
-					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
-					"\"$(SRCROOT)/../lib\"",
+					"\"${SRCROOT}/../Pods/AerisWeather\"",
 				);
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -667,10 +624,7 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
-					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
-					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
-					"\"$(SRCROOT)/../lib\"",
+					"\"${SRCROOT}/../Pods/AerisWeather\"",
 				);
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

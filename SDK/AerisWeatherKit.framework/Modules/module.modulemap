@@ -1,6 +1,0 @@
-framework module AerisWeatherKit {
-  umbrella header "AerisWeatherKit.h"
-
-  export *
-  module * { export * }
-}
