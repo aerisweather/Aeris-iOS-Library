@@ -8,10 +8,10 @@ use_frameworks!
 workspace 'AerisDemo.xcworkspace'
 
 def common_pods
-	pod 'AerisWeather', :podspec => '../AerisWeather.podspec'
-	pod 'AerisWeather/Maps', :podspec => '../AerisWeather.podspec'
-	pod 'AerisWeather/Mapbox', :podspec => '../AerisWeather.podspec'
-	pod 'AerisWeather/Google', :podspec => '../AerisWeather.podspec'
+	pod 'AerisWeather'
+	pod 'AerisWeather/Maps'
+	pod 'AerisWeather/Mapbox'
+	pod 'AerisWeather/Google'
 end
 
 target :AerisObjCDemo do
@@ -21,6 +21,11 @@ end
 
 target :AerisSwiftDemo do
 	project 'AerisDemo.xcodeproj'
+	common_pods
+end
+
+target :AerisDemoSupport do
+	project 'AerisDemoSupport/AerisDemoSupport.xcodeproj'
 	common_pods
 end
 
