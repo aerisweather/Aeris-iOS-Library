@@ -137,7 +137,7 @@
 					break;
 				case 1:
 					label = NSLocalizedString(@"Index", nil);
-					value = [NSString stringWithFormat:@"%li", currentIndex.index];
+					value = [NSString stringWithFormat:@"%li", (long)currentIndex.index];
 					break;
 				case 2:
 					label = NSLocalizedString(@"Risk", nil);
@@ -161,7 +161,7 @@
 						break;
 					case 1:
 						label = NSLocalizedString(@"Index", nil);
-						value = [NSString stringWithFormat:@"%li", forecastIndex.index];
+						value = [NSString stringWithFormat:@"%li", (long)forecastIndex.index];
 						break;
 					case 2:
 						label = NSLocalizedString(@"Risk", nil);

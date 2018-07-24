@@ -108,28 +108,28 @@ static CGFloat cellHeight = 222.0f;
 
 		summaryCell.weatherView.weatherTextLabel.text = [period.weather capitalizedString];
 		summaryCell.weatherView.iconImageView.image = [UIImage imageNamed:period.icon];
-		summaryCell.weatherView.hightempLabel.text = [NSString stringWithFormat:@"%.0f", period.maxTempF];
-		summaryCell.weatherView.lowtempLabel.text = [NSString stringWithFormat:@"%.0f", period.minTempF];
+		summaryCell.weatherView.hightempLabel.text = [NSString stringWithFormat:@"%.0f", period.tempF.max];
+		summaryCell.weatherView.lowtempLabel.text = [NSString stringWithFormat:@"%.0f", period.tempF.min];
 
-		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0fmph", period.minWindSpeedMPH] forWeatherType:AWFWeatherDataTypeWindSpeed];
-		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0fmph", period.maxWindSpeedMPH] forWeatherType:AWFWeatherDataTypeWindSpeed];
-		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0fmph", period.avgWindSpeedMPH] forWeatherType:AWFWeatherDataTypeWindSpeed];
+		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0fmph", period.windSpeedMPH.min] forWeatherType:AWFWeatherDataTypeWindSpeed];
+		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0fmph", period.windSpeedMPH.max] forWeatherType:AWFWeatherDataTypeWindSpeed];
+		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0fmph", period.windSpeedMPH.average] forWeatherType:AWFWeatherDataTypeWindSpeed];
 
-		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%%", period.minHumidity] forWeatherType:AWFWeatherDataTypeHumidity];
-		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%%", period.maxHumidity] forWeatherType:AWFWeatherDataTypeHumidity];
-		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%%", period.avgHumidity] forWeatherType:AWFWeatherDataTypeHumidity];
+		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%%", period.humidity.min] forWeatherType:AWFWeatherDataTypeHumidity];
+		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%%", period.humidity.max] forWeatherType:AWFWeatherDataTypeHumidity];
+		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%%", period.humidity.average] forWeatherType:AWFWeatherDataTypeHumidity];
 
-		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%@", period.minDewpointF, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
-		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%@", period.maxDewpointF, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
-		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%@", period.avgDewpointF, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
+		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%@", period.dewpointF.min, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
+		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%@", period.dewpointF.max, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
+		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%@", period.dewpointF.average, AWFDegree] forWeatherType:AWFWeatherDataTypeDewPoint];
 
-		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.2fin", period.minPressureIN] forWeatherType:AWFWeatherDataTypePressure];
-		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.2fin", period.maxPressureIN] forWeatherType:AWFWeatherDataTypePressure];
-		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.2fin", period.avgPressureIN] forWeatherType:AWFWeatherDataTypePressure];
+		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.2fin", period.pressureIN.min] forWeatherType:AWFWeatherDataTypePressure];
+		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.2fin", period.pressureIN.max] forWeatherType:AWFWeatherDataTypePressure];
+		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.2fin", period.pressureIN.average] forWeatherType:AWFWeatherDataTypePressure];
 
-		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%%", period.minSkyCoverPercentage] forWeatherType:AWFWeatherDataTypeSkyCover];
-		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%%", period.maxSkyCoverPercentage] forWeatherType:AWFWeatherDataTypeSkyCover];
-		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%%", period.avgSkyCoverPercentage] forWeatherType:AWFWeatherDataTypeSkyCover];
+		[summaryCell.weatherView setMinValue:[NSString stringWithFormat:@"%.0f%%", period.skyCoverPercentage.min] forWeatherType:AWFWeatherDataTypeSkyCover];
+		[summaryCell.weatherView setMaxValue:[NSString stringWithFormat:@"%.0f%%", period.skyCoverPercentage.max] forWeatherType:AWFWeatherDataTypeSkyCover];
+		[summaryCell.weatherView setAverageValue:[NSString stringWithFormat:@"%.0f%%", period.skyCoverPercentage.average] forWeatherType:AWFWeatherDataTypeSkyCover];
 
 		[summaryCell setNeedsLayout];
 	}

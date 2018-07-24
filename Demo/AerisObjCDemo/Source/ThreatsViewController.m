@@ -89,7 +89,7 @@ static NSString *phraseCellIdentifier = @"PhraseTableViewCell";
 				}
 				case 4: {
 					label = NSLocalizedString(@"Intensity (DBZ)", nil);
-					value = [NSString stringWithFormat:@"%.0f", threat.avgDbz];
+					value = [NSString stringWithFormat:@"%.0f", threat.dbz.average];
 					break;
 				}
 				default: {
@@ -102,7 +102,7 @@ static NSString *phraseCellIdentifier = @"PhraseTableViewCell";
 			switch (indexPath.row) {
 				case 0: {
 					label = NSLocalizedString(@"Distance", nil);
-					value = [NSString stringWithFormat:@"%.2f mi", threat.avgDistanceMI];
+					value = [NSString stringWithFormat:@"%.2f mi", threat.distanceMI.average];
 					break;
 				}
 				case 1: {
@@ -117,7 +117,7 @@ static NSString *phraseCellIdentifier = @"PhraseTableViewCell";
 				}
 				case 3: {
 					label = NSLocalizedString(@"Moving Speed", nil);
-					value = [NSString stringWithFormat:@"%.1f mph", threat.avgSpeedMPH];
+					value = [NSString stringWithFormat:@"%.1f mph", threat.speedMPH.average];
 					break;
 				}
 				default: {
@@ -153,12 +153,12 @@ static NSString *phraseCellIdentifier = @"PhraseTableViewCell";
 			switch (indexPath.row) {
 				case 0: {
 					label = NSLocalizedString(@"Nearby Strikes", nil);
-					value = [NSString stringWithFormat:@"%li", threat.lightningCountNearby];
+					value = [NSString stringWithFormat:@"%li", (long)threat.lightningCountNearby];
 					break;
 				}
 				case 1: {
 					label = NSLocalizedString(@"Approaching Strikes", nil);
-					value = [NSString stringWithFormat:@"%li", threat.lightningCountApproaching];
+					value = [NSString stringWithFormat:@"%li", (long)threat.lightningCountApproaching];
 					break;
 				}
 				default: {

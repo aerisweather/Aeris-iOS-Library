@@ -66,7 +66,7 @@
 		}
 		case 2: {
 			label = NSLocalizedString(@"Risk Code", nil);
-			value = [NSString stringWithFormat:@"%li", outlook.riskCode];
+			value = [NSString stringWithFormat:@"%li", (long)outlook.riskCode];
 			break;
 		}
 		default: {

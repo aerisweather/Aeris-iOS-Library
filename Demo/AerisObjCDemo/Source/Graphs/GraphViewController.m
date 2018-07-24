@@ -141,7 +141,7 @@
 
 - (void)graphView:(AWFGraphView *)graphView didSelectItemForSeries:(AWFSeriesItem *)seriesItem atIndex:(NSInteger)index {
 	AWFSeriesPoint *point = seriesItem.points[index];
-	NSLog(@"selected point at %lu: value=%.2f", index, point.y);
+	NSLog(@"selected point at %ld: value=%.2f", (long)index, point.y);
 }
 
 #pragma mark - GraphViewControllerDelegate

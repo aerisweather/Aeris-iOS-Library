@@ -54,7 +54,7 @@
 	switch (indexPath.row) {
 		case 0:
 			label = @"Date";
-			value = [NSString stringWithFormat:@"%li/%li", period.month, period.date];
+			value = [NSString stringWithFormat:@"%li/%li", (long)period.month, (long)period.date];
 			break;
 		case 1:
 			label = @"High Temp";
