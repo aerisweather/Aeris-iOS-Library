@@ -1,7 +1,7 @@
 AerisWeather SDK for iOS SDK 3.0
 =============
 
-The [AerisWeather SDK for iOS](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/) allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the [AerisWeather API](http://www.aerisweather.com/support/docs/api/) and [Aeris Maps Platform (AMP)](http://www.aerisweather.com/support/docs/maps/) backends for weather data and imagery and makes integrating your application with your AerisWeather account considerably easier and more efficient.
+The [AerisWeather SDK for iOS](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/) allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the [AerisWeather API](http://www.aerisweather.com/support/docs/api/) and [Aeris Maps Platform (AMP)](http://www.aerisweather.com/support/docs/maps/) backends for weather data and imagery and makes integrating your application with your AerisWeather account considerably easier and more efficient.
 
 ## Aeris Modules
 
@@ -19,11 +19,11 @@ The AerisWeather SDK is broken up into multiple modules, allowing you to only in
 	* requires [Google Maps SDK](https://developers.google.com/maps/documentation/ios-sdk/)
 
 ### Migrating from 2.0
-We have a [migration guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/3.0-migration-guide/) available to help you transition to version 3.0 of the SDK if you're projects are already using 2.0.
+We have a [migration guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/3.0-migration-guide/) available to help you transition to version 3.0 of the SDK if you're projects are already using 2.0.
 	
 ## Installation
 
-We have in-depth [installation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/installation/) and [setup](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) guides available for you to get started using the AerisWeather SDK for iOS. 
+We have in-depth [installation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/installation/) and [setup](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/setup/) guides available for you to get started using the AerisWeather SDK for iOS. 
 
 The following are basic installation instructions to follow to get the SDK integrated with your project based on your desired method. Select one of the following methods to integrate the SDK based on your preferred method, but don't use more than one method as that will result in duplicate copies of the SDK and compiler errors.
 
@@ -62,7 +62,7 @@ The following are basic installation instructions to follow to get the SDK integ
 	Input Files: Empty
 	Output Files: Empty
 	```
-5. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK.
+5. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/setup/) to start using the SDK.
 
 ### Carthage
 1. Install the latest version of [Carthage](https://github.com/Carthage/Carthage#installing-carthage).
@@ -105,7 +105,7 @@ The following are basic installation instructions to follow to get the SDK integ
 	Output Files: Empty
 	```
 		
-9. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK.
+9. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/setup/) to start using the SDK.
 
 ### Dynamic Frameworks
 1. [Download](http://cdn.aerisapi.com/sdk/ios/builds/latest.zip) the latest version of the AerisWeather SDK for iOS and decompress the downloaded archive file.
@@ -125,13 +125,13 @@ The following are basic installation instructions to follow to get the SDK integ
 	Output Files: Empty
 	```
 		
-5. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/setup/) to start using the SDK.
+5. Follow our [setup guide](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/setup/) to start using the SDK.
 
 ## Demo Application
 
 Check out the included demo project, under the **Demo** directory, which contains a variety of example views using different components of the SDK, including pre-built weather views and weather maps utilizing different mapping libraries. Since the project's AerisWeather SDK dependencies in the demo project are installed and managed using [CocoaPods](http://cocoapods.org), you will need to open the **Demo/AerisDemo.xcworkspace**.
 
-For complete details and instructions on installing and getting started with the AerisWeather SDK for iOS, refer to our complete [Getting Started and API documentation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk-3/getting-started/).
+For complete details and instructions on installing and getting started with the AerisWeather SDK for iOS, refer to our complete [Getting Started and API documentation](https://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/).
 
 ## Need Support?
 
