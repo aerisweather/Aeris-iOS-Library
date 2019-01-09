@@ -44,7 +44,7 @@ The following are basic installation instructions to follow to get the SDK integ
 	pod 'AerisWeather/Mapbox'
 	
 	# or include this if using Google Maps for maps in your project
-	pod 'AerisWeather/GoogleMaps'
+	pod 'AerisWeather/Google'
 	```
 		
 4. Run `pod install` from the Terminal at the root of your project where your `Podfile` is located.
