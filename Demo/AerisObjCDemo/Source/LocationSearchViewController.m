@@ -54,6 +54,9 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	UITableViewController *searchResultsController = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
 	searchResultsController.tableView.dataSource = self;
 	searchResultsController.tableView.delegate = self;
+	if (@available(iOS 11.0, *)) {
+		searchResultsController.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+	}
 	
 	UISearchController *searchController = [[UISearchController alloc] initWithSearchResultsController:searchResultsController];
 	searchController.searchResultsUpdater = self;
