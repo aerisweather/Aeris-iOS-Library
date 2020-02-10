@@ -20,7 +20,7 @@
 	highTempItem.title = NSLocalizedString(@"High Temp", nil);
 	highTempItem.rendererType = AWFGraphRendererTypeLine;
 	highTempItem.xAxisPropertyName = @"periods.#.timestamp";
-	highTempItem.yAxisPropertyName = @"periods.#.maxTempF";
+	highTempItem.yAxisPropertyName = @"periods.#.tempF.max";
 	highTempItem.strokeColor = [UIColor redColor];
 	highTempItem.interval = 5.0;
 	highTempItem.ignoreTime = YES;
@@ -30,7 +30,7 @@
 	
 	AWFWeatherSeriesItem *lowTempItem = [highTempItem copy];
 	lowTempItem.title = NSLocalizedString(@"Low Temp", nil);
-	lowTempItem.yAxisPropertyName = @"periods.#.minTempF";
+	lowTempItem.yAxisPropertyName = @"periods.#.tempF.min";
 	lowTempItem.strokeColor = [UIColor blueColor];
 	
 	// precip
