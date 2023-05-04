@@ -215,6 +215,9 @@
 
 - (void)optionsViewControllerDidChangeSelectedOption:(UIViewController *)optionsViewController {
 	self.currentIndexType = ((IndicesOptionsViewController *)optionsViewController).selectedIndexType;
+	if (self.currentIndexType != self.dataLastIndexType) {
+		[self loadDataForDefaultPlace];
+	}
 }
 
 #pragma mark - Private Methods
