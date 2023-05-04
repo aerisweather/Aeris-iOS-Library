@@ -168,12 +168,13 @@
 		2B5823AE1FF6F0580061B91E /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823AD1FF6F0580061B91E /* LocationSearchViewController.swift */; };
 		2B8512B92136DDE80010386C /* Pods_AerisObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8512B82136DDE80010386C /* Pods_AerisObjCDemo.framework */; };
 		2B8512BB2136DDF20010386C /* Pods_AerisSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8512BA2136DDF20010386C /* Pods_AerisSwiftDemo.framework */; };
-		2B8512BC2136DDF50010386C /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
 		2BB1C8CD1FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C61FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m */; };
 		2BB1C8CE1FEC3C4200BD4DA2 /* ModelGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C71FEC3C4200BD4DA2 /* ModelGraphsViewController.m */; };
 		2BB1C8CF1FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C81FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m */; };
 		2BB1C8D01FEC3C4200BD4DA2 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8CB1FEC3C4200BD4DA2 /* DetailedWeatherViewController.m */; };
 		2BF107151FF58F7A005BFBA4 /* AerisDemoSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A6DE7F5E2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
+		A6DE7F5F2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -215,6 +216,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				2BF107151FF58F7A005BFBA4 /* AerisDemoSupport.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DE7F602A03FD8F009D2DD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6DE7F5F2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +476,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8512BC2136DDF50010386C /* AerisDemoSupport.framework in Frameworks */,
+				A6DE7F5E2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Frameworks */,
 				2B8512BB2136DDF20010386C /* Pods_AerisSwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,6 +914,7 @@
 				2B16A6D51E43911B005AC3EF /* Resources */,
 				0298A0A03A1CA08BE769C973 /* [CP] Embed Pods Frameworks */,
 				256F4D501454B400B84D34B0 /* [CP] Copy Pods Resources */,
+				A6DE7F602A03FD8F009D2DD3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
