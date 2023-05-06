@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import "ModelGraphsViewController.h"
 
 @interface ModelGraphsViewController_iPad : ModelGraphsViewController

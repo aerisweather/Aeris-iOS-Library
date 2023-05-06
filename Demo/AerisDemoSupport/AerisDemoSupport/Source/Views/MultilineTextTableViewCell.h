@@ -6,6 +6,7 @@
 //  Copyright © 2015 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "Globals.h"
 

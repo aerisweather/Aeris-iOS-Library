@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
 #import <AerisDemoSupport/AWFStyledView.h>
 
 @interface AWFObservationView : AWFStyledView
