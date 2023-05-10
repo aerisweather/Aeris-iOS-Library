@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@import UIKit;
+#import <UIKit/UIKit.h>
 
 @class AWFHourlyBasicView;
 @class AWFForecastPeriod;
