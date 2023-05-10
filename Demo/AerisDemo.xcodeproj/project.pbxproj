@@ -185,13 +185,6 @@
 			remoteGlobalIDString = 2BD7690C1FF4127A00F758C9;
 			remoteInfo = AerisDemoSupport;
 		};
-		2BF105F61FF565BA005BFBA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BD7690B1FF4127A00F758C9;
-			remoteInfo = AerisDemoSupport;
-		};
 		2BF105F81FF565EC005BFBA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
@@ -896,7 +889,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				2BF105F71FF565BA005BFBA4 /* PBXTargetDependency */,
 				2BF107171FF58F7A005BFBA4 /* PBXTargetDependency */,
 			);
 			name = AerisObjCDemo;
@@ -1331,11 +1323,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2BF105F71FF565BA005BFBA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AerisDemoSupport;
-			targetProxy = 2BF105F61FF565BA005BFBA4 /* PBXContainerItemProxy */;
-		};
 		2BF105F91FF565EC005BFBA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AerisDemoSupport;
