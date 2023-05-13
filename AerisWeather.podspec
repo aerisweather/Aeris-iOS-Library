@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                       The Aeris iOS Weather Framework allows a developer to quickly and easily add weather content and functionality to their iOS applications quickly and easily without having to code anything themselves. It utilizes the Aeris API backend for data loading and is built on top of an object mapping system that efficiently loads requested weather content into third-party iOS applications, greatly reducing the amount of code and development needed on the developer end.
                     DESC
+  s.readme       = "https://raw.githubusercontent.com/aerisweather/Aeris-iOS-Library/#{s.version.to_s}/README.md"
 
   s.homepage     = 'https://github.com/aerisweather/Aeris-iOS-Library'
   s.documentation_url = 'http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/'
