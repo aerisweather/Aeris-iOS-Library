@@ -24,6 +24,11 @@ target :AerisSwiftDemo do
 	common_pods
 end
 
+target :AerisCatalystDemo do
+	project 'AerisDemo.xcodeproj'
+	common_pods
+end
+
 target :AerisDemoSupport do
 	project 'AerisDemoSupport/AerisDemoSupport.xcodeproj'
 	common_pods

@@ -337,6 +337,7 @@
 		A68FBEB92A28341F0098EE5B /* LightningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */; };
 		A6DAD9892A217AE000405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
 		A6DAD98A2A217B2A00405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
+		BB6B850E9A1F86323F356C95 /* Pods_AerisCatalystDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 153CEC83231193A0F934C23E /* Pods_AerisCatalystDemo.framework */; };
 		BD662A2041CC15D2FC711F1E /* Pods_AerisSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3862655522440B6C0ACC486 /* Pods_AerisSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -413,6 +414,8 @@
 
 /* Begin PBXFileReference section */
 		117CA1EC219FCEF71E640362 /* Pods-AerisObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		153CEC83231193A0F934C23E /* Pods_AerisCatalystDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisCatalystDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF35BDAF1E75E191612BABC /* Pods-AerisCatalystDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisCatalystDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		263CC8C9FDF0E983001D4B77 /* Pods-AerisSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2B1491B11FEC1CA2004BB807 /* AerisDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1491BA1FEC1CA2004BB807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -630,6 +633,7 @@
 		2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AerisDemoSupport.xcodeproj; path = AerisDemoSupport/AerisDemoSupport.xcodeproj; sourceTree = "<group>"; };
 		2BE504BD2769419000787C9D /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACC64EC3C793D49AC003E9D /* Pods-AerisSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4EB86F410AF27E2039111E94 /* Pods-AerisCatalystDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisCatalystDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6FBC9A6C16F5EA93E403D192 /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A63625FD2A1D76DE0073CB6E /* LightningFlashesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningFlashesViewController.h; sourceTree = "<group>"; };
 		A63625FE2A1D76DE0073CB6E /* LightningFlashesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningFlashesViewController.m; sourceTree = "<group>"; };
@@ -667,6 +671,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B45F5EA242158C500971689 /* AerisDemoSupport.framework in Frameworks */,
+				BB6B850E9A1F86323F356C95 /* Pods_AerisCatalystDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1062,6 +1067,7 @@
 				2BE504BD2769419000787C9D /* Pods_AerisObjCDemo.framework */,
 				6FBC9A6C16F5EA93E403D192 /* Pods_AerisObjCDemo.framework */,
 				C3862655522440B6C0ACC486 /* Pods_AerisSwiftDemo.framework */,
+				153CEC83231193A0F934C23E /* Pods_AerisCatalystDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1073,6 +1079,8 @@
 				EEA5F45D9CBC085A44D34768 /* Pods-AerisObjCDemo.release.xcconfig */,
 				3ACC64EC3C793D49AC003E9D /* Pods-AerisSwiftDemo.debug.xcconfig */,
 				263CC8C9FDF0E983001D4B77 /* Pods-AerisSwiftDemo.release.xcconfig */,
+				1EF35BDAF1E75E191612BABC /* Pods-AerisCatalystDemo.debug.xcconfig */,
+				4EB86F410AF27E2039111E94 /* Pods-AerisCatalystDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -1128,12 +1136,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B45F58B2421524A00971689 /* Build configuration list for PBXNativeTarget "AerisCatalystDemo" */;
 			buildPhases = (
+				63CFE785B2DB415D960FD75D /* [CP] Check Pods Manifest.lock */,
 				2B45F4DC2421524A00971689 /* Sources */,
 				2B45F5072421524A00971689 /* Frameworks */,
 				2B45F50C2421524A00971689 /* Resources */,
 				2B45F5862421524A00971689 /* Strip Frameworks */,
 				2B45F5882421524A00971689 /* Update Build Number */,
 				2B45F59D242156B200971689 /* Embed Frameworks */,
+				2A147092822C3B0B625AB779 /* [CP] Embed Pods Frameworks */,
+				98A4B9C0BDDDC90674712C67 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1567,6 +1578,36 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2A147092822C3B0B625AB779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo-frameworks.sh",
+				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
+				"${BUILT_PRODUCTS_DIR}/MapboxMobileEvents/MapboxMobileEvents.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AerisWeather/Core/AerisCore.framework/AerisCore",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AerisWeather/CoreUI/AerisCoreUI.framework/AerisCoreUI",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AerisWeather/Data/AerisWeatherKit.framework/AerisWeatherKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AerisWeather/Mapbox/AerisMapboxMapKit.framework/AerisMapboxMapKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/AerisWeather/Maps/AerisMapKit.framework/AerisMapKit",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MapboxMobileEvents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCoreUI.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisWeatherKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisMapboxMapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisMapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2B45F5862421524A00971689 /* Strip Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1594,6 +1635,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PROJECT_DIR}/scripts/update_build_number.sh\n";
+		};
+		63CFE785B2DB415D960FD75D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AerisCatalystDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		6F8D6474837F1F4ADEB178CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1629,6 +1692,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98A4B9C0BDDDC90674712C67 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisCatalystDemo/Pods-AerisCatalystDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -2148,6 +2229,7 @@
 		};
 		2B45F58C2421524A00971689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF35BDAF1E75E191612BABC /* Pods-AerisCatalystDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -2193,6 +2275,7 @@
 		};
 		2B45F58D2421524A00971689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EB86F410AF27E2039111E94 /* Pods-AerisCatalystDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
