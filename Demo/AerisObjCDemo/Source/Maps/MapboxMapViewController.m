@@ -7,6 +7,7 @@
 //
 
 #import "MapboxMapViewController.h"
+#import "dlfcn.h"
 
 @interface MapboxMapViewController ()
 @property (nonatomic, assign) BOOL isMapSetup;
@@ -17,6 +18,10 @@
 @synthesize isMapSetup = _isMapSetup;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+//	dlopen("AerisMapboxMapKit.framework/AerisMapboxMapKit", RTLD_LAZY);
+//	NSLog(@"MAPBOX: %@", NSStringFromClass([AWFMapboxMapStrategy class]));
+	
+//	MGLMapView *mapView = [[MGLMapView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 	self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 	if (self) {
 		self.weatherMapType = AWFWeatherMapTypeMapbox;

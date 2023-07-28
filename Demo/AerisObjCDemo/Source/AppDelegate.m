@@ -6,8 +6,11 @@
 //  Copyright (c) 2013 HAMweather, LLC. All rights reserved.
 //
 
+#import <AerisDemoSupport/AerisDemoSupport.h>
+#if !TARGET_OS_UIKITFORMAC
 #import <GoogleMaps/GoogleMaps.h>
 #import <Mapbox/Mapbox.h>
+#endif
 #import "AppDelegate.h"
 #import "CatalogViewController.h"
 #import "DetailedWeatherViewController_iPad.h"
@@ -23,13 +26,23 @@
 	[AerisWeather startWithApiKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AWFLogger setLoggingLevel:AWFLogLevelDebug];
 	
+#if !TARGET_OS_UIKITFORMAC
 	// must initialize Google Maps SDK with proper API key before using
 	[GMSServices provideAPIKey:@"__GOOGLE_KEY__"];
 	// must initialize Mapbox with proper token
 	[MGLAccountManager setAccessToken:@"__MAPBOX_KEY__"];
+#endif
 	
 	// set the global style to use for Aeris weather views
 	[AWFCascadingStyle setDefaultStyle:[AWFCascadingStyle style]];
+	
+	[AWFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+	[[AWFNetworkActivityIndicatorManager sharedManager] setNetworkingActivityActionWithBlock:^(BOOL networkActivityIndicatorVisible) {
+		[[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:networkActivityIndicatorVisible];
+	}];
+	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkActivityStateDidChange:) name:AWFNetworkActivityStateDidStart object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkActivityStateDidChange:) name:AWFNetworkActivityStateDidStop object:nil];
 	
 	// setup preferences
 	if (![Preferences sharedInstance].saved) {
@@ -60,8 +73,7 @@
 		}
 		
 		self.window.rootViewController = splitViewController;
-	}
-	else {
+	} else {
 		CatalogViewController *catalogController = [[CatalogViewController alloc] initWithNibName:nil bundle:nil];
 		UINavigationController *rootController = [[UINavigationController alloc] initWithRootViewController:catalogController];
 		
@@ -82,6 +94,10 @@
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
 	NSLog(@"Failed to get device token, error: %@", error);
+}
+
+- (void)networkActivityStateDidChange:(NSNotification *)notification {
+	[UIApplication sharedApplication].networkActivityIndicatorVisible = [AWFNetworkActivityIndicatorManager sharedManager].isNetworkActivityIndicatorVisible;
 }
 
 void uncaughtExceptionHandler(NSException *exception) {

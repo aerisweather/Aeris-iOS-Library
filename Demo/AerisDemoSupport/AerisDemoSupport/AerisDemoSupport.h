@@ -37,11 +37,15 @@ FOUNDATION_EXPORT const unsigned char AerisDemoSupportVersionString[];
 #import <AerisDemoSupport/AWFDailySummaryView.h>
 #import <AerisDemoSupport/AWFForecastDetailView.h>
 #import <AerisDemoSupport/AWFHourlyBasicView.h>
+#import <AerisDemoSupport/AWFLightningSummaryView.h>
 #import <AerisDemoSupport/AWFObservationAdvisoriesView.h>
 #import <AerisDemoSupport/AWFObservationView.h>
 #import <AerisDemoSupport/AWFTableViewDailySummaryCell.h>
 #import <AerisDemoSupport/AWFTableViewForecastRowCell.h>
 #import <AerisDemoSupport/AWFTableViewForecast24HourCell.h>
+#import <AerisDemoSupport/AWFTableViewLightningFlashRowCell.h>
+#import <AerisDemoSupport/AWFTableViewLightningStrikeRowCell.h>
+#import <AerisDemoSupport/AWFTableViewLightningSummaryCell.h>
 #import <AerisDemoSupport/AWFTableViewObservationRowCell.h>
 #import <AerisDemoSupport/AWFTableViewObservationRowCityCell.h>
 

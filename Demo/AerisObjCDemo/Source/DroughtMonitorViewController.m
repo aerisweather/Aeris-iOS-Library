@@ -6,6 +6,8 @@
 //  Copyright © 2015 HAMweather, LLC. All rights reserved.
 //
 
+#import <AerisWeatherKit/AerisWeatherKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 #import "DroughtMonitorViewController.h"
 
 @interface DroughtMonitorViewController ()

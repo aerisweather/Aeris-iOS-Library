@@ -291,7 +291,6 @@ static NSString *optionCellIdentifier = @"OptionCell";
 
 	cell.textLabel.text = typeName;
 	cell.selected = (self.selectedIndexType == type);
-    cell.accessoryType = cell.selected ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
 
 	return cell;
 }
@@ -302,7 +301,6 @@ static NSString *optionCellIdentifier = @"OptionCell";
 	AWFIndexDataType indexType = self.indexTypes[indexPath.row];
 	if (indexType != self.selectedIndexType) {
 		self.selectedIndexType = indexType;
-        [self.tableView reloadData];
 
 		if ([self.delegate respondsToSelector:@selector(optionsViewControllerDidChangeSelectedOption:)]) {
 			[self.delegate optionsViewControllerDidChangeSelectedOption:self];

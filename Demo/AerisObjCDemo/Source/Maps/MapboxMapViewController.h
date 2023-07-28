@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Mapbox/Mapbox.h>
 #import <AerisMapboxMapKit/AerisMapboxMapKit.h>
 #import "MapViewController.h"
 

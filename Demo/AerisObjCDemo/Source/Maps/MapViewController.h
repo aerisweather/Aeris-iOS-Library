@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <AerisMapKit/AerisMapKit.h>
+#import <AerisWeatherKit/AerisWeatherKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 
 @interface MapViewController : AWFWeatherMapViewController
 

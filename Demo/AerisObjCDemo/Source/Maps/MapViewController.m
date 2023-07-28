@@ -27,8 +27,6 @@
 }
 
 - (void)viewDidLoad {
-	
-	
     [super viewDidLoad];
     
 	self.view.backgroundColor = [UIColor blackColor];
@@ -62,7 +60,10 @@
 	[super viewDidAppear:animated];
 	
 	if (!self.isMapSetup) {
-		[self.weatherMap addSourcesForLayerTypes:@[AWFMapLayerSatellite, AWFMapLayerRadar]];
+//		AWFRasterMapLayer *layer = [AWFRasterMapLayer layerWithLayerKey:@"radar"];
+//		[self.weatherMap.amp addRasterLayer:layer];
+//		[self.weatherMap addSourcesForLayerTypes:@[AWFMapLayerRadar]];
+		[self.weatherMap addSourceForLayerType:AWFMapLayerRadar];
 		self.isMapSetup = YES;
 	}
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MenuItem {
+class MenuItem: NSObject {
 	var title: String
 	var controller: UIViewController
 	
@@ -18,7 +18,7 @@ class MenuItem {
 	}
 }
 
-class MenuCategory {
+class MenuCategory: NSObject {
 	var title: String
 	var items: [MenuItem]?
 	

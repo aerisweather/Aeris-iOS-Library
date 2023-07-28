@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AerisWeatherKit/AerisWeatherKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 #import "GraphViewController.h"
 
 @interface ForecastLineGraphsViewController : GraphViewController

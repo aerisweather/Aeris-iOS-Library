@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AerisWeatherKit/AerisWeatherKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 #import "GroupedListingViewController.h"
 
 @protocol OptionsViewControllerDelegate;

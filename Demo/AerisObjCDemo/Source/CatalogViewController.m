@@ -36,9 +36,15 @@
 #import "ConvectiveOutlookViewController.h"
 #import "ThreatsViewController.h"
 #import "DroughtMonitorViewController.h"
+#import "LightningSummaryViewController.h"
+#import "LightningThreatsViewController.h"
+#import "LightningFlashesViewController.h"
+#import "LightningStrikesViewController.h"
 #import "AppleMapViewController.h"
+#if !TARGET_OS_UIKITFORMAC
 #import "GoogleMapViewController.h"
 #import "MapboxMapViewController.h"
+#endif
 #import "DetailedWeatherViewController_iPad.h"
 
 @interface CatalogViewController ()
@@ -111,14 +117,24 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 		                         @{ @"title": NSLocalizedString(@"Nearby Records", nil), @"class": [RecordsViewController class] },
 		                         @{ @"title": NSLocalizedString(@"Nearby Earthquakes", nil), @"class": [EarthquakesViewController class] },
 								 @{ @"title": NSLocalizedString(@"Nearby Threats", nil), @"class": [ThreatsViewController class] },
-								 @{ @"title": NSLocalizedString(@"Convective Outlook", nil), @"class": [ConvectiveOutlookViewController class] }
+								 @{ @"title": NSLocalizedString(@"Convective Outlook", nil), @"class": [ConvectiveOutlookViewController class] },
+								 @{ @"title": NSLocalizedString(@"Lightning Summary", nil), @"class": [LightningSummaryViewController class] },
+								 @{ @"title": NSLocalizedString(@"Nearby Lightning Threats", nil), @"class": [LightningThreatsViewController class] },
+								 @{ @"title": NSLocalizedString(@"Nearby Lightning Flashes", nil), @"class": [LightningFlashesViewController class] },
+								 @{ @"title": NSLocalizedString(@"Nearby Lightning Strikes", nil), @"class": [LightningStrikesViewController class] },
 		];
 
+#if TARGET_OS_UIKITFORMAC
+		NSArray *imageItems = @[
+			@{ @"title": NSLocalizedString(@"Apple Map", nil), @"class": [AppleMapViewController class] }
+		];
+#else
 		NSArray *imageItems = @[ //@{@"title": NSLocalizedString(@"Static Map Viewer", nil), @"class": [NSObject class]},
 		    @{ @"title": NSLocalizedString(@"Apple Map", nil), @"class": [AppleMapViewController class] },
 		    @{ @"title": NSLocalizedString(@"Google Map", nil), @"class": [GoogleMapViewController class] },
 		    @{ @"title": NSLocalizedString(@"Mapbox Map", nil), @"class": [MapboxMapViewController class] }
 		];
+#endif
 
 		self.categories = @[@{ @"title": NSLocalizedString(@"Locations", nil), @"items": locationItems },
 		                    @{ @"title": NSLocalizedString(@"General Weather", nil), @"items": generalItems },

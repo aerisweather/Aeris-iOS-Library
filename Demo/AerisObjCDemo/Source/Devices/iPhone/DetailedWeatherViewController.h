@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AerisWeatherKit/AerisWeatherKit.h>
 
 @interface DetailedWeatherViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 

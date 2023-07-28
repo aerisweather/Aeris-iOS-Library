@@ -164,20 +164,204 @@
 		2B16A6DF1E43911B005AC3EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B16A6DD1E43911B005AC3EF /* Main.storyboard */; };
 		2B16A6E11E43911B005AC3EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B16A6E01E43911B005AC3EF /* Assets.xcassets */; };
 		2B16A6E41E43911B005AC3EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B16A6E21E43911B005AC3EF /* LaunchScreen.storyboard */; };
+		2B45F4DD2421524A00971689 /* IndicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492871FEC24DE004BB807 /* IndicesViewController.m */; };
+		2B45F4DE2421524A00971689 /* LocationSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14928B1FEC24DE004BB807 /* LocationSearchViewController.m */; };
+		2B45F4DF2421524A00971689 /* DetailedWeatherViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492671FEC24DE004BB807 /* DetailedWeatherViewController_iPad.m */; };
+		2B45F4E02421524A00971689 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492A21FEC24DE004BB807 /* SettingsViewController.m */; };
+		2B45F4E12421524A00971689 /* DroughtMonitorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492781FEC24DE004BB807 /* DroughtMonitorViewController.m */; };
+		2B45F4E22421524A00971689 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14927C1FEC24DE004BB807 /* ForecastViewController.m */; };
+		2B45F4E42421524A00971689 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14925B1FEC24DE004BB807 /* CatalogViewController.m */; };
+		2B45F4E52421524A00971689 /* BarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14927F1FEC24DE004BB807 /* BarGraphsViewController.m */; };
+		2B45F4E62421524A00971689 /* GroupedListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492851FEC24DE004BB807 /* GroupedListingViewController.m */; };
+		2B45F4E82421524A00971689 /* ModelGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14926D1FEC24DE004BB807 /* ModelGraphsViewController_iPad.m */; };
+		2B45F4E92421524A00971689 /* NearbyObservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492981FEC24DE004BB807 /* NearbyObservationsViewController.m */; };
+		2B45F4EA2421524A00971689 /* ForecastLineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C81FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m */; };
+		2B45F4EB2421524A00971689 /* ThreatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492AA1FEC24DE004BB807 /* ThreatsViewController.m */; };
+		2B45F4EC2421524A00971689 /* RecentObservationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14929C1FEC24DE004BB807 /* RecentObservationsViewController.m */; };
+		2B45F4ED2421524A00971689 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1491C21FEC1CA2004BB807 /* main.m */; };
+		2B45F4EE2421524A00971689 /* ForecastBarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C61FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m */; };
+		2B45F4EF2421524A00971689 /* ConvectiveOutlookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14925D1FEC24DE004BB807 /* ConvectiveOutlookViewController.m */; };
+		2B45F4F02421524A00971689 /* DailySummariesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14925F1FEC24DE004BB807 /* DailySummariesViewController.m */; };
+		2B45F4F12421524A00971689 /* LineGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14926B1FEC24DE004BB807 /* LineGraphsViewController_iPad.m */; };
+		2B45F4F22421524A00971689 /* RecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492A01FEC24DE004BB807 /* RecordsViewController.m */; };
+		2B45F4F32421524A00971689 /* NormalsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14929A1FEC24DE004BB807 /* NormalsViewController.m */; };
+		2B45F4F42421524A00971689 /* RecentObsGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14929E1FEC24DE004BB807 /* RecentObsGraphViewController.m */; };
+		2B45F4F52421524A00971689 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8CB1FEC3C4200BD4DA2 /* DetailedWeatherViewController.m */; };
+		2B45F4F62421524A00971689 /* WeekendWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492AE1FEC24DE004BB807 /* WeekendWeatherViewController.m */; };
+		2B45F4F72421524A00971689 /* TidesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492AC1FEC24DE004BB807 /* TidesViewController.m */; };
+		2B45F4F82421524A00971689 /* DailySummaryGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492611FEC24DE004BB807 /* DailySummaryGraphsViewController.m */; };
+		2B45F4F92421524A00971689 /* ModelGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C71FEC3C4200BD4DA2 /* ModelGraphsViewController.m */; };
+		2B45F4FA2421524A00971689 /* SunMoonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492A81FEC24DE004BB807 /* SunMoonViewController.m */; };
+		2B45F4FB2421524A00971689 /* MoonPhasesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492961FEC24DE004BB807 /* MoonPhasesViewController.m */; };
+		2B45F4FC2421524A00971689 /* StormCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492A41FEC24DE004BB807 /* StormCellsViewController.m */; };
+		2B45F4FD2421524A00971689 /* AdvisoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492571FEC24DE004BB807 /* AdvisoriesViewController.m */; };
+		2B45F4FE2421524A00971689 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492591FEC24DE004BB807 /* AppDelegate.m */; };
+		2B45F4FF2421524A00971689 /* ListingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492891FEC24DE004BB807 /* ListingViewController.m */; };
+		2B45F5002421524A00971689 /* GraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492811FEC24DE004BB807 /* GraphViewController.m */; };
+		2B45F5012421524A00971689 /* EarthquakesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14927A1FEC24DE004BB807 /* EarthquakesViewController.m */; };
+		2B45F5022421524A00971689 /* BarGraphsViewController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492651FEC24DE004BB807 /* BarGraphsViewController_iPad.m */; };
+		2B45F5032421524A00971689 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492941FEC24DE004BB807 /* MapViewController.m */; };
+		2B45F5042421524A00971689 /* StormReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492A61FEC24DE004BB807 /* StormReportsViewController.m */; };
+		2B45F5052421524A00971689 /* AppleMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B14928E1FEC24DE004BB807 /* AppleMapViewController.m */; };
+		2B45F5062421524A00971689 /* LineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B1492831FEC24DE004BB807 /* LineGraphsViewController.m */; };
+		2B45F50D2421524A00971689 /* hazyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D01FEC24DE004BB807 /* hazyn.png */; };
+		2B45F50E2421524A00971689 /* drizzle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BF1FEC24DE004BB807 /* drizzle.png */; };
+		2B45F50F2421524A00971689 /* pcloudyrwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492EB1FEC24DE004BB807 /* pcloudyrwn.png */; };
+		2B45F5102421524A00971689 /* pcloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E61FEC24DE004BB807 /* pcloudy.png */; };
+		2B45F5112421524A00971689 /* pcloudyt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F41FEC24DE004BB807 /* pcloudyt.png */; };
+		2B45F5122421524A00971689 /* rainandsnown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FD1FEC24DE004BB807 /* rainandsnown.png */; };
+		2B45F5132421524A00971689 /* pcloudytw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F61FEC24DE004BB807 /* pcloudytw.png */; };
+		2B45F5142421524A00971689 /* fairn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C41FEC24DE004BB807 /* fairn.png */; };
+		2B45F5152421524A00971689 /* mcloudys.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D81FEC24DE004BB807 /* mcloudys.png */; };
+		2B45F5162421524A00971689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491BE1FEC1CA2004BB807 /* LaunchScreen.storyboard */; };
+		2B45F5172421524A00971689 /* plcoudyrwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FA1FEC24DE004BB807 /* plcoudyrwn.png */; };
+		2B45F5182421524A00971689 /* flurrieswn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CA1FEC24DE004BB807 /* flurrieswn.png */; };
+		2B45F5192421524A00971689 /* flurriesw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C91FEC24DE004BB807 /* flurriesw.png */; };
+		2B45F51A2421524A00971689 /* cloudyw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BB1FEC24DE004BB807 /* cloudyw.png */; };
+		2B45F51B2421524A00971689 /* pcloudyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E71FEC24DE004BB807 /* pcloudyn.png */; };
+		2B45F51C2421524A00971689 /* fair.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C31FEC24DE004BB807 /* fair.png */; };
+		2B45F51D2421524A00971689 /* freezingrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CD1FEC24DE004BB807 /* freezingrain.png */; };
+		2B45F51E2421524A00971689 /* mcloudysf.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D91FEC24DE004BB807 /* mcloudysf.png */; };
+		2B45F51F2421524A00971689 /* tstorms.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493191FEC24DE004BB807 /* tstorms.png */; };
+		2B45F5202421524A00971689 /* hot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D11FEC24DE004BB807 /* hot.png */; };
+		2B45F5212421524A00971689 /* pcloudys.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492EC1FEC24DE004BB807 /* pcloudys.png */; };
+		2B45F5222421524A00971689 /* sleetn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493071FEC24DE004BB807 /* sleetn.png */; };
+		2B45F5232421524A00971689 /* tstormsw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931B1FEC24DE004BB807 /* tstormsw.png */; };
+		2B45F5242421524A00971689 /* cloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B91FEC24DE004BB807 /* cloudy.png */; };
+		2B45F5252421524A00971689 /* sunny.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493141FEC24DE004BB807 /* sunny.png */; };
+		2B45F5262421524A00971689 /* clearwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B81FEC24DE004BB807 /* clearwn.png */; };
+		2B45F5272421524A00971689 /* snowshowers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930E1FEC24DE004BB807 /* snowshowers.png */; };
+		2B45F5282421524A00971689 /* pcloudyrn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E91FEC24DE004BB807 /* pcloudyrn.png */; };
+		2B45F5292421524A00971689 /* showers.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493021FEC24DE004BB807 /* showers.png */; };
+		2B45F52A2421524A00971689 /* sunnyw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493161FEC24DE004BB807 /* sunnyw.png */; };
+		2B45F52B2421524A00971689 /* fdrizzlen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C61FEC24DE004BB807 /* fdrizzlen.png */; };
+		2B45F52C2421524A00971689 /* blowingsnown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B41FEC24DE004BB807 /* blowingsnown.png */; };
+		2B45F52D2421524A00971689 /* rainw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493011FEC24DE004BB807 /* rainw.png */; };
+		2B45F52E2421524A00971689 /* blizzard.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B11FEC24DE004BB807 /* blizzard.png */; };
+		2B45F52F2421524A00971689 /* wintrymixn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931F1FEC24DE004BB807 /* wintrymixn.png */; };
+		2B45F5302421524A00971689 /* flurriesn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C81FEC24DE004BB807 /* flurriesn.png */; };
+		2B45F5312421524A00971689 /* pcloudywn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F91FEC24DE004BB807 /* pcloudywn.png */; };
+		2B45F5322421524A00971689 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930C1FEC24DE004BB807 /* snow.png */; };
+		2B45F5332421524A00971689 /* rainn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FE1FEC24DE004BB807 /* rainn.png */; };
+		2B45F5342421524A00971689 /* sleetsnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493081FEC24DE004BB807 /* sleetsnow.png */; };
+		2B45F5352421524A00971689 /* mcloudysfw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DB1FEC24DE004BB807 /* mcloudysfw.png */; };
+		2B45F5362421524A00971689 /* mcloudyw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E41FEC24DE004BB807 /* mcloudyw.png */; };
+		2B45F5372421524A00971689 /* pcloudysf.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492ED1FEC24DE004BB807 /* pcloudysf.png */; };
+		2B45F5382421524A00971689 /* fdrizzle.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C51FEC24DE004BB807 /* fdrizzle.png */; };
+		2B45F5392421524A00971689 /* mcloudyswn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DF1FEC24DE004BB807 /* mcloudyswn.png */; };
+		2B45F53A2421524A00971689 /* snowtorainn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493111FEC24DE004BB807 /* snowtorainn.png */; };
+		2B45F53B2421524A00971689 /* showersn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493031FEC24DE004BB807 /* showersn.png */; };
+		2B45F53C2421524A00971689 /* pcloudyw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F81FEC24DE004BB807 /* pcloudyw.png */; };
+		2B45F53D2421524A00971689 /* snowwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493131FEC24DE004BB807 /* snowwn.png */; };
+		2B45F53E2421524A00971689 /* clear.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B51FEC24DE004BB807 /* clear.png */; };
+		2B45F53F2421524A00971689 /* pcloudysn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F11FEC24DE004BB807 /* pcloudysn.png */; };
+		2B45F5402421524A00971689 /* showersw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493041FEC24DE004BB807 /* showersw.png */; };
+		2B45F5412421524A00971689 /* sunnyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493151FEC24DE004BB807 /* sunnyn.png */; };
+		2B45F5422421524A00971689 /* cloudyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BA1FEC24DE004BB807 /* cloudyn.png */; };
+		2B45F5432421524A00971689 /* mcloudyr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D41FEC24DE004BB807 /* mcloudyr.png */; };
+		2B45F5442421524A00971689 /* pcloudytwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F71FEC24DE004BB807 /* pcloudytwn.png */; };
+		2B45F5452421524A00971689 /* drizzlen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C01FEC24DE004BB807 /* drizzlen.png */; };
+		2B45F5462421524A00971689 /* pcloudytn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F51FEC24DE004BB807 /* pcloudytn.png */; };
+		2B45F5472421524A00971689 /* snown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930D1FEC24DE004BB807 /* snown.png */; };
+		2B45F5482421524A00971689 /* sleet.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493061FEC24DE004BB807 /* sleet.png */; };
+		2B45F5492421524A00971689 /* mcloudyrw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D61FEC24DE004BB807 /* mcloudyrw.png */; };
+		2B45F54A2421524A00971689 /* dustn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C21FEC24DE004BB807 /* dustn.png */; };
+		2B45F54B2421524A00971689 /* pcloudyswn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F31FEC24DE004BB807 /* pcloudyswn.png */; };
+		2B45F54C2421524A00971689 /* raintosnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FF1FEC24DE004BB807 /* raintosnow.png */; };
+		2B45F54D2421524A00971689 /* mcloudysfn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DA1FEC24DE004BB807 /* mcloudysfn.png */; };
+		2B45F54E2421524A00971689 /* fog.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CB1FEC24DE004BB807 /* fog.png */; };
+		2B45F54F2421524A00971689 /* mcloudyn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D31FEC24DE004BB807 /* mcloudyn.png */; };
+		2B45F5502421524A00971689 /* flurries.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C71FEC24DE004BB807 /* flurries.png */; };
+		2B45F5512421524A00971689 /* mcloudysn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DD1FEC24DE004BB807 /* mcloudysn.png */; };
+		2B45F5522421524A00971689 /* blizzardn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B21FEC24DE004BB807 /* blizzardn.png */; };
+		2B45F5532421524A00971689 /* rainandsnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FC1FEC24DE004BB807 /* rainandsnow.png */; };
+		2B45F5542421524A00971689 /* mcloudytwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E31FEC24DE004BB807 /* mcloudytwn.png */; };
+		2B45F5552421524A00971689 /* dust.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492C11FEC24DE004BB807 /* dust.png */; };
+		2B45F5562421524A00971689 /* pcloudyr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E81FEC24DE004BB807 /* pcloudyr.png */; };
+		2B45F5572421524A00971689 /* blowingsnow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B31FEC24DE004BB807 /* blowingsnow.png */; };
+		2B45F5582421524A00971689 /* snowtorain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493101FEC24DE004BB807 /* snowtorain.png */; };
+		2B45F5592421524A00971689 /* mcloudysw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DE1FEC24DE004BB807 /* mcloudysw.png */; };
+		2B45F55A2421524A00971689 /* wintrymix.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931E1FEC24DE004BB807 /* wintrymix.png */; };
+		2B45F55B2421524A00971689 /* tstorm.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493171FEC24DE004BB807 /* tstorm.png */; };
+		2B45F55C2421524A00971689 /* pcloudysfwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F01FEC24DE004BB807 /* pcloudysfwn.png */; };
+		2B45F55D2421524A00971689 /* clearn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B61FEC24DE004BB807 /* clearn.png */; };
+		2B45F55E2421524A00971689 /* coldn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BE1FEC24DE004BB807 /* coldn.png */; };
+		2B45F55F2421524A00971689 /* tstormsn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931A1FEC24DE004BB807 /* tstormsn.png */; };
+		2B45F5602421524A00971689 /* freezingrainn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CE1FEC24DE004BB807 /* freezingrainn.png */; };
+		2B45F5612421524A00971689 /* mcloudy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D21FEC24DE004BB807 /* mcloudy.png */; };
+		2B45F5622421524A00971689 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930A1FEC24DE004BB807 /* smoke.png */; };
+		2B45F5632421524A00971689 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492FB1FEC24DE004BB807 /* rain.png */; };
+		2B45F5642421524A00971689 /* pcloudysfw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492EF1FEC24DE004BB807 /* pcloudysfw.png */; };
+		2B45F5652421524A00971689 /* mcloudywn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E51FEC24DE004BB807 /* mcloudywn.png */; };
+		2B45F5662421524A00971689 /* pcloudysfn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492EE1FEC24DE004BB807 /* pcloudysfn.png */; };
+		2B45F5672421524A00971689 /* mcloudyrwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D71FEC24DE004BB807 /* mcloudyrwn.png */; };
+		2B45F5682421524A00971689 /* showerswn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493051FEC24DE004BB807 /* showerswn.png */; };
+		2B45F5692421524A00971689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491BC1FEC1CA2004BB807 /* Assets.xcassets */; };
+		2B45F56A2421524A00971689 /* snoww.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493121FEC24DE004BB807 /* snoww.png */; };
+		2B45F56B2421524A00971689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B1491B91FEC1CA2004BB807 /* Main.storyboard */; };
+		2B45F56C2421524A00971689 /* wind.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931D1FEC24DE004BB807 /* wind.png */; };
+		2B45F56D2421524A00971689 /* raintosnown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493001FEC24DE004BB807 /* raintosnown.png */; };
+		2B45F56E2421524A00971689 /* mcloudyt.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E01FEC24DE004BB807 /* mcloudyt.png */; };
+		2B45F56F2421524A00971689 /* pcloudysw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492F21FEC24DE004BB807 /* pcloudysw.png */; };
+		2B45F5702421524A00971689 /* snowshowersn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930F1FEC24DE004BB807 /* snowshowersn.png */; };
+		2B45F5712421524A00971689 /* smoken.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14930B1FEC24DE004BB807 /* smoken.png */; };
+		2B45F5722421524A00971689 /* hazy.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CF1FEC24DE004BB807 /* hazy.png */; };
+		2B45F5732421524A00971689 /* pcloudyrw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492EA1FEC24DE004BB807 /* pcloudyrw.png */; };
+		2B45F5742421524A00971689 /* sleetsnown.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493091FEC24DE004BB807 /* sleetsnown.png */; };
+		2B45F5752421524A00971689 /* tstormswn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B14931C1FEC24DE004BB807 /* tstormswn.png */; };
+		2B45F5762421524A00971689 /* tstormn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1493181FEC24DE004BB807 /* tstormn.png */; };
+		2B45F5772421524A00971689 /* mcloudysfwn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492DC1FEC24DE004BB807 /* mcloudysfwn.png */; };
+		2B45F5782421524A00971689 /* cold.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BD1FEC24DE004BB807 /* cold.png */; };
+		2B45F5792421524A00971689 /* mcloudytn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E11FEC24DE004BB807 /* mcloudytn.png */; };
+		2B45F57A2421524A00971689 /* mcloudytw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492E21FEC24DE004BB807 /* mcloudytw.png */; };
+		2B45F57B2421524A00971689 /* cloudywn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492BC1FEC24DE004BB807 /* cloudywn.png */; };
+		2B45F57C2421524A00971689 /* mcloudyrn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492D51FEC24DE004BB807 /* mcloudyrn.png */; };
+		2B45F57D2421524A00971689 /* fogn.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492CC1FEC24DE004BB807 /* fogn.png */; };
+		2B45F57E2421524A00971689 /* clearw.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B1492B71FEC24DE004BB807 /* clearw.png */; };
+		2B45F5EA242158C500971689 /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
 		2B5823AC1FF6EF940061B91E /* DetailedWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823AB1FF6EF940061B91E /* DetailedWeatherViewController.swift */; };
 		2B5823AE1FF6F0580061B91E /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823AD1FF6F0580061B91E /* LocationSearchViewController.swift */; };
-		2B8512B92136DDE80010386C /* Pods_AerisObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8512B82136DDE80010386C /* Pods_AerisObjCDemo.framework */; };
-		2B8512BB2136DDF20010386C /* Pods_AerisSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B8512BA2136DDF20010386C /* Pods_AerisSwiftDemo.framework */; };
+		2B900E18253F8AED00F1E875 /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
+		2BB0F30925B5FD470019CC73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BB0F30825B5FD470019CC73 /* GoogleService-Info.plist */; };
+		2BB0F34C25B5FF170019CC73 /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
 		2BB1C8CD1FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C61FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m */; };
 		2BB1C8CE1FEC3C4200BD4DA2 /* ModelGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C71FEC3C4200BD4DA2 /* ModelGraphsViewController.m */; };
 		2BB1C8CF1FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8C81FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.m */; };
 		2BB1C8D01FEC3C4200BD4DA2 /* DetailedWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BB1C8CB1FEC3C4200BD4DA2 /* DetailedWeatherViewController.m */; };
-		2BF107151FF58F7A005BFBA4 /* AerisDemoSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A6DE7F5E2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; };
-		A6DE7F5F2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BE504BE2769419000787C9D /* Pods_AerisObjCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE504BD2769419000787C9D /* Pods_AerisObjCDemo.framework */; };
+		A63625FF2A1D76DE0073CB6E /* LightningFlashesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63625FE2A1D76DE0073CB6E /* LightningFlashesViewController.m */; };
+		A63626002A1D76DE0073CB6E /* LightningFlashesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A63625FE2A1D76DE0073CB6E /* LightningFlashesViewController.m */; };
+		A669C4942A2013F700860CF9 /* LightningThreatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A669C4932A2013F700860CF9 /* LightningThreatsViewController.m */; };
+		A669C4952A2013F700860CF9 /* LightningThreatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A669C4932A2013F700860CF9 /* LightningThreatsViewController.m */; };
+		A68FBEB82A28341F0098EE5B /* LightningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */; };
+		A68FBEB92A28341F0098EE5B /* LightningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */; };
+		A6DAD9892A217AE000405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
+		A6DAD98A2A217B2A00405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
+		BD662A2041CC15D2FC711F1E /* Pods_AerisSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3862655522440B6C0ACC486 /* Pods_AerisSwiftDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2B45F5E6242158A700971689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2B45F5E32421585A00971689;
+			remoteInfo = "AerisDemoSupport-catalyst";
+		};
+		2B45F5E8242158AB00971689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BB4B66224226DF100ECB78D;
+			remoteInfo = "AerisDemoSupport-catalyst";
+		};
+		2B900E16253F8ADE00F1E875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BD7690B1FF4127A00F758C9;
+			remoteInfo = AerisDemoSupport;
+		};
 		2BD769971FF4141100F758C9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
@@ -192,34 +376,35 @@
 			remoteGlobalIDString = 2BD7690B1FF4127A00F758C9;
 			remoteInfo = AerisDemoSupport;
 		};
-		2BF107161FF58F7A005BFBA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BD7690B1FF4127A00F758C9;
-			remoteInfo = AerisDemoSupport;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2B45F59D242156B200971689 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B58236E1FF6C31C0061B91E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BF107181FF58F7A005BFBA4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BF107151FF58F7A005BFBA4 /* AerisDemoSupport.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A6DE7F602A03FD8F009D2DD3 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				A6DE7F5F2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +414,7 @@
 /* Begin PBXFileReference section */
 		117CA1EC219FCEF71E640362 /* Pods-AerisObjCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisObjCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		263CC8C9FDF0E983001D4B77 /* Pods-AerisSwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
-		2B1491B11FEC1CA2004BB807 /* AerisObjCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisObjCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1491B11FEC1CA2004BB807 /* AerisDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1491BA1FEC1CA2004BB807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B1491BC1FEC1CA2004BB807 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B1491BF1FEC1CA2004BB807 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -427,17 +612,13 @@
 		2B16A6E01E43911B005AC3EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B16A6E31E43911B005AC3EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B16A6E51E43911B005AC3EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B45F4D32421521800971689 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B45F58E2421524A00971689 /* AerisCatalystDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerisCatalystDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B45F590242152A000971689 /* AerisCatalystDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AerisCatalystDemo.entitlements; sourceTree = "<group>"; };
 		2B4A841C1F9E82580047A549 /* AerisSwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AerisSwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		2B57CEF720C046D5004B2066 /* AerisMapboxMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisMapboxMapKit.framework; path = lib/AerisMapboxMapKit.framework; sourceTree = "<group>"; };
-		2B5823301FF6BEB20061B91E /* AerisCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCore.framework; path = lib/AerisCore.framework; sourceTree = "<group>"; };
-		2B5823311FF6BEB20061B91E /* AerisWeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisWeatherKit.framework; path = lib/AerisWeatherKit.framework; sourceTree = "<group>"; };
-		2B5823321FF6BEB20061B91E /* AerisCoreUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCoreUI.framework; path = lib/AerisCoreUI.framework; sourceTree = "<group>"; };
-		2B5823331FF6BEB20061B91E /* AerisMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisMapKit.framework; path = lib/AerisMapKit.framework; sourceTree = "<group>"; };
-		2B5823971FF6E8760061B91E /* AerisGoogleMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisGoogleMapKit.framework; path = lib/AerisGoogleMapKit.framework; sourceTree = "<group>"; };
 		2B5823AB1FF6EF940061B91E /* DetailedWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedWeatherViewController.swift; sourceTree = "<group>"; };
 		2B5823AD1FF6F0580061B91E /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
-		2B8512B82136DDE80010386C /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B8512BA2136DDF20010386C /* Pods_AerisSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AerisSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BB0F30825B5FD470019CC73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2BB1C8C51FEC3C4200BD4DA2 /* ForecastLineGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastLineGraphsViewController.h; sourceTree = "<group>"; };
 		2BB1C8C61FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastBarGraphsViewController.m; sourceTree = "<group>"; };
 		2BB1C8C71FEC3C4200BD4DA2 /* ModelGraphsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelGraphsViewController.m; sourceTree = "<group>"; };
@@ -446,13 +627,19 @@
 		2BB1C8CA1FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastBarGraphsViewController.h; sourceTree = "<group>"; };
 		2BB1C8CB1FEC3C4200BD4DA2 /* DetailedWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedWeatherViewController.m; sourceTree = "<group>"; };
 		2BB1C8CC1FEC3C4200BD4DA2 /* ModelGraphsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelGraphsViewController.h; sourceTree = "<group>"; };
-		2BB1C8D11FEC3CDD00BD4DA2 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
-		2BB4F46C1FF5984200FF518E /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		2BB4F46D1FF5984200FF518E /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AerisDemoSupport.xcodeproj; path = AerisDemoSupport/AerisDemoSupport.xcodeproj; sourceTree = "<group>"; };
-		3752ED2D4D2F6F296BC9E6A8 /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BE504BD2769419000787C9D /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ACC64EC3C793D49AC003E9D /* Pods-AerisSwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisSwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		480D7324982E85C9600B3AE0 /* Pods_AerisSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBC9A6C16F5EA93E403D192 /* Pods_AerisObjCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisObjCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A63625FD2A1D76DE0073CB6E /* LightningFlashesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningFlashesViewController.h; sourceTree = "<group>"; };
+		A63625FE2A1D76DE0073CB6E /* LightningFlashesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningFlashesViewController.m; sourceTree = "<group>"; };
+		A669C4922A2013F700860CF9 /* LightningThreatsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningThreatsViewController.h; sourceTree = "<group>"; };
+		A669C4932A2013F700860CF9 /* LightningThreatsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningThreatsViewController.m; sourceTree = "<group>"; };
+		A68FBEB62A28341F0098EE5B /* LightningSummaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningSummaryViewController.h; sourceTree = "<group>"; };
+		A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningSummaryViewController.m; sourceTree = "<group>"; };
+		A6DAD9872A217AE000405889 /* LightningStrikesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightningStrikesViewController.h; sourceTree = "<group>"; };
+		A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightningStrikesViewController.m; sourceTree = "<group>"; };
+		C3862655522440B6C0ACC486 /* Pods_AerisSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA5F45D9CBC085A44D34768 /* Pods-AerisObjCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisObjCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerisObjCDemo/Pods-AerisObjCDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -461,7 +648,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B8512B92136DDE80010386C /* Pods_AerisObjCDemo.framework in Frameworks */,
+				2B900E18253F8AED00F1E875 /* AerisDemoSupport.framework in Frameworks */,
+				2BE504BE2769419000787C9D /* Pods_AerisObjCDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,33 +657,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6DE7F5E2A03FD8F009D2DD3 /* AerisDemoSupport.framework in Frameworks */,
-				2B8512BB2136DDF20010386C /* Pods_AerisSwiftDemo.framework in Frameworks */,
+				2BB0F34C25B5FF170019CC73 /* AerisDemoSupport.framework in Frameworks */,
+				BD662A2041CC15D2FC711F1E /* Pods_AerisSwiftDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B45F5072421524A00971689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B45F5EA242158C500971689 /* AerisDemoSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DFFC019771DF046DFE78DCA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2B8512BA2136DDF20010386C /* Pods_AerisSwiftDemo.framework */,
-				2B8512B82136DDE80010386C /* Pods_AerisObjCDemo.framework */,
-				2B5823301FF6BEB20061B91E /* AerisCore.framework */,
-				2B5823321FF6BEB20061B91E /* AerisCoreUI.framework */,
-				2B5823971FF6E8760061B91E /* AerisGoogleMapKit.framework */,
-				2B57CEF720C046D5004B2066 /* AerisMapboxMapKit.framework */,
-				2B5823331FF6BEB20061B91E /* AerisMapKit.framework */,
-				2B5823311FF6BEB20061B91E /* AerisWeatherKit.framework */,
-				2BB4F46D1FF5984200FF518E /* Crashlytics.framework */,
-				2BB4F46C1FF5984200FF518E /* Fabric.framework */,
-				3752ED2D4D2F6F296BC9E6A8 /* Pods_AerisObjCDemo.framework */,
-				480D7324982E85C9600B3AE0 /* Pods_AerisSwiftDemo.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		2B1491B21FEC1CA2004BB807 /* AerisObjCDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -506,7 +683,7 @@
 				2B1491BE1FEC1CA2004BB807 /* LaunchScreen.storyboard */,
 				2B1491C11FEC1CA2004BB807 /* Info.plist */,
 				2B1491C21FEC1CA2004BB807 /* main.m */,
-				2BB1C8D11FEC3CDD00BD4DA2 /* Prefix.pch */,
+				2BB0F30825B5FD470019CC73 /* GoogleService-Info.plist */,
 			);
 			path = AerisObjCDemo;
 			sourceTree = "<group>";
@@ -538,6 +715,14 @@
 				2B1492851FEC24DE004BB807 /* GroupedListingViewController.m */,
 				2B1492861FEC24DE004BB807 /* IndicesViewController.h */,
 				2B1492871FEC24DE004BB807 /* IndicesViewController.m */,
+				A63625FD2A1D76DE0073CB6E /* LightningFlashesViewController.h */,
+				A63625FE2A1D76DE0073CB6E /* LightningFlashesViewController.m */,
+				A669C4922A2013F700860CF9 /* LightningThreatsViewController.h */,
+				A669C4932A2013F700860CF9 /* LightningThreatsViewController.m */,
+				A6DAD9872A217AE000405889 /* LightningStrikesViewController.h */,
+				A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */,
+				A68FBEB62A28341F0098EE5B /* LightningSummaryViewController.h */,
+				A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */,
 				2B1492881FEC24DE004BB807 /* ListingViewController.h */,
 				2B1492891FEC24DE004BB807 /* ListingViewController.m */,
 				2B14928A1FEC24DE004BB807 /* LocationSearchViewController.h */,
@@ -781,6 +966,15 @@
 			path = AerisSwiftDemo;
 			sourceTree = "<group>";
 		};
+		2B45F47B24214EBE00971689 /* AerisCatalystDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2B45F590242152A000971689 /* AerisCatalystDemo.entitlements */,
+				2B45F4D32421521800971689 /* Info.plist */,
+			);
+			path = AerisCatalystDemo;
+			sourceTree = "<group>";
+		};
 		2B5823A51FF6EF7C0061B91E /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,9 +1030,10 @@
 				2BD769931FF4141100F758C9 /* AerisDemoSupport.xcodeproj */,
 				2B1491B21FEC1CA2004BB807 /* AerisObjCDemo */,
 				2B16A6D81E43911B005AC3EF /* AerisSwiftDemo */,
+				2B45F47B24214EBE00971689 /* AerisCatalystDemo */,
 				2BAEE8EF17F5F15800931727 /* Products */,
-				0DFFC019771DF046DFE78DCA /* Frameworks */,
 				EDC09D2C73B3503C12825D30 /* Pods */,
+				E5A7F57683D95217E28E04B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -846,7 +1041,8 @@
 			isa = PBXGroup;
 			children = (
 				2B16A6D71E43911B005AC3EF /* AerisSwiftDemo.app */,
-				2B1491B11FEC1CA2004BB807 /* AerisObjCDemo.app */,
+				2B1491B11FEC1CA2004BB807 /* AerisDemo.app */,
+				2B45F58E2421524A00971689 /* AerisCatalystDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -855,8 +1051,19 @@
 			isa = PBXGroup;
 			children = (
 				2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */,
+				2B45F5E7242158A700971689 /* AerisDemoSupport.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E5A7F57683D95217E28E04B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE504BD2769419000787C9D /* Pods_AerisObjCDemo.framework */,
+				6FBC9A6C16F5EA93E403D192 /* Pods_AerisObjCDemo.framework */,
+				C3862655522440B6C0ACC486 /* Pods_AerisSwiftDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EDC09D2C73B3503C12825D30 /* Pods */ = {
@@ -882,18 +1089,17 @@
 				2B1491AE1FEC1CA2004BB807 /* Frameworks */,
 				2B1491AF1FEC1CA2004BB807 /* Resources */,
 				2BF107181FF58F7A005BFBA4 /* Embed Frameworks */,
-				2B788DAA200595EA006E0C97 /* Strip Frameworks */,
 				0FBD92E24A008944F6FFA3BB /* [CP] Embed Pods Frameworks */,
 				8E2CECD2E0A3D85A976E0074 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2BF107171FF58F7A005BFBA4 /* PBXTargetDependency */,
+				2B900E17253F8ADE00F1E875 /* PBXTargetDependency */,
 			);
 			name = AerisObjCDemo;
 			productName = AerisObjCDemo;
-			productReference = 2B1491B11FEC1CA2004BB807 /* AerisObjCDemo.app */;
+			productReference = 2B1491B11FEC1CA2004BB807 /* AerisDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2B16A6D61E43911B005AC3EF /* AerisSwiftDemo */ = {
@@ -906,7 +1112,7 @@
 				2B16A6D51E43911B005AC3EF /* Resources */,
 				0298A0A03A1CA08BE769C973 /* [CP] Embed Pods Frameworks */,
 				256F4D501454B400B84D34B0 /* [CP] Copy Pods Resources */,
-				A6DE7F602A03FD8F009D2DD3 /* Embed Frameworks */,
+				2B58236E1FF6C31C0061B91E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -918,6 +1124,27 @@
 			productReference = 2B16A6D71E43911B005AC3EF /* AerisSwiftDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2B45F4D62421524A00971689 /* AerisCatalystDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B45F58B2421524A00971689 /* Build configuration list for PBXNativeTarget "AerisCatalystDemo" */;
+			buildPhases = (
+				2B45F4DC2421524A00971689 /* Sources */,
+				2B45F5072421524A00971689 /* Frameworks */,
+				2B45F50C2421524A00971689 /* Resources */,
+				2B45F5862421524A00971689 /* Strip Frameworks */,
+				2B45F5882421524A00971689 /* Update Build Number */,
+				2B45F59D242156B200971689 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B45F5E9242158AB00971689 /* PBXTargetDependency */,
+			);
+			name = AerisCatalystDemo;
+			productName = AerisObjCDemo;
+			productReference = 2B45F58E2421524A00971689 /* AerisCatalystDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -925,19 +1152,22 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = AerisWeather;
 				TargetAttributes = {
 					2B1491B01FEC1CA2004BB807 = {
 						CreatedOnToolsVersion = 9.2;
 						DevelopmentTeam = 93U64PEERG;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					2B16A6D61E43911B005AC3EF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 93U64PEERG;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+					};
+					2B45F4D62421524A00971689 = {
+						DevelopmentTeam = 93U64PEERG;
 					};
 				};
 			};
@@ -962,11 +1192,19 @@
 			targets = (
 				2B1491B01FEC1CA2004BB807 /* AerisObjCDemo */,
 				2B16A6D61E43911B005AC3EF /* AerisSwiftDemo */,
+				2B45F4D62421524A00971689 /* AerisCatalystDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2B45F5E7242158A700971689 /* AerisDemoSupport.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AerisDemoSupport.framework;
+			remoteRef = 2B45F5E6242158A700971689 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		2BD769981FF4141100F758C9 /* AerisDemoSupport.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1023,6 +1261,7 @@
 				2B1493A11FEC24DE004BB807 /* sleetsnow.png in Resources */,
 				2B1493741FEC24DE004BB807 /* mcloudysfw.png in Resources */,
 				2B14937D1FEC24DE004BB807 /* mcloudyw.png in Resources */,
+				2BB0F30925B5FD470019CC73 /* GoogleService-Info.plist in Resources */,
 				2B1493861FEC24DE004BB807 /* pcloudysf.png in Resources */,
 				2B14935E1FEC24DE004BB807 /* fdrizzle.png in Resources */,
 				2B1493781FEC24DE004BB807 /* mcloudyswn.png in Resources */,
@@ -1105,6 +1344,127 @@
 				2B16A6E41E43911B005AC3EF /* LaunchScreen.storyboard in Resources */,
 				2B16A6E11E43911B005AC3EF /* Assets.xcassets in Resources */,
 				2B16A6DF1E43911B005AC3EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B45F50C2421524A00971689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B45F50D2421524A00971689 /* hazyn.png in Resources */,
+				2B45F50E2421524A00971689 /* drizzle.png in Resources */,
+				2B45F50F2421524A00971689 /* pcloudyrwn.png in Resources */,
+				2B45F5102421524A00971689 /* pcloudy.png in Resources */,
+				2B45F5112421524A00971689 /* pcloudyt.png in Resources */,
+				2B45F5122421524A00971689 /* rainandsnown.png in Resources */,
+				2B45F5132421524A00971689 /* pcloudytw.png in Resources */,
+				2B45F5142421524A00971689 /* fairn.png in Resources */,
+				2B45F5152421524A00971689 /* mcloudys.png in Resources */,
+				2B45F5162421524A00971689 /* LaunchScreen.storyboard in Resources */,
+				2B45F5172421524A00971689 /* plcoudyrwn.png in Resources */,
+				2B45F5182421524A00971689 /* flurrieswn.png in Resources */,
+				2B45F5192421524A00971689 /* flurriesw.png in Resources */,
+				2B45F51A2421524A00971689 /* cloudyw.png in Resources */,
+				2B45F51B2421524A00971689 /* pcloudyn.png in Resources */,
+				2B45F51C2421524A00971689 /* fair.png in Resources */,
+				2B45F51D2421524A00971689 /* freezingrain.png in Resources */,
+				2B45F51E2421524A00971689 /* mcloudysf.png in Resources */,
+				2B45F51F2421524A00971689 /* tstorms.png in Resources */,
+				2B45F5202421524A00971689 /* hot.png in Resources */,
+				2B45F5212421524A00971689 /* pcloudys.png in Resources */,
+				2B45F5222421524A00971689 /* sleetn.png in Resources */,
+				2B45F5232421524A00971689 /* tstormsw.png in Resources */,
+				2B45F5242421524A00971689 /* cloudy.png in Resources */,
+				2B45F5252421524A00971689 /* sunny.png in Resources */,
+				2B45F5262421524A00971689 /* clearwn.png in Resources */,
+				2B45F5272421524A00971689 /* snowshowers.png in Resources */,
+				2B45F5282421524A00971689 /* pcloudyrn.png in Resources */,
+				2B45F5292421524A00971689 /* showers.png in Resources */,
+				2B45F52A2421524A00971689 /* sunnyw.png in Resources */,
+				2B45F52B2421524A00971689 /* fdrizzlen.png in Resources */,
+				2B45F52C2421524A00971689 /* blowingsnown.png in Resources */,
+				2B45F52D2421524A00971689 /* rainw.png in Resources */,
+				2B45F52E2421524A00971689 /* blizzard.png in Resources */,
+				2B45F52F2421524A00971689 /* wintrymixn.png in Resources */,
+				2B45F5302421524A00971689 /* flurriesn.png in Resources */,
+				2B45F5312421524A00971689 /* pcloudywn.png in Resources */,
+				2B45F5322421524A00971689 /* snow.png in Resources */,
+				2B45F5332421524A00971689 /* rainn.png in Resources */,
+				2B45F5342421524A00971689 /* sleetsnow.png in Resources */,
+				2B45F5352421524A00971689 /* mcloudysfw.png in Resources */,
+				2B45F5362421524A00971689 /* mcloudyw.png in Resources */,
+				2B45F5372421524A00971689 /* pcloudysf.png in Resources */,
+				2B45F5382421524A00971689 /* fdrizzle.png in Resources */,
+				2B45F5392421524A00971689 /* mcloudyswn.png in Resources */,
+				2B45F53A2421524A00971689 /* snowtorainn.png in Resources */,
+				2B45F53B2421524A00971689 /* showersn.png in Resources */,
+				2B45F53C2421524A00971689 /* pcloudyw.png in Resources */,
+				2B45F53D2421524A00971689 /* snowwn.png in Resources */,
+				2B45F53E2421524A00971689 /* clear.png in Resources */,
+				2B45F53F2421524A00971689 /* pcloudysn.png in Resources */,
+				2B45F5402421524A00971689 /* showersw.png in Resources */,
+				2B45F5412421524A00971689 /* sunnyn.png in Resources */,
+				2B45F5422421524A00971689 /* cloudyn.png in Resources */,
+				2B45F5432421524A00971689 /* mcloudyr.png in Resources */,
+				2B45F5442421524A00971689 /* pcloudytwn.png in Resources */,
+				2B45F5452421524A00971689 /* drizzlen.png in Resources */,
+				2B45F5462421524A00971689 /* pcloudytn.png in Resources */,
+				2B45F5472421524A00971689 /* snown.png in Resources */,
+				2B45F5482421524A00971689 /* sleet.png in Resources */,
+				2B45F5492421524A00971689 /* mcloudyrw.png in Resources */,
+				2B45F54A2421524A00971689 /* dustn.png in Resources */,
+				2B45F54B2421524A00971689 /* pcloudyswn.png in Resources */,
+				2B45F54C2421524A00971689 /* raintosnow.png in Resources */,
+				2B45F54D2421524A00971689 /* mcloudysfn.png in Resources */,
+				2B45F54E2421524A00971689 /* fog.png in Resources */,
+				2B45F54F2421524A00971689 /* mcloudyn.png in Resources */,
+				2B45F5502421524A00971689 /* flurries.png in Resources */,
+				2B45F5512421524A00971689 /* mcloudysn.png in Resources */,
+				2B45F5522421524A00971689 /* blizzardn.png in Resources */,
+				2B45F5532421524A00971689 /* rainandsnow.png in Resources */,
+				2B45F5542421524A00971689 /* mcloudytwn.png in Resources */,
+				2B45F5552421524A00971689 /* dust.png in Resources */,
+				2B45F5562421524A00971689 /* pcloudyr.png in Resources */,
+				2B45F5572421524A00971689 /* blowingsnow.png in Resources */,
+				2B45F5582421524A00971689 /* snowtorain.png in Resources */,
+				2B45F5592421524A00971689 /* mcloudysw.png in Resources */,
+				2B45F55A2421524A00971689 /* wintrymix.png in Resources */,
+				2B45F55B2421524A00971689 /* tstorm.png in Resources */,
+				2B45F55C2421524A00971689 /* pcloudysfwn.png in Resources */,
+				2B45F55D2421524A00971689 /* clearn.png in Resources */,
+				2B45F55E2421524A00971689 /* coldn.png in Resources */,
+				2B45F55F2421524A00971689 /* tstormsn.png in Resources */,
+				2B45F5602421524A00971689 /* freezingrainn.png in Resources */,
+				2B45F5612421524A00971689 /* mcloudy.png in Resources */,
+				2B45F5622421524A00971689 /* smoke.png in Resources */,
+				2B45F5632421524A00971689 /* rain.png in Resources */,
+				2B45F5642421524A00971689 /* pcloudysfw.png in Resources */,
+				2B45F5652421524A00971689 /* mcloudywn.png in Resources */,
+				2B45F5662421524A00971689 /* pcloudysfn.png in Resources */,
+				2B45F5672421524A00971689 /* mcloudyrwn.png in Resources */,
+				2B45F5682421524A00971689 /* showerswn.png in Resources */,
+				2B45F5692421524A00971689 /* Assets.xcassets in Resources */,
+				2B45F56A2421524A00971689 /* snoww.png in Resources */,
+				2B45F56B2421524A00971689 /* Main.storyboard in Resources */,
+				2B45F56C2421524A00971689 /* wind.png in Resources */,
+				2B45F56D2421524A00971689 /* raintosnown.png in Resources */,
+				2B45F56E2421524A00971689 /* mcloudyt.png in Resources */,
+				2B45F56F2421524A00971689 /* pcloudysw.png in Resources */,
+				2B45F5702421524A00971689 /* snowshowersn.png in Resources */,
+				2B45F5712421524A00971689 /* smoken.png in Resources */,
+				2B45F5722421524A00971689 /* hazy.png in Resources */,
+				2B45F5732421524A00971689 /* pcloudyrw.png in Resources */,
+				2B45F5742421524A00971689 /* sleetsnown.png in Resources */,
+				2B45F5752421524A00971689 /* tstormswn.png in Resources */,
+				2B45F5762421524A00971689 /* tstormn.png in Resources */,
+				2B45F5772421524A00971689 /* mcloudysfwn.png in Resources */,
+				2B45F5782421524A00971689 /* cold.png in Resources */,
+				2B45F5792421524A00971689 /* mcloudytn.png in Resources */,
+				2B45F57A2421524A00971689 /* mcloudytw.png in Resources */,
+				2B45F57B2421524A00971689 /* cloudywn.png in Resources */,
+				2B45F57C2421524A00971689 /* mcloudyrn.png in Resources */,
+				2B45F57D2421524A00971689 /* fogn.png in Resources */,
+				2B45F57E2421524A00971689 /* clearw.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1207,7 +1567,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisSwiftDemo/Pods-AerisSwiftDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2B788DAA200595EA006E0C97 /* Strip Frameworks */ = {
+		2B45F5862421524A00971689 /* Strip Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1220,6 +1580,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCore.framework/strip-frameworks.sh\"\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisCoreUI.framework/strip-frameworks.sh\"\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisWeatherKit.framework/strip-frameworks.sh\"\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisMapKit.framework/strip-frameworks.sh\"\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisMapboxMapKit.framework/strip-frameworks.sh\"\n#bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AerisGoogleMapKit.framework/strip-frameworks.sh\"\n";
+		};
+		2B45F5882421524A00971689 /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/scripts/update_build_number.sh\n";
 		};
 		6F8D6474837F1F4ADEB178CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1265,10 +1639,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B1493361FEC24DE004BB807 /* IndicesViewController.m in Sources */,
+				A63625FF2A1D76DE0073CB6E /* LightningFlashesViewController.m in Sources */,
 				2B1493381FEC24DE004BB807 /* LocationSearchViewController.m in Sources */,
 				2B1493271FEC24DE004BB807 /* DetailedWeatherViewController_iPad.m in Sources */,
 				2B1493431FEC24DE004BB807 /* SettingsViewController.m in Sources */,
 				2B14932F1FEC24DE004BB807 /* DroughtMonitorViewController.m in Sources */,
+				A6DAD9892A217AE000405889 /* LightningStrikesViewController.m in Sources */,
 				2B1493311FEC24DE004BB807 /* ForecastViewController.m in Sources */,
 				2B14933A1FEC24DE004BB807 /* GoogleMapViewController.m in Sources */,
 				2B1493221FEC24DE004BB807 /* CatalogViewController.m in Sources */,
@@ -1281,6 +1657,7 @@
 				2B1493471FEC24DE004BB807 /* ThreatsViewController.m in Sources */,
 				2B1493401FEC24DE004BB807 /* RecentObservationsViewController.m in Sources */,
 				2B1491C31FEC1CA2004BB807 /* main.m in Sources */,
+				A669C4942A2013F700860CF9 /* LightningThreatsViewController.m in Sources */,
 				2BB1C8CD1FEC3C4200BD4DA2 /* ForecastBarGraphsViewController.m in Sources */,
 				2B1493231FEC24DE004BB807 /* ConvectiveOutlookViewController.m in Sources */,
 				2B1493241FEC24DE004BB807 /* DailySummariesViewController.m in Sources */,
@@ -1305,6 +1682,7 @@
 				2B14933C1FEC24DE004BB807 /* MapViewController.m in Sources */,
 				2B1493451FEC24DE004BB807 /* StormReportsViewController.m in Sources */,
 				2B1493391FEC24DE004BB807 /* AppleMapViewController.m in Sources */,
+				A68FBEB82A28341F0098EE5B /* LightningSummaryViewController.m in Sources */,
 				2B1493341FEC24DE004BB807 /* LineGraphsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1320,18 +1698,74 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2B45F4DC2421524A00971689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B45F4DD2421524A00971689 /* IndicesViewController.m in Sources */,
+				2B45F4DE2421524A00971689 /* LocationSearchViewController.m in Sources */,
+				2B45F4DF2421524A00971689 /* DetailedWeatherViewController_iPad.m in Sources */,
+				2B45F4E02421524A00971689 /* SettingsViewController.m in Sources */,
+				A68FBEB92A28341F0098EE5B /* LightningSummaryViewController.m in Sources */,
+				2B45F4E12421524A00971689 /* DroughtMonitorViewController.m in Sources */,
+				2B45F4E22421524A00971689 /* ForecastViewController.m in Sources */,
+				2B45F4E42421524A00971689 /* CatalogViewController.m in Sources */,
+				A63626002A1D76DE0073CB6E /* LightningFlashesViewController.m in Sources */,
+				2B45F4E52421524A00971689 /* BarGraphsViewController.m in Sources */,
+				2B45F4E62421524A00971689 /* GroupedListingViewController.m in Sources */,
+				2B45F4E82421524A00971689 /* ModelGraphsViewController_iPad.m in Sources */,
+				2B45F4E92421524A00971689 /* NearbyObservationsViewController.m in Sources */,
+				2B45F4EA2421524A00971689 /* ForecastLineGraphsViewController.m in Sources */,
+				2B45F4EB2421524A00971689 /* ThreatsViewController.m in Sources */,
+				2B45F4EC2421524A00971689 /* RecentObservationsViewController.m in Sources */,
+				2B45F4ED2421524A00971689 /* main.m in Sources */,
+				2B45F4EE2421524A00971689 /* ForecastBarGraphsViewController.m in Sources */,
+				2B45F4EF2421524A00971689 /* ConvectiveOutlookViewController.m in Sources */,
+				2B45F4F02421524A00971689 /* DailySummariesViewController.m in Sources */,
+				2B45F4F12421524A00971689 /* LineGraphsViewController_iPad.m in Sources */,
+				2B45F4F22421524A00971689 /* RecordsViewController.m in Sources */,
+				2B45F4F32421524A00971689 /* NormalsViewController.m in Sources */,
+				2B45F4F42421524A00971689 /* RecentObsGraphViewController.m in Sources */,
+				2B45F4F52421524A00971689 /* DetailedWeatherViewController.m in Sources */,
+				2B45F4F62421524A00971689 /* WeekendWeatherViewController.m in Sources */,
+				2B45F4F72421524A00971689 /* TidesViewController.m in Sources */,
+				2B45F4F82421524A00971689 /* DailySummaryGraphsViewController.m in Sources */,
+				2B45F4F92421524A00971689 /* ModelGraphsViewController.m in Sources */,
+				A669C4952A2013F700860CF9 /* LightningThreatsViewController.m in Sources */,
+				2B45F4FA2421524A00971689 /* SunMoonViewController.m in Sources */,
+				2B45F4FB2421524A00971689 /* MoonPhasesViewController.m in Sources */,
+				2B45F4FC2421524A00971689 /* StormCellsViewController.m in Sources */,
+				2B45F4FD2421524A00971689 /* AdvisoriesViewController.m in Sources */,
+				2B45F4FE2421524A00971689 /* AppDelegate.m in Sources */,
+				2B45F4FF2421524A00971689 /* ListingViewController.m in Sources */,
+				2B45F5002421524A00971689 /* GraphViewController.m in Sources */,
+				2B45F5012421524A00971689 /* EarthquakesViewController.m in Sources */,
+				A6DAD98A2A217B2A00405889 /* LightningStrikesViewController.m in Sources */,
+				2B45F5022421524A00971689 /* BarGraphsViewController_iPad.m in Sources */,
+				2B45F5032421524A00971689 /* MapViewController.m in Sources */,
+				2B45F5042421524A00971689 /* StormReportsViewController.m in Sources */,
+				2B45F5052421524A00971689 /* AppleMapViewController.m in Sources */,
+				2B45F5062421524A00971689 /* LineGraphsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2B45F5E9242158AB00971689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AerisDemoSupport-catalyst";
+			targetProxy = 2B45F5E8242158AB00971689 /* PBXContainerItemProxy */;
+		};
+		2B900E17253F8ADE00F1E875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AerisDemoSupport;
+			targetProxy = 2B900E16253F8ADE00F1E875 /* PBXContainerItemProxy */;
+		};
 		2BF105F91FF565EC005BFBA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AerisDemoSupport;
 			targetProxy = 2BF105F81FF565EC005BFBA4 /* PBXContainerItemProxy */;
-		};
-		2BF107171FF58F7A005BFBA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AerisDemoSupport;
-			targetProxy = 2BF107161FF58F7A005BFBA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1383,15 +1817,16 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = 93U64PEERG;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_PREFIX_HEADER = AerisObjCDemo/Prefix.pch;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1406,6 +1841,7 @@
 				INFOPLIST_FILE = AerisObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 3.4.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1446,7 +1882,8 @@
 					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AerisDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.xweather.AerisDemo";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1462,17 +1899,17 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 93U64PEERG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_PREFIX_HEADER = AerisObjCDemo/Prefix.pch;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1487,6 +1924,7 @@
 				INFOPLIST_FILE = AerisObjCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 3.4.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1527,7 +1965,8 @@
 					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AerisDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.xweather.AerisDemo";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1550,6 +1989,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1569,6 +2009,7 @@
 				INFOPLIST_FILE = AerisSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 3.4.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1613,7 +2054,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "AerisSwiftDemo/AerisSwiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1636,6 +2077,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib",
 				);
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1655,6 +2097,7 @@
 				INFOPLIST_FILE = AerisSwiftDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 3.4.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1698,7 +2141,98 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "AerisSwiftDemo/AerisSwiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B45F58C2421524A00971689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = AerisCatalystDemo/AerisCatalystDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 93U64PEERG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AerisObjCDemo/Source\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PAPreferences\"",
+				);
+				INFOPLIST_FILE = AerisCatalystDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/Frameworks/AerisDemoSupport/Frameworks";
+				MARKETING_VERSION = 3.4.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B45F58D2421524A00971689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = AerisCatalystDemo/AerisCatalystDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 93U64PEERG;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/lib/**",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/AerisObjCDemo/Source\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/PAPreferences\"",
+				);
+				INFOPLIST_FILE = AerisCatalystDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/Frameworks/AerisDemoSupport/Frameworks";
+				MARKETING_VERSION = 3.4.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1824,6 +2358,15 @@
 			buildConfigurations = (
 				2B16A6E61E43911B005AC3EF /* Debug */,
 				2B16A6E71E43911B005AC3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B45F58B2421524A00971689 /* Build configuration list for PBXNativeTarget "AerisCatalystDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B45F58C2421524A00971689 /* Debug */,
+				2B45F58D2421524A00971689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

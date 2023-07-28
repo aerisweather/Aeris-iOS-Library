@@ -11,6 +11,61 @@
 		2B58234A1FF6C1720061B91E /* PAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823461FF6C1720061B91E /* PAPreferences.m */; };
 		2B58234B1FF6C1720061B91E /* PAPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5823471FF6C1720061B91E /* PAPropertyDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B58234C1FF6C1720061B91E /* PAPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823481FF6C1720061B91E /* PAPropertyDescriptor.m */; };
+		2BB4B66524226DF100ECB78D /* AWFObservationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769561FF412BB00F758C9 /* AWFObservationView.m */; };
+		2BB4B66624226DF100ECB78D /* AWFCascadingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7692D1FF412BB00F758C9 /* AWFCascadingStyle.m */; };
+		2BB4B66724226DF100ECB78D /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7691B1FF412BA00F758C9 /* Globals.m */; };
+		2BB4B66824226DF100ECB78D /* Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769191FF412BA00F758C9 /* Drawing.m */; };
+		2BB4B66924226DF100ECB78D /* MultilineTextTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769281FF412BA00F758C9 /* MultilineTextTableViewCell.m */; };
+		2BB4B66A24226DF100ECB78D /* AWFTableViewDailySummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7693A1FF412BB00F758C9 /* AWFTableViewDailySummaryCell.m */; };
+		2BB4B66B24226DF100ECB78D /* PAPropertyDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823481FF6C1720061B91E /* PAPropertyDescriptor.m */; };
+		2BB4B66C24226DF100ECB78D /* AWFForecastDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7694A1FF412BB00F758C9 /* AWFForecastDetailView.m */; };
+		2BB4B66D24226DF100ECB78D /* Preferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7691D1FF412BA00F758C9 /* Preferences.m */; };
+		2BB4B66E24226DF100ECB78D /* GroupedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769221FF412BA00F758C9 /* GroupedTableViewCell.m */; };
+		2BB4B66F24226DF100ECB78D /* AWFCollectionViewHourlyBasicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769401FF412BB00F758C9 /* AWFCollectionViewHourlyBasicCell.m */; };
+		2BB4B67024226DF100ECB78D /* AWFTableViewForecastRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7693E1FF412BB00F758C9 /* AWFTableViewForecastRowCell.m */; };
+		2BB4B67124226DF100ECB78D /* AWFTableViewObservationRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769421FF412BB00F758C9 /* AWFTableViewObservationRowCell.m */; };
+		2BB4B67224226DF100ECB78D /* ListingEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769241FF412BA00F758C9 /* ListingEventView.m */; };
+		2BB4B67324226DF100ECB78D /* AWFLegacyStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7692F1FF412BB00F758C9 /* AWFLegacyStyle.m */; };
+		2BB4B67424226DF100ECB78D /* AWFTableViewForecast24HourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7693C1FF412BB00F758C9 /* AWFTableViewForecast24HourCell.m */; };
+		2BB4B67524226DF100ECB78D /* AWFStyledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769311FF412BB00F758C9 /* AWFStyledView.m */; };
+		2BB4B67624226DF100ECB78D /* UserLocationsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7691F1FF412BA00F758C9 /* UserLocationsManager.m */; };
+		2BB4B67724226DF100ECB78D /* AWFAdvisoryDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769381FF412BB00F758C9 /* AWFAdvisoryDetailView.m */; };
+		2BB4B67824226DF100ECB78D /* AWFStyledHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769331FF412BB00F758C9 /* AWFStyledHeaderView.m */; };
+		2BB4B67924226DF100ECB78D /* AWFHourlyBasicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7694E1FF412BB00F758C9 /* AWFHourlyBasicView.m */; };
+		2BB4B67A24226DF100ECB78D /* AWFObservationAdvisoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769501FF412BB00F758C9 /* AWFObservationAdvisoriesView.m */; };
+		2BB4B67B24226DF100ECB78D /* AWFTableViewObservationRowCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769441FF412BB00F758C9 /* AWFTableViewObservationRowCityCell.m */; };
+		2BB4B67C24226DF100ECB78D /* AWFAdvisoryStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD7692B1FF412BB00F758C9 /* AWFAdvisoryStyle.m */; };
+		2BB4B67D24226DF100ECB78D /* PAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823461FF6C1720061B91E /* PAPreferences.m */; };
+		2BB4B67E24226DF100ECB78D /* AWFDailySummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769461FF412BB00F758C9 /* AWFDailySummaryView.m */; };
+		2BB4B67F24226DF100ECB78D /* ListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769261FF412BA00F758C9 /* ListingTableViewCell.m */; };
+		2BB4B68724226DF100ECB78D /* AWFTableViewObservationRowCityCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769431FF412BB00F758C9 /* AWFTableViewObservationRowCityCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68824226DF100ECB78D /* AWFStyledHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769321FF412BB00F758C9 /* AWFStyledHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68924226DF100ECB78D /* AWFStyledView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769301FF412BB00F758C9 /* AWFStyledView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68A24226DF100ECB78D /* ListingEventView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769231FF412BA00F758C9 /* ListingEventView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68B24226DF100ECB78D /* ListingTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769251FF412BA00F758C9 /* ListingTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68C24226DF100ECB78D /* AWFTableViewForecast24HourCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7693B1FF412BB00F758C9 /* AWFTableViewForecast24HourCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68D24226DF100ECB78D /* PAPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5823451FF6C1720061B91E /* PAPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68E24226DF100ECB78D /* UserLocationsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7691E1FF412BA00F758C9 /* UserLocationsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B68F24226DF100ECB78D /* AWFTableViewObservationRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769411FF412BB00F758C9 /* AWFTableViewObservationRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69024226DF100ECB78D /* Preferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7691C1FF412BA00F758C9 /* Preferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69124226DF100ECB78D /* GroupedTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769211FF412BA00F758C9 /* GroupedTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69224226DF100ECB78D /* AWFAdvisoryStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7692A1FF412BA00F758C9 /* AWFAdvisoryStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69324226DF100ECB78D /* AWFAdvisoryDetailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769371FF412BB00F758C9 /* AWFAdvisoryDetailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69424226DF100ECB78D /* PAPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5823471FF6C1720061B91E /* PAPropertyDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69524226DF100ECB78D /* AWFForecastDetailView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769491FF412BB00F758C9 /* AWFForecastDetailView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69624226DF100ECB78D /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7691A1FF412BA00F758C9 /* Globals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69724226DF100ECB78D /* AWFTableViewDailySummaryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769391FF412BB00F758C9 /* AWFTableViewDailySummaryCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69824226DF100ECB78D /* AWFCollectionViewHourlyBasicCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7693F1FF412BB00F758C9 /* AWFCollectionViewHourlyBasicCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69924226DF100ECB78D /* MultilineTextTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769271FF412BA00F758C9 /* MultilineTextTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69A24226DF100ECB78D /* Drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769181FF412BA00F758C9 /* Drawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69B24226DF100ECB78D /* AWFTableViewForecastRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7693D1FF412BB00F758C9 /* AWFTableViewForecastRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69C24226DF100ECB78D /* AWFDailySummaryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769451FF412BB00F758C9 /* AWFDailySummaryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69D24226DF100ECB78D /* AWFHourlyBasicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7694D1FF412BB00F758C9 /* AWFHourlyBasicView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69E24226DF100ECB78D /* AWFLegacyStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7692E1FF412BB00F758C9 /* AWFLegacyStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B69F24226DF100ECB78D /* AWFObservationAdvisoriesView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7694F1FF412BB00F758C9 /* AWFObservationAdvisoriesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B6A024226DF100ECB78D /* AWFObservationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769551FF412BB00F758C9 /* AWFObservationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B6A124226DF100ECB78D /* AWFCascadingStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7692C1FF412BB00F758C9 /* AWFCascadingStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BB4B6A224226DF100ECB78D /* AerisDemoSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7690F1FF4127A00F758C9 /* AerisDemoSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD769111FF4127A00F758C9 /* AerisDemoSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD7690F1FF4127A00F758C9 /* AerisDemoSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD769571FF412BB00F758C9 /* Drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769181FF412BA00F758C9 /* Drawing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD769581FF412BB00F758C9 /* Drawing.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769191FF412BA00F758C9 /* Drawing.m */; };
@@ -62,19 +117,32 @@
 		2BD7698C1FF412BB00F758C9 /* AWFObservationAdvisoriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769501FF412BB00F758C9 /* AWFObservationAdvisoriesView.m */; };
 		2BD769911FF412BB00F758C9 /* AWFObservationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD769551FF412BB00F758C9 /* AWFObservationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BD769921FF412BB00F758C9 /* AWFObservationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD769561FF412BB00F758C9 /* AWFObservationView.m */; };
-		5D7848D2BFD30EE8D23CB201 /* Pods_AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B80F269FF21DFB364BB20 /* Pods_AerisDemoSupport.framework */; };
+		48B6D52453C88DE1D40CA80A /* Pods_AerisDemoSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B36B826BAE70784D0EBEE2 /* Pods_AerisDemoSupport.framework */; };
+		A66738792A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A66738772A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A667387A2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A66738772A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A667387B2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66738782A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m */; };
+		A667387C2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A66738782A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m */; };
+		A68FBEB02A282AC60098EE5B /* AWFLightningSummaryView.h in Headers */ = {isa = PBXBuildFile; fileRef = A68FBEAE2A282AC60098EE5B /* AWFLightningSummaryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68FBEB12A282AC60098EE5B /* AWFLightningSummaryView.h in Headers */ = {isa = PBXBuildFile; fileRef = A68FBEAE2A282AC60098EE5B /* AWFLightningSummaryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68FBEB42A2832880098EE5B /* AWFLightningSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEAF2A282AC60098EE5B /* AWFLightningSummaryView.m */; };
+		A68FBEB52A2832880098EE5B /* AWFLightningSummaryView.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEAF2A282AC60098EE5B /* AWFLightningSummaryView.m */; };
+		A68FBEC22A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A68FBEC02A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68FBEC32A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A68FBEC02A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A68FBEC42A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEC12A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m */; };
+		A68FBEC52A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEC12A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m */; };
+		A6DAD98D2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DAD98B2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6DAD98E2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A6DAD98B2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6DAD98F2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD98C2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m */; };
+		A6DAD9902A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD98C2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17D990855DEA18117CA0060C /* Pods-AerisDemoSupport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisDemoSupport.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport.debug.xcconfig"; sourceTree = "<group>"; };
-		2B58233C1FF6BECE0061B91E /* AerisCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCore.framework; path = ../lib/AerisCore.framework; sourceTree = "<group>"; };
-		2B58233D1FF6BECE0061B91E /* AerisWeatherKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisWeatherKit.framework; path = ../lib/AerisWeatherKit.framework; sourceTree = "<group>"; };
-		2B58233E1FF6BECE0061B91E /* AerisCoreUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisCoreUI.framework; path = ../lib/AerisCoreUI.framework; sourceTree = "<group>"; };
-		2B58233F1FF6BECE0061B91E /* AerisMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AerisMapKit.framework; path = ../lib/AerisMapKit.framework; sourceTree = "<group>"; };
+		1D38B2616707E86EFCFEA6F0 /* Pods-AerisDemoSupport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisDemoSupport.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport.debug.xcconfig"; sourceTree = "<group>"; };
 		2B5823451FF6C1720061B91E /* PAPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPreferences.h; sourceTree = "<group>"; };
 		2B5823461FF6C1720061B91E /* PAPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPreferences.m; sourceTree = "<group>"; };
 		2B5823471FF6C1720061B91E /* PAPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPropertyDescriptor.h; sourceTree = "<group>"; };
 		2B5823481FF6C1720061B91E /* PAPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPropertyDescriptor.m; sourceTree = "<group>"; };
+		2BB4B6AD24226DF100ECB78D /* AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD7690C1FF4127A00F758C9 /* AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD7690F1FF4127A00F758C9 /* AerisDemoSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AerisDemoSupport.h; sourceTree = "<group>"; };
 		2BD769101FF4127A00F758C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,16 +196,31 @@
 		2BD769501FF412BB00F758C9 /* AWFObservationAdvisoriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWFObservationAdvisoriesView.m; sourceTree = "<group>"; };
 		2BD769551FF412BB00F758C9 /* AWFObservationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWFObservationView.h; sourceTree = "<group>"; };
 		2BD769561FF412BB00F758C9 /* AWFObservationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWFObservationView.m; sourceTree = "<group>"; };
-		AEA9DD9791C7A9BD369E8726 /* Pods-AerisDemoSupport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisDemoSupport.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport.release.xcconfig"; sourceTree = "<group>"; };
-		D80B80F269FF21DFB364BB20 /* Pods_AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B36B826BAE70784D0EBEE2 /* Pods_AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D0CFC9D826055A6B4A7139A /* Pods-AerisDemoSupport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerisDemoSupport.release.xcconfig"; path = "../Pods/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport.release.xcconfig"; sourceTree = "<group>"; };
+		A66738772A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWFTableViewLightningFlashRowCell.h; sourceTree = "<group>"; };
+		A66738782A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWFTableViewLightningFlashRowCell.m; sourceTree = "<group>"; };
+		A68FBEAE2A282AC60098EE5B /* AWFLightningSummaryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWFLightningSummaryView.h; sourceTree = "<group>"; };
+		A68FBEAF2A282AC60098EE5B /* AWFLightningSummaryView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWFLightningSummaryView.m; sourceTree = "<group>"; };
+		A68FBEC02A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWFTableViewLightningSummaryCell.h; sourceTree = "<group>"; };
+		A68FBEC12A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWFTableViewLightningSummaryCell.m; sourceTree = "<group>"; };
+		A6DAD98B2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWFTableViewLightningStrikeRowCell.h; sourceTree = "<group>"; };
+		A6DAD98C2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AWFTableViewLightningStrikeRowCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2BB4B68024226DF100ECB78D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BD769081FF4127A00F758C9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7848D2BFD30EE8D23CB201 /* Pods_AerisDemoSupport.framework in Frameworks */,
+				48B6D52453C88DE1D40CA80A /* Pods_AerisDemoSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +244,7 @@
 				2BD7690E1FF4127A00F758C9 /* AerisDemoSupport */,
 				2BD7690D1FF4127A00F758C9 /* Products */,
 				CEFB89A8B8A437F839FE6E94 /* Pods */,
-				39B0B2D19BAC3CEE521032C2 /* Frameworks */,
+				5586F87AA1497A1AD2BDD5C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				2BD7690C1FF4127A00F758C9 /* AerisDemoSupport.framework */,
+				2BB4B6AD24226DF100ECB78D /* AerisDemoSupport.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,6 +331,8 @@
 				2BD7694A1FF412BB00F758C9 /* AWFForecastDetailView.m */,
 				2BD7694D1FF412BB00F758C9 /* AWFHourlyBasicView.h */,
 				2BD7694E1FF412BB00F758C9 /* AWFHourlyBasicView.m */,
+				A68FBEAE2A282AC60098EE5B /* AWFLightningSummaryView.h */,
+				A68FBEAF2A282AC60098EE5B /* AWFLightningSummaryView.m */,
 				2BD7694F1FF412BB00F758C9 /* AWFObservationAdvisoriesView.h */,
 				2BD769501FF412BB00F758C9 /* AWFObservationAdvisoriesView.m */,
 				2BD769551FF412BB00F758C9 /* AWFObservationView.h */,
@@ -257,6 +343,12 @@
 				2BD7693C1FF412BB00F758C9 /* AWFTableViewForecast24HourCell.m */,
 				2BD7693D1FF412BB00F758C9 /* AWFTableViewForecastRowCell.h */,
 				2BD7693E1FF412BB00F758C9 /* AWFTableViewForecastRowCell.m */,
+				A66738772A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h */,
+				A66738782A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m */,
+				A6DAD98B2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h */,
+				A6DAD98C2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m */,
+				A68FBEC02A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h */,
+				A68FBEC12A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m */,
 				2BD769411FF412BB00F758C9 /* AWFTableViewObservationRowCell.h */,
 				2BD769421FF412BB00F758C9 /* AWFTableViewObservationRowCell.m */,
 				2BD769431FF412BB00F758C9 /* AWFTableViewObservationRowCityCell.h */,
@@ -265,14 +357,10 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		39B0B2D19BAC3CEE521032C2 /* Frameworks */ = {
+		5586F87AA1497A1AD2BDD5C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B58233C1FF6BECE0061B91E /* AerisCore.framework */,
-				2B58233E1FF6BECE0061B91E /* AerisCoreUI.framework */,
-				2B58233F1FF6BECE0061B91E /* AerisMapKit.framework */,
-				2B58233D1FF6BECE0061B91E /* AerisWeatherKit.framework */,
-				D80B80F269FF21DFB364BB20 /* Pods_AerisDemoSupport.framework */,
+				45B36B826BAE70784D0EBEE2 /* Pods_AerisDemoSupport.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,8 +368,8 @@
 		CEFB89A8B8A437F839FE6E94 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17D990855DEA18117CA0060C /* Pods-AerisDemoSupport.debug.xcconfig */,
-				AEA9DD9791C7A9BD369E8726 /* Pods-AerisDemoSupport.release.xcconfig */,
+				1D38B2616707E86EFCFEA6F0 /* Pods-AerisDemoSupport.debug.xcconfig */,
+				5D0CFC9D826055A6B4A7139A /* Pods-AerisDemoSupport.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -289,6 +377,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2BB4B68624226DF100ECB78D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB4B68724226DF100ECB78D /* AWFTableViewObservationRowCityCell.h in Headers */,
+				2BB4B68824226DF100ECB78D /* AWFStyledHeaderView.h in Headers */,
+				2BB4B68924226DF100ECB78D /* AWFStyledView.h in Headers */,
+				2BB4B68A24226DF100ECB78D /* ListingEventView.h in Headers */,
+				2BB4B68B24226DF100ECB78D /* ListingTableViewCell.h in Headers */,
+				2BB4B68C24226DF100ECB78D /* AWFTableViewForecast24HourCell.h in Headers */,
+				2BB4B68D24226DF100ECB78D /* PAPreferences.h in Headers */,
+				2BB4B68E24226DF100ECB78D /* UserLocationsManager.h in Headers */,
+				2BB4B68F24226DF100ECB78D /* AWFTableViewObservationRowCell.h in Headers */,
+				A68FBEB12A282AC60098EE5B /* AWFLightningSummaryView.h in Headers */,
+				2BB4B69024226DF100ECB78D /* Preferences.h in Headers */,
+				2BB4B69124226DF100ECB78D /* GroupedTableViewCell.h in Headers */,
+				2BB4B69224226DF100ECB78D /* AWFAdvisoryStyle.h in Headers */,
+				2BB4B69324226DF100ECB78D /* AWFAdvisoryDetailView.h in Headers */,
+				2BB4B69424226DF100ECB78D /* PAPropertyDescriptor.h in Headers */,
+				2BB4B69524226DF100ECB78D /* AWFForecastDetailView.h in Headers */,
+				2BB4B69624226DF100ECB78D /* Globals.h in Headers */,
+				2BB4B69724226DF100ECB78D /* AWFTableViewDailySummaryCell.h in Headers */,
+				2BB4B69824226DF100ECB78D /* AWFCollectionViewHourlyBasicCell.h in Headers */,
+				2BB4B69924226DF100ECB78D /* MultilineTextTableViewCell.h in Headers */,
+				2BB4B69A24226DF100ECB78D /* Drawing.h in Headers */,
+				2BB4B69B24226DF100ECB78D /* AWFTableViewForecastRowCell.h in Headers */,
+				2BB4B69C24226DF100ECB78D /* AWFDailySummaryView.h in Headers */,
+				A68FBEC32A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h in Headers */,
+				2BB4B69D24226DF100ECB78D /* AWFHourlyBasicView.h in Headers */,
+				2BB4B69E24226DF100ECB78D /* AWFLegacyStyle.h in Headers */,
+				2BB4B69F24226DF100ECB78D /* AWFObservationAdvisoriesView.h in Headers */,
+				2BB4B6A024226DF100ECB78D /* AWFObservationView.h in Headers */,
+				2BB4B6A124226DF100ECB78D /* AWFCascadingStyle.h in Headers */,
+				A6DAD98E2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h in Headers */,
+				A667387A2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h in Headers */,
+				2BB4B6A224226DF100ECB78D /* AerisDemoSupport.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BD769091FF4127A00F758C9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -302,6 +429,7 @@
 				2B5823491FF6C1720061B91E /* PAPreferences.h in Headers */,
 				2BD7695D1FF412BB00F758C9 /* UserLocationsManager.h in Headers */,
 				2BD7697D1FF412BB00F758C9 /* AWFTableViewObservationRowCell.h in Headers */,
+				A68FBEB02A282AC60098EE5B /* AWFLightningSummaryView.h in Headers */,
 				2BD7695B1FF412BB00F758C9 /* Preferences.h in Headers */,
 				2BD7695F1FF412BB00F758C9 /* GroupedTableViewCell.h in Headers */,
 				2BD769671FF412BB00F758C9 /* AWFAdvisoryStyle.h in Headers */,
@@ -315,11 +443,14 @@
 				2BD769571FF412BB00F758C9 /* Drawing.h in Headers */,
 				2BD769791FF412BB00F758C9 /* AWFTableViewForecastRowCell.h in Headers */,
 				2BD769811FF412BB00F758C9 /* AWFDailySummaryView.h in Headers */,
+				A68FBEC22A2835D60098EE5B /* AWFTableViewLightningSummaryCell.h in Headers */,
 				2BD769891FF412BB00F758C9 /* AWFHourlyBasicView.h in Headers */,
 				2BD7696B1FF412BB00F758C9 /* AWFLegacyStyle.h in Headers */,
 				2BD7698B1FF412BB00F758C9 /* AWFObservationAdvisoriesView.h in Headers */,
 				2BD769911FF412BB00F758C9 /* AWFObservationView.h in Headers */,
 				2BD769691FF412BB00F758C9 /* AWFCascadingStyle.h in Headers */,
+				A6DAD98D2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.h in Headers */,
+				A66738792A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.h in Headers */,
 				2BD769111FF4127A00F758C9 /* AerisDemoSupport.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,6 +458,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2BB4B66224226DF100ECB78D /* AerisDemoSupport-catalyst */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BB4B6AA24226DF100ECB78D /* Build configuration list for PBXNativeTarget "AerisDemoSupport-catalyst" */;
+			buildPhases = (
+				2BB4B66424226DF100ECB78D /* Sources */,
+				2BB4B68024226DF100ECB78D /* Frameworks */,
+				2BB4B68624226DF100ECB78D /* Headers */,
+				2BB4B6A324226DF100ECB78D /* Resources */,
+				2BB4B6A424226DF100ECB78D /* Create Module Map */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AerisDemoSupport-catalyst";
+			productName = AerisDemoSupport;
+			productReference = 2BB4B6AD24226DF100ECB78D /* AerisDemoSupport.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2BD7690B1FF4127A00F758C9 /* AerisDemoSupport */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BD769141FF4127A00F758C9 /* Build configuration list for PBXNativeTarget "AerisDemoSupport" */;
@@ -336,8 +486,8 @@
 				2BD769081FF4127A00F758C9 /* Frameworks */,
 				2BD769091FF4127A00F758C9 /* Headers */,
 				2BD7690A1FF4127A00F758C9 /* Resources */,
-				7387DFA9B1B659BB43F1A060 /* [CP] Copy Pods Resources */,
 				2BB4F4791FF59B1100FF518E /* Create Module Map */,
+				9D75E53833F369F740EDA31D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,9 +504,12 @@
 		2BD769031FF4127A00F758C9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "AerisWeather, LLC";
 				TargetAttributes = {
+					2BB4B66224226DF100ECB78D = {
+						ProvisioningStyle = Automatic;
+					};
 					2BD7690B1FF4127A00F758C9 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -369,7 +522,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 2BD769021FF4127A00F758C9;
 			productRefGroup = 2BD7690D1FF4127A00F758C9 /* Products */;
@@ -377,11 +529,19 @@
 			projectRoot = "";
 			targets = (
 				2BD7690B1FF4127A00F758C9 /* AerisDemoSupport */,
+				2BB4B66224226DF100ECB78D /* AerisDemoSupport-catalyst */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2BB4B6A324226DF100ECB78D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BD7690A1FF4127A00F758C9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,7 +552,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2BB4F4791FF59B1100FF518E /* Create Module Map */ = {
+		2BB4B6A424226DF100ECB78D /* Create Module Map */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,23 +566,19 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\nset +u\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\"\n#/bin/ln -sfh Versions/Current/Modules \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n/bin/ln -sfh \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\" \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n\ncat > \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\" << _EOF_\nframework module ${PROJECT_NAME} {\n    umbrella header \"${PROJECT_NAME}.h\"\n    \n    export *\n    module * { export * }\n}\n_EOF_\n\necho \"Framework module map created at ${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\"";
 		};
-		7387DFA9B1B659BB43F1A060 /* [CP] Copy Pods Resources */ = {
+		2BB4F4791FF59B1100FF518E /* Create Module Map */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "Create Module Map";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "set -e\nset +u\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\"\n#/bin/ln -sfh Versions/Current/Modules \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n/bin/ln -sfh \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules\" \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Modules\"\n\ncat > \"${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\" << _EOF_\nframework module ${PROJECT_NAME} {\n    umbrella header \"${PROJECT_NAME}.h\"\n    \n    export *\n    module * { export * }\n}\n_EOF_\n\necho \"Framework module map created at ${BUILT_PRODUCTS_DIR}/${PROJECT_NAME}.framework/Versions/A/Modules/module.modulemap\"";
 		};
 		85ED23B799A1E9B4ACE9C7AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -442,9 +598,65 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9D75E53833F369F740EDA31D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2BB4B66424226DF100ECB78D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BB4B66524226DF100ECB78D /* AWFObservationView.m in Sources */,
+				2BB4B66624226DF100ECB78D /* AWFCascadingStyle.m in Sources */,
+				2BB4B66724226DF100ECB78D /* Globals.m in Sources */,
+				2BB4B66824226DF100ECB78D /* Drawing.m in Sources */,
+				2BB4B66924226DF100ECB78D /* MultilineTextTableViewCell.m in Sources */,
+				2BB4B66A24226DF100ECB78D /* AWFTableViewDailySummaryCell.m in Sources */,
+				2BB4B66B24226DF100ECB78D /* PAPropertyDescriptor.m in Sources */,
+				A68FBEC52A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m in Sources */,
+				2BB4B66C24226DF100ECB78D /* AWFForecastDetailView.m in Sources */,
+				2BB4B66D24226DF100ECB78D /* Preferences.m in Sources */,
+				2BB4B66E24226DF100ECB78D /* GroupedTableViewCell.m in Sources */,
+				2BB4B66F24226DF100ECB78D /* AWFCollectionViewHourlyBasicCell.m in Sources */,
+				2BB4B67024226DF100ECB78D /* AWFTableViewForecastRowCell.m in Sources */,
+				A667387C2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m in Sources */,
+				2BB4B67124226DF100ECB78D /* AWFTableViewObservationRowCell.m in Sources */,
+				2BB4B67224226DF100ECB78D /* ListingEventView.m in Sources */,
+				2BB4B67324226DF100ECB78D /* AWFLegacyStyle.m in Sources */,
+				2BB4B67424226DF100ECB78D /* AWFTableViewForecast24HourCell.m in Sources */,
+				2BB4B67524226DF100ECB78D /* AWFStyledView.m in Sources */,
+				2BB4B67624226DF100ECB78D /* UserLocationsManager.m in Sources */,
+				2BB4B67724226DF100ECB78D /* AWFAdvisoryDetailView.m in Sources */,
+				2BB4B67824226DF100ECB78D /* AWFStyledHeaderView.m in Sources */,
+				2BB4B67924226DF100ECB78D /* AWFHourlyBasicView.m in Sources */,
+				2BB4B67A24226DF100ECB78D /* AWFObservationAdvisoriesView.m in Sources */,
+				A68FBEB52A2832880098EE5B /* AWFLightningSummaryView.m in Sources */,
+				2BB4B67B24226DF100ECB78D /* AWFTableViewObservationRowCityCell.m in Sources */,
+				A6DAD9902A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m in Sources */,
+				2BB4B67C24226DF100ECB78D /* AWFAdvisoryStyle.m in Sources */,
+				2BB4B67D24226DF100ECB78D /* PAPreferences.m in Sources */,
+				2BB4B67E24226DF100ECB78D /* AWFDailySummaryView.m in Sources */,
+				2BB4B67F24226DF100ECB78D /* ListingTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BD769071FF4127A00F758C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -456,11 +668,13 @@
 				2BD769661FF412BB00F758C9 /* MultilineTextTableViewCell.m in Sources */,
 				2BD769761FF412BB00F758C9 /* AWFTableViewDailySummaryCell.m in Sources */,
 				2B58234C1FF6C1720061B91E /* PAPropertyDescriptor.m in Sources */,
+				A68FBEC42A2835D60098EE5B /* AWFTableViewLightningSummaryCell.m in Sources */,
 				2BD769861FF412BB00F758C9 /* AWFForecastDetailView.m in Sources */,
 				2BD7695C1FF412BB00F758C9 /* Preferences.m in Sources */,
 				2BD769601FF412BB00F758C9 /* GroupedTableViewCell.m in Sources */,
 				2BD7697C1FF412BB00F758C9 /* AWFCollectionViewHourlyBasicCell.m in Sources */,
 				2BD7697A1FF412BB00F758C9 /* AWFTableViewForecastRowCell.m in Sources */,
+				A667387B2A1EA3A200A34A22 /* AWFTableViewLightningFlashRowCell.m in Sources */,
 				2BD7697E1FF412BB00F758C9 /* AWFTableViewObservationRowCell.m in Sources */,
 				2BD769621FF412BB00F758C9 /* ListingEventView.m in Sources */,
 				2BD7696C1FF412BB00F758C9 /* AWFLegacyStyle.m in Sources */,
@@ -471,7 +685,9 @@
 				2BD769701FF412BB00F758C9 /* AWFStyledHeaderView.m in Sources */,
 				2BD7698A1FF412BB00F758C9 /* AWFHourlyBasicView.m in Sources */,
 				2BD7698C1FF412BB00F758C9 /* AWFObservationAdvisoriesView.m in Sources */,
+				A68FBEB42A2832880098EE5B /* AWFLightningSummaryView.m in Sources */,
 				2BD769801FF412BB00F758C9 /* AWFTableViewObservationRowCityCell.m in Sources */,
+				A6DAD98F2A217C4200405889 /* AWFTableViewLightningStrikeRowCell.m in Sources */,
 				2BD769681FF412BB00F758C9 /* AWFAdvisoryStyle.m in Sources */,
 				2B58234A1FF6C1720061B91E /* PAPreferences.m in Sources */,
 				2BD769821FF412BB00F758C9 /* AWFDailySummaryView.m in Sources */,
@@ -482,6 +698,78 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		2BB4B6AB24226DF100ECB78D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93U64PEERG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib\"/**",
+				);
+				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisDemoSupport;
+				PRODUCT_NAME = AerisDemoSupport;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BB4B6AC24226DF100ECB78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 93U64PEERG;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../lib\"/**",
+				);
+				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"z\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisDemoSupport;
+				PRODUCT_NAME = AerisDemoSupport;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		2BD769121FF4127A00F758C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -536,7 +824,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -600,13 +888,13 @@
 		};
 		2BD769151FF4127A00F758C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17D990855DEA18117CA0060C /* Pods-AerisDemoSupport.debug.xcconfig */;
+			baseConfigurationReference = 1D38B2616707E86EFCFEA6F0 /* Pods-AerisDemoSupport.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2Y62FY5H3;
+				DEVELOPMENT_TEAM = 93U64PEERG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -615,57 +903,37 @@
 					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
 					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
 					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
+					"\"$(SRCROOT)/../lib\"/**",
 				);
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"c++\"",
 					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisDemoSupport;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		2BD769161FF4127A00F758C9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEA9DD9791C7A9BD369E8726 /* Pods-AerisDemoSupport.release.xcconfig */;
+			baseConfigurationReference = 5D0CFC9D826055A6B4A7139A /* Pods-AerisDemoSupport.release.xcconfig */;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = A2Y62FY5H3;
+				DEVELOPMENT_TEAM = 93U64PEERG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -674,44 +942,24 @@
 					"\"${PODS_ROOT}/GoogleMaps/Base/Frameworks\"",
 					"\"${PODS_ROOT}/GoogleMaps/Maps/Frameworks\"",
 					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
+					"\"$(SRCROOT)/../lib\"/**",
 				);
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-l\"c++\"",
 					"-l\"z\"",
-					"-framework",
-					"\"Accelerate\"",
-					"-framework",
-					"\"CoreData\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"CoreLocation\"",
-					"-framework",
-					"\"CoreTelephony\"",
-					"-framework",
-					"\"CoreText\"",
-					"-framework",
-					"\"GLKit\"",
-					"-framework",
-					"\"ImageIO\"",
-					"-framework",
-					"\"OpenGLES\"",
-					"-framework",
-					"\"QuartzCore\"",
-					"-framework",
-					"\"SystemConfiguration\"",
-					"-framework",
-					"\"UIKit\"",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisDemoSupport;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -719,6 +967,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2BB4B6AA24226DF100ECB78D /* Build configuration list for PBXNativeTarget "AerisDemoSupport-catalyst" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BB4B6AB24226DF100ECB78D /* Debug */,
+				2BB4B6AC24226DF100ECB78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2BD769061FF4127A00F758C9 /* Build configuration list for PBXProject "AerisDemoSupport" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

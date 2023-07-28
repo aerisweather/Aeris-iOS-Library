@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 
 @interface SettingsViewController : UIViewController
 

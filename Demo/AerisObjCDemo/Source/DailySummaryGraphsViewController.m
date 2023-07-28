@@ -38,7 +38,7 @@
 	precipItem.title = NSLocalizedString(@"Precip", nil);
 	precipItem.rendererType = AWFGraphRendererTypeBar;
 	precipItem.xAxisPropertyName = @"periods.#.timestamp";
-	precipItem.yAxisPropertyName = @"periods.#.precipIN";
+	precipItem.yAxisPropertyName = @"periods.#.precipIN.total";
 	precipItem.fillColor = [UIColor colorWithRed:0.038 green:0.746 blue:0.000 alpha:1.000];
 	precipItem.interval = 0.25;
 	precipItem.ignoreTime = YES;

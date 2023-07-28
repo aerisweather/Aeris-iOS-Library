@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <AerisWeatherKit/AerisWeatherKit.h>
+#import <AerisDemoSupport/AerisDemoSupport.h>
 
 extern NSString * const kAWFDemoDefaultPlaceChanged;
 
