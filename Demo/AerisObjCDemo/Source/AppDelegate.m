@@ -7,7 +7,7 @@
 //
 
 #import <AerisDemoSupport/AerisDemoSupport.h>
-#if !TARGET_OS_UIKITFORMAC
+#if !TARGET_OS_UIKITFORMAC && !TARGET_OS_SIMULATOR
 #import <GoogleMaps/GoogleMaps.h>
 #import <Mapbox/Mapbox.h>
 #endif
@@ -26,9 +26,11 @@
 	[AerisWeather startWithApiKey:@"__CLIENT_ID__" secret:@"__CLIENT_SECRET__"];
 	[AWFLogger setLoggingLevel:AWFLogLevelDebug];
 	
-#if !TARGET_OS_UIKITFORMAC
-	// must initialize Google Maps SDK with proper API key before using
-	[GMSServices provideAPIKey:@"__GOOGLE_KEY__"];
+#if !TARGET_OS_UIKITFORMAC && !TARGET_OS_SIMULATOR
+	if (@available(iOS 14, *)) { // GoogleMaps 8.x.x requires iOS ≥ 14
+		// must initialize Google Maps SDK with proper API key before using
+		[GMSServices provideAPIKey:@"__GOOGLE_KEY__"];
+	}
 	// must initialize Mapbox with proper token
 	[MGLAccountManager setAccessToken:@"__MAPBOX_KEY__"];
 #endif
@@ -79,7 +81,8 @@
 		
 		// handle the translucent status bar in iOS 7
 		if (AWF_SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0")) {
-			//rootController.navigationBar.barTintColor = [UIColor blackColor];
+			rootController.navigationBar.backgroundColor = UIColor.whiteColor; // needed for iOS ≥14
+			rootController.navigationBar.barTintColor = UIColor.whiteColor;
 			rootController.navigationBar.translucent = NO;
 			rootController.extendedLayoutIncludesOpaqueBars = YES;
 		}

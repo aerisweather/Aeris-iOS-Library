@@ -171,7 +171,15 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	//NSString* country = (AWFIsNonEmptyString(place.state)) ? [NSString stringWithFormat:@", %@", place.country] : @"";
 	country = (AWFIsNonEmptyString(place.state)) ? [NSString stringWithFormat:@", %@", country] : @"";
 	
-	cell.textLabel.text = [NSString stringWithFormat:@"%@, %@%@", place.name, state, country];
+	if (AWFIsNonEmptyString(place.name)) {
+		cell.textLabel.text = [NSString stringWithFormat:@"%@, %@%@", place.name, state, country];
+	} else {
+		NSNumberFormatter *latLongFormatter = [NSNumberFormatter new];
+		latLongFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+		latLongFormatter.minimumFractionDigits = 1;
+		latLongFormatter.maximumFractionDigits = 4;
+		cell.textLabel.text = [NSString stringWithFormat:@"(%@, %@)", [latLongFormatter stringFromNumber:@(place.coordinate.latitude)], [latLongFormatter stringFromNumber:@(place.coordinate.longitude)]];
+	}
 	
 	if (indexPath.section == 1) {
 		cell.detailTextLabel.text = [NSString stringWithFormat:@"%.2f mi away", place.relativeTo.distanceMI];
@@ -180,10 +188,7 @@ static NSString *cellIdentifier = @"LocationCellIdentifier";
 	// show accessory mark if this location is the user's default one
 	if ([[UserLocationsManager sharedManager] defaultLocation]) {
 		AWFPlace *defaultPlace = [[UserLocationsManager sharedManager] defaultLocation];
-		if ([defaultPlace.name isEqualToString:place.name]
-			&& [defaultPlace.state isEqualToString:place.state]
-			&& [defaultPlace.country isEqualToString:place.country])
-		{
+		if ([defaultPlace isEqualToPlace:place]) {
 			cell.accessoryType = UITableViewCellAccessoryCheckmark;
 		} else {
 			cell.accessoryType = UITableViewCellAccessoryNone;
@@ -297,8 +302,14 @@ AWFDebounceFunction AWFDebounce(double delay, dispatch_queue_t queue, dispatch_b
 							return;
 						}
 						
-						NSArray *objects = (result.results) ? result.results : @[];
-						weakSelf.searchResults = [NSMutableArray arrayWithArray:objects];
+						NSMutableArray *objects = [NSMutableArray arrayWithArray:(result.results) ? result.results : @[]];
+						
+						if (AWFIsValidCoordinateString(query)) {
+							AWFPlace *latLongPlace = [AWFPlace placeFromString:query];
+							[objects addObject:latLongPlace];
+						}
+						
+						weakSelf.searchResults = objects;
 						[weakSelf.searchResultsController.tableView reloadData];
 					}];
 				});

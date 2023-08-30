@@ -131,10 +131,10 @@ static NSString *tznameKey	= @"tzname";
 	AWFPlace *defaultLocation = [self defaultLocation];
 	NSMutableArray *mutablePlaces = [self.locations mutableCopy];
 	[mutablePlaces enumerateObjectsUsingBlock:^(AWFPlace *p, NSUInteger idx, BOOL *stop) {
-		if ([p.name isEqualToString:place.name] && [p.state isEqualToString:place.state] && [p.country isEqualToString:place.country]) {
+		if ([p isEqualToPlace:place]) {
 			[mutablePlaces removeObject:p];
 			
-			if ([p isEqualToPlaceByComparingName:defaultLocation]) {
+			if ([p isEqualToPlace:defaultLocation]) {
 				[self removeDefaultLocation];
 			}
 			
@@ -152,7 +152,7 @@ static NSString *tznameKey	= @"tzname";
 - (BOOL)containsLocation:(AWFPlace *)place {
 	__block BOOL contains = NO;
 	[self.locations enumerateObjectsUsingBlock:^(AWFPlace *p, NSUInteger idx, BOOL *stop) {
-		if ([p.name isEqualToString:place.name] && [p.state isEqualToString:place.state] && [p.country isEqualToString:place.country]) {
+		if ([p isEqualToPlace:place]) {
 			contains = YES;
 			*stop = YES;
 		}
@@ -164,13 +164,14 @@ static NSString *tznameKey	= @"tzname";
 #pragma mark - Private
 
 - (NSDictionary *)placeToDictionary:(AWFPlace *)place {
+	NSString *name = (place.name) ? place.name : @"";
 	NSString *state = (place.state) ? place.state : @"";
 	NSString *country = (place.country) ? place.country : @"";
 	NSNumber *lat = @(place.coordinate.latitude);
 	NSNumber *lon = @(place.coordinate.longitude);
 	NSString *tzname = (place.timeZone.name) ? place.timeZone.name : @"";
 	
-	return @{nameKey: place.name, stateKey: state, countryKey: country, latKey: lat, lonKey: lon, tznameKey: tzname};
+	return @{nameKey: name, stateKey: state, countryKey: country, latKey: lat, lonKey: lon, tznameKey: tzname};
 }
 
 - (void)updateUserPreferences {

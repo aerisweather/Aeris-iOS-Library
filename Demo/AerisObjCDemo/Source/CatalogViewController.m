@@ -40,8 +40,9 @@
 #import "LightningThreatsViewController.h"
 #import "LightningFlashesViewController.h"
 #import "LightningStrikesViewController.h"
+#import "MaritimeReportViewController.h"
 #import "AppleMapViewController.h"
-#if !TARGET_OS_UIKITFORMAC
+#if !TARGET_OS_UIKITFORMAC && !TARGET_OS_SIMULATOR
 #import "GoogleMapViewController.h"
 #import "MapboxMapViewController.h"
 #endif
@@ -82,6 +83,7 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 			                 @{ @"title": NSLocalizedString(@"Moon Phases", nil), @"class": [MoonPhasesViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Climate Normals", nil), @"class": [NormalsViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Today's Tides", nil), @"class": [TidesViewController class] },
+							 @{ @"title": NSLocalizedString(@"Maritime Report", nil), @"class": [MaritimeReportViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] },
 							 @{ @"title": NSLocalizedString(@"Drought Monitor", nil), @"class": [DroughtMonitorViewController class] }
 			];
@@ -100,6 +102,7 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 			                 @{ @"title": NSLocalizedString(@"Moon Phases", nil), @"class": [MoonPhasesViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Climate Normals", nil), @"class": [NormalsViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Today's Tides", nil), @"class": [TidesViewController class] },
+							 @{ @"title": NSLocalizedString(@"Maritime Report", nil), @"class": [MaritimeReportViewController class] },
 			                 @{ @"title": NSLocalizedString(@"Indices", nil), @"class": [IndicesViewController class] },
 							 @{ @"title": NSLocalizedString(@"Drought Monitor", nil), @"class": [DroughtMonitorViewController class] }
 			];
@@ -124,16 +127,15 @@ static NSString *cellIdentifier = @"AFCatalogCell";
 								 @{ @"title": NSLocalizedString(@"Nearby Lightning Strikes", nil), @"class": [LightningStrikesViewController class] },
 		];
 
-#if TARGET_OS_UIKITFORMAC
-		NSArray *imageItems = @[
+		NSMutableArray *imageItems = [NSMutableArray arrayWithArray: @[
 			@{ @"title": NSLocalizedString(@"Apple Map", nil), @"class": [AppleMapViewController class] }
-		];
-#else
-		NSArray *imageItems = @[ //@{@"title": NSLocalizedString(@"Static Map Viewer", nil), @"class": [NSObject class]},
-		    @{ @"title": NSLocalizedString(@"Apple Map", nil), @"class": [AppleMapViewController class] },
-		    @{ @"title": NSLocalizedString(@"Google Map", nil), @"class": [GoogleMapViewController class] },
-		    @{ @"title": NSLocalizedString(@"Mapbox Map", nil), @"class": [MapboxMapViewController class] }
-		];
+		]];
+#if !TARGET_OS_UIKITFORMAC && !TARGET_OS_SIMULATOR
+		//[imageItems insertObject:@{@"title": NSLocalizedString(@"Static Map Viewer", nil), @"class": [NSObject class]} atIndex:0];
+		if (@available(iOS 14, *)) { // GoogleMaps 8.x.x requires iOS ≥ 14
+			[imageItems addObject:@{ @"title": NSLocalizedString(@"Google Map", nil), @"class": [GoogleMapViewController class] }];
+		}
+		[imageItems addObject:@{ @"title": NSLocalizedString(@"Mapbox Map", nil), @"class": [MapboxMapViewController class] }];
 #endif
 
 		self.categories = @[@{ @"title": NSLocalizedString(@"Locations", nil), @"items": locationItems },
