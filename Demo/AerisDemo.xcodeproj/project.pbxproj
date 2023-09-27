@@ -1630,7 +1630,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/scripts/update_build_number.sh";
+			shellScript = "update_build_number_script=\"${PROJECT_DIR}/scripts/update_build_number.sh\"\nif [ -f \"$update_build_number_script\" ]; then\n\t\"$update_build_number_script\"\nfi\n";
 		};
 		2B788DA920058F01006E0C97 /* Update Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1644,7 +1644,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PROJECT_DIR}/scripts/update_build_number.sh\"\n";
+			shellScript = "update_build_number_script=\"${PROJECT_DIR}/scripts/update_build_number.sh\"\nif [ -f \"$update_build_number_script\" ]; then\n\t\"$update_build_number_script\"\nfi\n";
 		};
 		6F8D6474837F1F4ADEB178CF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
