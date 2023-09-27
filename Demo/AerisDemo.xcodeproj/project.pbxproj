@@ -336,7 +336,6 @@
 		A68FBEB82A28341F0098EE5B /* LightningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */; };
 		A68FBEB92A28341F0098EE5B /* LightningSummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A68FBEB72A28341F0098EE5B /* LightningSummaryViewController.m */; };
 		A6B3883F2A4F6DCA0079503E /* MaritimeReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B3883E2A4F6DCA0079503E /* MaritimeReportViewController.m */; };
-		A6B388402A4F6DCA0079503E /* MaritimeReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B3883E2A4F6DCA0079503E /* MaritimeReportViewController.m */; };
 		A6B388412A4F6DCA0079503E /* MaritimeReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6B3883E2A4F6DCA0079503E /* MaritimeReportViewController.m */; };
 		A6DAD9892A217AE000405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
 		A6DAD98A2A217B2A00405889 /* LightningStrikesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAD9882A217AE000405889 /* LightningStrikesViewController.m */; };
@@ -1793,7 +1792,6 @@
 			files = (
 				2B5823AC1FF6EF940061B91E /* DetailedWeatherViewController.swift in Sources */,
 				2B16A6DC1E43911B005AC3EF /* ViewController.swift in Sources */,
-				A6B388402A4F6DCA0079503E /* MaritimeReportViewController.m in Sources */,
 				2B16A6DA1E43911B005AC3EF /* AppDelegate.swift in Sources */,
 				2B5823AE1FF6F0580061B91E /* LocationSearchViewController.swift in Sources */,
 			);
