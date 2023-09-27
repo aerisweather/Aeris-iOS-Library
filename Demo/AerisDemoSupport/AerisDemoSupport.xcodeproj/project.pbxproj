@@ -3,20 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B00F4BF25BA26BE0038559D /* AerisCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35C25B5FFDB0019CC73 /* AerisCore.xcframework */; };
-		2B00F4C125BA26BE0038559D /* AerisCoreUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35825B5FFDB0019CC73 /* AerisCoreUI.xcframework */; };
-		2B00F4C725BA26BF0038559D /* AerisMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35725B5FFDB0019CC73 /* AerisMapKit.xcframework */; };
-		2B00F4C925BA26BF0038559D /* AerisWeatherKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35A25B5FFDB0019CC73 /* AerisWeatherKit.xcframework */; };
-		2B00F4CE25BA26E20038559D /* AerisCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35C25B5FFDB0019CC73 /* AerisCore.xcframework */; };
-		2B00F4D025BA26E20038559D /* AerisCoreUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35825B5FFDB0019CC73 /* AerisCoreUI.xcframework */; };
-		2B00F4D225BA26E20038559D /* AerisGoogleMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35925B5FFDB0019CC73 /* AerisGoogleMapKit.xcframework */; };
-		2B00F4D425BA26E20038559D /* AerisMapboxMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35B25B5FFDB0019CC73 /* AerisMapboxMapKit.xcframework */; };
-		2B00F4D625BA26E20038559D /* AerisMapKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35725B5FFDB0019CC73 /* AerisMapKit.xcframework */; };
-		2B00F4D825BA26E20038559D /* AerisWeatherKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB0F35A25B5FFDB0019CC73 /* AerisWeatherKit.xcframework */; };
 		2B5823491FF6C1720061B91E /* PAPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5823451FF6C1720061B91E /* PAPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B58234A1FF6C1720061B91E /* PAPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5823461FF6C1720061B91E /* PAPreferences.m */; };
 		2B58234B1FF6C1720061B91E /* PAPropertyDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B5823471FF6C1720061B91E /* PAPropertyDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -152,12 +142,6 @@
 		2B5823461FF6C1720061B91E /* PAPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPreferences.m; sourceTree = "<group>"; };
 		2B5823471FF6C1720061B91E /* PAPropertyDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPropertyDescriptor.h; sourceTree = "<group>"; };
 		2B5823481FF6C1720061B91E /* PAPropertyDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPropertyDescriptor.m; sourceTree = "<group>"; };
-		2BB0F35725B5FFDB0019CC73 /* AerisMapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisMapKit.xcframework; sourceTree = "<group>"; };
-		2BB0F35825B5FFDB0019CC73 /* AerisCoreUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisCoreUI.xcframework; sourceTree = "<group>"; };
-		2BB0F35925B5FFDB0019CC73 /* AerisGoogleMapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisGoogleMapKit.xcframework; sourceTree = "<group>"; };
-		2BB0F35A25B5FFDB0019CC73 /* AerisWeatherKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisWeatherKit.xcframework; sourceTree = "<group>"; };
-		2BB0F35B25B5FFDB0019CC73 /* AerisMapboxMapKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisMapboxMapKit.xcframework; sourceTree = "<group>"; };
-		2BB0F35C25B5FFDB0019CC73 /* AerisCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = AerisCore.xcframework; sourceTree = "<group>"; };
 		2BB4B6AD24226DF100ECB78D /* AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD7690C1FF4127A00F758C9 /* AerisDemoSupport.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AerisDemoSupport.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD7690F1FF4127A00F758C9 /* AerisDemoSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AerisDemoSupport.h; sourceTree = "<group>"; };
@@ -229,10 +213,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B00F4C725BA26BF0038559D /* AerisMapKit.xcframework in Frameworks */,
-				2B00F4BF25BA26BE0038559D /* AerisCore.xcframework in Frameworks */,
-				2B00F4C925BA26BF0038559D /* AerisWeatherKit.xcframework in Frameworks */,
-				2B00F4C125BA26BE0038559D /* AerisCoreUI.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,12 +220,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B00F4D425BA26E20038559D /* AerisMapboxMapKit.xcframework in Frameworks */,
-				2B00F4D625BA26E20038559D /* AerisMapKit.xcframework in Frameworks */,
-				2B00F4D025BA26E20038559D /* AerisCoreUI.xcframework in Frameworks */,
-				2B00F4CE25BA26E20038559D /* AerisCore.xcframework in Frameworks */,
-				2B00F4D225BA26E20038559D /* AerisGoogleMapKit.xcframework in Frameworks */,
-				2B00F4D825BA26E20038559D /* AerisWeatherKit.xcframework in Frameworks */,
 				48B6D52453C88DE1D40CA80A /* Pods_AerisDemoSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,24 +238,9 @@
 			path = PAPreferences;
 			sourceTree = "<group>";
 		};
-		2BB0F35625B5FFDB0019CC73 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				2BB0F35725B5FFDB0019CC73 /* AerisMapKit.xcframework */,
-				2BB0F35825B5FFDB0019CC73 /* AerisCoreUI.xcframework */,
-				2BB0F35925B5FFDB0019CC73 /* AerisGoogleMapKit.xcframework */,
-				2BB0F35A25B5FFDB0019CC73 /* AerisWeatherKit.xcframework */,
-				2BB0F35B25B5FFDB0019CC73 /* AerisMapboxMapKit.xcframework */,
-				2BB0F35C25B5FFDB0019CC73 /* AerisCore.xcframework */,
-			);
-			name = lib;
-			path = ../lib;
-			sourceTree = "<group>";
-		};
 		2BD769021FF4127A00F758C9 = {
 			isa = PBXGroup;
 			children = (
-				2BB0F35625B5FFDB0019CC73 /* lib */,
 				2BD7690E1FF4127A00F758C9 /* AerisDemoSupport */,
 				2BD7690D1FF4127A00F758C9 /* Products */,
 				CEFB89A8B8A437F839FE6E94 /* Pods */,
@@ -646,8 +605,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-AerisDemoSupport/Pods-AerisDemoSupport-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.xcframework/ios-arm64_x86_64-simulator/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -759,11 +717,7 @@
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -799,11 +753,7 @@
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -958,12 +908,7 @@
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1002,12 +947,7 @@
 				INFOPLIST_FILE = AerisDemoSupport/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../../Frameworks";
 				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
