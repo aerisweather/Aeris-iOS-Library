@@ -1984,6 +1984,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
 				PRODUCT_NAME = AerisDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match Development com.xweather.AerisDemo";
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -2067,6 +2068,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xweather.AerisDemo;
 				PRODUCT_NAME = AerisDemo;
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore com.xweather.AerisDemo";
+				SUPPORTED_PLATFORMS = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -2151,6 +2153,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "AerisSwiftDemo/AerisSwiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -2239,6 +2242,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aerisweather.AerisSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "AerisSwiftDemo/AerisSwiftDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
